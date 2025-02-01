@@ -29,43 +29,40 @@ documents = [
     Document(content="My name is Marta and I live in Madrid."),
     Document(content="My name is Harry and I live in London."),
 ]
-
 document_store = InMemoryDocumentStore()
-
-indexing_pipeline = Pipeline()
-indexing_pipeline.add_component(
-    instance=SentenceTransformersDocumentEmbedder(model="sentence-transformers/all-MiniLM-L6-v2"), name="doc_embedder"
-)
-indexing_pipeline.add_component(instance=DocumentWriter(document_store=document_store), name="doc_writer")
-
-indexing_pipeline.connect("doc_embedder.documents", "doc_writer.documents")
-
-indexing_pipeline.run({"doc_embedder": {"documents": documents}})
 
 template = [
     ChatMessage.from_user(
         """
-Answer the questions based on the given context.
+    Answer the questions based on the given context.
 
-Context:
-{% for document in documents %}
-    {{ document.content }}
-{% endfor %}
-Question: {{ question }}
-Answer:
-"""
-    )
+    Context:
+    {% for document in documents %}
+        {{ document.content }}
+    {% endfor %}
+    Question: {{ question }}
+    Answer:
+    """)
 ]
+
+# Document Indexing Pipeline
+indexing_pipeline = Pipeline()
+indexing_pipeline.add_component("doc_embedder", instance=SentenceTransformersDocumentEmbedder(model="sentence-transformers/all-MiniLM-L6-v2"))
+indexing_pipeline.add_component("doc_writer", instance=DocumentWriter(document_store=document_store))
+indexing_pipeline.connect("doc_embedder.documents", "doc_writer.documents")
+indexing_pipeline.run({"doc_embedder": {"documents": documents}})
+
+# Query Embedding and RAG Pipeline
 rag_pipe = Pipeline()
 rag_pipe.add_component("embedder", SentenceTransformersTextEmbedder(model="sentence-transformers/all-MiniLM-L6-v2"))
 rag_pipe.add_component("retriever", InMemoryEmbeddingRetriever(document_store=document_store))
 rag_pipe.add_component("prompt_builder", ChatPromptBuilder(template=template))
 rag_pipe.add_component("llm", AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0"))
-
 rag_pipe.connect("embedder.embedding", "retriever.query_embedding")
 rag_pipe.connect("retriever", "prompt_builder.documents")
 rag_pipe.connect("prompt_builder.prompt", "llm.messages")
 
+# Running the Pipeline
 query = "Where does Mark live?"
 result = rag_pipe.run({"embedder": {"text": query}, "prompt_builder": {"question": query}})
 print(result["llm"]["replies"][0].text)
