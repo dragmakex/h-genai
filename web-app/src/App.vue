@@ -15,17 +15,25 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
-import { ref } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { Check, ChevronsUpDown } from 'lucide-vue-next'
+import { useUserSelectionStore } from '@/stores/userSelection'
+import { useMunicipalitiesStore } from '@/stores/municipalities'
 
-const clients = [
-  {value: 'dijon', label: 'Dijon'},
-  {value: 'paris', label: 'Paris'},
-  {value: 'lyon', label: 'Lyon'},
-]
+const userSelectionStore = useUserSelectionStore()
+const municipalitiesStore = useMunicipalitiesStore()
+
+onMounted(() => {
+  municipalitiesStore.initializeMunicipalities()
+})
 
 const open = ref(false)
-const value = ref('')
+const value = computed({
+  get: () => userSelectionStore.selected_municipality_code,
+  set: (newValue) => userSelectionStore.setSelectedMunicipality(newValue)
+})
+
+const clients = computed(() => municipalitiesStore.getMunicipalitiesForSelect)
 </script>
 
 <template>
@@ -42,7 +50,7 @@ const value = ref('')
     <hr class="w-full max-w-screen-lg">
     <div class="w-full max-w-screen-lg flex-1 flex flex-col items-center py-2 px-8 pt-16 mt-2">
       <div>
-        <div class="text-gray-500">Selectionnez un client.</div>
+        <!-- <div class="text-gray-500">Selectionnez un client.</div> -->
         <div class="flex space-x-2">
           <Popover v-model:open="open">
             <PopoverTrigger as-child>
@@ -52,9 +60,7 @@ const value = ref('')
                 :aria-expanded="open"
                 class="w-[400px] justify-between"
               >
-                {{ value
-                  ? clients.find((client) => client.value === value)?.label
-                  : "Sélectionnez un client..." }}
+                {{ userSelectionStore.selected_municipality || "Sélectionnez un client..." }}
                 <ChevronsUpDown class="ml-2 h-4 w-4 shrink-0 opacity-50" />
               </Button>
             </PopoverTrigger>
@@ -66,20 +72,20 @@ const value = ref('')
                   <CommandGroup>
                     <CommandItem
                       v-for="client in clients"
-                      :key="client.value"
-                      :value="client.value"
+                      :key="client.code"
+                      :value="client.name"
                       @select="(ev) => {
                         if (typeof ev.detail.value === 'string') {
-                          value = ev.detail.value
+                          userSelectionStore.setSelectedMunicipality(client)
                         }
                         open = false
                       }"
                     >
-                      {{ client.label }}
+                      {{ client.name }}
                       <Check
                         :class="cn(
                           'ml-auto h-4 w-4',
-                          value === client.value ? 'opacity-100' : 'opacity-0',
+                          value === client.code ? 'opacity-100' : 'opacity-0',
                         )"
                       />
                     </CommandItem>
