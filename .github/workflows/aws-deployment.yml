@@ -2,37 +2,32 @@ name: AWS Deployment
 
 on:
   push:
-    branches: [ server, web-app ]
-  pull_request:
-    branches: [ server, web-app ]
+    branches: [ main ]
+    paths:
+      - 'server/**'
+      - '.github/workflows/aws-deployment.yml'
 
 env:
-  AWS_REGION: us-east-1 # Change this to your preferred region
+  AWS_REGION: us-west-2
+  PYTHON_VERSION: '3.11'
+  NODE_VERSION: '20'
 
 jobs:
-  deploy-server:
+  test-and-lint-server:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/server'
     
     steps:
       - uses: actions/checkout@v4
       
-      - name: Set up Python 3.11
+      - name: Set up Python ${{ env.PYTHON_VERSION }}
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
           
       - name: Install Poetry
         uses: snok/install-poetry@v1
         with:
           version: 1.7.1
-          
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ env.AWS_REGION }}
           
       - name: Install dependencies
         run: |
@@ -44,19 +39,52 @@ jobs:
           cd server
           poetry run pytest
           
-      - name: Build and push Docker image
+      - name: Run linting
         run: |
           cd server
-          docker build -t h-genai-server .
-          aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_REGISTRY }}
-          docker tag h-genai-server:latest ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest
-          docker push ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest
+          poetry run black . --check
+          poetry run isort . --check
+          poetry run mypy .
+
+  deploy-server:
+    needs: test-and-lint-server
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+          
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+          
+      - name: Build and push Docker image
+        env:
+          ECR_REGISTRY: ${{ secrets.AWS_ECR_REGISTRY }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          cd server
+          docker build -t $ECR_REGISTRY/h-genai-server:$IMAGE_TAG -t $ECR_REGISTRY/h-genai-server:latest .
+          docker push $ECR_REGISTRY/h-genai-server:$IMAGE_TAG
+          docker push $ECR_REGISTRY/h-genai-server:latest
           
       - name: Update Lambda function
         run: |
           aws lambda update-function-code \
             --function-name h-genai-server \
-            --image-uri ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest
+            --image-uri ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest \
+            --publish
+
+      - name: Wait for Lambda Update
+        run: |
+          aws lambda wait function-updated --function-name h-genai-server
 
   deploy-webapp:
     runs-on: ubuntu-latest
