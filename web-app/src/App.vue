@@ -88,7 +88,6 @@ const gotResult = ref(false)
     <hr class="w-full max-w-screen-lg">
     <div class="w-full max-w-screen-lg flex-1 flex flex-col items-center py-2 px-8 pt-16 mt-2">
       <div>
-        <!-- <div class="text-gray-500">Selectionnez un client.</div> -->
         <div class="flex space-x-2">
           <Popover v-model:open="open">
             <PopoverTrigger as-child>
