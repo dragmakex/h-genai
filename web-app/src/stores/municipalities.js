@@ -18,7 +18,8 @@ export const useMunicipalitiesStore = defineStore('municipalities', {
           name: municipality.com_name,
           inter_name: municipality.epci_name,
           inter_code: municipality.epci_code,
-          siren: municipality.siren
+          siren: municipality.siren,
+          reference_sirens: municipality.reference_sirens || []
         }))
     }
   }
