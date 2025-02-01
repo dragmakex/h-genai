@@ -1,0 +1,102 @@
+name: AWS Deployment
+
+on:
+  push:
+    branches: [ server, web-app ]
+  pull_request:
+    branches: [ server, web-app ]
+
+env:
+  AWS_REGION: us-east-1 # Change this to your preferred region
+
+jobs:
+  deploy-server:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/server'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          version: 1.7.1
+          
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+          
+      - name: Install dependencies
+        run: |
+          cd server
+          poetry install
+          
+      - name: Run tests
+        run: |
+          cd server
+          poetry run pytest
+          
+      - name: Build and push Docker image
+        run: |
+          cd server
+          docker build -t h-genai-server .
+          aws ecr get-login-password --region ${{ env.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_REGISTRY }}
+          docker tag h-genai-server:latest ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest
+          docker push ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest
+          
+      - name: Update Lambda function
+        run: |
+          aws lambda update-function-code \
+            --function-name h-genai-server \
+            --image-uri ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest
+
+  deploy-webapp:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/web-app'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: web-app/package-lock.json
+          
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+          
+      - name: Install dependencies
+        run: |
+          cd web-app
+          npm ci
+          
+      - name: Run tests
+        run: |
+          cd web-app
+          npm run test
+          
+      - name: Build
+        run: |
+          cd web-app
+          npm run build
+          
+      - name: Deploy to AWS Amplify
+        run: |
+          aws amplify start-job \
+            --app-id ${{ secrets.AWS_AMPLIFY_APP_ID }} \
+            --branch-name web-app \
+            --job-type RELEASE
