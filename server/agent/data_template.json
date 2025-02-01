@@ -543,19 +543,19 @@
                 },
                 "education": {
                     "type": "array",
-                    "content": [null, null, null],
+                    "content": null,
                     "instruction": "List the educational background of the contact person",
                     "example": ["Master's degree in public law and sports management from the University of Burgundy (1999)", "Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005)", "Institute for Public Management and Economic Development (IGPDE) (2006)"]
                 },
                 "activities": {
                     "type": "array",
-                    "content": [null, null],
+                    "content": null,
                     "instruction": "List the professional activities of the contact person",
                     "example": ["1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"]
                 },
                 "career": {
                     "type": "array",
-                    "content": [null, null, null, null],
+                    "content": null,
                     "instruction": "List the career history of the contact person",
                     "example": ["Former French champion in 5,000 m canoe-kayak (1998)", "Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014)", "Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014)", "1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024)", "Acting Mayor of Dijon (July 27-August 10, 2015)"]
                 }
@@ -593,19 +593,19 @@
                 },
                 "education": {
                     "type": "array",
-                    "content": [null, null, null],
+                    "content": null,
                     "instruction": "List the educational background of the contact person",
                     "example": ["Master's degree in public law", "DESS in Economics", "DEA in Political Science"]
                 },
                 "activities": {
                     "type": "array",
-                    "content": [null, null],
+                    "content": null,
                     "instruction": "List the professional activities of the contact person",
                     "example": ["Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"]
                 },
                 "career": {
                     "type": "array",
-                    "content": [null, null, null, null],
+                    "content": null,
                     "instruction": "List the career history of the contact person",
                     "example": [
     "Chargé de mission to the prefect of the Burgundy region (1979-1981)",
