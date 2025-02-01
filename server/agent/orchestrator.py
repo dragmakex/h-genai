@@ -61,9 +61,10 @@ class Orchestrator:
         # Process each field in the municipality data
         for field, value in fields.items():
             # E.g. field = 'population'
-            # E.g. value = {'type': 'number', 'content': null}
+            # E.g. value = {'type': 'number', 'content': null, 'instruction': 'Enter the total population of the municipality'}
             print(field)
             type = value['type']
+            instruction = value['instruction']
             example = examples[field]['content']
 
             conversation_id = field
@@ -72,7 +73,7 @@ class Orchestrator:
                 self.conversation_history[conversation_id] = []
             
             # Create a prompt based on the field and append it to the messages
-            prompt = tool_agent_prompt.format(name=name, field=field, type=type, example=example)
+            prompt = tool_agent_prompt.format(name=name, field=field, instruction=instruction, type=type, example=example)
             self.conversation_history[conversation_id].append(ChatMessage.from_user(prompt))
 
             # Get response from agent and extend the conversation history with the response

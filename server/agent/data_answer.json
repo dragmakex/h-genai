@@ -1,115 +1,142 @@
 {
     "municipality_name": {
         "type": "string",
-        "content": "Dijon"
+        "content": "Dijon",
+        "instruction": "Enter the name of the municipality"
     },
     "inter_municipality_name": {
         "type": "string",
-        "content": null
+        "content": null,
+        "instruction": "Enter the name of the inter-municipality organization"
     },
     "logo": {
         "type": "string",
-        "content": null
+        "content": null,
+        "instruction": "Provide the URL or path to the municipality logo"
     },
     "summary": {
         "municipality": {
             "population": {
                 "type": "number",
-                "content": "159941 inhabitants"
+                "content": "164018 inhabitants",
+                "instruction": "Enter the total population of the municipality"
             },
             "area": {
                 "type": "number",
-                "content": "40.41 km²"
+                "content": "40.41 km²",
+                "instruction": "Enter the total area of the municipality in square kilometers"
             },
             "data_from_year": {
                 "type": "number",
-                "content": "2022"
+                "content": "2022",
+                "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": "271.18 million euros"
+                "content": "271.18 million euros",
+                "instruction": "Enter the total budget of the municipality in euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": "unknown"
+                "content": null,
+                "instruction": "Enter the total budget per person in euros"
             },
             "mean_total_budget_per_person": {
                 "type": "number",
-                "content": "22,160 €/person"
+                "content": "unknown",
+                "instruction": "Enter the mean total budget per person across similar municipalities"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": "unknown"
+                "content": "unknown",
+                "instruction": "Enter the debt repayment capacity as a ratio"
             },
             "mean_debt_repayment_capacity": {
                 "type": "number",
-                "content": "unknown"
+                "content": "unknown",
+                "instruction": "Enter the mean debt repayment capacity across similar municipalities"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": "unknown"
+                "content": "unknown",
+                "instruction": "Enter the debt ratio as a percentage"
             },
             "mean_debt_ratio": {
                 "type": "number",
-                "content": "unknown"
+                "content": "unknown",
+                "instruction": "Enter the mean debt ratio across similar municipalities"
             },
             "debt_duration": {
                 "type": "number",
-                "content": "unknown"
+                "content": "unknown",
+                "instruction": "Enter the debt duration in years"
             },
             "mean_debt_duration": {
                 "type": "number",
-                "content": "unknown"
+                "content": "unknown",
+                "instruction": "Enter the mean debt duration across similar municipalities"
             }
         },
         "inter_municipality": {
             "population": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the total population of the inter-municipality"
             },
             "area": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the total area of the inter-municipality in square kilometers"
             },
             "data_from_year": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the total budget of the inter-municipality in euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the total budget per person in euros"
             },
             "mean_total_budget_per_person": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the mean total budget per person across similar inter-municipalities"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the debt repayment capacity as a ratio"
             },
             "mean_debt_repayment_capacity": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the mean debt repayment capacity across similar inter-municipalities"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the debt ratio as a percentage"
             },
             "mean_debt_ratio": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the mean debt ratio across similar inter-municipalities"
             },
             "debt_duration": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the debt duration in years"
             },
             "mean_debt_duration": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the mean debt duration across similar inter-municipalities"
             },
             "historical_milestones": {
                 "type": "array",
@@ -117,31 +144,37 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the year of the historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Describe the historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the year of the historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Describe the historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the year of the historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Describe the historical milestone event"
                         }
                     }
                 ]
@@ -156,37 +189,45 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the environmental theme of the project"
                         },
                         "category": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the category of the green project"
                         },
                         "description": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Provide a detailed description of the green project"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the investment amount for the green project"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the environmental theme of the project"
                         },
                         "category": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the category of the green project"
                         },
                         "description": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Provide a detailed description of the green project"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the investment amount for the green project"
                         }
                     }
                 ]
@@ -197,19 +238,23 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the social theme of the project"
                         },
                         "category": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the category of the social project"
                         },
                         "description": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Provide a detailed description of the social project"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the investment amount for the social project"
                         }
                     }
                 ]
@@ -222,19 +267,23 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the environmental theme of the inter-municipality project"
                         },
                         "category": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the category of the inter-municipality green project"
                         },
                         "description": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Provide a detailed description of the inter-municipality green project"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the investment amount for the inter-municipality green project"
                         }
                     }
                 ]
@@ -245,19 +294,23 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the social theme of the inter-municipality project"
                         },
                         "category": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the category of the inter-municipality social project"
                         },
                         "description": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Provide a detailed description of the inter-municipality social project"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null
+                            "content": null,
+                            "instruction": "Enter the investment amount for the inter-municipality social project"
                         }
                     }
                 ]
@@ -270,23 +323,28 @@
             {
                 "name": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the full name of the contact person"
                 },
                 "title": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the professional title of the contact person"
                 },
                 "title_since": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the date when the person started in this title"
                 },
                 "birth_date": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the birth date of the contact person"
                 },
                 "birth_place": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the birth place of the contact person"
                 },
                 "education": {
                     "type": "array",
@@ -294,14 +352,16 @@
                         null,
                         null,
                         null
-                    ]
+                    ],
+                    "instruction": "List the educational background of the contact person"
                 },
                 "activities": {
                     "type": "array",
                     "content": [
                         null,
                         null
-                    ]
+                    ],
+                    "instruction": "List the professional activities of the contact person"
                 },
                 "career": {
                     "type": "array",
@@ -310,29 +370,35 @@
                         null,
                         null,
                         null
-                    ]
+                    ],
+                    "instruction": "List the career history of the contact person"
                 }
             },
             {
                 "name": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the full name of the contact person"
                 },
                 "title": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the professional title of the contact person"
                 },
                 "title_since": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the date when the person started in this title"
                 },
                 "birth_date": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the birth date of the contact person"
                 },
                 "birth_place": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the birth place of the contact person"
                 },
                 "education": {
                     "type": "array",
@@ -340,14 +406,16 @@
                         null,
                         null,
                         null
-                    ]
+                    ],
+                    "instruction": "List the educational background of the contact person"
                 },
                 "activities": {
                     "type": "array",
                     "content": [
                         null,
                         null
-                    ]
+                    ],
+                    "instruction": "List the professional activities of the contact person"
                 },
                 "career": {
                     "type": "array",
@@ -356,7 +424,8 @@
                         null,
                         null,
                         null
-                    ]
+                    ],
+                    "instruction": "List the career history of the contact person"
                 }
             }
         ]
@@ -365,29 +434,35 @@
         "municipality": {
             "date": {
                 "type": "string",
-                "content": null
+                "content": null,
+                "instruction": "Enter the date of the budget data"
             },
             "year": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the fiscal year of the budget"
             },
             "total_budget": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the total budget amount in euros"
             }
         },
         "inter_municipality": {
             "date": {
                 "type": "string",
-                "content": null
+                "content": null,
+                "instruction": "Enter the date of the inter-municipality budget data"
             },
             "year": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the fiscal year of the inter-municipality budget"
             },
             "total_budget": {
                 "type": "number",
-                "content": null
+                "content": null,
+                "instruction": "Enter the total inter-municipality budget amount in euros"
             }
         }
     },
@@ -395,13 +470,15 @@
         "municipality": {
             "year": {
                 "type": "string",
-                "content": null
+                "content": null,
+                "instruction": "Enter the year of the financial data"
             }
         },
         "inter_municipality": {
             "year": {
                 "type": "string",
-                "content": null
+                "content": null,
+                "instruction": "Enter the year of the inter-municipality financial data"
             }
         }
     },
@@ -411,117 +488,145 @@
             {
                 "municipality": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the name of the municipality being compared"
                 },
                 "inter_municipality": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the name of the inter-municipality being compared"
                 },
                 "population": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the population of the compared municipality"
                 },
                 "area": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the area of the compared municipality in square kilometers"
                 },
                 "data_from_year": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the year of the comparative data"
                 },
                 "total_budget": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the total budget of the compared municipality"
                 },
                 "total_budget_per_person": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the total budget per person of the compared municipality"
                 },
                 "mean_total_budget_per_person": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean total budget per person for similar municipalities"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the debt repayment capacity of the compared municipality"
                 },
                 "mean_debt_repayment_capacity": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean debt repayment capacity for similar municipalities"
                 },
                 "debt_ratio": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the debt ratio of the compared municipality as a percentage"
                 },
                 "mean_debt_ratio": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean debt ratio for similar municipalities"
                 },
                 "debt_duration": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the debt duration of the compared municipality in years"
                 },
                 "mean_debt_duration": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean debt duration for similar municipalities"
                 }
             },
             {
                 "municipality": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the name of the municipality being compared"
                 },
                 "inter_municipality": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the name of the inter-municipality being compared"
                 },
                 "population": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the population of the compared municipality"
                 },
                 "area": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the area of the compared municipality in square kilometers"
                 },
                 "data_from_year": {
                     "type": "string",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the year of the comparative data"
                 },
                 "total_budget": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the total budget of the compared municipality"
                 },
                 "total_budget_per_person": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the total budget per person of the compared municipality"
                 },
                 "mean_total_budget_per_person": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean total budget per person for similar municipalities"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the debt repayment capacity of the compared municipality"
                 },
                 "mean_debt_repayment_capacity": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean debt repayment capacity for similar municipalities"
                 },
                 "debt_ratio": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the debt ratio of the compared municipality as a percentage"
                 },
                 "mean_debt_ratio": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean debt ratio for similar municipalities"
                 },
                 "debt_duration": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the debt duration of the compared municipality in years"
                 },
                 "mean_debt_duration": {
                     "type": "number",
-                    "content": null
+                    "content": null,
+                    "instruction": "Enter the mean debt duration for similar municipalities"
                 }
             }
         ]

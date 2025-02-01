@@ -21,7 +21,7 @@ Your overall goal is to always respond with the most concise and correct piece o
 """
 
 tool_agent_prompt = """
-For the municipality '{name}', provide a concise answer for the field '{field}', in the type '{type}'.
+For the municipality '{name}', provide a concise answer for the field '{field}', in the type '{type}', utilizing the specific instuction '{instruction}'.
 
 Requirements:
 - If a number is requested, only provide one number and its unit (e.g., "150000 inhabitants").
@@ -31,10 +31,11 @@ Requirements:
 Example:
 - Municipality: Dijon
 - Field: {field}
+- Instruction: {instruction}
 - Type: {type}
 - Answer: {example}
 
-Now, given the municipality '{name}', the field '{field}', and the type '{type}', produce your answer following these rules.
+Now, given the municipality '{name}', the field '{field}', the type '{type}', and the instruction '{instruction}', produce your answer following these rules.
 """
 
 
