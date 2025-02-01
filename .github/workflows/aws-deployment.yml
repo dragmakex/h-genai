@@ -68,21 +68,27 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
           
+      - name: Create ECR repository if not exists
+        run: |
+          aws ecr describe-repositories --repository-names h-genai-server || \
+          aws ecr create-repository --repository-name h-genai-server
+
       - name: Build and push Docker image
         env:
           ECR_REGISTRY: ${{ secrets.AWS_ECR_REGISTRY }}
           IMAGE_TAG: ${{ github.sha }}
+          AWS_ACCOUNT_ID: "140023381458"
         run: |
           cd server
-          docker build -t $ECR_REGISTRY/h-genai-server:$IMAGE_TAG -t $ECR_REGISTRY/h-genai-server:latest .
-          docker push $ECR_REGISTRY/h-genai-server:$IMAGE_TAG
-          docker push $ECR_REGISTRY/h-genai-server:latest
+          docker build -t ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:${IMAGE_TAG} -t ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:latest .
+          docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:${IMAGE_TAG}
+          docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:latest
           
       - name: Update Lambda function
         run: |
           aws lambda update-function-code \
             --function-name h-genai-server \
-            --image-uri ${{ secrets.AWS_ECR_REGISTRY }}/h-genai-server:latest \
+            --image-uri ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:latest \
             --publish
 
       - name: Wait for Lambda Update
