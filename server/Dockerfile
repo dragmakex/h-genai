@@ -28,7 +28,6 @@ COPY pyproject.toml ./
 # Configure poetry and install dependencies with specific settings for Lambda
 RUN poetry config virtualenvs.create false && \
     poetry lock && \
-    pip install --no-cache-dir onnxruntime && \
     poetry install --no-root --without dev --no-interaction --no-ansi
 
 # Copy the rest of the application code
