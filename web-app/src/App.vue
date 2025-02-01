@@ -1,6 +1,7 @@
 <script setup>
 import SfilLogo from '@/assets/images/Sfil-Logo.png'
 import { Button } from '@/components/ui/button'
+import { Progress } from '@/components/ui/progress'
 import {
   Command,
   CommandEmpty,
@@ -16,7 +17,7 @@ import {
 } from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
 import { ref, computed, onMounted } from 'vue'
-import { Check, ChevronsUpDown } from 'lucide-vue-next'
+import { Check, ChevronsUpDown, LoaderCircle } from 'lucide-vue-next'
 import { useUserSelectionStore } from '@/stores/userSelection'
 import { useMunicipalitiesStore } from '@/stores/municipalities'
 
@@ -34,6 +35,43 @@ const value = computed({
 })
 
 const clients = computed(() => municipalitiesStore.getMunicipalitiesForSelect)
+
+const isGenerating = ref(false)
+const progress = ref(0)
+const progressMessages = ref([
+  "Recherche de données générales...",
+  "Recherche de projets...",
+  "Recherche de données financières...",
+  "Recherche du budget primitif...",
+  "Recherche de communes similaires...",
+  "Génération du fichier...",
+])
+
+const handleGenerate = async () => {
+  isGenerating.value = true
+  progress.value = 0
+  gotResult.value = false
+  
+  const duration = 8000
+  const interval = 100
+  const steps = duration / interval
+  const increment = 100 / steps
+  
+  const progressInterval = setInterval(() => {
+    progress.value = Math.min(100, progress.value + increment)
+  }, interval)
+
+  setTimeout(() => {
+    clearInterval(progressInterval)
+    setTimeout(() => {
+      isGenerating.value = false
+      progress.value = 0
+      gotResult.value = true
+    }, 1000)
+  }, duration)
+}
+
+const gotResult = ref(false)
 </script>
 
 <template>
@@ -94,7 +132,30 @@ const clients = computed(() => municipalitiesStore.getMunicipalitiesForSelect)
               </Command>
             </PopoverContent>
           </Popover>
-          <Button class="bg-[#164194]">Générer</Button>
+          <Button 
+            class="bg-[#164194]" 
+            @click="handleGenerate"
+            :disabled="isGenerating || !userSelectionStore.selected_municipality"
+          >
+            <span v-if="isGenerating" class="mr-2">
+              <LoaderCircle class="animate-spin" />
+            </span>
+            Générer
+          </Button>
+        </div>
+        <div v-if="isGenerating" class="mt-4 w-full">
+          <Progress :model-value="progress" class="[&>*]:bg-[#1640948d] h-2" />
+        </div>
+        <div v-if="isGenerating">
+          <div class="text-gray-500 mt-2">
+            <p>{{ progressMessages[Math.min(progressMessages.length - 1, Math.floor((progress / 90) * (progressMessages.length - 1)))] }}</p>
+          </div>
+        </div>
+        <div v-if="gotResult" class="mt-4 w-full">
+          <div class="text-[#95BB20] flex items-center gap-2">
+            <Check class="w-4 h-4" />
+            <p> Fichier généré pour <b>{{ userSelectionStore.selected_municipality }}</b> avec succès.</p>
+          </div>
         </div>
       </div>
     </div>
