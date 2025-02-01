@@ -1,0 +1,193 @@
+{
+    "municipality_name": "Dijon",
+    "inter_municipality_name": "Dijon Métropole",
+    "logo": "string",
+    "summary": {
+        "municipality": {
+            "population": "number",
+            "area": "number",
+            "data_from_year": "2023",
+            "total_budget": "number",
+            "total_budget_per_person": "number",
+            "mean_total_budget_per_person": "number",
+            "debt_repayment_capacity": "number",
+            "mean_debt_repayment_capacity": "number",
+            "debt_ratio": "number",
+            "mean_debt_ratio": "number",
+            "debt_duration": "number",
+            "mean_debt_duration": "number"
+        },
+        "inter_municipality": {
+            "population": "number",
+            "area": "number",
+            "data_from_year": "2024",
+            "total_budget": "number",
+            "total_budget_per_person": "number",
+            "mean_total_budget_per_person": "number",
+            "debt_repayment_capacity": "number",
+            "mean_debt_repayment_capacity": "number",
+            "debt_ratio": "number",
+            "mean_debt_ratio": "number",
+            "debt_duration": "number",
+            "mean_debt_duration": "number",
+            "historical_milestones": [
+                {
+                    "year": "1957",
+                    "milestone": "Création de la Communauté d'Agglomération de Dijon Métropole"
+                },
+                {
+                    "year": "1999",
+                    "milestone": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
+                },
+                {
+                    "year": "2012",
+                    "milestone": "Creation de Dijon Métropole avec 23 communes"
+                }
+            ]
+        }
+    },
+    "projects": {
+        "municipality": {
+            "green_projects": [
+                {
+                    "theme": "string",
+                    "category": "string",
+                    "description": "string",
+                    "investment": "string"
+                },
+                {
+                    "theme": "string",
+                    "category": "string",
+                    "description": "string",
+                    "investment": "string"
+                }
+            ],
+            "social_projects": [
+                {
+                    "theme": "string",
+                    "category": "string",
+                    "description": "string",
+                    "investment": "string"
+                }
+            ]
+        },
+        "inter_municipality": {
+            "green_projects": [
+                {
+                    "theme": "string",
+                    "category": "string",
+                    "description": "string",
+                    "investment": "string"
+                }
+            ],
+            "social_projects": [
+                {
+                    "theme": "string",
+                    "category": "string",
+                    "description": "string",
+                    "investment": "string"
+                }
+            ]
+        }
+    },
+    "contacts": [
+        {
+            "name": "name",
+            "title": "title",
+            "title_since": "title_since",
+            "birth_date": "birth_date",
+            "birth_place": "birth_place",
+            "education": [
+                "string",
+                "string",
+                "string"
+            ],
+            "activities": [
+                "string",
+                "string"
+            ],
+            "career": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ]
+        },
+        {
+            "name": "name",
+            "title": "title",
+            "title_since": "year",
+            "birth_date": "birth_date",
+            "birth_place": "birth_place",
+            "education": [
+                "string",
+                "string",
+                "string"
+            ],
+            "activities": [
+                "string",
+                "string"
+            ],
+            "career": [
+                "string",
+                "string",
+                "string",
+                "string"
+            ]
+        }
+    ],
+    "budget": {
+        "municipality": {
+            "date": "date",
+            "year": "number",
+            "total_budget": "number"
+        },
+        "inter_municipality": {
+            "date": "date",
+            "year": "number",
+            "total_budget": "number"
+        }
+    },
+    "financial_data": {
+        "municipality": {
+            "year": "year"
+        },
+        "inter_municipality": {
+            "year": "year"
+        }
+    },
+    "comparative_data": [
+        {
+            "municipality": "string",
+            "inter_municipality": "string",
+            "population": "number",
+            "area": "number",
+            "data_from_year": "2023",
+            "total_budget": "number",
+            "total_budget_per_person": "number",
+            "mean_total_budget_per_person": "number",
+            "debt_repayment_capacity": "number",
+            "mean_debt_repayment_capacity": "number",
+            "debt_ratio": "number",
+            "mean_debt_ratio": "number",
+            "debt_duration": "number",
+            "mean_debt_duration": "number"
+        },
+        {
+            "municipality": "string",
+            "inter_municipality": "string",
+            "population": "number",
+            "area": "number",
+            "data_from_year": "2023",
+            "total_budget": "number",
+            "total_budget_per_person": "number",
+            "mean_total_budget_per_person": "number",
+            "debt_repayment_capacity": "number",
+            "mean_debt_repayment_capacity": "number",
+            "debt_ratio": "number",
+            "mean_debt_ratio": "number",
+            "debt_duration": "number",
+            "mean_debt_duration": "number"
+        }
+    ]
+}
