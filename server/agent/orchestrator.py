@@ -90,10 +90,13 @@ class Orchestrator:
         for field, value in fields.items():
             # E.g. field = 'population'
             # E.g. value = {'type': 'number', 'content': null, 'instruction': 'Enter the total population of the municipality'}
-            print("Field: " + name + " " +field)
+            print("Field: " + name + " " + field)
             type = value['type']
             instruction = value['instruction']
             example = examples[field]['content']
+
+            # if field != 'historical_milestones':
+            #     continue
 
             conversation_id = identifier + "_" + field
             if conversation_id not in self.conversation_history:
@@ -117,8 +120,8 @@ class Orchestrator:
                         # Create prompt for this specific array item
                         item_prompt = f"For item {idx+1} of the array:\n"
                         item_prompt += tool_agent_prompt.format(identifier=identifier, name=name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=example)
-                        if idx == 0:
-                            item_prompt = array_prompt + item_prompt
+                        # if idx == 0:
+                        #     item_prompt = array_prompt + item_prompt
                         self.conversation_history[conversation_id].append(ChatMessage.from_user(item_prompt))
                         
                         # Get response for this item
@@ -126,11 +129,12 @@ class Orchestrator:
                         self.conversation_history[conversation_id].extend(response)
 
                         # We call the agent again to get the final reply after the tool execution
-                        final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
-                        self.conversation_history[conversation_id].extend(final_reply)
+                        if self.conversation_history[conversation_id][-1].role != ChatRole.ASSISTANT:
+                            final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
+                            self.conversation_history[conversation_id].extend(final_reply)
                         
                         # Store the response for this item
-                        self.data['summary'][identifier][field]['content'][idx][subfield]['content'] = self.conversation_history[conversation_id][-1].text if final_reply else "unknown"           
+                        self.data['summary'][identifier][field]['content'][idx][subfield]['content'] = self.conversation_history[conversation_id][-1].text #if final_reply else "unknown"           
             else: 
                 # Create a prompt based on the field and append it to the messages
                 prompt = tool_agent_prompt.format(identifier=identifier, name=name, field=field, instruction=instruction, type=type, example=example)

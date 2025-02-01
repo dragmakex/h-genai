@@ -41,40 +41,20 @@
                 "content": null,
                 "instruction": "Enter the total budget per person in euros"
             },
-            "mean_total_budget_per_person": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean total budget per person across similar municipalities"
-            },
             "debt_repayment_capacity": {
                 "type": "number",
                 "content": null,
                 "instruction": "Enter the debt repayment capacity as a ratio"
-            },
-            "mean_debt_repayment_capacity": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt repayment capacity across similar municipalities"
             },
             "debt_ratio": {
                 "type": "number",
                 "content": null,
                 "instruction": "Enter the debt ratio as a percentage"
             },
-            "mean_debt_ratio": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt ratio across similar municipalities"
-            },
             "debt_duration": {
                 "type": "number",
                 "content": null,
                 "instruction": "Enter the debt duration in years"
-            },
-            "mean_debt_duration": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt duration across similar municipalities"
             }
         },
         "inter_municipality": {
@@ -103,40 +83,20 @@
                 "content": null,
                 "instruction": "Enter the total budget per person in euros"
             },
-            "mean_total_budget_per_person": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean total budget per person across similar inter-municipalities"
-            },
             "debt_repayment_capacity": {
                 "type": "number",
                 "content": null,
                 "instruction": "Enter the debt repayment capacity as a ratio"
-            },
-            "mean_debt_repayment_capacity": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt repayment capacity across similar inter-municipalities"
             },
             "debt_ratio": {
                 "type": "number",
                 "content": null,
                 "instruction": "Enter the debt ratio as a percentage"
             },
-            "mean_debt_ratio": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt ratio across similar inter-municipalities"
-            },
             "debt_duration": {
                 "type": "number",
                 "content": null,
                 "instruction": "Enter the debt duration in years"
-            },
-            "mean_debt_duration": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt duration across similar inter-municipalities"
             },
             "historical_milestones": {
                 "type": "array",
@@ -498,40 +458,20 @@
                     "content": null,
                     "instruction": "Enter the total budget per person of the compared municipality"
                 },
-                "mean_total_budget_per_person": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean total budget per person for similar municipalities"
-                },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt repayment capacity of the compared municipality"
-                },
-                "mean_debt_repayment_capacity": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt repayment capacity for similar municipalities"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt ratio of the compared municipality as a percentage"
                 },
-                "mean_debt_ratio": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt ratio for similar municipalities"
-                },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt duration of the compared municipality in years"
-                },
-                "mean_debt_duration": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt duration for similar municipalities"
                 }
             },
             {
@@ -570,40 +510,20 @@
                     "content": null,
                     "instruction": "Enter the total budget per person of the compared municipality"
                 },
-                "mean_total_budget_per_person": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean total budget per person for similar municipalities"
-                },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt repayment capacity of the compared municipality"
-                },
-                "mean_debt_repayment_capacity": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt repayment capacity for similar municipalities"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt ratio of the compared municipality as a percentage"
                 },
-                "mean_debt_ratio": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt ratio for similar municipalities"
-                },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt duration of the compared municipality in years"
-                },
-                "mean_debt_duration": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt duration for similar municipalities"
                 }
             }
         ]

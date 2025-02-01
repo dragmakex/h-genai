@@ -18,22 +18,22 @@
         "municipality": {
             "population": {
                 "type": "number",
-                "content": null,
+                "content": "159346 inhabitants",
                 "instruction": "Enter the total population of the municipality"
             },
             "area": {
                 "type": "number",
-                "content": null,
+                "content": "40.41 km²",
                 "instruction": "Enter the total area of the municipality in square kilometers"
             },
             "data_from_year": {
                 "type": "number",
-                "content": null,
+                "content": "2022",
                 "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": null,
+                "content": "280 million euros",
                 "instruction": "Enter the total budget of the municipality in euros"
             },
             "total_budget_per_person": {
@@ -41,102 +41,62 @@
                 "content": null,
                 "instruction": "Enter the total budget per person in euros"
             },
-            "mean_total_budget_per_person": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean total budget per person across similar municipalities"
-            },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": null,
+                "content": "3.4 years",
                 "instruction": "Enter the debt repayment capacity as a ratio"
-            },
-            "mean_debt_repayment_capacity": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt repayment capacity across similar municipalities"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": null,
+                "content": "3.4 years",
                 "instruction": "Enter the debt ratio as a percentage"
-            },
-            "mean_debt_ratio": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt ratio across similar municipalities"
             },
             "debt_duration": {
                 "type": "number",
-                "content": null,
+                "content": "unknown",
                 "instruction": "Enter the debt duration in years"
-            },
-            "mean_debt_duration": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt duration across similar municipalities"
             }
         },
         "inter_municipality": {
             "population": {
                 "type": "number",
-                "content": null,
+                "content": "257193 inhabitants",
                 "instruction": "Enter the total population of the inter-municipality"
             },
             "area": {
                 "type": "number",
-                "content": null,
+                "content": "240 km²",
                 "instruction": "Enter the total area of the inter-municipality in square kilometers"
             },
             "data_from_year": {
                 "type": "number",
-                "content": null,
+                "content": "2022",
                 "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": null,
+                "content": "454 million euros",
                 "instruction": "Enter the total budget of the inter-municipality in euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": null,
+                "content": "1592 €/person",
                 "instruction": "Enter the total budget per person in euros"
-            },
-            "mean_total_budget_per_person": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean total budget per person across similar inter-municipalities"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": null,
+                "content": "2.9 years",
                 "instruction": "Enter the debt repayment capacity as a ratio"
-            },
-            "mean_debt_repayment_capacity": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt repayment capacity across similar inter-municipalities"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": null,
+                "content": "unknown",
                 "instruction": "Enter the debt ratio as a percentage"
-            },
-            "mean_debt_ratio": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt ratio across similar inter-municipalities"
             },
             "debt_duration": {
                 "type": "number",
-                "content": null,
+                "content": "unknown",
                 "instruction": "Enter the debt duration in years"
-            },
-            "mean_debt_duration": {
-                "type": "number",
-                "content": null,
-                "instruction": "Enter the mean debt duration across similar inter-municipalities"
             },
             "historical_milestones": {
                 "type": "array",
@@ -144,41 +104,41 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": "2017",
+                            "content": "1976",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Transformation of Grand Dijon urban community into Dijon Métropole",
+                            "content": "Creation of District of Dijon with five communes",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
-                            "content": "2015",
+                            "content": "2000",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Transformation of Grand Dijon agglomeration community into urban community",
+                            "content": "Transformation into Communauté d'agglomération (Comadi/Grand Dijon)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
-                            "content": "2000",
+                            "content": "2017",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Creation of Grand Dijon agglomeration community (COMADI)",
+                            "content": "Creation of Dijon Métropole",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event"
                         }
                     }
                 ],
-                "instruction": "Find 3 important historical milestones concerning the inter-municipalities"
+                "instruction": "Find 3 important historical milestones concerning the inter-municipalities. Make sure they are 3 distinct and different events. Take care of this when researching the individual milestones."
             }
         }
     },
@@ -522,40 +482,20 @@
                     "content": null,
                     "instruction": "Enter the total budget per person of the compared municipality"
                 },
-                "mean_total_budget_per_person": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean total budget per person for similar municipalities"
-                },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt repayment capacity of the compared municipality"
-                },
-                "mean_debt_repayment_capacity": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt repayment capacity for similar municipalities"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt ratio of the compared municipality as a percentage"
                 },
-                "mean_debt_ratio": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt ratio for similar municipalities"
-                },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt duration of the compared municipality in years"
-                },
-                "mean_debt_duration": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt duration for similar municipalities"
                 }
             },
             {
@@ -594,40 +534,20 @@
                     "content": null,
                     "instruction": "Enter the total budget per person of the compared municipality"
                 },
-                "mean_total_budget_per_person": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean total budget per person for similar municipalities"
-                },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt repayment capacity of the compared municipality"
-                },
-                "mean_debt_repayment_capacity": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt repayment capacity for similar municipalities"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt ratio of the compared municipality as a percentage"
                 },
-                "mean_debt_ratio": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt ratio for similar municipalities"
-                },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
                     "instruction": "Enter the debt duration of the compared municipality in years"
-                },
-                "mean_debt_duration": {
-                    "type": "number",
-                    "content": null,
-                    "instruction": "Enter the mean debt duration for similar municipalities"
                 }
             }
         ]
