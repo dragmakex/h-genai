@@ -85,6 +85,8 @@ jobs:
           docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:latest
           
       - name: Update Lambda function
+        env:
+          AWS_ACCOUNT_ID: "140023381458"
         run: |
           aws lambda update-function-code \
             --function-name h-genai-server \
