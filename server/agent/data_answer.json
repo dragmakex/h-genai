@@ -28,22 +28,22 @@
             },
             "data_from_year": {
                 "type": "number",
-                "content": "2022",
+                "content": "2021",
                 "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": "271.18 million euros",
+                "content": "unknown",
                 "instruction": "Enter the total budget of the municipality in euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": null,
+                "content": "1763 €/person",
                 "instruction": "Enter the total budget per person in euros"
             },
             "mean_total_budget_per_person": {
                 "type": "number",
-                "content": "unknown",
+                "content": "1216 €/person",
                 "instruction": "Enter the mean total budget per person across similar municipalities"
             },
             "debt_repayment_capacity": {
@@ -53,12 +53,12 @@
             },
             "mean_debt_repayment_capacity": {
                 "type": "number",
-                "content": "unknown",
+                "content": "3.5 years",
                 "instruction": "Enter the mean debt repayment capacity across similar municipalities"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": "unknown",
+                "content": "678€/inhabitant",
                 "instruction": "Enter the debt ratio as a percentage"
             },
             "mean_debt_ratio": {
@@ -73,7 +73,7 @@
             },
             "mean_debt_duration": {
                 "type": "number",
-                "content": "unknown",
+                "content": "10.5 years",
                 "instruction": "Enter the mean debt duration across similar municipalities"
             }
         },

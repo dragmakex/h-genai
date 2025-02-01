@@ -1,9 +1,16 @@
 import json
+import inspect
 from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage
 from agents import Agent, ToolCallingAgent
-from tools import get_sonar_pro_response
+from tools import *
 from prompt import tool_agent_instructions, tool_agent_prompt
+
+def get_all_tools():
+    """Get all functions marked as tools from tools module"""
+    import tools
+    return [obj for name, obj in inspect.getmembers(tools) 
+            if inspect.isfunction(obj) and hasattr(obj, '_is_tool')]
 
 class Orchestrator:
     def __init__(self):
@@ -11,8 +18,8 @@ class Orchestrator:
         self.simple_agent = Agent()
         self.tool_agent = ToolCallingAgent(
             instructions=tool_agent_instructions,
-            functions=[get_sonar_pro_response])
-        
+            functions=get_all_tools())
+
         # Store conversation history
         self.conversation_history: Dict[str, List[ChatMessage]] = {}
         
