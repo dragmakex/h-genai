@@ -12,3 +12,7 @@
 **/target
 **/venv
 **/__pycache__
+
+# ides
+.idea
+.vscode
