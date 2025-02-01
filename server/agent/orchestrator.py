@@ -27,7 +27,6 @@ class Orchestrator:
         
         # Load data from data.json
         self.data = self._load_data_fields()
-        self.data_example = self._load_data_example()
 
         self.municipality_name = self._get_municipality_name()
         self.inter_municipality_name = self._get_inter_municipality_name()
@@ -41,14 +40,6 @@ class Orchestrator:
                 return json.load(file)
         except FileNotFoundError:
             raise FileNotFoundError("data_template.json not found in the agent directory")
-        
-    def _load_data_example(self) -> Dict[str, Any]:
-        """Load data from data_example.json file"""
-        try:
-            with open('data_example.json', 'r', encoding='utf-8') as file:
-                return json.load(file)
-        except FileNotFoundError:
-            raise FileNotFoundError("data_example.json not found in the agent directory")
         
     def _get_municipality_name(self):
         """Get the input from the user"""
@@ -94,7 +85,6 @@ class Orchestrator:
 
 
         fields = self.data['summary'][identifier]
-        examples = self.data_example['summary'][identifier]
 
         name_id = f"{identifier}_name"
         self.data[name_id]['content'] = name
@@ -106,10 +96,6 @@ class Orchestrator:
             print("Field: " + name + " " + field)
             type = value['type']
             instruction = value['instruction']
-            example = examples[field]['content']
-
-            # if field != 'historical_milestones':
-            #     continue
 
             if field in api_fields:
                 self.data['summary'][identifier][field]['content'] = self.numeric_api_data[name][field]
@@ -127,7 +113,7 @@ class Orchestrator:
                         field=field,
                         instruction=instruction,
                         type=type,
-                        example=example
+                        example=""
                     )
                     
                     # Process each item in the array sequentially
@@ -135,9 +121,9 @@ class Orchestrator:
                         for subfield, subvalue in item.items():                       
                             # Create prompt for this specific array item
                             item_prompt = f"For item {idx+1} of the array:\n"
-                            item_prompt += tool_agent_prompt.format(identifier=identifier, name=name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=example)
-                            # if idx == 0:
-                            #     item_prompt = array_prompt + item_prompt
+                            item_prompt += tool_agent_prompt.format(identifier=identifier, name=name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=subvalue['example'])
+                            if idx == 0:
+                                item_prompt = array_prompt + item_prompt
                             self.conversation_history[conversation_id].append(ChatMessage.from_user(item_prompt))
                             
                             # Get response for this item
@@ -151,9 +137,9 @@ class Orchestrator:
                             
                             # Store the response for this item
                             self.data['summary'][identifier][field]['content'][idx][subfield]['content'] = self.conversation_history[conversation_id][-1].text #if final_reply else "unknown"           
-                else: 
+                else:
                     # Create a prompt based on the field and append it to the messages
-                    prompt = tool_agent_prompt.format(identifier=identifier, name=name, field=field, instruction=instruction, type=type, example=example)
+                    prompt = tool_agent_prompt.format(identifier=identifier, name=name, field=field, instruction=instruction, type=type, example=value['example'])
                     self.conversation_history[conversation_id].append(ChatMessage.from_user(prompt))
                     # print(self.conversation_history[conversation_id][-1])
                     
@@ -174,10 +160,89 @@ class Orchestrator:
                 print(self.conversation_history[conversation_id])
                 print("--------------------------------")
 
+    def process_projects_fields(self, inter=False) -> None:
+        """Process fields from the projects section"""
+        if inter:
+            identifier = 'inter_municipality'
+            name = self.inter_municipality_name
+        else:
+            identifier = 'municipality'
+            name = self.municipality_name
+        
+        fields = self.data['projects'][identifier]
+
+        # Process each field in the project data
+        for field, value in fields.items():
+            print("Field: " + name + " " + field)
+            type = value['type']
+            instruction = value['instruction']
+            example = ""#value['example']
+            conversation_id = identifier + "_" + field
+            if conversation_id not in self.conversation_history:
+                self.conversation_history[conversation_id] = []
+
+            if type == 'array':             
+                # Create the overall array instructions
+                array_prompt = tool_agent_prompt.format(
+                    identifier=identifier,
+                    name=name,
+                    field=field,
+                    instruction=instruction,
+                    type=type,
+                    example=example
+                )
+                
+                # Process each item in the array sequentially
+                for idx, item in enumerate(value['content']):
+                    for subfield, subvalue in item.items():                       
+                        # Create prompt for this specific array item
+                        item_prompt = f"For item {idx+1} of the array:\n"
+                        item_prompt += tool_agent_prompt.format(identifier=identifier, name=name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=example)
+                        if idx == 0:
+                            item_prompt = array_prompt + item_prompt
+                        self.conversation_history[conversation_id].append(ChatMessage.from_user(item_prompt))
+                        
+                        # Get response for this item
+                        response = self.tool_agent.run(self.conversation_history[conversation_id])
+                        self.conversation_history[conversation_id].extend(response)
+
+                        # We call the agent again to get the final reply after the tool execution
+                        if self.conversation_history[conversation_id][-1].role != ChatRole.ASSISTANT:
+                            final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
+                            self.conversation_history[conversation_id].extend(final_reply)
+                        
+                        # Store the response for this item
+                        self.data['projects'][identifier][field]['content'][idx][subfield]['content'] = self.conversation_history[conversation_id][-1].text #if final_reply else "unknown"           
+            else: 
+                # Create a prompt based on the field and append it to the messages
+                prompt = tool_agent_prompt.format(identifier=identifier, name=name, field=field, instruction=instruction, type=type, example=example)
+                self.conversation_history[conversation_id].append(ChatMessage.from_user(prompt))
+                # print(self.conversation_history[conversation_id][-1])
+                
+                # Get response from agent and extend the conversation history with the response
+                response = self.tool_agent.run(self.conversation_history[conversation_id])
+                self.conversation_history[conversation_id].extend(response)
+                #print(self.conversation_history[conversation_id][-1])
+
+                # We call the agent again to get the final reply after the tool executions
+                final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
+                self.conversation_history[conversation_id].extend(final_reply)
+                # print(self.conversation_history[conversation_id][-1])
+
+                # Store the response
+                self.data['projects'][identifier][field]['content'] = self.conversation_history[conversation_id][-1].text if final_reply else "unknown"
+
+            print("--------------------------------")
+            print(self.conversation_history[conversation_id])
+            print("--------------------------------")
+        
+
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
         self.process_summary_fields(inter=False)
         self.process_summary_fields(inter=True)
+        #self.process_projects_fields(inter=False)
+        #self.process_projects_fields(inter=True)
 
         # Save to answer.json
         try:
