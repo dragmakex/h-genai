@@ -15,6 +15,8 @@ from haystack_integrations.components.generators.amazon_bedrock import AmazonBed
 from dotenv import load_dotenv
 import os
 
+MODEL_ID = "anthropic.claude-3-5-sonnet-20241022-v2:0"
+
 # Load environment variables for Keys
 load_dotenv()
 aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
@@ -57,7 +59,7 @@ rag_pipe = Pipeline()
 rag_pipe.add_component("embedder", SentenceTransformersTextEmbedder(model="sentence-transformers/all-MiniLM-L6-v2"))
 rag_pipe.add_component("retriever", InMemoryEmbeddingRetriever(document_store=document_store))
 rag_pipe.add_component("prompt_builder", ChatPromptBuilder(template=template))
-rag_pipe.add_component("llm", AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0"))
+rag_pipe.add_component("llm", AmazonBedrockChatGenerator(model=MODEL_ID))
 rag_pipe.connect("embedder.embedding", "retriever.query_embedding")
 rag_pipe.connect("retriever", "prompt_builder.documents")
 rag_pipe.connect("prompt_builder.prompt", "llm.messages")

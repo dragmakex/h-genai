@@ -9,6 +9,9 @@ from typing import Callable, Tuple
 from dotenv import load_dotenv
 import os
 
+#MODEL_ID = "mistral.mistral-large-2407-v1:0"
+MODEL_ID = "anthropic.claude-3-5-sonnet-20241022-v2:0"
+
 # Load environment variables for Keys
 load_dotenv()
 aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
@@ -22,7 +25,7 @@ search_api_key = os.getenv("SERPERDEV_API_KEY")
 @dataclass
 class Agent:
     name: str = "Agent"
-    llm: object = AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0")
+    llm: object = AmazonBedrockChatGenerator(model=MODEL_ID)
     instructions: str = (
         "You are a helpful assistant tasked with finding answers to questions. Keep the answers as short as possible, never longer than one sentence and idealy only one words if it is just a fact."
     )
@@ -44,7 +47,7 @@ class Agent:
 @dataclass
 class ToolCallingAgent:
     name: str = "ToolCallingAgent"
-    llm: object = AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0")
+    llm: object = AmazonBedrockChatGenerator(model=MODEL_ID)
     instructions: str = (
         "You are a helpful assistant with tools at your disposal tasked with finding answers to questions. Keep the answres as short as possible, never longer than one sentence and idealy only one words if it is just a fact."
     )

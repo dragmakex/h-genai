@@ -15,7 +15,7 @@
         "municipality": {
             "population": {
                 "type": "number",
-                "content": "159346 residents"
+                "content": "159941 inhabitants"
             },
             "area": {
                 "type": "number",
@@ -23,19 +23,19 @@
             },
             "data_from_year": {
                 "type": "number",
-                "content": "2021"
+                "content": "2022"
             },
             "total_budget": {
                 "type": "number",
-                "content": "303,707,715 euros"
+                "content": "271.18 million euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": "1553 €/person"
+                "content": "unknown"
             },
             "mean_total_budget_per_person": {
                 "type": "number",
-                "content": "unknown"
+                "content": "22,160 €/person"
             },
             "debt_repayment_capacity": {
                 "type": "number",
@@ -47,7 +47,7 @@
             },
             "debt_ratio": {
                 "type": "number",
-                "content": "Unknown"
+                "content": "unknown"
             },
             "mean_debt_ratio": {
                 "type": "number",
