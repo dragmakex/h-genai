@@ -122,13 +122,13 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": "1976",
+                            "content": "1957",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone",
                             "example": 1957
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Creation of the District of Dijon with 5 communes",
+                            "content": "Formation of District of Greater Dijon",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -136,13 +136,13 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": "2000",
+                            "content": "1999",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone",
                             "example": 1999
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "District transformed into community of agglomeration (COMADI)",
+                            "content": "Creation of COMADI (Communauté d'Agglomération de Dijon)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -174,78 +174,78 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "For the main question about green projects, based on the information received, here are three significant green projects in Dijon:\n\n[\"Green hydrogen production facility for public transport\", \"Elithis energy-positive tower\", \"Odivea water management and biomethane production\"]\n\nFor the specific follow-up question about the theme of the first project (green hydrogen production facility), the environmental theme would be:\n\nClean transport",
-                            "instruction": "Enter the environmental theme of the project",
+                            "content": "Based on the search results, for your first question about an environmental theme for Dijon's first major green project:\n\nGreen hydrogen production\n\nThis is an accurate and concise description of the primary environmental theme of one of Dijon's major green projects, which involves the creation of a green hydrogen production and distribution station as part of their environmental initiatives.",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Describe the environmental theme of the project",
                             "example": "Renewable energies"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Based on the previous search results, I'll provide the green projects array for Dijon first:\n\n[\"Green hydrogen production facility for public transport\", \"Elithis energy-positive tower\", \"Odivea water management and biomethane production\"]\n\nFor the category of the first project (Green hydrogen production facility for public transport), the category would be:\n\nHydrogen infrastructure",
-                            "instruction": "Enter the category of the green project",
+                            "content": "Based on the previous search results regarding Dijon's green projects, for the first project's category:\n\nClean transportation\n\nThis accurately categorizes the green hydrogen project which is primarily focused on transforming the city's transportation fleet (buses and waste collection vehicles) to clean energy vehicles.",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Describe the category of the green project",
                             "example": "Solar energy"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Based on the previous search results, here's the detailed description for the first green project (hydrogen production facility):\n\n€100 million investment in green hydrogen production and distribution station with 430 kg daily capacity to power public buses and refuse collection vehicles, aiming for full decarbonization of the fleet by 2035",
-                            "instruction": "Provide a detailed description of the green project",
+                            "content": "Green hydrogen production and distribution station producing 430kg daily to power 22 garbage trucks and 50-60 buses by 2035, reducing CO2 emissions by 1,200 tonnes annually",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Provide a detailed description of the green project",
                             "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "Based on the previous search results about Dijon's hydrogen project:\n\n100 million euros",
-                            "instruction": "Enter the investment amount for the green project",
+                            "content": "100 million euros",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Based on the previous search results about the Elithis Tower project:\n\nEnergy efficiency",
-                            "instruction": "Enter the environmental theme of the project",
+                            "content": "Based on the search results, for the second project's environmental theme:\n\nEnergy efficiency and solar power",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Describe the environmental theme of the project",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Based on the previous search results about the Elithis Tower:\n\nSustainable building",
-                            "instruction": "Enter the category of the green project",
+                            "content": "Building renovation",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Describe the category of the green project",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Based on the previous search results about the Elithis Tower:\n\nEnergy-positive tower that produces more energy than it consumes through solar panels and innovative design, showcasing sustainable architecture",
-                            "instruction": "Provide a detailed description of the green project",
+                            "content": "Positive Energy District of Fontaine D'Ouche: large-scale thermal renovation with solar panels and district heating networks, creating France's largest energy self-consumption project in social housing",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Provide a detailed description of the green project",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
-                            "instruction": "Enter the investment amount for the green project",
+                            "content": "23 million euros",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Based on the previous search results about the Odivea water management project:\n\nWater management",
-                            "instruction": "Enter the environmental theme of the project",
+                            "content": "Based on the search results, for the third project's environmental theme:\n\nCircular waste management",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Describe the environmental theme of the project",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Based on the previous search results about the Odivea project:\n\nWater infrastructure",
-                            "instruction": "Enter the category of the green project",
+                            "content": "Waste recovery",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Describe the category of the green project",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Based on the previous search results about the Odivea project:\n\nPublic-private water management partnership converting wastewater into energy, producing 10 GWh of biomethane annually and reducing CO2 emissions by 300 tonnes",
-                            "instruction": "Provide a detailed description of the green project",
+                            "content": "Energy Recovery Unit converting waste to green electricity, with comprehensive waste separation system and transition to hydrogen-powered collection vehicles, targeting 73% decarbonized fleet by 2035",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Provide a detailed description of the green project",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
                             "content": "unknown",
-                            "instruction": "Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
                     }
@@ -258,78 +258,78 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Based on the search results, for the array of social projects:\n\n1. Age-friendly Programme\n[\"Seniors support program\", \"Housing First initiative\", \"Youth Civic Engagement program\"]\n\nFor the theme of the first project:\n\"Senior welfare and social inclusion\"",
-                            "instruction": "Enter the social theme of the project",
+                            "content": "Based on the information provided, for a vocational education and training theme, I'll respond:\n\nTraining and Employment Support Hub\n\nThis response reflects the first social project theme, focusing on vocational education and training initiatives in Dijon, which includes various programs for skills development and employment support.",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Describe the social theme of the project",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Based on the previous search results, for the first social project (Age-friendly Programme):\n\nSenior services and accessibility",
-                            "instruction": "Enter the category of the social project",
+                            "content": "Higher Education Infrastructure\n\nThis represents the primary category of the first social project, as evidenced by Dijon's significant investments in educational establishments and facilities.",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Describe the category of the social project",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "A comprehensive program launched in 2009 making Dijon more inclusive for older residents through La Maison des séniors (dedicated support center), improved urban accessibility (pedestrian areas, benches, lowered curbs), and seniors' restaurant initiative for combating isolation.",
-                            "instruction": "Provide a detailed description of the social project",
+                            "content": "75M€ educational infrastructure renovation plan (2021-2031) includes: removal of prefabricated buildings (36.7M€), school modernization (30M€), improved schoolyards (4.3M€), and digital transition (4M€) across 75 schools, with focus on climate adaptation and energy efficiency",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Provide a detailed description of the social project",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
-                            "instruction": "Enter the investment amount for the social project",
+                            "content": "75 million euros",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Housing and homelessness support",
-                            "instruction": "Enter the social theme of the project",
+                            "content": "Smart City Digitalization",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Describe the social theme of the project",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Housing assistance and social inclusion",
-                            "instruction": "Enter the category of the social project",
+                            "content": "Digital Infrastructure and Public Services",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Describe the category of the social project",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Housing First initiative providing housing and support for people with mental health issues experiencing homelessness, featuring 39 support sites for marginalized individuals and an 80% success rate in maintaining housing stability.",
-                            "instruction": "Provide a detailed description of the social project",
+                            "content": "OnDijon smart city project: centralized control center managing public services, includes renovation of 34,000 LED lights, 140km fiber optic network, 113 connected traffic lights, 180 equipped buses, 180 connected buildings, 269 CCTV cameras, and citizen communication app for improved urban services and 65% energy savings target over 12 years",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Provide a detailed description of the social project",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
-                            "instruction": "Enter the investment amount for the social project",
+                            "content": "105 million euros",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Youth and civic engagement",
-                            "instruction": "Enter the social theme of the project",
+                            "content": "Environmental Transition",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Describe the social theme of the project",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Community participation and youth development",
-                            "instruction": "Enter the category of the social project",
+                            "content": "Sustainable Energy Infrastructure",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Describe the category of the social project",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Multi-component youth program featuring participative budget allocation of €450,000 annually for neighborhood workshops, Agoras Jeunes public debates with elected officials, and recruitment of 40 young volunteers for community service missions.",
-                            "instruction": "Provide a detailed description of the social project",
+                            "content": "Green hydrogen production station and 43,000 photovoltaic panel urban solar farm, combined with LED lighting conversion (93% of public lighting) and district heating network, targeting 100,000 tonnes CO2 reduction by 2035 and 75% emissions reduction in Fontaine d'Ouche neighborhood",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Provide a detailed description of the social project",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "450000 euros annually",
-                            "instruction": "Enter the investment amount for the social project",
+                            "content": "100 million euros",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
                     }
@@ -344,78 +344,78 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "For the first item (theme), based on the information provided:\n\nWaste-to-energy and hydrogen mobility\n\nFor the complete array of green projects:\n[\"Green hydrogen mobility fleet conversion\", \"Fontaine D'Ouche positive energy district\", \"Waste-to-energy and biomethane production\"]",
-                            "instruction": "Enter the environmental theme of the inter-municipality project",
+                            "content": "Based on the information received, I will provide a description of the first theme:\n\nWaste-to-hydrogen energy conversion",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Describe the environmental theme of the project",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Based on the previously gathered information, let me provide both answers:\n\n[\"Green hydrogen mobility fleet conversion\", \"Fontaine D'Ouche positive energy district\", \"Waste-to-energy and biomethane production\"]\n\nFor the category of the first item (Green hydrogen mobility fleet conversion):\n\nClean transportation and mobility",
-                            "instruction": "Enter the category of the inter-municipality green project",
+                            "content": "Waste-to-energy infrastructure",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Describe the category of the green project",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Based on the previously gathered information:\n\n€100 million project to convert the city's bus and refuse collection fleet to green hydrogen, including a hydrogen production and distribution station, aiming to power all buses and 73% of refuse vehicles by 2035, reducing CO2 emissions by 1,200 tonnes annually",
-                            "instruction": "Provide a detailed description of the inter-municipality green project",
+                            "content": "Production of green hydrogen from household waste incineration electricity via two 400kg/day hydrogen stations and 1MW electrolyzer, powering zero-emission vehicles including buses, garbage trucks, and light vehicles, saving 2,500 tons CO2/year",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Provide a detailed description of the green project",
+                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": "4 million euros",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Enter the investment amount for the green project",
+                            "example": "15 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": "Smart city infrastructure optimization",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Describe the environmental theme of the project",
+                            "example": "Waste management and recovery"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": "Digital urban management",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Describe the category of the green project",
+                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": "Centralized control center managing urban equipment across 23 municipalities, including smart lighting, traffic control, and video protection systems, achieving 65% energy savings in lighting and 40% reduction in service costs",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Provide a detailed description of the green project",
+                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": "105 million euros",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project",
+                            "example": "15 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": "Integrated water management",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Describe the environmental theme of the project",
+                            "example": "Waste management and recovery"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": "Water and wastewater services",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Describe the category of the green project",
+                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": "Creation of Odivea SEMOP managing water services for 220,000 inhabitants, featuring smart meters, 15,000m³ storage basin, wastewater treatment plant producing 10 GWh/year biomethane, and targeting 6.2 million m³ water savings over 9 years",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Provide a detailed description of the green project",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
                             "content": "100 million euros",
-                            "instruction": "Enter the investment amount for the inter-municipality green project",
-                            "example": "15 million euros"
-                        }
-                    },
-                    {
-                        "theme": {
-                            "type": "string",
-                            "content": "Renewable energy and energy efficiency",
-                            "instruction": "Enter the environmental theme of the inter-municipality project",
-                            "example": "Waste management and recovery"
-                        },
-                        "category": {
-                            "type": "string",
-                            "content": "Sustainable urban development",
-                            "instruction": "Enter the category of the inter-municipality green project",
-                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
-                        },
-                        "description": {
-                            "type": "string",
-                            "content": "Implementation of a Positive Energy District in Fontaine D'Ouche neighborhood, featuring energy renovation of social housing, solar panel installations, and district heating network improvements, creating France's largest collective self-consumption operation for local renewable energy production and use",
-                            "instruction": "Provide a detailed description of the inter-municipality green project",
-                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
-                        },
-                        "investment": {
-                            "type": "string",
-                            "content": "unknown",
-                            "instruction": "Enter the investment amount for the inter-municipality green project",
-                            "example": "15 million euros"
-                        }
-                    },
-                    {
-                        "theme": {
-                            "type": "string",
-                            "content": "Circular economy and renewable energy",
-                            "instruction": "Enter the environmental theme of the inter-municipality project",
-                            "example": "Waste management and recovery"
-                        },
-                        "category": {
-                            "type": "string",
-                            "content": "Waste and wastewater management",
-                            "instruction": "Enter the category of the inter-municipality green project",
-                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
-                        },
-                        "description": {
-                            "type": "string",
-                            "content": "Integrated waste-to-energy and biomethane production system combining an Energy Recovery Unit generating green electricity from waste combustion and the Eauvitale wastewater treatment plant producing 10 GWh per year of biomethane from reused sludge for injection into the metropole's natural gas network",
-                            "instruction": "Provide a detailed description of the inter-municipality green project",
-                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
-                        },
-                        "investment": {
-                            "type": "string",
-                            "content": "unknown",
-                            "instruction": "Enter the investment amount for the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
                     }
@@ -428,78 +428,78 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "For the first instruction (three social projects), based on the information provided:\n\n[\"Community Development Partnership (€3M for Maison des Associations)\", \"Positive Energy District in Fontaine D'Ouche\", \"Massification Operator for Climate Transition\"]\n\nFor the second instruction (theme of first project):\n\nSocial support and associations",
-                            "instruction": "Enter the social theme of the inter-municipality project",
+                            "content": "Cultural association development",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Describe the social theme of the project",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Associative facility investment",
-                            "instruction": "Enter the category of the inter-municipality social project",
+                            "content": "Sports infrastructure development",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Describe the category of the social project",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Renovation and extension of Maison des Associations with €12.2M investment, including modernization, energy efficiency improvements, and creation of additional spaces for local associations",
-                            "instruction": "Provide a detailed description of the inter-municipality social project",
-                            "example": "Renovation of the Carrousel swimming pool"
-                        },
-                        "investment": {
-                            "type": "string",
-                            "content": "12.2 million euros",
-                            "instruction": "Enter the investment amount for the inter-municipality social project",
-                            "example": "21.9 million euros"
-                        }
-                    },
-                    {
-                        "theme": {
-                            "type": "string",
-                            "content": "Energy transition and social housing",
-                            "instruction": "Enter the social theme of the inter-municipality project",
-                            "example": "Sport, culture and associations"
-                        },
-                        "category": {
-                            "type": "string",
-                            "content": "Urban renewal and energy efficiency",
-                            "instruction": "Enter the category of the inter-municipality social project",
-                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
-                        },
-                        "description": {
-                            "type": "string",
-                            "content": "Implementation of a Positive Energy District in Fontaine D'Ouche neighborhood, including large-scale energy renovation, solar panel installation, and district heating network improvements",
-                            "instruction": "Provide a detailed description of the inter-municipality social project",
-                            "example": "Renovation of the Carrousel swimming pool"
-                        },
-                        "investment": {
-                            "type": "string",
-                            "content": "23 million euros",
-                            "instruction": "Enter the investment amount for the inter-municipality social project",
-                            "example": "21.9 million euros"
-                        }
-                    },
-                    {
-                        "theme": {
-                            "type": "string",
-                            "content": "Climate action and governance",
-                            "instruction": "Enter the social theme of the inter-municipality project",
-                            "example": "Sport, culture and associations"
-                        },
-                        "category": {
-                            "type": "string",
-                            "content": "Sustainable development coordination",
-                            "instruction": "Enter the category of the inter-municipality social project",
-                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
-                        },
-                        "description": {
-                            "type": "string",
-                            "content": "Creation of \"Massification Operator\" to coordinate climate transition projects, serving as one-stop-shop for planning, implementation, and financing of public and private transition initiatives",
-                            "instruction": "Provide a detailed description of the inter-municipality social project",
+                            "content": "Development of sports facilities including Olympic Swimming Pool, Carrousel swimming pool with Nordic basin, and Cime Altitude 245 climbing hall",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Provide a detailed description of the social project",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": "unknown",
-                            "instruction": "Enter the investment amount for the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project",
+                            "example": "21.9 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": "Cultural accessibility and youth engagement",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Describe the social theme of the project",
+                            "example": "Sport, culture and associations"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": "Cultural access programs",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Describe the category of the social project",
+                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": "CarteCulture program offering 60% discounts on cultural activities for students and Pass Culture initiative for 15-18 year-olds",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Provide a detailed description of the social project",
+                            "example": "Renovation of the Carrousel swimming pool"
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": "unknown",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Enter the investment amount for the social project",
+                            "example": "21.9 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": "Environmental sustainability and community development",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Describe the social theme of the project",
+                            "example": "Sport, culture and associations"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": "Energy transition and urban development",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Describe the category of the social project",
+                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": "Positive Energy District project in Fontaine D'Ouche implementing energy-saving measures and promoting citizen participation",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Provide a detailed description of the social project",
+                            "example": "Renovation of the Carrousel swimming pool"
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": "unknown",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
                     }
@@ -544,11 +544,7 @@
                 },
                 "education": {
                     "type": "array",
-                    "content": [
-                        null,
-                        null,
-                        null
-                    ],
+                    "content": null,
                     "instruction": "List the educational background of the contact person",
                     "example": [
                         "Master's degree in public law and sports management from the University of Burgundy (1999)",
@@ -558,10 +554,7 @@
                 },
                 "activities": {
                     "type": "array",
-                    "content": [
-                        null,
-                        null
-                    ],
+                    "content": null,
                     "instruction": "List the professional activities of the contact person",
                     "example": [
                         "1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"
@@ -569,12 +562,7 @@
                 },
                 "career": {
                     "type": "array",
-                    "content": [
-                        null,
-                        null,
-                        null,
-                        null
-                    ],
+                    "content": null,
                     "instruction": "List the career history of the contact person",
                     "example": [
                         "Former French champion in 5,000 m canoe-kayak (1998)",
@@ -618,11 +606,7 @@
                 },
                 "education": {
                     "type": "array",
-                    "content": [
-                        null,
-                        null,
-                        null
-                    ],
+                    "content": null,
                     "instruction": "List the educational background of the contact person",
                     "example": [
                         "Master's degree in public law",
@@ -632,10 +616,7 @@
                 },
                 "activities": {
                     "type": "array",
-                    "content": [
-                        null,
-                        null
-                    ],
+                    "content": null,
                     "instruction": "List the professional activities of the contact person",
                     "example": [
                         "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
@@ -643,12 +624,7 @@
                 },
                 "career": {
                     "type": "array",
-                    "content": [
-                        null,
-                        null,
-                        null,
-                        null
-                    ],
+                    "content": null,
                     "instruction": "List the career history of the contact person",
                     "example": [
                         "Chargé de mission to the prefect of the Burgundy region (1979-1981)",
