@@ -2,6 +2,7 @@
 import SfilLogo from '@/assets/images/Sfil-Logo.png'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
+import pdfTemplate from '@/assets/template.pdf'
 import {
   Command,
   CommandEmpty,
@@ -75,7 +76,7 @@ const gotResult = ref(false)
 </script>
 
 <template>
-  <div class="bg-slate-50 flex flex-col items-center h-screen space-y-4">
+  <div class="bg-slate-50 flex flex-col items-center min-h-screen space-y-4">
     <div class="w-full max-w-screen-lg flex justify-between items-center py-2 px-8 mt-2">
       <div class="flex-shrink-0">
         <img :src="SfilLogo" alt="SFIL Logo" class="w-48" />
@@ -86,7 +87,7 @@ const gotResult = ref(false)
       </div>
     </div>
     <hr class="w-full max-w-screen-lg">
-    <div class="w-full max-w-screen-lg flex-1 flex flex-col items-center py-2 px-8 pt-16 mt-2">
+    <div class="w-full max-w-screen-lg flex-1 flex flex-col items-center py-2 px-8 pt-8 mt-2">
       <div>
         <div class="flex space-x-2">
           <Popover v-model:open="open">
@@ -155,6 +156,16 @@ const gotResult = ref(false)
             <Check class="w-4 h-4" />
             <p> Fichier généré pour <b>{{ userSelectionStore.selected_municipality }}</b> avec succès.</p>
           </div>
+        </div>
+      </div>
+      <div v-if="gotResult" class="w-full my-8">
+        <div class="w-full h-[1000px]">
+          <embed
+            :src="pdfTemplate"
+            class="w-full h-full"
+            :title="`PDF pour ${userSelectionStore.selected_municipality}`"
+            frameborder="0"
+          />
         </div>
       </div>
     </div>
