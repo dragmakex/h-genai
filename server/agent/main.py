@@ -1,16 +1,22 @@
-from haystack_integrations.components.generators.amazon_bedrock import AmazonBedrockChatGenerator
+# Imports
 from haystack.dataclasses import ChatMessage
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
+from agents import ToolCallingAgent
+from tools import search_func
 
-aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID")
-aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY")
-aws_region_name=os.getenv("AWS_DEFAULT_REGION") 
+Tool_Agent = ToolCallingAgent(functions=[search_func])  # Can define name and special instructions & tools for every agent
 
-generator = AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0")
-messages = [ChatMessage.from_system("You are a helpful assistant that answers question."), ChatMessage.from_user("What's Natural Language Processing? Be brief.")]
-    
-response = generator.run(messages)
-print(response)
+# Create Messages List to store
+messages = []
+
+# Query User
+user_input = input("User: ")
+messages.append(ChatMessage.from_user(user_input))
+
+# Call Agent
+# Our agent alrady calls the tool, so we dont need to do it manually with toolinvoker
+new_messages = Tool_Agent.run(messages)
+messages.extend(new_messages)
+
+# We call the agent again to get the final reply after the tool execution
+final_replie = Tool_Agent.run(messages)
