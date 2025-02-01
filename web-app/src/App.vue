@@ -48,31 +48,64 @@ const progressMessages = ref([
   "Génération du fichier...",
 ])
 
+const error = ref(null)
+const gotResult = ref(false)
+
 const handleGenerate = async () => {
   isGenerating.value = true
   progress.value = 0
   gotResult.value = false
-  
-  const duration = 8000
-  const interval = 100
-  const steps = duration / interval
-  const increment = 100 / steps
+  error.value = null
   
   const progressInterval = setInterval(() => {
-    progress.value = Math.min(100, progress.value + increment)
-  }, interval)
+    let increment
+    if (progress.value < 30) {
+      increment = Math.random() * 2 + 1
+    } else if (progress.value < 60) {
+      increment = Math.random() * 1.5 + 0.5
+    } else {
+      increment = Math.random() * 0.5 + 0.1
+    }
+    
+    if (progress.value > 40 && Math.random() < 0.1) {
+      return
+    }
+    
+    progress.value = Math.min(95, progress.value + increment)
+  }, 100)
 
-  setTimeout(() => {
-    clearInterval(progressInterval)
+  try {
+    const response = await fetch('http://localhost:8000/test', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        siren: userSelectionStore.selected_siren
+      })
+    })
+
+    if (!response.ok) {
+      throw new Error('Erreur lors de la génération du PDF')
+    }
+
+    progress.value = 100
+    
     setTimeout(() => {
+      clearInterval(progressInterval)
       isGenerating.value = false
       progress.value = 0
       gotResult.value = true
     }, 1000)
-  }, duration)
-}
 
-const gotResult = ref(false)
+  } catch (error) {
+    console.error('Erreur:', error)
+    clearInterval(progressInterval)
+    error.value = error.message
+    isGenerating.value = false
+    progress.value = 0
+  }
+}
 </script>
 
 <template>
