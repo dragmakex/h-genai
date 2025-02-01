@@ -18,7 +18,7 @@
         "municipality": {
             "population": {
                 "type": "number",
-                "content": "159346 inhabitants",
+                "content": 162454,
                 "instruction": "Enter the total population of the municipality"
             },
             "area": {
@@ -28,39 +28,39 @@
             },
             "data_from_year": {
                 "type": "number",
-                "content": "2022",
+                "content": 2023,
                 "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": "280 million euros",
+                "content": 110284094.09,
                 "instruction": "Enter the total budget of the municipality in euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": null,
+                "content": 678.8635188422569,
                 "instruction": "Enter the total budget per person in euros"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": "3.4 years",
+                "content": 3.421998298410285,
                 "instruction": "Enter the debt repayment capacity as a ratio"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": "3.4 years",
+                "content": 53.34297830381788,
                 "instruction": "Enter the debt ratio as a percentage"
             },
             "debt_duration": {
                 "type": "number",
-                "content": "unknown",
+                "content": 10.111153565438771,
                 "instruction": "Enter the debt duration in years"
             }
         },
         "inter_municipality": {
             "population": {
                 "type": "number",
-                "content": "257193 inhabitants",
+                "content": 261901,
                 "instruction": "Enter the total population of the inter-municipality"
             },
             "area": {
@@ -70,32 +70,32 @@
             },
             "data_from_year": {
                 "type": "number",
-                "content": "2022",
+                "content": 2023,
                 "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": "454 million euros",
+                "content": 413830553.89,
                 "instruction": "Enter the total budget of the inter-municipality in euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": "1592 €/person",
+                "content": 1580.1029926957133,
                 "instruction": "Enter the total budget per person in euros"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": "2.9 years",
+                "content": 3.0684359671662658,
                 "instruction": "Enter the debt repayment capacity as a ratio"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": "unknown",
+                "content": 63.18780497901272,
                 "instruction": "Enter the debt ratio as a percentage"
             },
             "debt_duration": {
                 "type": "number",
-                "content": "unknown",
+                "content": 9.12922133359339,
                 "instruction": "Enter the debt duration in years"
             },
             "historical_milestones": {
@@ -109,7 +109,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Creation of District of Dijon with five communes",
+                            "content": "Creation of the District of Dijon with 5 communes",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event"
                         }
                     },
@@ -121,7 +121,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Transformation into Communauté d'agglomération (Comadi/Grand Dijon)",
+                            "content": "Transformation into Communauté d'agglomération (Comadi)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event"
                         }
                     },
@@ -133,7 +133,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Creation of Dijon Métropole",
+                            "content": "Transformation into Dijon Métropole",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event"
                         }
                     }
