@@ -128,7 +128,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Creation of District of Dijon with 5 initial communes (Dijon, Ahuy, Chenôve, Plombières-lès-Dijon, Saint-Apollinaire)",
+                            "content": "Creation of the District with 5 communes (Dijon, Ahuy, Chenôve, Plombières-lès-Dijon and Saint-Apollinaire)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -142,7 +142,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Transformation into Communauté d'agglomération (COMADI/Grand Dijon)",
+                            "content": "Transformation into Communauté d'agglomération",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -156,7 +156,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Elevation to Métropole status with expanded powers and responsibilities",
+                            "content": "Official establishment as Dijon Métropole",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event",
                             "example": "Creation de Dijon Métropole avec 23 communes"
                         }

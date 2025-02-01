@@ -4,7 +4,9 @@ from haystack.components.websearch import SerperDevWebSearch
 from typing import Annotated, List
 from dotenv import load_dotenv
 import os
-from typing import Annotated, List
+
+from pydantic import BaseModel
+from openai import OpenAI
 
 # Load environment variables for Keys
 load_dotenv()
@@ -15,7 +17,6 @@ def tool(func):
     """Decorator to automatically register functions as tools"""
     func._is_tool = True
     return func
-
 
 class PerplexityResponse(BaseModel):
     content: str
@@ -45,12 +46,11 @@ def get_sonar_pro_response(message: str) -> PerplexityResponse:
     """
     client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
 
-    messages = [{"role": "user", "content": message}]
+    messages = [
+        {"role": "user", "content": message}
+    ]
     response = client.chat.completions.create(model="sonar-pro", messages=messages)
-    return PerplexityResponse(
-        content=response.choices[0].message.content, citations=response.citations
-    )
-
+    return PerplexityResponse(content=response.choices[0].message.content, citations=response.citations)
 
 #def get_sonar_response(message: str) -> PerplexityResponse:
 #    """

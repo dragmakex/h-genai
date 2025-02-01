@@ -1,12 +1,11 @@
 # Imports
-from agents import ToolCallingAgent
 from haystack.dataclasses import ChatMessage
-from rag_pipeline import rag_pipeline_func
-from tools import get_sonar_pro_response, get_sonar_response, parse_docs, search_func
 
-Tool_Agent = ToolCallingAgent(
-    functions=[get_sonar_pro_response, rag_pipeline_func]
-)  # Can define name and special instructions & tools for every agent
+from agents import ToolCallingAgent
+from tools import get_sonar_pro_response
+from rag_pipeline import rag_pipeline_func
+
+Tool_Agent = ToolCallingAgent(functions=[get_sonar_pro_response, rag_pipeline_func])  # Can define name and special instructions & tools for every agent
 
 # Create Messages List to store
 messages = []
