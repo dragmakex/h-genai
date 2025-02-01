@@ -3,7 +3,6 @@ name = "h-genai-server"
 version = "0.1.0"
 description = ""
 authors = ["podolskyDavid <david.podolskyi@tum.de>"]
-package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
