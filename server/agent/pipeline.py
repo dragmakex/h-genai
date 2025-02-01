@@ -4,6 +4,16 @@ from haystack.components.retrievers.in_memory import InMemoryBM25Retriever
 from haystack.components.builders.prompt_builder import PromptBuilder
 from haystack_integrations.components.generators.amazon_bedrock import AmazonBedrockChatGenerator
 
+from dotenv import load_dotenv
+import os
+
+# Load environment variables for Keys
+load_dotenv()
+aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
+aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
+aws_region_name = os.getenv("AWS_DEFAULT_REGION")
+search_api_key = os.getenv("SERPERDEV_API_KEY")
+
 # Write documents to InMemoryDocumentStore
 document_store = InMemoryDocumentStore()
 document_store.write_documents([
