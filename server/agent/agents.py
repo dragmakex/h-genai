@@ -1,11 +1,11 @@
 import os
 from dataclasses import dataclass, field
-from typing import Callable, Tuple
+from typing import Any, Callable, List, Optional, Tuple, cast
 
 from dotenv import load_dotenv
 from haystack.components.tools import ToolInvoker
 from haystack.dataclasses import ChatMessage
-from haystack.tools import create_tool_from_function
+from haystack.tools import Tool, create_tool_from_function
 from haystack_integrations.components.generators.amazon_bedrock import (
     AmazonBedrockChatGenerator,
 )
@@ -24,15 +24,17 @@ search_api_key = os.getenv("SERPERDEV_API_KEY")
 @dataclass
 class Agent:
     name: str = "Agent"
-    llm: object = AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0")
+    llm: AmazonBedrockChatGenerator = field(
+        default_factory=lambda: AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0")
+    )
     instructions: str = (
         "You are a helpful assistant tasked with finding answers to questions. Keep the answers as short as possible, never longer than one sentence and idealy only one words if it is just a fact."
     )
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         self._system_message = ChatMessage.from_system(self.instructions)
 
-    def run(self, messages: list[ChatMessage]) -> list[ChatMessage]:
+    def run(self, messages: List[ChatMessage]) -> List[ChatMessage]:
         new_message = self.llm.run(messages=[self._system_message] + messages)[
             "replies"
         ][0]
@@ -47,27 +49,28 @@ class Agent:
 @dataclass
 class ToolCallingAgent:
     name: str = "ToolCallingAgent"
-    llm: object = AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0")
+    llm: AmazonBedrockChatGenerator = field(
+        default_factory=lambda: AmazonBedrockChatGenerator(model="mistral.mistral-large-2407-v1:0")
+    )
     instructions: str = (
         "You are a helpful assistant with tools at your disposal tasked with finding answers to questions. Keep the answres as short as possible, never longer than one sentence and idealy only one words if it is just a fact."
     )
-    functions: list[Callable] = field(default_factory=list)
+    functions: List[Callable[..., Any]] = field(default_factory=list)
 
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         self._system_message = ChatMessage.from_system(self.instructions)
-        # We just give the function to the agent. Otherwise we could create all the tools individually and just give a list of tool objects
-        self.tools = (
+        self.tools: Optional[List[Tool]] = (
             [create_tool_from_function(fun) for fun in self.functions]
             if self.functions
             else None
         )
-        self._tool_invoker = (
+        self._tool_invoker: Optional[ToolInvoker] = (
             ToolInvoker(tools=self.tools, raise_on_failure=False)
             if self.tools
             else None
         )
 
-    def run(self, messages: list[ChatMessage]) -> Tuple[str, list[ChatMessage]]:
+    def run(self, messages: List[ChatMessage]) -> List[ChatMessage]:
         # generate response
         agent_message = self.llm.run(
             messages=[self._system_message] + messages, tools=self.tools
@@ -77,7 +80,7 @@ class ToolCallingAgent:
         if agent_message.text:
             print(f"\n{self.name}: {agent_message.text}")
 
-        if not agent_message.tool_calls:
+        if not agent_message.tool_calls or not self._tool_invoker:
             return new_messages
 
         # handle tool calls

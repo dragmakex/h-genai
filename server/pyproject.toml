@@ -11,12 +11,18 @@ uvicorn = "^0.27.0"
 mangum = "^0.17.0"
 pydantic = "^2.6.0"
 python-dotenv = "^1.0.0"
+haystack-ai = "^2.0.0b5"
+openai = "^1.12.0"
+docling = "^0.1.0"
+haystack-integrations = {extras = ["amazon-bedrock"], version = "^0.1.0"}
+types-requests = "^2.31.0.20240125"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
 black = {extras = ["jupyter"], version = "^24.1.0"}
 isort = "^5.13.0"
 mypy = "^1.8.0"
+types-python-dotenv = "^1.0.0.20240118"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -35,3 +41,29 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_functions = ["test_*"]
 filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+exclude = [
+    "tests/",
+    ".venv/",
+]
+
+[[tool.mypy.overrides]]
+module = [
+    "haystack.*",
+    "haystack_integrations.*",
+    "docling.*",
+]
+ignore_missing_imports = true
