@@ -17,6 +17,8 @@ openai = "^1.12.0"
 docling = "^0.1.0"
 amazon-bedrock-haystack = "^0.1.0"
 onnxruntime = "1.16.2"
+weasyprint = "^64.0"
+jinja2 = "^3.1.5"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
