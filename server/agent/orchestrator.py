@@ -2,7 +2,7 @@ import json
 from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage
 from agents import Agent, ToolCallingAgent
-from tools import search_func, get_sonar_pro_response, get_sonar_response, parse_docs
+from tools import get_sonar_pro_response
 from prompt import tool_agent_instructions, tool_agent_prompt
 
 class Orchestrator:

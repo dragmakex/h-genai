@@ -2,7 +2,7 @@
 from haystack.dataclasses import ChatMessage
 
 from agents import ToolCallingAgent
-from tools import search_func, get_sonar_response, get_sonar_pro_response, parse_docs
+from tools import get_sonar_pro_response
 from rag_pipeline import rag_pipeline_func
 
 Tool_Agent = ToolCallingAgent(functions=[get_sonar_pro_response, rag_pipeline_func])  # Can define name and special instructions & tools for every agent
