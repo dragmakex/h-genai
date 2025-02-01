@@ -175,25 +175,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Describe the environmental theme of the project",
                             "example": "Renewable energies" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Describe the category of the green project",
                             "example": "Solar energy"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Provide a detailed description of the green project",
                             "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
                     },
@@ -201,25 +201,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Describe the environmental theme of the project",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Describe the category of the green project",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Provide a detailed description of the green project",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
                     },
@@ -227,25 +227,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Describe the environmental theme of the project",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Describe the category of the green project",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Provide a detailed description of the green project",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
                     }
@@ -259,25 +259,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Describe the social theme of the project",
                             "example":  "Vocational education and training" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Describe the category of the social project",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Provide a detailed description of the social project",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
                     },
@@ -285,25 +285,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Describe the social theme of the project",
                             "example":  "Vocational education and training" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Describe the category of the social project",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Provide a detailed description of the social project",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
                     },
@@ -311,25 +311,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Describe the social theme of the project",
                             "example":  "Vocational education and training" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Describe the category of the social project",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Provide a detailed description of the social project",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
                     }
@@ -345,25 +345,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the inter-municipality project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Describe the environmental theme of the project",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Describe the category of the green project",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Provide a detailed description of the green project",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
                     },
@@ -371,50 +371,50 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the inter-municipality project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Describe the environmental theme of the project",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Describe the category of the green project",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Provide a detailed description of the green project",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
                     },{
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the inter-municipality project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Describe the environmental theme of the project",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Describe the category of the green project",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Provide a detailed description of the green project",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
                     }
@@ -428,25 +428,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the inter-municipality project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Describe the social theme of the project",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Describe the category of the social project",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Provide a detailed description of the social project",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
                     },
@@ -454,25 +454,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the inter-municipality project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Describe the social theme of the project",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Describe the category of the social project",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Provide a detailed description of the social project",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
                     },
@@ -480,25 +480,25 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the inter-municipality project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Describe the social theme of the project",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Describe the category of the social project",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Provide a detailed description of the social project",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
                     }
