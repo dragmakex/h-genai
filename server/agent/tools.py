@@ -15,6 +15,7 @@ search_api_key = os.getenv("SERPERDEV_API_KEY")
 
 # Ading a tool (adapted from e.g. https://haystack.deepset.ai/tutorials/40_building_chat_application_with_function_calling)
 # This is a pipeline (you can define any other pipeline you want to give as a tool)
+# https://docs.haystack.deepset.ai/v1.22/docs/nodes_overview
 # Returns documents, content, metadata, and links
 websearch = SerperDevWebSearch(top_k=5, api_key=Secret.from_token(search_api_key))
 
