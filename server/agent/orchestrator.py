@@ -5,7 +5,7 @@ from haystack.dataclasses import ChatMessage, ChatRole
 from agents import Agent, ToolCallingAgent
 from tools import *
 from prompt import tool_agent_instructions, tool_agent_prompt
-
+from util import get_commune_finances_by_siren, get_epci_finances_by_code
 api_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
 
 def get_all_tools():
@@ -49,14 +49,18 @@ class Orchestrator:
         """Get the input from the user"""
         return input("Inter-Municipality: ")
     
-    def _get_numeric_api_data(self, municipality_name: str, inter_municipality_name: str):
+    def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_siren: str):
         """Get the data from the API
         Return a dictionary with the data:
         Example:
         {"Dijon": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10},
         "Dijon Métropole": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10}}"""
-        return {f"{municipality_name}": {'total_budget': 110284094.09, 'total_budget_per_person': 678.8635188422569, 'population': 162454, 'data_from_year': 2023, 'debt_repayment_capacity': 3.421998298410285, 'debt_ratio': 53.34297830381788, 'debt_duration': 10.111153565438771},
-                f"{inter_municipality_name}": {'total_budget': 413830553.89, 'total_budget_per_person': 1580.1029926957133, 'population': 261901, 'data_from_year': 2023, 'debt_repayment_capacity': 3.0684359671662658, 'debt_ratio': 63.18780497901272, 'debt_duration': 9.12922133359339}}
+        
+        _, municipality_finances = get_commune_finances_by_siren(municipality_siren)
+        _, epci_finances = get_epci_finances_by_code(inter_municipality_siren)
+        
+        return {f"{municipality_name}": municipality_finances,
+                f"{inter_municipality_name}": epci_finances}
 
 
     def get_conversation_history(self, conversation_id: str) -> List[Dict[str, Any]]:
