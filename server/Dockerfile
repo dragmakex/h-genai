@@ -29,7 +29,7 @@ FROM --platform=linux/amd64 public.ecr.aws/lambda/python:3.11
 WORKDIR ${LAMBDA_TASK_ROOT}
 
 # Copy Python dependencies from builder
-COPY --from=builder ${LAMBDA_TASK_ROOT}/lib/python3.11/site-packages/ /var/lang/lib/python3.11/site-packages/
+COPY --from=builder /var/lang/lib/python3.11/site-packages/ /var/lang/lib/python3.11/site-packages/
 
 # Copy only the API code
 COPY ./api ./api
