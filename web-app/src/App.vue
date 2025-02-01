@@ -2,6 +2,7 @@
 import SfilLogo from '@/assets/images/Sfil-Logo.png'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
+import pdfTemplate from '@/assets/template.pdf'
 import {
   Command,
   CommandEmpty,
@@ -47,35 +48,68 @@ const progressMessages = ref([
   "Génération du fichier...",
 ])
 
+const error = ref(null)
+const gotResult = ref(false)
+
 const handleGenerate = async () => {
   isGenerating.value = true
   progress.value = 0
   gotResult.value = false
-  
-  const duration = 8000
-  const interval = 100
-  const steps = duration / interval
-  const increment = 100 / steps
+  error.value = null
   
   const progressInterval = setInterval(() => {
-    progress.value = Math.min(100, progress.value + increment)
-  }, interval)
+    let increment
+    if (progress.value < 30) {
+      increment = Math.random() * 2 + 1
+    } else if (progress.value < 60) {
+      increment = Math.random() * 1.5 + 0.5
+    } else {
+      increment = Math.random() * 0.5 + 0.1
+    }
+    
+    if (progress.value > 40 && Math.random() < 0.1) {
+      return
+    }
+    
+    progress.value = Math.min(95, progress.value + increment)
+  }, 100)
 
-  setTimeout(() => {
-    clearInterval(progressInterval)
+  try {
+    const response = await fetch('http://localhost:8000/test', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        siren: userSelectionStore.selected_siren
+      })
+    })
+
+    if (!response.ok) {
+      throw new Error('Erreur lors de la génération du PDF')
+    }
+
+    progress.value = 100
+    
     setTimeout(() => {
+      clearInterval(progressInterval)
       isGenerating.value = false
       progress.value = 0
       gotResult.value = true
     }, 1000)
-  }, duration)
-}
 
-const gotResult = ref(false)
+  } catch (error) {
+    console.error('Erreur:', error)
+    clearInterval(progressInterval)
+    error.value = error.message
+    isGenerating.value = false
+    progress.value = 0
+  }
+}
 </script>
 
 <template>
-  <div class="bg-slate-50 flex flex-col items-center h-screen space-y-4">
+  <div class="bg-slate-50 flex flex-col items-center min-h-screen space-y-4">
     <div class="w-full max-w-screen-lg flex justify-between items-center py-2 px-8 mt-2">
       <div class="flex-shrink-0">
         <img :src="SfilLogo" alt="SFIL Logo" class="w-48" />
@@ -86,9 +120,8 @@ const gotResult = ref(false)
       </div>
     </div>
     <hr class="w-full max-w-screen-lg">
-    <div class="w-full max-w-screen-lg flex-1 flex flex-col items-center py-2 px-8 pt-16 mt-2">
+    <div class="w-full max-w-screen-lg flex-1 flex flex-col items-center py-2 px-8 pt-8 mt-2">
       <div>
-        <!-- <div class="text-gray-500">Selectionnez un client.</div> -->
         <div class="flex space-x-2">
           <Popover v-model:open="open">
             <PopoverTrigger as-child>
@@ -156,6 +189,16 @@ const gotResult = ref(false)
             <Check class="w-4 h-4" />
             <p> Fichier généré pour <b>{{ userSelectionStore.selected_municipality }}</b> avec succès.</p>
           </div>
+        </div>
+      </div>
+      <div v-if="gotResult" class="w-full my-8">
+        <div class="w-full h-[1000px]">
+          <embed
+            :src="pdfTemplate"
+            class="w-full h-full"
+            :title="`PDF pour ${userSelectionStore.selected_municipality}`"
+            frameborder="0"
+          />
         </div>
       </div>
     </div>
