@@ -11,7 +11,8 @@ If you dont know the answer, just say 'unknown'. Do not provide any other explan
 Always adhere to the format the answer is requested in.
 If the format is 'number', provide just a number and a unit, do not provide a sentence as an answer."""
 
-tool_agent_prompt = """For the municipality '{name}', provide a concise answer for the field '{field}', in the format or with the context '{value}'. 
+tool_agent_prompt = """For the municipality '{name}', provide a concise answer for the field '{field}', in the type '{type}'. 
 If a number is requested, only provide a single number with its unit. 
-If you dont know the answer, do not apologize or provide any reasoning, just say 'unknown'."""
+If you dont know the answer, do not apologize or provide any reasoning, just say 'unknown'.
+Example: Municipality: Dijon, Field: '{field}', Type: '{type}', Answer: '{example}'"""
 
