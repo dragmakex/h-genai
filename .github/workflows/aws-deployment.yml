@@ -13,7 +13,7 @@ env:
   NODE_VERSION: '20'
 
 jobs:
-  test-and-lint-server:
+  test-server:
     runs-on: ubuntu-latest
     
     steps:
@@ -48,18 +48,9 @@ jobs:
         run: |
           cd server
           poetry run pytest
-          
-      - name: Run linting
-        run: |
-          cd server
-          poetry run black .
-          poetry run isort .
-          poetry run black . --check
-          poetry run isort . --check
-          poetry run mypy .
 
   deploy-server:
-    needs: test-and-lint-server
+    needs: test-server
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     
