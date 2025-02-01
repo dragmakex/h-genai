@@ -14,7 +14,7 @@ python-dotenv = "^1.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
-black = "^24.1.0"
+black = {extras = ["jupyter"], version = "^24.1.0"}
 isort = "^5.13.0"
 mypy = "^1.8.0"
 

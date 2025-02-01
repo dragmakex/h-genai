@@ -36,5 +36,3 @@ Example:
 
 Now, given the municipality '{name}', the field '{field}', and the type '{type}', produce your answer following these rules.
 """
-
-

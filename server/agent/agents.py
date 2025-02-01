@@ -1,13 +1,14 @@
-from haystack_integrations.components.generators.amazon_bedrock import AmazonBedrockChatGenerator
-from haystack.dataclasses import ChatMessage
-from haystack.components.tools import ToolInvoker
-from haystack.tools import create_tool_from_function
-
+import os
 from dataclasses import dataclass, field
 from typing import Callable, Tuple
 
 from dotenv import load_dotenv
-import os
+from haystack.components.tools import ToolInvoker
+from haystack.dataclasses import ChatMessage
+from haystack.tools import create_tool_from_function
+from haystack_integrations.components.generators.amazon_bedrock import (
+    AmazonBedrockChatGenerator,
+)
 
 # Load environment variables for Keys
 load_dotenv()
@@ -17,6 +18,7 @@ aws_region_name = os.getenv("AWS_DEFAULT_REGION")
 search_api_key = os.getenv("SERPERDEV_API_KEY")
 
 # Implementations adapted from https://haystack.deepset.ai/cookbook/swarm
+
 
 # Simple Agent without tools
 @dataclass
@@ -39,6 +41,7 @@ class Agent:
             print(f"\n{self.name}: {new_message.text}")
 
         return [new_message]
+
 
 # Agent with tools
 @dataclass
@@ -82,7 +85,8 @@ class ToolCallingAgent:
         new_messages.extend(tool_results)
 
         return new_messages
-    
+
+
 # Example:
 # from haystack.dataclasses import ChatRole
 
