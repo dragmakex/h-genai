@@ -2,9 +2,9 @@
 from haystack.dataclasses import ChatMessage
 
 from agents import ToolCallingAgent
-from tools import search_func
+from tools import search_func, get_sonar_response, get_sonar_pro_response, parse_docs
 
-Tool_Agent = ToolCallingAgent(functions=[search_func])  # Can define name and special instructions & tools for every agent
+Tool_Agent = ToolCallingAgent(functions=[search_func, get_sonar_pro_response, get_sonar_response, parse_docs])  # Can define name and special instructions & tools for every agent
 
 # Create Messages List to store
 messages = []

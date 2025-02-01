@@ -1,13 +1,20 @@
 from haystack.components.websearch import SerperDevWebSearch
 from haystack.utils import Secret
 
-from typing import Annotated
+from typing import Annotated, List
 from dotenv import load_dotenv
 import os
+
+from pydantic import BaseModel
+from openai import OpenAI
+
+from docling.document_converter import DocumentConverter
+converter = DocumentConverter()
 
 # Load environment variables for Keys
 load_dotenv()
 search_api_key = os.getenv("SERPERDEV_API_KEY")
+PERPLEXITY_API_KEY = os.getenv("PERPLEXITY_API_KEY")
 
 ###############
 # SEARCH TOOL #
@@ -37,3 +44,80 @@ def search_func(query: Annotated[str, "The query to search for"]):
 # Example:
 # results = websearch.run(query="Who is the boyfriend of Olivia Wilde?")
 # results = search_func(query="Who is the boyfriend of Olivia Wilde?")
+
+class PerplexityResponse(BaseModel):
+    content: str
+    citations: List[str]
+
+
+client = OpenAI(api_key=PERPLEXITY_API_KEY, base_url="https://api.perplexity.ai")
+
+
+def get_sonar_pro_response(message: str) -> PerplexityResponse:
+    """
+    Generate a response using the Perplexity API's 'sonar-pro' model.
+    
+    This function sends a message to the Perplexity API and retrieves a response
+    along with any citations from the 'sonar-pro' model. The response includes
+    both the generated content and a list of citations.
+
+    Args:
+        message: The input message or question to send to the model.
+
+    Returns:
+        PerplexityResponse: A Pydantic model containing the generated content
+                            and a list of citations.
+
+    Example:
+        response = get_sonar_pro_response("Explain quantum computing.")
+        print(response.content)  # Prints the generated response
+        print(response.citations)  # Prints the list of citations
+    """
+
+    messages = [
+        {"role": "user", "content": message}
+    ]
+    response = client.chat.completions.create(model="sonar-pro", messages=messages)
+    return PerplexityResponse(content=response.choices[0].message.content, citations=response.citations)
+
+def get_sonar_response(message: str) -> PerplexityResponse:
+    """
+    Generate a response using the Perplexity API's 'sonar' model.
+    
+    This function sends a message to the Perplexity API and retrieves a response
+    along with any citations from the 'sonar' model. The response includes both
+    the generated content and a list of citations.
+
+    Args:
+        message: The input message or question to send to the model.
+
+    Returns:
+        PerplexityResponse: A Pydantic model containing the generated content
+                            and a list of citations.
+
+    Example:
+        response = get_sonar_response("What is natural language processing?")
+        print(response.content)  # Prints the generated response
+        print(response.citations)  # Prints the list of citations
+    """
+
+    messages = [
+        {"role": "user", "content": message}
+    ]
+    response = client.chat.completions.create(model="sonar", messages=messages)
+    return PerplexityResponse(content=response.choices[0].message.content, citations=response.citations)
+
+def parse_docs(source_path: str) -> str:
+    """
+    Convert a pdf document to markdown format.
+
+    Args:
+        source_path (str): Local file path or URL to the document
+
+    Returns:
+        str: The document content in markdown format
+    """
+
+    result = converter.convert(source_path)
+    return result.document.export_to_markdown()
+
