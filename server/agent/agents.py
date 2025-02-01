@@ -39,7 +39,7 @@ class Agent:
         ][0]
 
         if new_message.text:
-            print(f"\n{self.name}: {new_message.text}")
+            print(f"{self.name}: {new_message.text}")
 
         return [new_message]
 
@@ -75,12 +75,14 @@ class ToolCallingAgent:
         new_messages = [agent_message]
 
         if agent_message.text:
-            print(f"\n{self.name}: {agent_message.text}")
+            print(f"{self.name}: {agent_message.text}")
 
+        
         if not agent_message.tool_calls:
             return new_messages
 
         # handle tool calls
+        print(f"{self.name}: {agent_message.tool_calls}")
         tool_results = self._tool_invoker.run(messages=[agent_message])["tool_messages"]
         new_messages.extend(tool_results)
 

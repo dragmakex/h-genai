@@ -6,7 +6,7 @@
     },
     "inter_municipality_name": {
         "type": "string",
-        "content": null,
+        "content": "Dijon Metropole",
         "instruction": "Enter the name of the inter-municipality organization"
     },
     "logo": {
@@ -18,62 +18,62 @@
         "municipality": {
             "population": {
                 "type": "number",
-                "content": "164018 inhabitants",
+                "content": null,
                 "instruction": "Enter the total population of the municipality"
             },
             "area": {
                 "type": "number",
-                "content": "40.41 km²",
+                "content": null,
                 "instruction": "Enter the total area of the municipality in square kilometers"
             },
             "data_from_year": {
                 "type": "number",
-                "content": "2021",
+                "content": null,
                 "instruction": "Enter the year from which this data was collected"
             },
             "total_budget": {
                 "type": "number",
-                "content": "unknown",
+                "content": null,
                 "instruction": "Enter the total budget of the municipality in euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": "1763 €/person",
+                "content": null,
                 "instruction": "Enter the total budget per person in euros"
             },
             "mean_total_budget_per_person": {
                 "type": "number",
-                "content": "1216 €/person",
+                "content": null,
                 "instruction": "Enter the mean total budget per person across similar municipalities"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": "unknown",
+                "content": null,
                 "instruction": "Enter the debt repayment capacity as a ratio"
             },
             "mean_debt_repayment_capacity": {
                 "type": "number",
-                "content": "3.5 years",
+                "content": null,
                 "instruction": "Enter the mean debt repayment capacity across similar municipalities"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": "678€/inhabitant",
+                "content": null,
                 "instruction": "Enter the debt ratio as a percentage"
             },
             "mean_debt_ratio": {
                 "type": "number",
-                "content": "unknown",
+                "content": null,
                 "instruction": "Enter the mean debt ratio across similar municipalities"
             },
             "debt_duration": {
                 "type": "number",
-                "content": "unknown",
+                "content": null,
                 "instruction": "Enter the debt duration in years"
             },
             "mean_debt_duration": {
                 "type": "number",
-                "content": "10.5 years",
+                "content": null,
                 "instruction": "Enter the mean debt duration across similar municipalities"
             }
         },
@@ -144,40 +144,41 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": null,
-                            "instruction": "Enter the year of the historical milestone"
+                            "content": "2017",
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null,
-                            "instruction": "Describe the historical milestone event"
+                            "content": "Transformation of Grand Dijon urban community into Dijon Métropole",
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
-                            "content": null,
-                            "instruction": "Enter the year of the historical milestone"
+                            "content": "2015",
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null,
-                            "instruction": "Describe the historical milestone event"
+                            "content": "Transformation of Grand Dijon agglomeration community into urban community",
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
-                            "content": null,
-                            "instruction": "Enter the year of the historical milestone"
+                            "content": "2000",
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone"
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null,
-                            "instruction": "Describe the historical milestone event"
+                            "content": "Creation of Grand Dijon agglomeration community (COMADI)",
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event"
                         }
                     }
-                ]
+                ],
+                "instruction": "Find 3 important historical milestones concerning the inter-municipalities"
             }
         }
     },

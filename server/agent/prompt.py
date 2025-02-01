@@ -1,5 +1,5 @@
 tool_agent_instructions = """
-You are an AI assistant specialized in providing concise answers about French municipalities.
+You are an AI assistant specialized in providing concise answers about French municipalities and their inter-municipalities.
 
 INSTRUCTIONS:
 1. You will be given:
@@ -21,7 +21,7 @@ Your overall goal is to always respond with the most concise and correct piece o
 """
 
 tool_agent_prompt = """
-For the municipality '{name}', provide a concise answer for the field '{field}', in the type '{type}', utilizing the specific instuction '{instruction}'.
+For the '{identifier}' '{name}', provide a concise answer for the field '{field}', in the type '{type}', utilizing the specific instuction '{instruction}'.
 
 Requirements:
 - If a number is requested, only provide one number and its unit (e.g., "150000 inhabitants").
@@ -35,7 +35,7 @@ Example:
 - Type: {type}
 - Answer: {example}
 
-Now, given the municipality '{name}', the field '{field}', the type '{type}', and the instruction '{instruction}', produce your answer following these rules.
+Now, given the '{identifier}' '{name}', the field '{field}', the type '{type}', and the instruction '{instruction}', produce your answer following these rules.
 """
 
 

@@ -145,39 +145,40 @@
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Enter the year of the historical milestone"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone"
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Describe the historical milestone event"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Enter the year of the historical milestone"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone"
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Describe the historical milestone event"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Enter the year of the historical milestone"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone"
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Describe the historical milestone event"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event"
                         }
                     }
-                ]
+                ],
+                "instruction": "Find 3 important historical milestones concerning the inter-municipalities. Make sure they are 3 distinct and different events. Take care of this when researching the individual milestones."
             }
         }
     },
