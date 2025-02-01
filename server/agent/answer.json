@@ -1,18 +1,18 @@
 {
     "summary": {
         "municipality": {
-            "population": "159,941",
+            "population": "159,346",
             "area": "40.41 km2",
-            "data_from_year": "2025.",
-            "total_budget": "For the municipality 'Dijon', the total budget is 75 M€.",
-            "total_budget_per_person": "€1,316 per person",
-            "mean_total_budget_per_person": null,
-            "debt_repayment_capacity": "I apologize I could not find the information on 'debt_repayment_capacity' for the municipality 'Dijon'.",
-            "mean_debt_repayment_capacity": "The mean debt repayment capacity for Dijon was not found in the provided search. Please provide additional context or details to refine the search.",
-            "debt_ratio": "2024-10-22",
-            "mean_debt_ratio": "I'm sorry, but I couldn't find the specific mean debt ratio for Dijon.",
-            "debt_duration": "50 years",
-            "mean_debt_duration": "I could not find any information on 'Dijon mean debt duration'."
+            "data_from_year": "2021",
+            "total_budget": "280 million euros.",
+            "total_budget_per_person": "unknown",
+            "mean_total_budget_per_person": "The mean total budget per person for the municipality 'Dijon' is approximately €1,553 per month.",
+            "debt_repayment_capacity": "unknown",
+            "mean_debt_repayment_capacity": "unknown",
+            "debt_ratio": "unknown",
+            "mean_debt_ratio": "unknown",
+            "debt_duration": "unknown",
+            "mean_debt_duration": "unknown"
         }
     }
 }
