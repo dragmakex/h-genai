@@ -180,7 +180,7 @@ class Orchestrator:
             print("Field: " + name + " " + field)
             type = value['type']
             instruction = value['instruction']
-            example = ""#value['example']
+
             conversation_id = identifier + "_" + field
             if conversation_id not in self.conversation_history:
                 self.conversation_history[conversation_id] = []
@@ -193,7 +193,7 @@ class Orchestrator:
                     field=field,
                     instruction=instruction,
                     type=type,
-                    example=example
+                    example=""
                 )
                 
                 # Process each item in the array sequentially
@@ -201,7 +201,7 @@ class Orchestrator:
                     for subfield, subvalue in item.items():                       
                         # Create prompt for this specific array item
                         item_prompt = f"For item {idx+1} of the array:\n"
-                        item_prompt += tool_agent_prompt.format(identifier=identifier, name=name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=example)
+                        item_prompt += tool_agent_prompt.format(identifier=identifier, name=name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=subvalue['example'])
                         if idx == 0:
                             item_prompt = array_prompt + item_prompt
                         self.conversation_history[conversation_id].append(ChatMessage.from_user(item_prompt))
@@ -219,7 +219,7 @@ class Orchestrator:
                         self.data['projects'][identifier][field]['content'][idx][subfield]['content'] = self.conversation_history[conversation_id][-1].text #if final_reply else "unknown"           
             else: 
                 # Create a prompt based on the field and append it to the messages
-                prompt = tool_agent_prompt.format(identifier=identifier, name=name, field=field, instruction=instruction, type=type, example=example)
+                prompt = tool_agent_prompt.format(identifier=identifier, name=name, field=field, instruction=instruction, type=type, example=value['example'])
                 self.conversation_history[conversation_id].append(ChatMessage.from_user(prompt))
                 # print(self.conversation_history[conversation_id][-1])
                 
@@ -243,10 +243,10 @@ class Orchestrator:
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
-        self.process_summary_fields(inter=False)
-        self.process_summary_fields(inter=True)
-        #self.process_projects_fields(inter=False)
-        #self.process_projects_fields(inter=True)
+        #self.process_summary_fields(inter=False)
+        #self.process_summary_fields(inter=True)
+        self.process_projects_fields(inter=False)
+        self.process_projects_fields(inter=True)
 
         # Save to answer.json
         try:
