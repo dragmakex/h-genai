@@ -20,12 +20,12 @@ class Orchestrator:
         self.data = self._load_data_fields()
     
     def _load_data_fields(self) -> Dict[str, Any]:
-        """Load data from data.json file"""
+        """Load data from data_template.json file"""
         try:
-            with open('data.json', 'r', encoding='utf-8') as file:
+            with open('data_template.json', 'r', encoding='utf-8') as file:
                 return json.load(file)
         except FileNotFoundError:
-            raise FileNotFoundError("data.json not found in the agent directory")
+            raise FileNotFoundError("data_template.json not found in the agent directory")
     
     def get_conversation_history(self, conversation_id: str) -> List[Dict[str, Any]]:
         """Get the conversation history in a serializable format"""
@@ -88,7 +88,7 @@ class Orchestrator:
 
         # Save to answer.json
         try:
-            with open('answer.json', 'w', encoding='utf-8') as file:
+            with open('data_answer.json', 'w', encoding='utf-8') as file:
                 json.dump(processed_data, file, indent=4, ensure_ascii=False)
         except Exception as e:
             print(f"Error saving to answer.json: {e}")

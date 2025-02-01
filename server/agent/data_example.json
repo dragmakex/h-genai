@@ -15,11 +15,11 @@
         "municipality": {
             "population": {
                 "type": "number",
-                "content": null
+                "content": "159346 residents" 
             },
             "area": {
                 "type": "number",
-                "content": null
+                "content": "40.40 km2"
             },
             "data_from_year": {
                 "type": "number",
@@ -27,39 +27,39 @@
             },
             "total_budget": {
                 "type": "number",
-                "content": null
+                "content": "110 million euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": null
+                "content": "679 €/person"
             },
             "mean_total_budget_per_person": {
                 "type": "number",
-                "content": null
+                "content": "1,100 €/person"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": null
+                "content": "3.4 years"
             },
             "mean_debt_repayment_capacity": {
                 "type": "number",
-                "content": null
+                "content": "5.7 years"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": null
+                "content": "51%"
             },
             "mean_debt_ratio": {
                 "type": "number",
-                "content": null
+                "content": "74%"
             },
             "debt_duration": {
                 "type": "number",
-                "content": null
+                "content": "10.1 years"
             },
             "mean_debt_duration": {
                 "type": "number",
-                "content": null
+                "content": "10.3 years"
             }
         },
         "inter_municipality": {

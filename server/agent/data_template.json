@@ -1,0 +1,505 @@
+{
+    "municipality_name": {
+        "type": "string",
+        "content": null
+    },
+    "inter_municipality_name": {
+        "type": "string",
+        "content": null
+    },
+    "logo": {
+        "type": "string",
+        "content": null
+    },
+    "summary": {
+        "municipality": {
+            "population": {
+                "type": "number",
+                "content": null
+            },
+            "area": {
+                "type": "number",
+                "content": null
+            },
+            "data_from_year": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "mean_total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "debt_duration": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_duration": {
+                "type": "number",
+                "content": null
+            }
+        },
+        "inter_municipality": {
+            "population": {
+                "type": "number",
+                "content": null
+            },
+            "area": {
+                "type": "number",
+                "content": null
+            },
+            "data_from_year": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "mean_total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "debt_duration": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_duration": {
+                "type": "number",
+                "content": null
+            },
+            "historical_milestones": {
+                "type": "array",
+                "content": [
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": null
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": null
+                        }
+                    },
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": null
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": null
+                        }
+                    },
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": null
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "projects": {
+        "municipality": {
+            "green_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            },
+            "social_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            }
+        },
+        "inter_municipality": {
+            "green_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            },
+            "social_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "contacts": {
+        "type": "array",
+        "content": [
+            {
+                "name": {
+                    "type": "string",
+                    "content": null
+                },
+                "title": {
+                    "type": "string",
+                    "content": null
+                },
+                "title_since": {
+                    "type": "string",
+                    "content": null
+                },
+                "birth_date": {
+                    "type": "string",
+                    "content": null
+                },
+                "birth_place": {
+                    "type": "string",
+                    "content": null
+                },
+                "education": {
+                    "type": "array",
+                    "content": [null, null, null]
+                },
+                "activities": {
+                    "type": "array",
+                    "content": [null, null]
+                },
+                "career": {
+                    "type": "array",
+                    "content": [null, null, null, null]
+                }
+            },
+            {
+                "name": {
+                    "type": "string",
+                    "content": null
+                },
+                "title": {
+                    "type": "string",
+                    "content": null
+                },
+                "title_since": {
+                    "type": "string",
+                    "content": null
+                },
+                "birth_date": {
+                    "type": "string",
+                    "content": null
+                },
+                "birth_place": {
+                    "type": "string",
+                    "content": null
+                },
+                "education": {
+                    "type": "array",
+                    "content": [null, null, null]
+                },
+                "activities": {
+                    "type": "array",
+                    "content": [null, null]
+                },
+                "career": {
+                    "type": "array",
+                    "content": [null, null, null, null]
+                }
+            }
+        ]
+    },
+    "budget": {
+        "municipality": {
+            "date": {
+                "type": "string",
+                "content": null
+            },
+            "year": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            }
+        },
+        "inter_municipality": {
+            "date": {
+                "type": "string",
+                "content": null
+            },
+            "year": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            }
+        }
+    },
+    "financial_data": {
+        "municipality": {
+            "year": {
+                "type": "string",
+                "content": null
+            }
+        },
+        "inter_municipality": {
+            "year": {
+                "type": "string",
+                "content": null
+            }
+        }
+    },
+    "comparative_data": {
+        "type": "array",
+        "content": [
+            {
+                "municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "inter_municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "population": {
+                    "type": "number",
+                    "content": null
+                },
+                "area": {
+                    "type": "number",
+                    "content": null
+                },
+                "data_from_year": {
+                    "type": "string",
+                    "content": null
+                },
+                "total_budget": {
+                    "type": "number",
+                    "content": null
+                },
+                "total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_duration": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_duration": {
+                    "type": "number",
+                    "content": null
+                }
+            },
+            {
+                "municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "inter_municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "population": {
+                    "type": "number",
+                    "content": null
+                },
+                "area": {
+                    "type": "number",
+                    "content": null
+                },
+                "data_from_year": {
+                    "type": "string",
+                    "content": null
+                },
+                "total_budget": {
+                    "type": "number",
+                    "content": null
+                },
+                "total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_duration": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_duration": {
+                    "type": "number",
+                    "content": null
+                }
+            }
+        ]
+    }
+}
