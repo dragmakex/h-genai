@@ -62,8 +62,21 @@ rag_pipe.connect("embedder.embedding", "retriever.query_embedding")
 rag_pipe.connect("retriever", "prompt_builder.documents")
 rag_pipe.connect("prompt_builder.prompt", "llm.messages")
 
-# Running the Pipeline
-query = "Where does Mark live?"
-result = rag_pipe.run({"embedder": {"text": query}, "prompt_builder": {"question": query}})
-print(result["llm"]["replies"][0].text)
+def rag_pipeline_func(query: str):
+    """Search your documents with the RAG pipeline.
+    https://haystack.deepset.ai/tutorials/40_building_chat_application_with_function_calling#creating-a-function-calling-tool-from-a-haystack-pipeline
+    
+    Args:
+        query: The search query to look up
+
+    Returns:
+        str: The search results
+    """
+    result = rag_pipe.run({"embedder": {"text": query}, "prompt_builder": {"question": query}})
+    return {"reply": result["llm"]["replies"][0].text}
+
+# # Running the Pipeline
+# query = "Where does Mark live?"
+# result = rag_pipe.run({"embedder": {"text": query}, "prompt_builder": {"question": query}})
+# print(result["llm"]["replies"][0].text)
 

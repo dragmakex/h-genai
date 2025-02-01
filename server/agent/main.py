@@ -3,11 +3,13 @@ from haystack.dataclasses import ChatMessage
 
 from agents import ToolCallingAgent
 from tools import search_func, get_sonar_response, get_sonar_pro_response, parse_docs
+from rag_pipeline import rag_pipeline_func
 
-Tool_Agent = ToolCallingAgent(functions=[get_sonar_pro_response])  # Can define name and special instructions & tools for every agent
+Tool_Agent = ToolCallingAgent(functions=[get_sonar_pro_response, rag_pipeline_func])  # Can define name and special instructions & tools for every agent
 
 # Create Messages List to store
 messages = []
+
 
 # Query User
 user_input = input("User: ")
