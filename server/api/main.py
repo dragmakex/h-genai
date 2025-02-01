@@ -20,20 +20,24 @@ logger = logging.getLogger(__name__)
 app = FastAPI(title="H-GenAI API", description="REST API for H-GenAI", version="1.0.0")
 
 # Initialize Jinja2 templates
-templates = Jinja2Templates(directory="template")
+templates = Jinja2Templates(directory="xtemplate")
 
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "http://localhost:5173",
         "https://127.0.0.1:5173",
-        "https://127.0.0.1:5173"
+        "https://kbba87ikh5.execute-api.us-west-2.amazonaws.com",
+        "https://kbba87ikh5.execute-api.us-west-2.amazonaws.com/*",
+        "https://aws-deployment.d5glcpyeyb6n5.amplifyapp.com/*",
+        "https://aws-deployment.d5glcpyeyb6n5.amplifyapp.com"
     ],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
+    expose_headers=["*"],
+    max_age=600,
 )
 
 # Add middleware to log all requests
