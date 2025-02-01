@@ -6,6 +6,8 @@ from agents import Agent, ToolCallingAgent
 from tools import *
 from prompt import tool_agent_instructions, tool_agent_prompt
 
+api_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
+
 def get_all_tools():
     """Get all functions marked as tools from tools module"""
     import tools
@@ -29,10 +31,11 @@ class Orchestrator:
 
         self.municipality_name = self._get_municipality_name()
         self.inter_municipality_name = self._get_inter_municipality_name()
-    
+
+        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.inter_municipality_name)
+     
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
-
         try:
             with open('data_template.json', 'r', encoding='utf-8') as file:
                 return json.load(file)
@@ -55,9 +58,18 @@ class Orchestrator:
         """Get the input from the user"""
         return input("Inter-Municipality: ")
     
+    def _get_numeric_api_data(self, municipality_name: str, inter_municipality_name: str):
+        """Get the data from the API
+        Return a dictionary with the data:
+        Example:
+        {"Dijon": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10},
+        "Dijon Métropole": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10}}"""
+        return {}
+
 
     def get_conversation_history(self, conversation_id: str) -> List[Dict[str, Any]]:
         """Get the conversation history in a serializable format"""
+
         if conversation_id not in self.conversation_history:
             return []
         
