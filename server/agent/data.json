@@ -1,193 +1,505 @@
 {
-    "municipality_name": "Dijon",
-    "inter_municipality_name": "Dijon Métropole",
-    "logo": "string",
+    "municipality_name": {
+        "type": "string",
+        "content": "Dijon"
+    },
+    "inter_municipality_name": {
+        "type": "string",
+        "content": "Dijon Métropole"
+    },
+    "logo": {
+        "type": "string",
+        "content": null
+    },
     "summary": {
         "municipality": {
-            "population": "number",
-            "area": "number",
-            "data_from_year": "2023",
-            "total_budget": "number",
-            "total_budget_per_person": "number",
-            "mean_total_budget_per_person": "number",
-            "debt_repayment_capacity": "number",
-            "mean_debt_repayment_capacity": "number",
-            "debt_ratio": "number",
-            "mean_debt_ratio": "number",
-            "debt_duration": "number",
-            "mean_debt_duration": "number"
+            "population": {
+                "type": "number",
+                "content": null
+            },
+            "area": {
+                "type": "number",
+                "content": null
+            },
+            "data_from_year": {
+                "type": "number",
+                "content": 2023
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "mean_total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "debt_duration": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_duration": {
+                "type": "number",
+                "content": null
+            }
         },
         "inter_municipality": {
-            "population": "number",
-            "area": "number",
-            "data_from_year": "2024",
-            "total_budget": "number",
-            "total_budget_per_person": "number",
-            "mean_total_budget_per_person": "number",
-            "debt_repayment_capacity": "number",
-            "mean_debt_repayment_capacity": "number",
-            "debt_ratio": "number",
-            "mean_debt_ratio": "number",
-            "debt_duration": "number",
-            "mean_debt_duration": "number",
-            "historical_milestones": [
-                {
-                    "year": "1957",
-                    "milestone": "Création de la Communauté d'Agglomération de Dijon Métropole"
-                },
-                {
-                    "year": "1999",
-                    "milestone": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
-                },
-                {
-                    "year": "2012",
-                    "milestone": "Creation de Dijon Métropole avec 23 communes"
-                }
-            ]
+            "population": {
+                "type": "number",
+                "content": null
+            },
+            "area": {
+                "type": "number",
+                "content": null
+            },
+            "data_from_year": {
+                "type": "number",
+                "content": 2024
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "mean_total_budget_per_person": {
+                "type": "number",
+                "content": null
+            },
+            "debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_repayment_capacity": {
+                "type": "number",
+                "content": null
+            },
+            "debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_ratio": {
+                "type": "number",
+                "content": null
+            },
+            "debt_duration": {
+                "type": "number",
+                "content": null
+            },
+            "mean_debt_duration": {
+                "type": "number",
+                "content": null
+            },
+            "historical_milestones": {
+                "type": "array",
+                "content": [
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": 1957
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": "Création de la Communauté d'Agglomération de Dijon Métropole"
+                        }
+                    },
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": 1999
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
+                        }
+                    },
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": 2012
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": "Creation de Dijon Métropole avec 23 communes"
+                        }
+                    }
+                ]
+            }
         }
     },
     "projects": {
         "municipality": {
-            "green_projects": [
-                {
-                    "theme": "string",
-                    "category": "string",
-                    "description": "string",
-                    "investment": "string"
-                },
-                {
-                    "theme": "string",
-                    "category": "string",
-                    "description": "string",
-                    "investment": "string"
-                }
-            ],
-            "social_projects": [
-                {
-                    "theme": "string",
-                    "category": "string",
-                    "description": "string",
-                    "investment": "string"
-                }
-            ]
+            "green_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            },
+            "social_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            }
         },
         "inter_municipality": {
-            "green_projects": [
-                {
-                    "theme": "string",
-                    "category": "string",
-                    "description": "string",
-                    "investment": "string"
-                }
-            ],
-            "social_projects": [
-                {
-                    "theme": "string",
-                    "category": "string",
-                    "description": "string",
-                    "investment": "string"
-                }
-            ]
+            "green_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            },
+            "social_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null
+                        }
+                    }
+                ]
+            }
         }
     },
-    "contacts": [
-        {
-            "name": "name",
-            "title": "title",
-            "title_since": "title_since",
-            "birth_date": "birth_date",
-            "birth_place": "birth_place",
-            "education": [
-                "string",
-                "string",
-                "string"
-            ],
-            "activities": [
-                "string",
-                "string"
-            ],
-            "career": [
-                "string",
-                "string",
-                "string",
-                "string"
-            ]
-        },
-        {
-            "name": "name",
-            "title": "title",
-            "title_since": "year",
-            "birth_date": "birth_date",
-            "birth_place": "birth_place",
-            "education": [
-                "string",
-                "string",
-                "string"
-            ],
-            "activities": [
-                "string",
-                "string"
-            ],
-            "career": [
-                "string",
-                "string",
-                "string",
-                "string"
-            ]
-        }
-    ],
+    "contacts": {
+        "type": "array",
+        "content": [
+            {
+                "name": {
+                    "type": "string",
+                    "content": "name"
+                },
+                "title": {
+                    "type": "string",
+                    "content": "title"
+                },
+                "title_since": {
+                    "type": "string",
+                    "content": "title_since"
+                },
+                "birth_date": {
+                    "type": "string",
+                    "content": "birth_date"
+                },
+                "birth_place": {
+                    "type": "string",
+                    "content": "birth_place"
+                },
+                "education": {
+                    "type": "array",
+                    "content": ["string", "string", "string"]
+                },
+                "activities": {
+                    "type": "array",
+                    "content": ["string", "string"]
+                },
+                "career": {
+                    "type": "array",
+                    "content": ["string", "string", "string", "string"]
+                }
+            },
+            {
+                "name": {
+                    "type": "string",
+                    "content": "name"
+                },
+                "title": {
+                    "type": "string",
+                    "content": "title"
+                },
+                "title_since": {
+                    "type": "string",
+                    "content": "year"
+                },
+                "birth_date": {
+                    "type": "string",
+                    "content": "birth_date"
+                },
+                "birth_place": {
+                    "type": "string",
+                    "content": "birth_place"
+                },
+                "education": {
+                    "type": "array",
+                    "content": ["string", "string", "string"]
+                },
+                "activities": {
+                    "type": "array",
+                    "content": ["string", "string"]
+                },
+                "career": {
+                    "type": "array",
+                    "content": ["string", "string", "string", "string"]
+                }
+            }
+        ]
+    },
     "budget": {
         "municipality": {
-            "date": "date",
-            "year": "number",
-            "total_budget": "number"
+            "date": {
+                "type": "string",
+                "content": null
+            },
+            "year": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            }
         },
         "inter_municipality": {
-            "date": "date",
-            "year": "number",
-            "total_budget": "number"
+            "date": {
+                "type": "string",
+                "content": null
+            },
+            "year": {
+                "type": "number",
+                "content": null
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null
+            }
         }
     },
     "financial_data": {
         "municipality": {
-            "year": "year"
+            "year": {
+                "type": "string",
+                "content": "year"
+            }
         },
         "inter_municipality": {
-            "year": "year"
+            "year": {
+                "type": "string",
+                "content": "year"
+            }
         }
     },
-    "comparative_data": [
-        {
-            "municipality": "string",
-            "inter_municipality": "string",
-            "population": "number",
-            "area": "number",
-            "data_from_year": "2023",
-            "total_budget": "number",
-            "total_budget_per_person": "number",
-            "mean_total_budget_per_person": "number",
-            "debt_repayment_capacity": "number",
-            "mean_debt_repayment_capacity": "number",
-            "debt_ratio": "number",
-            "mean_debt_ratio": "number",
-            "debt_duration": "number",
-            "mean_debt_duration": "number"
-        },
-        {
-            "municipality": "string",
-            "inter_municipality": "string",
-            "population": "number",
-            "area": "number",
-            "data_from_year": "2023",
-            "total_budget": "number",
-            "total_budget_per_person": "number",
-            "mean_total_budget_per_person": "number",
-            "debt_repayment_capacity": "number",
-            "mean_debt_repayment_capacity": "number",
-            "debt_ratio": "number",
-            "mean_debt_ratio": "number",
-            "debt_duration": "number",
-            "mean_debt_duration": "number"
-        }
-    ]
+    "comparative_data": {
+        "type": "array",
+        "content": [
+            {
+                "municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "inter_municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "population": {
+                    "type": "number",
+                    "content": null
+                },
+                "area": {
+                    "type": "number",
+                    "content": null
+                },
+                "data_from_year": {
+                    "type": "string",
+                    "content": "2023"
+                },
+                "total_budget": {
+                    "type": "number",
+                    "content": null
+                },
+                "total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_duration": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_duration": {
+                    "type": "number",
+                    "content": null
+                }
+            },
+            {
+                "municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "inter_municipality": {
+                    "type": "string",
+                    "content": null
+                },
+                "population": {
+                    "type": "number",
+                    "content": null
+                },
+                "area": {
+                    "type": "number",
+                    "content": null
+                },
+                "data_from_year": {
+                    "type": "string",
+                    "content": "2023"
+                },
+                "total_budget": {
+                    "type": "number",
+                    "content": null
+                },
+                "total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_total_budget_per_person": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_repayment_capacity": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_ratio": {
+                    "type": "number",
+                    "content": null
+                },
+                "debt_duration": {
+                    "type": "number",
+                    "content": null
+                },
+                "mean_debt_duration": {
+                    "type": "number",
+                    "content": null
+                }
+            }
+        ]
+    }
 }
