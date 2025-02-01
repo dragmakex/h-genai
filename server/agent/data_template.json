@@ -2,12 +2,14 @@
     "municipality_name": {
         "type": "string",
         "content": null,
-        "instruction": "Enter the name of the municipality"
+        "instruction": "Enter the name of the municipality",
+        "example": "Dijon"
     },
     "inter_municipality_name": {
         "type": "string",
         "content": null,
-        "instruction": "Enter the name of the inter-municipality organization"
+        "instruction": "Enter the name of the inter-municipality organization",
+        "example": "Dijon Métropole"
     },
     "logo": {
         "type": "string",
@@ -19,84 +21,100 @@
             "population": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total population of the municipality"
+                "instruction": "Enter the total population of the municipality",
+                "example": "159346 residents"
             },
             "area": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total area of the municipality in square kilometers"
+                "instruction": "Enter the total area of the municipality in square kilometers",
+                "example": "40.40 km2"
             },
             "data_from_year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the year from which this data was collected"
+                "instruction": "Enter the year from which this data was collected",
+                "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget of the municipality in euros"
+                "instruction": "Enter the total budget of the municipality in euros",
+                "example": "110 million euros"
             },
             "total_budget_per_person": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget per person in euros"
+                "instruction": "Enter the total budget per person in euros",
+                "example": "679 €/person"
             },
             "debt_repayment_capacity": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt repayment capacity as a ratio"
+                "instruction": "Enter the debt repayment capacity as a ratio",
+                "example": "3.4 years"
             },
             "debt_ratio": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt ratio as a percentage"
+                "instruction": "Enter the debt ratio as a percentage",
+                "example": "51%"
             },
             "debt_duration": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt duration in years"
+                "instruction": "Enter the debt duration in years",
+                "example": "10.1 years"
             }
         },
         "inter_municipality": {
             "population": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total population of the inter-municipality"
+                "instruction": "Enter the total population of the inter-municipality",
+                "example": "257193 residents"
             },
             "area": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total area of the inter-municipality in square kilometers"
+                "instruction": "Enter the total area of the inter-municipality in square kilometers",
+                "example": "240 km2"
             },
             "data_from_year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the year from which this data was collected"
+                "instruction": "Enter the year from which this data was collected",
+                "example": 2021
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget of the inter-municipality in euros"
+                "instruction": "Enter the total budget of the inter-municipality in euros",
+                "example": "257 million euros"
             },
             "total_budget_per_person": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget per person in euros"
+                "instruction": "Enter the total budget per person in euros",
+                "example": "968 €/person"
             },
             "debt_repayment_capacity": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt repayment capacity as a ratio"
+                "instruction": "Enter the debt repayment capacity as a ratio",
+                "example": "2.7 years"
             },
             "debt_ratio": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt ratio as a percentage"
+                "instruction": "Enter the debt ratio as a percentage",
+                "example": "71%" 
             },
             "debt_duration": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt duration in years"
+                "instruction": "Enter the debt duration in years",
+                "example": "8.7 years"
             },
             "historical_milestones": {
                 "type": "array",
@@ -105,36 +123,42 @@
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone",
+                            "example": 1957
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event",
+                            "example": "Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone",
+                            "example": 1999
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event",
+                            "example":  "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
                     },
                     {
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone",
+                            "example": 2012
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event"
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event",
+                            "example": "Creation de Dijon Métropole avec 23 communes"
                         }
                     }
                 ],
@@ -151,44 +175,52 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the project"
+                            "instruction": "Enter the environmental theme of the project",
+                            "example": "Renewable energies" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the green project"
+                            "instruction": "Enter the category of the green project",
+                            "example": "Solar energy"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the green project"
+                            "instruction": "Provide a detailed description of the green project",
+                            "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the green project"
+                            "instruction": "Enter the investment amount for the green project",
+                            "example": "50 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the project"
+                            "instruction": "Enter the environmental theme of the project",
+                            "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the green project"
+                            "instruction": "Enter the category of the green project",
+                            "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the green project"
+                            "instruction": "Provide a detailed description of the green project",
+                            "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the green project"
+                            "instruction": "Enter the investment amount for the green project",
+                            "example": "50 million euros"
                         }
                     }
                 ]
@@ -200,22 +232,26 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the project"
+                            "instruction": "Enter the social theme of the project",
+                            "example":  "Vocational education and training" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the social project"
+                            "instruction": "Enter the category of the social project",
+                            "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the social project"
+                            "instruction": "Provide a detailed description of the social project",
+                            "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the social project"
+                            "instruction": "Enter the investment amount for the social project",
+                            "example": "75 million euros"
                         }
                     }
                 ]
@@ -229,22 +265,26 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the environmental theme of the inter-municipality project"
+                            "instruction": "Enter the environmental theme of the inter-municipality project",
+                            "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality green project"
+                            "instruction": "Enter the category of the inter-municipality green project",
+                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality green project"
+                            "instruction": "Provide a detailed description of the inter-municipality green project",
+                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality green project"
+                            "instruction": "Enter the investment amount for the inter-municipality green project",
+                            "example": "15 million euros"
                         }
                     }
                 ]
@@ -256,22 +296,26 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the social theme of the inter-municipality project"
+                            "instruction": "Enter the social theme of the inter-municipality project",
+                            "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the category of the inter-municipality social project"
+                            "instruction": "Enter the category of the inter-municipality social project",
+                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Provide a detailed description of the inter-municipality social project"
+                            "instruction": "Provide a detailed description of the inter-municipality social project",
+                            "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Enter the investment amount for the inter-municipality social project"
+                            "instruction": "Enter the investment amount for the inter-municipality social project",
+                            "example": "21.9 million euros"
                         }
                     }
                 ]
@@ -285,84 +329,125 @@
                 "name": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the full name of the contact person"
+                    "instruction": "Enter the full name of the contact person",
+                    "example": "Nathalie KOENDERS"
                 },
                 "title": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the professional title of the contact person"
+                    "instruction": "Enter the professional title of the contact person",
+                    "example": "Mayor of Dijon"
                 },
                 "title_since": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the date when the person started in this title"
+                    "instruction": "Enter the date when the person started in this title",
+                    "example": "November 25, 2024"
                 },
                 "birth_date": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth date of the contact person"
+                    "instruction": "Enter the birth date of the contact person",
+                    "example": "March 1, 1977" 
                 },
                 "birth_place": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth place of the contact person"
+                    "instruction": "Enter the birth place of the contact person",
+                    "example": "Rennes, France"
                 },
                 "education": {
                     "type": "array",
                     "content": [null, null, null],
-                    "instruction": "List the educational background of the contact person"
+                    "instruction": "List the educational background of the contact person",
+                    "example": ["Master's degree in public law and sports management from the University of Burgundy (1999)", "Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005)", "Institute for Public Management and Economic Development (IGPDE) (2006)"]
                 },
                 "activities": {
                     "type": "array",
                     "content": [null, null],
-                    "instruction": "List the professional activities of the contact person"
+                    "instruction": "List the professional activities of the contact person",
+                    "example": ["1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"]
                 },
                 "career": {
                     "type": "array",
                     "content": [null, null, null, null],
-                    "instruction": "List the career history of the contact person"
+                    "instruction": "List the career history of the contact person",
+                    "example": ["Former French champion in 5,000 m canoe-kayak (1998)", "Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014)", "Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014)", "1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024)", "Acting Mayor of Dijon (July 27-August 10, 2015)"]
                 }
             },
             {
                 "name": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the full name of the contact person"
+                    "instruction": "Enter the full name of the contact person",
+                    "example": "Francois REBSAMEN"
                 },
                 "title": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the professional title of the contact person"
+                    "instruction": "Enter the professional title of the contact person",
+                    "example": "Chairman of the Dijon Metropolitan Council"
                 },
                 "title_since": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the date when the person started in this title"
+                    "instruction": "Enter the date when the person started in this title",
+                    "example": "2017"
                 },
                 "birth_date": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth date of the contact person"
+                    "instruction": "Enter the birth date of the contact person",
+                    "example": "June 25, 1951"
                 },
                 "birth_place": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth place of the contact person"
+                    "instruction": "Enter the birth place of the contact person",
+                    "example": "Dijon, France"
                 },
                 "education": {
                     "type": "array",
                     "content": [null, null, null],
-                    "instruction": "List the educational background of the contact person"
+                    "instruction": "List the educational background of the contact person",
+                    "example": ["Master's degree in public law", "DESS in Economics", "DEA in Political Science"]
                 },
                 "activities": {
                     "type": "array",
                     "content": [null, null],
-                    "instruction": "List the professional activities of the contact person"
+                    "instruction": "List the professional activities of the contact person",
+                    "example": ["Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"]
                 },
                 "career": {
                     "type": "array",
                     "content": [null, null, null, null],
-                    "instruction": "List the career history of the contact person"
+                    "instruction": "List the career history of the contact person",
+                    "example": [
+    "Chargé de mission to the prefect of the Burgundy region (1979-1981)",
+    "Chargé de mission in the office of Pierre Joxe, then chief of staff to André Billardon, Chairman of the Burgundy Regional Council (1981-1984)",
+    "Chief of Staff to Pierre Joxe, Minister of the Interior and Decentralization (1984-1986)",
+    "General Delegate of the Association of Progressive and Socialist Regional Councils (1986-1988)",
+    "Technical advisor to Pierre Joxe, Minister of the Interior (1988-1991)",
+    "Dijon city councillor (1989-2001)",
+    "Deputy Chief of Staff to Laurent Fabius (1991-1992) and Henri Emmanuelli (1992-1993), Presidents of the French National Assembly",
+    "Sous-préfet hors-cadre on secondment, project manager at the Fondation Jean-Jaurès (1993-1999)",
+    "Burgundy regional councillor (1994-2001)",
+    "PS National Secretary, in charge of organization and coordination (1997-2005)",
+    "Member of the PS national office",
+    "General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008)",
+    "Technical advisor to Jean-Jack Queyranne, Minister for Relations with Parliament (2000-2001)",
+    "Chairman, Dijon Regional Council (2001-2014)",
+    "Mayor of Dijon (2001-2014)",
+    "Vice-Chairman, AMF (Association des maires de France)",
+    "Chairman of the Côte-d'Or Mayors Association (2001-2014)",
+    "PS National Secretary, in charge of coordination (2005-2008)",
+    "Senator for Côte-d'Or (2008-2014)",
+    "Chairman of the Socialist Group in the French Senate (2011-2014)",
+    "Minister of Labor, Employment and Social Dialogue in Manuel Valls' first government (April 2014 to August 2014), then Minister of Labor, Employment, Vocational Training and Social Dialogue (August 2014 to August 2015)",
+    "Chairman of the Communauté d'agglomération, then the Communauté urbaine du Grand Dijon (August 2014-2017)",
+    "Mayor of Dijon (2015-Nov. 2024)",
+    "Chairman, FNSER (Fédération nationale des élus socialistes et républicains) (March 2016-Sept. 2021)"
+  ]
                 }
             }
         ]
@@ -372,34 +457,40 @@
             "date": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the date of the budget data"
+                "instruction": "Enter the date of the budget data",
+                "example": "December 18"
             },
             "year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the fiscal year of the budget"
+                "instruction": "Enter the fiscal year of the budget",
+                "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget amount in euros"
+                "instruction": "Enter the total budget amount in euros",
+                "example": "271.2 million euros"
             }
         },
         "inter_municipality": {
             "date": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the date of the inter-municipality budget data"
+                "instruction": "Enter the date of the inter-municipality budget data",
+                "example": "December 21"
             },
             "year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the fiscal year of the inter-municipality budget"
+                "instruction": "Enter the fiscal year of the inter-municipality budget",
+                "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total inter-municipality budget amount in euros"
+                "instruction": "Enter the total inter-municipality budget amount in euros",
+                "example": "418 million euros"
             }
         }
     },
@@ -408,14 +499,16 @@
             "year": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the year of the financial data"
+                "instruction": "Enter the year of the financial data",
+                "example": "2023"
             }
         },
         "inter_municipality": {
             "year": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the year of the inter-municipality financial data"
+                "instruction": "Enter the year of the inter-municipality financial data",
+                "example": "2023"
             }
         }
     },
@@ -426,104 +519,124 @@
                 "municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the municipality being compared"
+                    "instruction": "Enter the name of the municipality being compared",
+                    "example": "Clermont-Ferrand"
                 },
                 "inter_municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the inter-municipality being compared"
+                    "instruction": "Enter the name of the inter-municipality being compared",
+                    "example": "Clermont Auvergne Metropole"
                 },
                 "population": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the population of the compared municipality"
+                    "instruction": "Enter the population of the compared municipality",
+                    "example": "180975 residents"
                 },
                 "area": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the area of the compared municipality in square kilometers"
+                    "instruction": "Enter the area of the compared municipality in square kilometers",
+                    "example": "43.65 km2"
                 },
                 "data_from_year": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the year of the comparative data"
+                    "instruction": "Enter the year of the comparative data",
+                    "example": "2023"
                 },
                 "total_budget": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget of the compared municipality"
+                    "instruction": "Enter the total budget of the compared municipality",
+                    "example": "120 million euros"
                 },
                 "total_budget_per_person": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget per person of the compared municipality"
+                    "instruction": "Enter the total budget per person of the compared municipality",
+                    "example": "710 €/person"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt repayment capacity of the compared municipality"
+                    "instruction": "Enter the debt repayment capacity of the compared municipality",
+                    "example": "4.2 years"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt ratio of the compared municipality as a percentage"
+                    "instruction": "Enter the debt ratio of the compared municipality as a percentage",
+                    "example": "53%"
                 },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt duration of the compared municipality in years"
+                    "instruction": "Enter the debt duration of the compared municipality in years",
+                    "example": "11.7 years"
                 }
             },
             {
                 "municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the municipality being compared"
+                    "instruction": "Enter the name of the municipality being compared",
+                    "example": "Saint-Denis"
                 },
                 "inter_municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the inter-municipality being compared"
+                    "instruction": "Enter the name of the inter-municipality being compared",
+                    "example": "CA Intercommunale du Nord de la Reunion (CINNOR)"
                 },
                 "population": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the population of the compared municipality"
+                    "instruction": "Enter the population of the compared municipality",
+                    "example": "210167 residents"
                 },
                 "area": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the area of the compared municipality in square kilometers"
+                    "instruction": "Enter the area of the compared municipality in square kilometers",
+                    "example": "46.3 km2" 
                 },
                 "data_from_year": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the year of the comparative data"
+                    "instruction": "Enter the year of the comparative data",
+                    "example": "2023"
                 },
                 "total_budget": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget of the compared municipality"
+                    "instruction": "Enter the total budget of the compared municipality",
+                    "example": "130 million euros"
                 },
                 "total_budget_per_person": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget per person of the compared municipality"
+                    "instruction": "Enter the total budget per person of the compared municipality",
+                    "example": "728 €/person"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt repayment capacity of the compared municipality"
+                    "instruction": "Enter the debt repayment capacity of the compared municipality",
+                    "example": "2.9 years"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt ratio of the compared municipality as a percentage"
+                    "instruction": "Enter the debt ratio of the compared municipality as a percentage",
+                    "example": "48%"
                 },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt duration of the compared municipality in years"
+                    "instruction": "Enter the debt duration of the compared municipality in years",
+                    "example": "10.5 years"
                 }
             }
         ]
