@@ -1,0 +1,430 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Sfil fiche client</title>
+        <meta name="description" content="Sfil fiche client">
+    </head>
+    <body>
+        <div id="header">
+            <div class="title">
+                <div class="municipality-name">{{data.municipality_name.content}}</div>
+                <div class="inter-municipality-name">{{data.inter_municipality_name.content}}</div>
+            </div>
+            <div class="page-info">
+                <div class="date-fiche">Date Fiche</div>
+                <div class="page-number">Page&nbsp;<span class="pageNumber"></span>&nbsp;sur&nbsp;<span class="totalPages"></span></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="logo">
+                <img src="{{data.logo.content}}" alt="Logo">
+            </div>
+
+            <div class="municipality-headline">
+                <h2>{{data.municipality_name.content}}</h2>
+            </div>
+            <div class="summary">
+                <table class="summary-table">
+                    <tr>
+                        <td>Vision récapitulative</td>
+                        <td>Client</td>
+                        <td>Moyenne nationale</td>
+                    </tr>
+                    <tr>
+                        <td>Encours total budget pricipal Ville (<b>{{data.summary.municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.municipality.total_budget.content}}</b>&nbsp;M€ <br>soit <b>{{data.summary.municipality.total_budget_per_person.content}}</b>&nbsp;€/hab</td>
+                        <td><b>1100</b>&nbsp;€/hab</td>
+                    </tr>
+                    <tr>
+                        <td>Capacité de désendettement (<b>{{data.summary.municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.municipality.debt_repayment_capacity.content}}</b>&nbsp;ans</td>
+                        <td><b>5,7</b>&nbsp;ans</td>
+                    </tr>
+                    <tr>
+                        <td>Taux d'endettement (<b>{{data.summary.municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.municipality.debt_ratio.content}}</b>&nbsp;%</td>
+                        <td><b>74</b>&nbsp;%</td>
+                    </tr>
+                    <tr>
+                        <td>Durée apparente de la dette (<b>{{data.summary.municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.municipality.debt_duration.content}}</b>&nbsp;ans</td>
+                        <td><b>10,3</b>&nbsp;ans</td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            <div class="inter-municipality-headline">
+                <h2>{{data.inter_municipality_name.content}}</h2>
+            </div>
+            <div class="summary">
+                <table class="summary-table">
+                    <tr>
+                        <td>Vision récapitulative</td>
+                        <td>Client</td>
+                        <td>Moyenne nationale</td>
+                    </tr>
+                    <tr>
+                        <td>Encours total budget pricipal Ville (<b>{{data.summary.inter_municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.inter_municipality.total_budget.content}}</b>&nbsp;M€ <br>soit <b>{{data.summary.inter_municipality.total_budget_per_person.content}}</b>&nbsp;€/hab</td>
+                        <td><b>1100</b>&nbsp;€/hab</td>
+                    </tr>
+                    <tr>
+                        <td>Capacité de désendettement (<b>{{data.summary.inter_municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.inter_municipality.debt_repayment_capacity.content}}</b>&nbsp;ans</td>
+                        <td><b>5,7</b>&nbsp;ans</td>
+                    </tr>
+                    <tr>
+                        <td>Taux d'endettement (<b>{{data.summary.inter_municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.inter_municipality.debt_ratio.content}}</b>&nbsp;%</td>
+                        <td><b>74</b>&nbsp;%</td>
+                    </tr>
+                    <tr>
+                        <td>Durée apparente de la dette (<b>{{data.summary.inter_municipality.data_from_year.content}}</b>)</td>
+                        <td><b>{{data.summary.inter_municipality.debt_duration.content}}</b>&nbsp;ans</td>
+                        <td><b>10,3</b>&nbsp;ans</td>
+                    </tr>
+                </table>
+            </div>
+
+            <br><br>
+            <div class="list-header-first">
+                <h3>1. Présentation générale</h3>
+            </div>
+            <div class="list-header-second">
+                <h4>1.1. {{data.municipality_name.content}}</h4>
+            </div>
+            <div>Habitants: <b>{{data.summary.municipality.population.content}}</b> ({{data.summary.municipality.data_from_year.content}})</div>
+            <div>Superficie: <b>{{data.summary.municipality.area.content}}</b> km²</div>
+            <div class="list-header-second">
+                <h4>1.2. {{data.inter_municipality_name.content}}</h4>
+            </div>
+            <div>Habitants: <b>{{data.summary.inter_municipality.population.content}}</b> ({{data.summary.inter_municipality.data_from_year.content}})</div>
+            <div>Superficie: <b>{{data.summary.inter_municipality.area.content}}</b> km²</div>
+
+            <table class="milestones-table">
+                {% for milestone in data.summary.inter_municipality.historical_milestones.content %}
+                <tr>
+                    <td>{{milestone.year.content}}</td>
+                    <td>{{milestone.milestone.content}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+            <br><br>
+            <div class="project-headline-green">
+                <h3>PROJETS VERTS</h3>
+            </div>
+            <div class="project-table">
+                <table class="projects">
+                    <tr>
+                        <td colspan="4"><b>{{data.municipality_name.content}}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Identification de dépenses d'investissement éligibles</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Thème</td>
+                        <td>Catégorie de projets</td>
+                        <td>Principaux investissements en montants associés</td>
+                        <td>Libellé politique publique ou budget</td>
+                    </tr>
+                    {% for project in data.projects.municipality.green_projects.content %}
+                    <tr>
+                        <td>{{project.theme.content}}</td>
+                        <td>{{project.category.content}}</td>
+                        <td>{{project.description.content}}</td>
+                        <td>{{project.investment.content}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+                <br><br>
+                <table class="projects">
+                    <tr>
+                        <td colspan="4"><b>{{data.inter_municipality_name.content}}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Identification de dépenses d'investissement éligibles</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Thème</td>
+                        <td>Catégorie de projets</td>
+                        <td>Principaux investissements en montants associés</td>
+                        <td>Libellé politique publique ou budget</td>
+                    </tr>
+                    {% for project in data.projects.inter_municipality.green_projects.content %}
+                    <tr>
+                        <td>{{project.theme.content}}</td>
+                        <td>{{project.category.content}}</td>
+                        <td>{{project.description.content}}</td>
+                        <td>{{project.investment.content}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            <br><br>
+            <div class="project-headline-social">
+                <h3>PROJETS SOCIAUX</h3>
+            </div>
+            <div class="project-table">
+                <table class="projects">
+                    <tr>
+                        <td colspan="4"><b>{{data.municipality_name.content}}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Identification de dépenses d'investissement éligibles</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Thème</td>
+                        <td>Catégorie de projets</td>
+                        <td>Principaux investissements en montants associés</td>
+                        <td>Libellé politique publique ou budget</td>
+                    </tr>
+                    {% for project in data.projects.municipality.social_projects.content %}
+                    <tr>
+                        <td>{{project.theme.content}}</td>
+                        <td>{{project.category.content}}</td>
+                        <td>{{project.description.content}}</td>
+                        <td>{{project.investment.content}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+                <br><br>
+                <table class="projects">
+                    <tr>
+                        <td colspan="4"><b>{{data.inter_municipality_name.content}}</b></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Identification de dépenses d'investissement éligibles</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Thème</td>
+                        <td>Catégorie de projets</td>
+                        <td>Principaux investissements en montants associés</td>
+                        <td>Libellé politique publique ou budget</td>
+                    </tr>
+                    {% for project in data.projects.inter_municipality.social_projects.content %}
+                    <tr>
+                        <td>{{project.theme.content}}</td>
+                        <td>{{project.category.content}}</td>
+                        <td>{{project.description.content}}</td>
+                        <td>{{project.investment.content}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+            <br><br>
+            <div class="list-header-first">
+                <h3>2. Interlocuteurs</h3>
+            </div>
+
+            <table class="contacts-table">
+                {% for contact in data.contacts.content %}
+                <tr>
+                    <td class="contact-name">
+                        {{contact.name.content}}
+                    </td>
+                    <td class="contact-info">
+                        <div class="title-info">
+                            {{contact.title.content}} (depuis {{contact.title_since.content}})
+                        </div>
+                        <div class="birth-info">
+                            Né(e) le {{contact.birth_date.content}} à {{contact.birth_place.content}}
+                        </div>
+                        
+                        <div class="section-title">Formation:</div>
+                        <ul>
+                            {% for education in contact.education.content %}
+                            <li>{{education.content}}</li>
+                            {% endfor %}
+                        </ul>
+
+                        <div class="section-title">Autres activités en cours:</div>
+                        <ul>
+                            {% for activity in contact.activities.content %}
+                            <li>{{activity.content}}</li>
+                            {% endfor %}
+                        </ul>
+
+                        <div class="section-title">Carrière:</div>
+                        <ul>
+                            {% for career_item in contact.career.content %}
+                            <li>{{career_item.content}}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+
+            <br><br>
+            <div class="list-header-first">
+                <h3>3. Budget primitif</h3>
+            </div>
+            <div class="list-header-second">
+                <h4>3.1. {{data.municipality_name.content}}</h4>
+            </div>
+            <div>Le budget primitif a été voté le {{data.budget.municipality.date.content}} et s'élève à <b>{{data.budget.municipality.total_budget}}</b> M€</div>
+            <div class="budget-table">
+                table with all the budget items
+            </div>
+            <div class="list-header-second">
+                <h4>3.2. {{data.inter_municipality_name.content}}</h4>
+            </div>
+            <div>Le budget primitif a été voté le {{data.budget.inter_municipality.date.content}} et s'élève à <b>{{data.budget.inter_municipality.total_budget.content}}</b> M€</div>
+            <div class="budget-table">
+                table with all the budget items
+            </div>
+
+            <br><br>
+            <div class="list-header-first">
+                <h3>4. Situation financière</h3>
+            </div>
+            <div class="list-header-second">
+                <h4>4.1. {{data.municipality_name.content}}</h4>
+            </div>
+            <table class="financial-table">
+                <tr class="header">
+                    <th>Principaux indicateurs</th>
+                    <th>{{data.municipality_name.content}}</th>
+                    <th>Moyenne nationale</th>
+                </tr>
+                <tr>
+                    <td>Épargne de gestion en €/hab</td>
+                    <td>{{data.financial_data.municipality.management_savings_per_capita.content}}</td>
+                    <td>215</td>
+                </tr>
+                <tr>
+                    <td>Épargne brute en €/hab</td>
+                    <td>{{data.financial_data.municipality.gross_savings_per_capita.content}}</td>
+                    <td>193</td>
+                </tr>
+                <tr>
+                    <td>Épargne nette en €/hab</td>
+                    <td>{{data.financial_data.municipality.net_savings_per_capita.content}}</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td>Taux d'épargne de gestion (EG/RG)</td>
+                    <td>{{data.financial_data.municipality.management_savings_ratio.content}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Taux d'épargne brute (EB HC/RF HC)</td>
+                    <td>{{data.financial_data.municipality.gross_savings_ratio.content}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Taux d'épargne nette (EN HC/RF HC)</td>
+                    <td>{{data.financial_data.municipality.net_savings_ratio.content}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Annuité/Recettes de fonctionnement HC</td>
+                    <td>{{data.financial_data.municipality.debt_service_to_operating_revenue_ratio.content}}</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <br><br>
+            <div class="list-header-second">
+                <h4>4.2. {{data.inter_municipality_name.content}}</h4>
+            </div>
+            <table class="financial-table">
+                <tr class="header">
+                    <th>Principaux indicateurs</th>
+                    <th>{{data.inter_municipality_name.content}}</th>
+                    <th>Moyenne nationale</th>
+                </tr>
+                <tr>
+                    <td>Épargne de gestion en €/hab</td>
+                    <td>{{data.financial_data.inter_municipality.management_savings_per_capita.content}}</td>
+                    <td>215</td>
+                </tr>
+                <tr>
+                    <td>Épargne brute en €/hab</td>
+                    <td>{{data.financial_data.inter_municipality.gross_savings_per_capita.content}}</td>
+                    <td>193</td>
+                </tr>
+                <tr>
+                    <td>Épargne nette en €/hab</td>
+                    <td>{{data.financial_data.inter_municipality.net_savings_per_capita.content}}</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td>Taux d'épargne de gestion (EG/RG)</td>
+                    <td>{{data.financial_data.inter_municipality.management_savings_ratio.content}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Taux d'épargne brute (EB HC/RF HC)</td>
+                    <td>{{data.financial_data.inter_municipality.gross_savings_ratio.content}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Taux d'épargne nette (EN HC/RF HC)</td>
+                    <td>{{data.financial_data.inter_municipality.net_savings_ratio.content}}</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Annuité/Recettes de fonctionnement HC</td>
+                    <td>{{data.financial_data.inter_municipality.debt_service_to_operating_revenue_ratio.content}}</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <br><br>
+            <div class="list-header-first">
+                <h3>5. Comparatif du client rencontré avec des comparables</h3>
+            </div>
+            <div class="comparative-data-table">
+                <table class="comparative-table">
+                    <thead>
+                        <tr>
+                            <th>Commune</th>
+                            <th>Intercommunalité</th>
+                            <th>Habitants</th>
+                            <th>Superficie</th>
+                            <th>Vision récapitulative</th>
+                            <th>Client</th>
+                            <th>Moyenne nationale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in data.comparative_data.content %}
+                        <tr>
+                            <td rowspan="4">{{item.municipality.content}}</td>
+                            <td rowspan="4">{{item.inter_municipality.content}}</td>
+                            <td rowspan="4">{{item.population.content}}</td>
+                            <td rowspan="4">{{item.area.content}}</td>
+                            <td>Encours total budget principal Ville ({{item.data_from_year.content}})</td>
+                            <td>{{item.total_budget.content}} M€<br>soit {{item.total_budget_per_person.content}} €/hab</td>
+                            <td>1100 €/hab</td>
+                        </tr>
+                        <tr>
+                            <td>Capacité de désendettement ({{item.data_from_year.content}})</td>
+                            <td>{{item.debt_repayment_capacity.content}} ans</td>
+                            <td>5,7 ans</td>
+                        </tr>
+                        <tr>
+                            <td>Taux d'endettement ({{item.data_from_year.content}})</td>
+                            <td>{{item.debt_ratio.content}} %</td>
+                            <td>74 %</td>
+                        </tr>
+                        <tr>
+                            <td>Durée apparente de la dette ({{item.data_from_year.content}})</td>
+                            <td>{{item.debt_duration.content}} ans</td>
+                            <td>10,3 ans</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica');
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+@page {
+    size: A4;
+    margin: 3.9cm 1.8cm 2cm 1.8cm;
+    counter-increment: page;
+    @top-center {
+        content: element(header);
+        width: 100%;
+        border: 2px solid #162B8D;
+        margin-top: .9cm;
+        margin-bottom: .5cm;
+    }
+}
+
+.pageNumber::before {
+    content: counter(page);
+}
+
+.totalPages::before {
+    content: counter(pages);
+}
+
+#header {
+    position: running(header);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #162B8D;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid #162B8D;
+    font-size: 1.5em;
+}
+
+.municipality-name {
+    padding-bottom: 5px;
+}
+
+.page-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.page-info > * {
+    height: 30px;
+    width: 100px;
+    border-left: 2px solid #162B8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.municipality-headline {
+    color: #162B8D;
+}
+
+.inter-municipality-headline {
+    color: #162B8D;
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.summary-table td:nth-child(1) {
+    width: 50%;
+}
+
+.summary-table td:nth-child(2) {
+    width: 30%;
+}
+
+.summary-table td:nth-child(3) {
+    width: 20%;
+}
+
+.summary-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    height: 20px;
+}
+
+.summary-table tr:first-child td {
+    background-color: #03ACB1;
+    font-weight: bolder;
+    color: white;
+}
+
+.list-header-first {
+    color: #162B8D;
+}
+
+.list-header-second {
+    color: #162B8D;
+}
+
+.milestones-table {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.milestones-table td:first-child {
+    width: 10%;
+}
+
+.milestones-table td:last-child {
+    width: 90%;
+}
+
+.project-headline-green {
+    color: #00AF50;
+    text-align: center;
+}
+
+.projects {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.projects td {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.projects tr:first-child td,
+.projects tr:nth-child(2) td {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.projects tr:first-child td {
+    font-size: 16px;
+}
+
+.projects tr.header td {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projects td:nth-child(1) {
+    width: 15%;
+}
+
+.projects td:nth-child(2) {
+    width: 20%;
+}
+
+.projects td:nth-child(3) {
+    width: 50%;
+}
+
+.projects td:nth-child(4) {
+    width: 15%;
+}
+
+.project-headline-social {
+    color: #7031A0;
+    text-align: center;
+}
+
+.contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.contacts-table td {
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.contact-name {
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-info {
+    width: 80%;
+}
+
+.title-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.birth-info {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contact-info ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 5px;
+}
+
+.budget-table {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 10px;
+    display: flex; /* needs to go later */
+    justify-content: center; /* needs to go later */
+    align-items: center; /* needs to go later */
+}
+
+.comparative-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.comparative-table th,
+.comparative-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.comparative-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.financial-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.financial-table th,
+.financial-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.financial-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.financial-table td:first-child {
+    width: 50%;
+    text-align: left;
+}
+
+.financial-table td:nth-child(2),
+.financial-table td:nth-child(3) {
+    width: 25%;
+}
