@@ -243,8 +243,8 @@ class Orchestrator:
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
-        #self.process_summary_fields(inter=False)
-        #self.process_summary_fields(inter=True)
+        self.process_summary_fields(inter=False)
+        self.process_summary_fields(inter=True)
         self.process_projects_fields(inter=False)
         self.process_projects_fields(inter=True)
 
