@@ -7,13 +7,12 @@ export const useMunicipalitiesStore = defineStore('municipalities', {
   }),
   actions: {
     initializeMunicipalities() {
-      this.municipalities = records.results
+      this.municipalities = records
     }
   },
   getters: {
     getMunicipalitiesForSelect: (state) => {
       return state.municipalities
-        .slice(0, 100)
         .map(municipality => ({
           code: municipality.com_code,
           name: municipality.com_name,
