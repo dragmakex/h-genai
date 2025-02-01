@@ -1,5 +1,5 @@
 from haystack.components.websearch import SerperDevWebSearch
-from haystack.utils import Secret
+# from haystack.utils import Secret
 
 from typing import Annotated, List
 from dotenv import load_dotenv
