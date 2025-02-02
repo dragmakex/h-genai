@@ -60,7 +60,7 @@ The project is organized into two main components:
   - `tools.py`: Tool implementations for agents
   - `prompt.py`: LLM prompt templates
   - `rag_pipeline.py`: Document retrieval system
-  - `util.py`: Utility functions
+  - `util.py`: Utility functions for querying the OFGL API
 - `api/`: FastAPI server implementation
 - `template/`: PDF report templates
 - `tests/`: Test suite
@@ -101,3 +101,8 @@ The project is organized into two main components:
 ## Useful commands
 
 ### Deploying changes to AWS Lambda (sample command)
+```bash
+cd server && docker build -t h-genai-server . && docker tag h-genai-server:latest 140023381458.dkr.ecr.us-west-2.amazonaws.com/
+h-genai-server:latest && docker push 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest && aws lambda 
+update-function-code --function-name h-genai-server --image-uri 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest
+```
