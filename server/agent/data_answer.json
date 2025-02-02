@@ -1,68 +1,68 @@
 {
     "municipality_name": {
         "type": "string",
-        "content": null,
+        "content": "Dijon",
         "instruction": "Enter the name of the municipality",
         "example": "Dijon"
     },
     "inter_municipality_name": {
         "type": "string",
-        "content": null,
+        "content": "Dijon Metropole",
         "instruction": "Enter the name of the inter-municipality organization",
         "example": "Dijon Métropole"
     },
     "logo": {
         "type": "string",
-        "content": null,
-        "instruction": "Provide the URL or path to the municipality logo"
+        "content": "https://upload.wikimedia.org/wikipedia/fr/2/2f/Logo_Dijon.svg",
+        "instruction": "Provide the URL or path to the municipality logo. DO NOT HALUCINATE A URL, provide a real image url that you found on the internet!"
     },
     "summary": {
         "municipality": {
             "population": {
                 "type": "number",
-                "content": null,
+                "content": 162454,
                 "instruction": "Enter the total population of the municipality",
                 "example": "159346 residents"
             },
             "area": {
                 "type": "number",
-                "content": null,
+                "content": "40.41 km²",
                 "instruction": "Enter the total area of the municipality in square kilometers",
                 "example": "40.40 km2"
             },
             "data_from_year": {
                 "type": "number",
-                "content": null,
+                "content": 2023,
                 "instruction": "Enter the year from which this data was collected",
                 "example": 2023
             },
             "total_budget": {
                 "type": "number",
-                "content": null,
+                "content": 110284094.09,
                 "instruction": "Enter the total budget of the municipality in euros",
                 "example": "110 million euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": null,
+                "content": 678.8635188422569,
                 "instruction": "Enter the total budget per person in euros",
                 "example": "679 €/person"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": null,
+                "content": 3.421998298410285,
                 "instruction": "Enter the debt repayment capacity as a ratio",
                 "example": "3.4 years"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": null,
+                "content": 53.34297830381788,
                 "instruction": "Enter the debt ratio as a percentage",
                 "example": "51%"
             },
             "debt_duration": {
                 "type": "number",
-                "content": null,
+                "content": 10.111153565438771,
                 "instruction": "Enter the debt duration in years",
                 "example": "10.1 years"
             }
@@ -70,49 +70,49 @@
         "inter_municipality": {
             "population": {
                 "type": "number",
-                "content": null,
+                "content": 261901,
                 "instruction": "Enter the total population of the inter-municipality",
                 "example": "257193 residents"
             },
             "area": {
                 "type": "number",
-                "content": null,
+                "content": "240 km²",
                 "instruction": "Enter the total area of the inter-municipality in square kilometers",
                 "example": "240 km2"
             },
             "data_from_year": {
                 "type": "number",
-                "content": null,
+                "content": 2023,
                 "instruction": "Enter the year from which this data was collected",
                 "example": 2021
             },
             "total_budget": {
                 "type": "number",
-                "content": null,
+                "content": 413830553.89,
                 "instruction": "Enter the total budget of the inter-municipality in euros",
                 "example": "257 million euros"
             },
             "total_budget_per_person": {
                 "type": "number",
-                "content": null,
+                "content": 1580.1029926957133,
                 "instruction": "Enter the total budget per person in euros",
                 "example": "968 €/person"
             },
             "debt_repayment_capacity": {
                 "type": "number",
-                "content": null,
+                "content": 3.0684359671662658,
                 "instruction": "Enter the debt repayment capacity as a ratio",
                 "example": "2.7 years"
             },
             "debt_ratio": {
                 "type": "number",
-                "content": null,
+                "content": 63.18780497901272,
                 "instruction": "Enter the debt ratio as a percentage",
                 "example": "71%"
             },
             "debt_duration": {
                 "type": "number",
-                "content": null,
+                "content": 9.12922133359339,
                 "instruction": "Enter the debt duration in years",
                 "example": "8.7 years"
             },
@@ -122,13 +122,13 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": null,
+                            "content": "1966",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone",
                             "example": 1957
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null,
+                            "content": "Creation of the Urban Community of Greater Dijon (Communauté urbaine du Grand Dijon)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -136,13 +136,13 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": null,
+                            "content": "2015",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone",
                             "example": 1999
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null,
+                            "content": "Transformation into Urban Community (Communauté Urbaine du Grand Dijon)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -150,13 +150,13 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": null,
+                            "content": "2017",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone",
                             "example": 2012
                         },
                         "milestone": {
                             "type": "string",
-                            "content": null,
+                            "content": "Transformation into Metropolis (Dijon Métropole)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event",
                             "example": "Creation de Dijon Métropole avec 23 communes"
                         }
@@ -174,25 +174,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Based on this result, for the theme of the first green project in Dijon:\n\nHydrogen mobility",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project",
                             "example": "Renewable energies"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Based on the previous search results about Dijon's green hydrogen initiative:\n\nGreen transportation",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project",
                             "example": "Solar energy"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "€100 million green hydrogen station project launched June 2024, producing 430 kg hydrogen daily to power city buses and waste collection vehicles, reducing CO2 emissions by 1,200 tonnes annually",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "100 million euros",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
@@ -200,25 +200,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Smart city management",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the environmental theme of the project",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Urban digitalization",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "OnDijon smart city project with centralized control center managing 34,000 LED lights, 140km fiber optics, and 180 connected buildings, targeting 65% energy savings",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "105 million euros",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
@@ -226,25 +226,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Sustainable food systems",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Urban agriculture",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "Sustainable food program for 2030 featuring urban farming in 60% of city projects, vertical farms, and green roofs that absorb 50% of rainwater",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "unknown",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
@@ -258,13 +258,13 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Based on the information I found: \n\nVocational education and training",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Financing educational establishments (schools, colleges, lycées...)",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the category of the social project",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
@@ -344,25 +344,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Based on the search results, for the waste management and recovery theme:\n\nWaste management and recovery",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the environmental theme of the project",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M, deployment of hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy), modernization of the sorting center (€2 million in 2024 and a PPI total of €29 million), project to modernize the waste-to-energy plant.",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "29 million euros",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
@@ -370,25 +370,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Water management and ecological transition",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Water and wastewater services management",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "Odivea public-private partnership created in 2021, serving 220,000 inhabitants across 15 towns, aims for 90% network efficiency saving 6.2 million m3 water in 9 years, includes 35,000 smart water meters, new 15,000 m3 storage basin, and will produce 10 GWh of biomethane annually through wastewater treatment.",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "100 million euros",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
@@ -396,25 +396,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Clean mobility and hydrogen energy",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Sustainable transportation and renewable energy infrastructure",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "Dijon Métropole Smart EnergHy project includes two hydrogen stations (400kg/day each), 1 MW electrolyzer powered 90% by waste incineration, fleet of 27 buses, 9 garbage trucks, 15 light vehicles initially, expanding to 200 buses by 2030, will reduce CO2 emissions by 2,500 tons annually.",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "unknown",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
@@ -428,25 +428,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Based on this first search, I'll provide:\n\nSport, culture and associations",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the social theme of the project",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "Renovation of the Carrousel swimming pool",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "Based on the previous search results:\n\n20.7 million euros",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
@@ -454,25 +454,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Sustainable development and energy transition",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the social theme of the project",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Green hydrogen transportation project",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "Green hydrogen fleet conversion project: conversion of municipal buses and waste collection vehicles to hydrogen power by 2035",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "100 million euros",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
@@ -480,25 +480,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": null,
+                            "content": "Housing and urban development",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Name the social theme of the project",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": null,
+                            "content": "Positive energy social housing project",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Name the category of the social project",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": null,
+                            "content": "Avenue 6 Project: 51 positive energy social housing units designed to produce more energy than consumed",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
-                            "content": null,
+                            "content": "unknown",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
@@ -514,148 +514,105 @@
             {
                 "name": {
                     "type": "string",
-                    "content": "Antoine Hoareau",
-                    "instruction": "Enter the full name of the contact person",
+                    "content": "Nathalie Koenders",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the full name of the first contact person. Answer with just the name, without any explanation or excuse.",
                     "example": "Nathalie KOENDERS"
                 },
                 "title": {
                     "type": "string",
                     "content": "Mayor of Dijon (since 2024)",
-                    "instruction": "Enter the professional title of the contact person",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the professional title of the first contact person. Answer with max 5 words, without any explanation or excuse.",
                     "example": "Mayor of Dijon"
                 },
                 "title_since": {
                     "type": "string",
                     "content": "November 25, 2024",
-                    "instruction": "Enter the date when the person started in this title",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the date when the first person started in this title. Answer with just the date, without any explanation or excuse.",
                     "example": "November 25, 2024"
                 },
                 "birth_date": {
                     "type": "string",
                     "content": "March 1, 1977",
-                    "instruction": "Enter the birth date of the contact person",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the birth date of the first contact person. Answer with just the date, without any explanation or excuse.",
                     "example": "March 1, 1977"
                 },
                 "birth_place": {
                     "type": "string",
                     "content": "Rennes, France",
-                    "instruction": "Enter the birth place of the contact person",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the birth place of the first contact person. Answer with just the place, without any explanation or excuse.",
                     "example": "Rennes, France"
                 },
                 "education": {
-                    "type": "array",
-                    "content": "[\"Scientific baccalaureate, Charles-de-Gaulle high school\", \"Master's degree in sports management and law, University of Burgundy (1999)\", \"Bachelor's degree in public law\", \"Preparatory cycle, École Nationale d'Administration (ENA), Institut d'études politiques de Lille and IGPDE (2006)\"]",
-                    "instruction": "List the educational background of the contact person",
-                    "example": [
-                        "Master's degree in public law and sports management from the University of Burgundy (1999)",
-                        "Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005)",
-                        "Institute for Public Management and Economic Development (IGPDE) (2006)"
-                    ]
+                    "type": "string",
+                    "content": "STAPS degree and Public Law License from University of Burgundy, ENA preparatory exam (2006)",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the educational background of the first contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Master's degree in public law and sports management from the University of Burgundy (1999), Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005), Institute for Public Management and Economic Development (IGPDE) (2006)"
                 },
                 "activities": {
-                    "type": "array",
-                    "content": "[\"Mayor of Dijon (since 2024)\", \"First Vice-President of Dijon Metropolis\", \"Member of the Departmental Council of Côte-d'Or (since 2015)\"]",
-                    "instruction": "List the professional activities of the contact person",
-                    "example": [
-                        "1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"
-                    ]
+                    "type": "string",
+                    "content": "First Vice-President of Dijon Métropole (mobility, cycling, European Green Capital), Departmental Councillor for Côte-d'Or (since 2015)",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the professional activities of the first contact person. Be as brief, conscise and specific as possible.",
+                    "example": "1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"
                 },
                 "career": {
-                    "type": "array",
-                    "content": "[\"French national canoë-kayak team member (1992-2001)\", \"French champion in K1 canoë-kayak (1998)\", \"Civil servant, Ministry of Youth and Sports (2001)\", \"Member of Departmental Council of Côte-d'Or (since 2015)\", \"Acting Mayor of Dijon (July-August 2015)\", \"Interim president of Dijon (2018)\", \"First Deputy Mayor (until 2024)\", \"Mayor of Dijon (since 2024)\"]",
-                    "instruction": "List the career history of the contact person",
-                    "example": [
-                        "Former French champion in 5,000 m canoe-kayak (1998)",
-                        "Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014)",
-                        "Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014)",
-                        "1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024)",
-                        "Acting Mayor of Dijon (July 27-August 10, 2015)"
-                    ]
+                    "type": "string",
+                    "content": "Departmental Councillor of Côte-d'Or (since 2015), Acting Mayor (July-August 2015), First Deputy Mayor (2015-2024), Mayor (since 2024)",
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the career history of the first contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Former French champion in 5,000 m canoe-kayak (1998), Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014), Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014), 1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024), Acting Mayor of Dijon (July 27-August 10, 2015)"
                 }
             },
             {
                 "name": {
                     "type": "string",
-                    "content": "Nathalie Koenders",
-                    "instruction": "Enter the full name of the contact person",
+                    "content": "François Rebsamen",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the full name of the second contact person. Answer with just the name, without any explanation or excuse.",
                     "example": "Francois REBSAMEN"
                 },
                 "title": {
                     "type": "string",
-                    "content": "Mayor of Dijon",
-                    "instruction": "Enter the professional title of the contact person",
+                    "content": "President of Dijon Métropole",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the professional title of the second contact person. Answer with max 5 words, without any explanation or excuse.",
                     "example": "Chairman of the Dijon Metropolitan Council"
                 },
                 "title_since": {
                     "type": "string",
-                    "content": "November 25, 2024",
-                    "instruction": "Enter the date when the person started in this title",
+                    "content": "2001",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the date when the second person started in this title. Answer with just the date, without any explanation or excuse.",
                     "example": "2017"
                 },
                 "birth_date": {
                     "type": "string",
-                    "content": "unknown",
-                    "instruction": "Enter the birth date of the contact person",
+                    "content": "June 25, 1951",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth date of the second contact person. Answer with just the date, without any explanation or excuse.",
                     "example": "June 25, 1951"
                 },
                 "birth_place": {
                     "type": "string",
-                    "content": "unknown",
-                    "instruction": "Enter the birth place of the contact person",
+                    "content": "Dijon, France",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth place of the second contact person. Answer with just the Place, without any explanation or excuse.",
                     "example": "Dijon, France"
                 },
                 "education": {
-                    "type": "array",
-                    "content": "unknown",
-                    "instruction": "List the educational background of the contact person",
-                    "example": [
-                        "Master's degree in public law",
-                        "DESS in Economics",
-                        "DEA in Political Science"
-                    ]
+                    "type": "string",
+                    "content": "Master's in Public Law, DESS in Economics, Degree in Political Science",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the educational background of the second contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Master's degree in public law, DESS in Economics, DEA in Political Science"
                 },
                 "activities": {
-                    "type": "array",
-                    "content": "[\"Mayor of Dijon (since 2024)\", \"First Vice-President of Dijon Metropolis\", \"Member of the Departmental Council of Côte-d'Or (since 2015)\"]",
-                    "instruction": "List the professional activities of the contact person",
-                    "example": [
-                        "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
-                    ]
+                    "type": "string",
+                    "content": "Minister for Territorial Development (since 2024), President of Cités Unies France (since 2020)",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the professional activities of the second contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
                 },
                 "career": {
-                    "type": "array",
-                    "content": "[\"First Deputy Mayor of Dijon (2015-2024)\", \"Interim Mayor of Dijon (July-August 2015)\", \"Member of the Departmental Council of Côte-d'Or (since 2015)\", \"Mayor of Dijon (since November 25, 2024)\"]",
-                    "instruction": "List the career history of the contact person",
-                    "example": [
-                        "Chargé de mission to the prefect of the Burgundy region (1979-1981)",
-                        "Chargé de mission in the office of Pierre Joxe, then chief of staff to André Billardon, Chairman of the Burgundy Regional Council (1981-1984)",
-                        "Chief of Staff to Pierre Joxe, Minister of the Interior and Decentralization (1984-1986)",
-                        "General Delegate of the Association of Progressive and Socialist Regional Councils (1986-1988)",
-                        "Technical advisor to Pierre Joxe, Minister of the Interior (1988-1991)",
-                        "Dijon city councillor (1989-2001)",
-                        "Deputy Chief of Staff to Laurent Fabius (1991-1992) and Henri Emmanuelli (1992-1993), Presidents of the French National Assembly",
-                        "Sous-préfet hors-cadre on secondment, project manager at the Fondation Jean-Jaurès (1993-1999)",
-                        "Burgundy regional councillor (1994-2001)",
-                        "PS National Secretary, in charge of organization and coordination (1997-2005)",
-                        "Member of the PS national office",
-                        "General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008)",
-                        "Technical advisor to Jean-Jack Queyranne, Minister for Relations with Parliament (2000-2001)",
-                        "Chairman, Dijon Regional Council (2001-2014)",
-                        "Mayor of Dijon (2001-2014)",
-                        "Vice-Chairman, AMF (Association des maires de France)",
-                        "Chairman of the Côte-d'Or Mayors Association (2001-2014)",
-                        "PS National Secretary, in charge of coordination (2005-2008)",
-                        "Senator for Côte-d'Or (2008-2014)",
-                        "Chairman of the Socialist Group in the French Senate (2011-2014)",
-                        "Minister of Labor, Employment and Social Dialogue in Manuel Valls' first government (April 2014 to August 2014), then Minister of Labor, Employment, Vocational Training and Social Dialogue (August 2014 to August 2015)",
-                        "Chairman of the Communauté d'agglomération, then the Communauté urbaine du Grand Dijon (August 2014-2017)",
-                        "Mayor of Dijon (2015-Nov. 2024)",
-                        "Chairman, FNSER (Fédération nationale des élus socialistes et républicains) (March 2016-Sept. 2021)"
-                    ]
+                    "type": "string",
+                    "content": "Regional Council of Burgundy Chief of Staff (1979-1983), Chief of Staff for Pierre Joxe (1984-1991), PS National Secretary (1997), General Councillor Côte-d'Or (1998-2008), Mayor of Dijon (2001-2014, 2015-2024), Senator (2008-2014), Minister of Labor (2014-2015), Minister for Territorial Development (since 2024)",
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the career history of the second contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Burgundy regional councillor (1994-2001), PS National Secretary, in charge of organization and coordination (1997-2005), General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008), Mayor of Dijon (2001-2024)"
                 }
             }
         ],
-        "instruction": "Find to contacts for the municipalities and their details. Give the answer as short as possible, idealy only a few words."
+        "instruction": "Find two contacts (e.g. the mayor of the municipality and the chairman of the inter-municipality) for the municipalities and their details. Give the answer as short as possible, idealy only a few words. Try to search for the individual contact persons after identifying them and then parse the specific informations from the search result."
     },
     "budget": {
         "municipality": {

@@ -4,7 +4,8 @@ from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage, ChatRole
 from agents import Agent, ToolCallingAgent
 from tools import *
-from prompt import tool_agent_instructions, tool_agent_prompt, contact_agent_prompt
+from concurrent.futures import ThreadPoolExecutor
+from prompt import tool_agent_instructions, tool_agent_prompt, contact_agent_prompt, logo_agent_prompt
 from util import get_commune_finances_by_siren, get_epci_finances_by_code
 api_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
 
@@ -92,6 +93,34 @@ class Orchestrator:
             }
             for msg in self.conversation_history[conversation_id]
         ]
+    
+    def process_logo_field(self) -> None:
+        conversation_id = "logo_retrieval"
+        if conversation_id not in self.conversation_history:
+            self.conversation_history[conversation_id] = []
+        # Create a prompt based on the field and append it to the messages
+        prompt = logo_agent_prompt.format(name=self.municipality_name)
+        self.conversation_history[conversation_id].append(ChatMessage.from_user(prompt))
+        # print(self.conversation_history[conversation_id][-1])
+        
+        # Get response from agent and extend the conversation history with the response
+        response = self.tool_agent.run(self.conversation_history[conversation_id])
+        self.conversation_history[conversation_id].extend(response)
+        #print(self.conversation_history[conversation_id][-1])
+
+        # We call the agent again to get the final reply after the tool executions
+        final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
+        self.conversation_history[conversation_id].extend(final_reply)
+        # print(self.conversation_history[conversation_id][-1])
+
+        # Store the response
+        self.data['logo']['content'] = self.conversation_history[conversation_id][-1].text if final_reply else "unknown"
+
+        print("--------------------------------")
+        print(self.conversation_history[conversation_id])
+        print("--------------------------------")
+
+        return ""
 
     def process_summary_fields(self, inter=False) -> None:
         """Process fields from the summary section"""
@@ -270,13 +299,12 @@ class Orchestrator:
             type=fields['type'],
             example=""
         )
+        conversation_id = "contacts"
+        if conversation_id not in self.conversation_history:
+            self.conversation_history[conversation_id] = []
         
         # Process each item in the array sequentially
         for idx, item in enumerate(fields['content']):
-            conversation_id = f"contact_{idx + 1}"
-            if conversation_id not in self.conversation_history:
-                self.conversation_history[conversation_id] = []
-
             for subfield, subvalue in item.items():                       
                 # Create prompt for this specific array item
                 item_prompt = contact_agent_prompt.format(municipality=self.municipality_name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=subvalue['example'])
@@ -303,11 +331,44 @@ class Orchestrator:
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
-        #self.process_summary_fields(inter=False)
-        #self.process_summary_fields(inter=True)
+        self.process_logo_field()
+        self.process_summary_fields(inter=False)
+        self.process_summary_fields(inter=True)
         self.process_projects_fields(inter=False)
         self.process_projects_fields(inter=True)
-        #self.process_contact_fields()
+        self.process_contact_fields()
+
+        # Save to answer.json
+        try:
+            with open('data_answer.json', 'w', encoding='utf-8') as file:
+                json.dump(self.data, file, indent=4, ensure_ascii=False)
+        except Exception as e:
+            print(f"Error saving to answer.json: {e}")
+        
+        return self.data
+    
+    def parallel_process_all_sections(self) -> Dict[str, Any]:
+        """Process all fields in data_template.json and save results to data_answer.json"""
+        # Define the tasks we want to run in parallel
+        tasks = [
+            (self.process_logo_field, ()),
+            (self.process_summary_fields, (False,)),
+            (self.process_summary_fields, (True,)),
+            (self.process_projects_fields, (False,)),
+            (self.process_projects_fields, (True,)),
+            (self.process_contact_fields, ())
+        ]
+        
+        # Run tasks in parallel
+        with ThreadPoolExecutor(max_workers=6) as executor:
+            futures = [executor.submit(func, *args) for func, args in tasks]
+            
+            # Wait for all tasks to complete
+            for future in futures:
+                try:
+                    future.result()
+                except Exception as e:
+                    print(f"Error in parallel execution: {e}")
 
         # Save to answer.json
         try:
@@ -325,4 +386,4 @@ class city_info():
     inter_municipality_code = 242100410
 
 test_orchestrator = Orchestrator(city_info)
-test_orchestrator.process_all_sections()
+test_orchestrator.parallel_process_all_sections()
