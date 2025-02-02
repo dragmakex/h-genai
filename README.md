@@ -3,6 +3,7 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Key Features](#key-features)
+  - [Preview](#preview)
   - [Financial Analysis](#financial-analysis)
   - [Data Sources](#data-sources)
   - [Architecture](#architecture)
@@ -32,6 +33,11 @@
 This project provides a comprehensive data collection and analysis system for French municipalities and their inter-municipal organizations (EPCIs). It combines financial data from the OFGL (Observatoire des Finances et de la Gestion publique Locales) API with AI-powered web research to create detailed municipality profiles.
 
 ## Key Features
+
+- **Preview**: A glimpse of the application interface:
+<div align="center">
+  <img src="h-genai/web-app/src/assets/images/screenshot.png" alt="H-GenAI Application Preview" width="800px">
+</div>
 
 - **Financial Analysis**: Detailed financial metrics for both municipalities and EPCIs including:
   - Budget analysis and debt metrics
@@ -137,8 +143,7 @@ The data processing workflow:
 
 ## Useful commands
 
-### Deploying changes to AWS Lambda (sample command)
-```bash
+### Deploying changes to AWS Lambda (sample command)```bash
 cd server && docker build -t h-genai-server . && docker tag h-genai-server:latest 140023381458.dkr.ecr.us-west-2.amazonaws.com/
 h-genai-server:latest && docker push 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest && aws lambda 
 update-function-code --function-name h-genai-server --image-uri 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest
@@ -242,8 +247,6 @@ npm run test
    - Follow Vue's testing best practices
 
 ## Team
-
-Our team of developers and researchers:
 
 <div align="center">
   <img src="docs/assets/team.jpg" alt="H-GenAI Team" width="600px">
