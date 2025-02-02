@@ -115,7 +115,7 @@ def _process_financial_results(results: List[Dict[str, Any]], year: str, is_comm
         'inter_municipality': basic_info['epci_name'],
         'population': basic_info['ptot'],
         'data_from_year': int(year),
-        'total_budget': round(total_budget),
+        'total_budget': round(total_budget / 1_000_000),
         'total_budget_per_person': round(total_budget_per_person),
         'debt_repayment_capacity': round(total_budget / gross_savings, 1) if gross_savings != 0 else None,
         'debt_ratio': round((total_budget / operating_revenue * 100), 2) if operating_revenue != 0 else None,
