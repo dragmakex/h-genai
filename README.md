@@ -8,6 +8,8 @@ This project provides a comprehensive data collection and analysis system for Fr
 
 Click for a [VIDEO DEMO](https://youtu.be/6UeDz4PCt1w) on YouTube.
 
+To test the App go to [https://aws-deployment.d5glcpyeyb6n5.amplifyapp.com/](https://aws-deployment.d5glcpyeyb6n5.amplifyapp.com/)
+
 ## Table of Contents
 - [Key Features](#key-features)
   - [Financial Analysis](#financial-analysis)
