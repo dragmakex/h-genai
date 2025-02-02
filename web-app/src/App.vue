@@ -2,7 +2,6 @@
 import SfilLogo from '@/assets/images/Sfil-Logo.png'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
-import pdfTemplate from '@/assets/template.pdf'
 import {
   Command,
   CommandEmpty,
@@ -50,6 +49,7 @@ const progressMessages = ref([
 
 const error = ref(null)
 const gotResult = ref(false)
+const pdfUrl = ref(null)
 
 const handleGenerate = async () => {
   isGenerating.value = true
@@ -59,35 +59,47 @@ const handleGenerate = async () => {
   
   const progressInterval = setInterval(() => {
     let increment
-    if (progress.value < 30) {
-      increment = Math.random() * 2 + 1
-    } else if (progress.value < 60) {
-      increment = Math.random() * 1.5 + 0.5
-    } else {
+    if (progress.value < 20) {
+      increment = Math.random() * 0.8 + 0.2
+    } else if (progress.value < 40) {
       increment = Math.random() * 0.5 + 0.1
+    } else if (progress.value < 60) {
+      increment = Math.random() * 0.3 + 0.05
+    } else if (progress.value < 80) {
+      increment = Math.random() * 0.2 + 0.02
+    } else {
+      increment = Math.random() * 0.1 + 0.01
     }
     
-    if (progress.value > 40 && Math.random() < 0.1) {
+    if (Math.random() < 0.2) {
       return
     }
     
-    progress.value = Math.min(95, progress.value + increment)
-  }, 100)
+    progress.value = Math.min(90, progress.value + increment)
+  }, 200)
 
   try {
-    const response = await fetch('http://localhost:8000/test', {
+    const response = await fetch('https://kbba87ikh5.execute-api.us-west-2.amazonaws.com/generate-pdf', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        siren: userSelectionStore.selected_siren
+        siren: userSelectionStore.selected_siren,
+        municipality_name: userSelectionStore.selected_municipality,
+        municipality_code: userSelectionStore.selected_municipality_code,
+        inter_municipality_name: userSelectionStore.selected_inter_municipality,
+        inter_municipality_code: userSelectionStore.selected_inter_municipality_code,
+        reference_sirens: userSelectionStore.selected_reference_sirens
       })
     })
 
     if (!response.ok) {
       throw new Error('Erreur lors de la génération du PDF')
     }
+
+    const blob = await response.blob()
+    pdfUrl.value = URL.createObjectURL(blob)
 
     progress.value = 100
     
@@ -98,10 +110,16 @@ const handleGenerate = async () => {
       gotResult.value = true
     }, 1000)
 
-  } catch (error) {
-    console.error('Erreur:', error)
+  } catch (err) {
+    console.error('Erreur:', err)
     clearInterval(progressInterval)
-    error.value = error.message
+    error.value = err.message || "Une erreur s'est produite lors de la génération du PDF"
+    
+    // Debug logs
+    console.log('error.value:', error.value)
+    console.log('Is error truthy?:', !!error.value)
+    console.log('Type of error:', typeof error.value)
+    
     isGenerating.value = false
     progress.value = 0
   }
@@ -184,6 +202,15 @@ const handleGenerate = async () => {
             <p>{{ progressMessages[Math.min(progressMessages.length - 1, Math.floor((progress / 90) * (progressMessages.length - 1)))] }}</p>
           </div>
         </div>
+        <div v-if="error" class="mt-4 p-4 bg-red-50 border border-red-200 rounded-md">
+          <div class="flex items-center text-red-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+            </svg>
+            <span class="font-medium">Erreur:</span>
+            <span class="ml-2">{{ error }}</span>
+          </div>
+        </div>
         <div v-if="gotResult" class="mt-4 w-full">
           <div class="text-[#95BB20] flex items-center gap-2">
             <Check class="w-4 h-4" />
@@ -194,11 +221,12 @@ const handleGenerate = async () => {
       <div v-if="gotResult" class="w-full my-8">
         <div class="w-full h-[1000px]">
           <embed
-            :src="pdfTemplate"
+            v-if="pdfUrl"
+            :src="pdfUrl"
             class="w-full h-full"
             :title="`PDF pour ${userSelectionStore.selected_municipality}`"
             frameborder="0"
-          />
+          ></embed>
         </div>
       </div>
     </div>
