@@ -636,7 +636,7 @@
                 }
             }
         ], 
-        "instruction": "Find to contacts for the municipalities and their details."
+        "instruction": "Find to contacts for the municipalities and their details. Give the answer as short as possible, idealy only a few words."
     },
     "budget": {
         "municipality": {

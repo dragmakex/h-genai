@@ -55,5 +55,6 @@ This is the field I want to have information for right now {field}.
 
 Here is an example: {example}
 
-Please provide accurate, verified information for this contact. If certain information is not publicly available, you may omit those fields rather than provide uncertain data."""
+Please provide accurate, verified information for this contact. If certain information is not publicly available, you may omit those fields rather than provide uncertain data.
+Provide the answer as short as possible. Do not give any reasoning or explanation. Ideally mainly give only a few words."""
 
