@@ -15,7 +15,7 @@ def get_all_tools():
             if inspect.isfunction(obj) and hasattr(obj, '_is_tool')]
 
 class Orchestrator:
-    def __init__(self):
+    def __init__(self, city_info):
         # Initialize different types of agents
         self.simple_agent = Agent()
         self.tool_agent = ToolCallingAgent(
@@ -28,10 +28,10 @@ class Orchestrator:
         # Load data from data.json
         self.data = self._load_data_fields()
 
-        self.municipality_name = self._get_municipality_name()
-        self.inter_municipality_name = self._get_inter_municipality_name()
-        self.municipality_siren = self._get_municipality_siren()
-        self.inter_municipality_epci = self._get_inter_municipality_epci()
+        self.municipality_name = self.city_info.municipality_name
+        self.inter_municipality_name = self.city_info.inter_municipality_name
+        self.municipality_siren = self.city_info.siren
+        self.inter_municipality_epci = self.city_info.inter_municipality_code
 
 
         self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.municipality_siren, self.inter_municipality_name, self.inter_municipality_epci)
