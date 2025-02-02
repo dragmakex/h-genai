@@ -40,13 +40,13 @@ Now, given the '{identifier}' '{name}', the field '{field}', the type '{type}', 
 
 contact_agent_prompt = """You are a research assistant helping to gather information about key contacts in {municipality}. I need you to find accurate information about important municipal officials.
 
-Please provide the following information {field} in the following type {type}:
-
+Please provide the following information {field} in the following type {type}.
+Follow these instructions as close as possible, do not deviate and do not halucinate:
 {instruction}
 
 Please ensure:
 1. All dates are in the format "Month DD, YYYY"
-2. Education, activities, and career should be arrays of strings
+2. Education, activities, and career should be as consice as possible.
 3. Include only verified information - if you're unsure about any detail, omit it rather than guess
 4. List career history in chronological order
 5. For current activities, include "(since Year)" where applicable

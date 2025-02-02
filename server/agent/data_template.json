@@ -514,129 +514,104 @@
                 "name": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the full name of the contact person",
+                    "instruction": "Enter the full name of the contact person. Answer with just the name, without any explanation or excuse.",
                     "example": "Nathalie KOENDERS"
                 },
                 "title": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the professional title of the contact person",
+                    "instruction": "Enter the professional title of the contact person. Answer with max 5 words, without any explanation or excuse.",
                     "example": "Mayor of Dijon"
                 },
                 "title_since": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the date when the person started in this title",
+                    "instruction": "Enter the date when the person started in this title. Answer with just the date, without any explanation or excuse.",
                     "example": "November 25, 2024"
                 },
                 "birth_date": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth date of the contact person",
+                    "instruction": "Enter the birth date of the contact person. Answer with just the date, without any explanation or excuse.",
                     "example": "March 1, 1977" 
                 },
                 "birth_place": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth place of the contact person",
+                    "instruction": "Enter the birth place of the contact person. Answer with just the place, without any explanation or excuse.",
                     "example": "Rennes, France"
                 },
                 "education": {
-                    "type": "array",
+                    "type": "string",
                     "content": null,
-                    "instruction": "List the educational background of the contact person",
-                    "example": ["Master's degree in public law and sports management from the University of Burgundy (1999)", "Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005)", "Institute for Public Management and Economic Development (IGPDE) (2006)"]
+                    "instruction": "List the educational background of the contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Master's degree in public law and sports management from the University of Burgundy (1999), Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005), Institute for Public Management and Economic Development (IGPDE) (2006)"
                 },
                 "activities": {
-                    "type": "array",
+                    "type": "string",
                     "content": null,
-                    "instruction": "List the professional activities of the contact person",
-                    "example": ["1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"]
+                    "instruction": "List the professional activities of the contact person. Be as brief, conscise and specific as possible.",
+                    "example": "1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"
                 },
                 "career": {
-                    "type": "array",
+                    "type": "string",
                     "content": null,
-                    "instruction": "List the career history of the contact person",
-                    "example": ["Former French champion in 5,000 m canoe-kayak (1998)", "Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014)", "Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014)", "1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024)", "Acting Mayor of Dijon (July 27-August 10, 2015)"]
+                    "instruction": "List the career history of the contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Former French champion in 5,000 m canoe-kayak (1998), Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014), Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014), 1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024), Acting Mayor of Dijon (July 27-August 10, 2015)"
                 }
             },
             {
                 "name": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the full name of the contact person",
+                    "instruction": "Enter the full name of the contact person. Answer with just the name, without any explanation or excuse.",
                     "example": "Francois REBSAMEN"
                 },
                 "title": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the professional title of the contact person",
+                    "instruction": "Enter the professional title of the contact person. Answer with max 5 words, without any explanation or excuse.",
                     "example": "Chairman of the Dijon Metropolitan Council"
                 },
                 "title_since": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the date when the person started in this title",
+                    "instruction": "Enter the date when the person started in this title. Answer with just the date, without any explanation or excuse.",
                     "example": "2017"
                 },
                 "birth_date": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth date of the contact person",
+                    "instruction": "Enter the birth date of the contact person. Answer with just the date, without any explanation or excuse.",
                     "example": "June 25, 1951"
                 },
                 "birth_place": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the birth place of the contact person",
+                    "instruction": "Enter the birth place of the contact person. Answer with just the Place, without any explanation or excuse.",
                     "example": "Dijon, France"
                 },
                 "education": {
-                    "type": "array",
+                    "type": "string",
                     "content": null,
-                    "instruction": "List the educational background of the contact person",
-                    "example": ["Master's degree in public law", "DESS in Economics", "DEA in Political Science"]
+                    "instruction": "List the educational background of the contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Master's degree in public law, DESS in Economics, DEA in Political Science"
                 },
                 "activities": {
-                    "type": "array",
+                    "type": "string",
                     "content": null,
-                    "instruction": "List the professional activities of the contact person",
-                    "example": ["Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"]
+                    "instruction": "List the professional activities of the contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
                 },
                 "career": {
-                    "type": "array",
+                    "type": "string",
                     "content": null,
-                    "instruction": "List the career history of the contact person",
-                    "example": [
-                        "Chargé de mission to the prefect of the Burgundy region (1979-1981)",
-                        "Chargé de mission in the office of Pierre Joxe, then chief of staff to André Billardon, Chairman of the Burgundy Regional Council (1981-1984)",
-                        "Chief of Staff to Pierre Joxe, Minister of the Interior and Decentralization (1984-1986)",
-                        "General Delegate of the Association of Progressive and Socialist Regional Councils (1986-1988)",
-                        "Technical advisor to Pierre Joxe, Minister of the Interior (1988-1991)",
-                        "Dijon city councillor (1989-2001)",
-                        "Deputy Chief of Staff to Laurent Fabius (1991-1992) and Henri Emmanuelli (1992-1993), Presidents of the French National Assembly",
-                        "Sous-préfet hors-cadre on secondment, project manager at the Fondation Jean-Jaurès (1993-1999)",
-                        "Burgundy regional councillor (1994-2001)",
-                        "PS National Secretary, in charge of organization and coordination (1997-2005)",
-                        "Member of the PS national office",
-                        "General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008)",
-                        "Technical advisor to Jean-Jack Queyranne, Minister for Relations with Parliament (2000-2001)",
-                        "Chairman, Dijon Regional Council (2001-2014)",
-                        "Mayor of Dijon (2001-2014)",
-                        "Vice-Chairman, AMF (Association des maires de France)",
-                        "Chairman of the Côte-d'Or Mayors Association (2001-2014)",
-                        "PS National Secretary, in charge of coordination (2005-2008)",
-                        "Senator for Côte-d'Or (2008-2014)",
-                        "Chairman of the Socialist Group in the French Senate (2011-2014)",
-                        "Minister of Labor, Employment and Social Dialogue in Manuel Valls' first government (April 2014 to August 2014), then Minister of Labor, Employment, Vocational Training and Social Dialogue (August 2014 to August 2015)",
-                        "Chairman of the Communauté d'agglomération, then the Communauté urbaine du Grand Dijon (August 2014-2017)",
-                        "Mayor of Dijon (2015-Nov. 2024)",
-                        "Chairman, FNSER (Fédération nationale des élus socialistes et républicains) (March 2016-Sept. 2021)"
-                    ]
+                    "instruction": "List the career history of the contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Burgundy regional councillor (1994-2001), PS National Secretary, in charge of organization and coordination (1997-2005), General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008), Mayor of Dijon (2001-2024)"
                 }
             }
         ], 
-        "instruction": "Find to contacts for the municipalities and their details. Give the answer as short as possible, idealy only a few words."
+        "instruction": "Find two contacts for the municipalities and their details. Give the answer as short as possible, idealy only a few words."
     },
     "budget": {
         "municipality": {
