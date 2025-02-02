@@ -10,6 +10,7 @@
 - [Project Structure](#project-structure)
   - [Server](#server)
   - [Web Application](#web-application)
+  - [Data](#data)
 - [Developer Guide](#developer-guide)
   - [Prerequisites](#prerequisites)
   - [Local Development Setup](#local-development-setup)
@@ -82,6 +83,32 @@ The project is organized into two main components:
   - `assets/`: Static assets
   - `lib/`: Utility functions
 - `public/`: Static files
+
+### Data (`/data`)
+- Notebooks and scripts for data preprocessing and exploration:
+  - `explore_ofgl_api.ipynb`: Exploration of the OFGL API endpoints and available datasets
+  - `pp_ofgl_data.ipynb`: Data preprocessing pipeline for municipality data including:
+    - Deduplication of municipality entries
+    - Population data normalization
+    - Reference municipality selection
+    - JSON data structure formatting
+
+- Processed Data Files:
+  - `populations-ofgl-communes-postprocessed.json`: Processed municipality dataset containing:
+    - Basic municipality info (SIREN, codes, names)
+    - Administrative hierarchy (commune, EPCI, department, region)
+    - Population metrics (current and projected)
+    - Reference municipalities for comparisons
+    - Structured for easy API consumption
+
+The data processing workflow:
+1. Fetches raw data from OFGL API (https://data.ofgl.fr/api/explore/v2.1/)
+2. Removes duplicate entries keeping most recent data
+3. Adds reference municipalities based on:
+   - Same region
+   - Similar population size
+   - Administrative status
+4. Outputs standardized JSON format for the application
 
 ## Developer Guide
 
