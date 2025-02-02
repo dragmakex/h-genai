@@ -1,0 +1,850 @@
+{
+    "municipality_name": {
+        "type": "string",
+        "content": null,
+        "instruction": "Enter the name of the municipality",
+        "example": "Dijon"
+    },
+    "inter_municipality_name": {
+        "type": "string",
+        "content": null,
+        "instruction": "Enter the name of the inter-municipality organization",
+        "example": "Dijon Métropole"
+    },
+    "logo": {
+        "type": "string",
+        "content": null,
+        "instruction": "Provide the URL or path to the municipality logo. DO NOT HALUCINATE A URL, provide a real image url that you found on the internet!"
+    },
+    "summary": {
+        "municipality": {
+            "population": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total population of the municipality",
+                "example": "159346 residents"
+            },
+            "area": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total area of the municipality in square kilometers",
+                "example": "40.40 km2"
+            },
+            "data_from_year": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the year from which this data was collected",
+                "example": 2023
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total budget of the municipality in euros",
+                "example": "110 million euros"
+            },
+            "total_budget_per_person": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total budget per person in euros",
+                "example": "679 €/person"
+            },
+            "debt_repayment_capacity": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the debt repayment capacity as a ratio",
+                "example": "3.4 years"
+            },
+            "debt_ratio": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the debt ratio as a percentage",
+                "example": "51%"
+            },
+            "debt_duration": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the debt duration in years",
+                "example": "10.1 years"
+            }
+        },
+        "inter_municipality": {
+            "population": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total population of the inter-municipality",
+                "example": "257193 residents"
+            },
+            "area": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total area of the inter-municipality in square kilometers",
+                "example": "240 km2"
+            },
+            "data_from_year": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the year from which this data was collected",
+                "example": 2021
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total budget of the inter-municipality in euros",
+                "example": "257 million euros"
+            },
+            "total_budget_per_person": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total budget per person in euros",
+                "example": "968 €/person"
+            },
+            "debt_repayment_capacity": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the debt repayment capacity as a ratio",
+                "example": "2.7 years"
+            },
+            "debt_ratio": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the debt ratio as a percentage",
+                "example": "71%"
+            },
+            "debt_duration": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the debt duration in years",
+                "example": "8.7 years"
+            },
+            "historical_milestones": {
+                "type": "array",
+                "content": [
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": null,
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone",
+                            "example": 1957
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event",
+                            "example": "Création de la Communauté d'Agglomération de Dijon Métropole"
+                        }
+                    },
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": null,
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone",
+                            "example": 1999
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event",
+                            "example": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
+                        }
+                    },
+                    {
+                        "year": {
+                            "type": "number",
+                            "content": null,
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone",
+                            "example": 2012
+                        },
+                        "milestone": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event",
+                            "example": "Creation de Dijon Métropole avec 23 communes"
+                        }
+                    }
+                ],
+                "instruction": "Find 3 important historical milestones concerning the inter-municipalities. Make sure they are 3 distinct and different events. Take care of this when researching the individual milestones."
+            }
+        }
+    },
+    "projects": {
+        "municipality": {
+            "green_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Renewable energies"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Solar energy"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project.",
+                            "example": "50 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Soft mobility and clean transport"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Individual transport"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Enter the investment amount for the green project",
+                            "example": "50 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Soft mobility and clean transport"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Individual transport"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project.",
+                            "example": "50 million euros"
+                        }
+                    }
+                ],
+                "instruction": "Find 3 important green projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
+            },
+            "social_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Vocational education and training"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Financing educational establishments (schools, colleges, lycées...)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Enter the investment amount for the social project",
+                            "example": "75 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Vocational education and training"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Financing educational establishments (schools, colleges, lycées...)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Enter the investment amount for the social project",
+                            "example": "75 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Vocational education and training"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Financing educational establishments (schools, colleges, lycées...)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Enter the investment amount for the social project",
+                            "example": "75 million euros"
+                        }
+                    }
+                ],
+                "instruction": "Find 3 important social projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
+            }
+        },
+        "inter_municipality": {
+            "green_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Waste management and recovery"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Enter the investment amount for the green project",
+                            "example": "15 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Waste management and recovery"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project.",
+                            "example": "15 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Waste management and recovery"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project.",
+                            "example": "15 million euros"
+                        }
+                    }
+                ],
+                "instruction": "Find 3 important green projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
+            },
+            "social_projects": {
+                "type": "array",
+                "content": [
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Sport, culture and associations"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Renovation of the Carrousel swimming pool"
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project.",
+                            "example": "21.9 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Sport, culture and associations"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Renovation of the Carrousel swimming pool"
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Enter the investment amount for the social project",
+                            "example": "21.9 million euros"
+                        }
+                    },
+                    {
+                        "theme": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
+                            "example": "Sport, culture and associations"
+                        },
+                        "category": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
+                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                        },
+                        "description": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "example": "Renovation of the Carrousel swimming pool"
+                        },
+                        "investment": {
+                            "type": "string",
+                            "content": null,
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Enter the investment amount for the social project.",
+                            "example": "21.9 million euros"
+                        }
+                    }
+                ],
+                "instruction": "Find 3 important social projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
+            }
+        }
+    },
+    "contacts": {
+        "type": "array",
+        "content": [
+            {
+                "name": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the full name of the first contact person. Answer with just the name, without any explanation or excuse.",
+                    "example": "Nathalie KOENDERS"
+                },
+                "title": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the professional title of the first contact person. Answer with max 5 words, without any explanation or excuse.",
+                    "example": "Mayor of Dijon"
+                },
+                "title_since": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the date when the first person started in this title. Answer with just the date, without any explanation or excuse.",
+                    "example": "November 25, 2024"
+                },
+                "birth_date": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the birth date of the first contact person. Answer with just the date, without any explanation or excuse.",
+                    "example": "March 1, 1977"
+                },
+                "birth_place": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the birth place of the first contact person. Answer with just the place, without any explanation or excuse.",
+                    "example": "Rennes, France"
+                },
+                "education": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the educational background of the first contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Master's degree in public law and sports management from the University of Burgundy (1999), Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005), Institute for Public Management and Economic Development (IGPDE) (2006)"
+                },
+                "activities": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the professional activities of the first contact person. Be as brief, conscise and specific as possible.",
+                    "example": "1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"
+                },
+                "career": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the career history of the first contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Former French champion in 5,000 m canoe-kayak (1998), Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014), Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014), 1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024), Acting Mayor of Dijon (July 27-August 10, 2015)"
+                }
+            },
+            {
+                "name": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the full name of the second contact person. Answer with just the name, without any explanation or excuse.",
+                    "example": "Francois REBSAMEN"
+                },
+                "title": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the professional title of the second contact person. Answer with max 5 words, without any explanation or excuse.",
+                    "example": "Chairman of the Dijon Metropolitan Council"
+                },
+                "title_since": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the date when the second person started in this title. Answer with just the date, without any explanation or excuse.",
+                    "example": "2017"
+                },
+                "birth_date": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth date of the second contact person. Answer with just the date, without any explanation or excuse.",
+                    "example": "June 25, 1951"
+                },
+                "birth_place": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth place of the second contact person. Answer with just the Place, without any explanation or excuse.",
+                    "example": "Dijon, France"
+                },
+                "education": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the educational background of the second contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Master's degree in public law, DESS in Economics, DEA in Political Science"
+                },
+                "activities": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the professional activities of the second contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
+                },
+                "career": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the career history of the second contact person. Be as brief, conscise and specific as possible.",
+                    "example": "Burgundy regional councillor (1994-2001), PS National Secretary, in charge of organization and coordination (1997-2005), General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008), Mayor of Dijon (2001-2024)"
+                }
+            }
+        ],
+        "instruction": "Find two contacts (e.g. the mayor of the municipality and the chairman of the inter-municipality) for the municipalities and their details. Give the answer as short as possible, idealy only a few words. Try to search for the individual contact persons after identifying them and then parse the specific informations from the search result."
+    },
+    "budget": {
+        "municipality": {
+            "date": {
+                "type": "string",
+                "content": null,
+                "instruction": "Enter the date of the budget data",
+                "example": "December 18"
+            },
+            "year": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the fiscal year of the budget",
+                "example": 2023
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total budget amount in euros",
+                "example": "271.2 million euros"
+            }
+        },
+        "inter_municipality": {
+            "date": {
+                "type": "string",
+                "content": null,
+                "instruction": "Enter the date of the inter-municipality budget data",
+                "example": "December 21"
+            },
+            "year": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the fiscal year of the inter-municipality budget",
+                "example": 2023
+            },
+            "total_budget": {
+                "type": "number",
+                "content": null,
+                "instruction": "Enter the total inter-municipality budget amount in euros",
+                "example": "418 million euros"
+            }
+        }
+    },
+    "financial_data": {
+        "municipality": {
+            "management_savings_per_capita": {
+                "type": "string",
+                "content": 221
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": 198
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": 131
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": 16.39
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": 15.59
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": 10.31
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": 7.37
+            }
+        },
+        "inter_municipality": {
+            "management_savings_per_capita": {
+                "type": "string",
+                "content": 561
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": 515
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": 342
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": 20.36
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": 20.59
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": 13.67
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": 9.07
+            }
+        }
+    },
+    "comparative_data": {
+        "type": "array",
+        "content": [
+            {
+                "municipality": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "Enter the name of the municipality being compared",
+                    "example": "Clermont-Ferrand"
+                },
+                "inter_municipality": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "Enter the name of the inter-municipality being compared",
+                    "example": "Clermont Auvergne Metropole"
+                },
+                "population": {
+                    "type": "number",
+                    "content": 121519,
+                    "instruction": "Enter the population of the compared municipality",
+                    "example": "180975 residents"
+                },
+                "area": {
+                    "type": "number",
+                    "content": null,
+                    "instruction": "Enter the area of the compared municipality in square kilometers",
+                    "example": "43.65 km2"
+                },
+                "data_from_year": {
+                    "type": "string",
+                    "content": 2023,
+                    "instruction": "Enter the year of the comparative data",
+                    "example": "2023"
+                },
+                "total_budget": {
+                    "type": "number",
+                    "content": 108014238,
+                    "instruction": "Enter the total budget of the compared municipality",
+                    "example": "120 million euros"
+                },
+                "total_budget_per_person": {
+                    "type": "number",
+                    "content": 889,
+                    "instruction": "Enter the total budget per person of the compared municipality",
+                    "example": "710 €/person"
+                },
+                "debt_repayment_capacity": {
+                    "type": "number",
+                    "content": 3.1,
+                    "instruction": "Enter the debt repayment capacity of the compared municipality",
+                    "example": "4.2 years"
+                },
+                "debt_ratio": {
+                    "type": "number",
+                    "content": 63.63,
+                    "instruction": "Enter the debt ratio of the compared municipality as a percentage",
+                    "example": "53%"
+                },
+                "debt_duration": {
+                    "type": "number",
+                    "content": 8.0,
+                    "instruction": "Enter the debt duration of the compared municipality in years",
+                    "example": "11.7 years"
+                }
+            },
+            {
+                "municipality": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "Enter the name of the municipality being compared",
+                    "example": "Saint-Denis"
+                },
+                "inter_municipality": {
+                    "type": "string",
+                    "content": null,
+                    "instruction": "Enter the name of the inter-municipality being compared",
+                    "example": "CA Intercommunale du Nord de la Reunion (CINNOR)"
+                },
+                "population": {
+                    "type": "number",
+                    "content": 46567,
+                    "instruction": "Enter the population of the compared municipality",
+                    "example": "210167 residents"
+                },
+                "area": {
+                    "type": "number",
+                    "content": null,
+                    "instruction": "Enter the area of the compared municipality in square kilometers",
+                    "example": "46.3 km2"
+                },
+                "data_from_year": {
+                    "type": "string",
+                    "content": 2023,
+                    "instruction": "Enter the year of the comparative data",
+                    "example": "2023"
+                },
+                "total_budget": {
+                    "type": "number",
+                    "content": 89444413,
+                    "instruction": "Enter the total budget of the compared municipality",
+                    "example": "130 million euros"
+                },
+                "total_budget_per_person": {
+                    "type": "number",
+                    "content": 1921,
+                    "instruction": "Enter the total budget per person of the compared municipality",
+                    "example": "728 €/person"
+                },
+                "debt_repayment_capacity": {
+                    "type": "number",
+                    "content": 17.8,
+                    "instruction": "Enter the debt repayment capacity of the compared municipality",
+                    "example": "2.9 years"
+                },
+                "debt_ratio": {
+                    "type": "number",
+                    "content": 122.51,
+                    "instruction": "Enter the debt ratio of the compared municipality as a percentage",
+                    "example": "48%"
+                },
+                "debt_duration": {
+                    "type": "number",
+                    "content": 13.8,
+                    "instruction": "Enter the debt duration of the compared municipality in years",
+                    "example": "10.5 years"
+                }
+            }
+        ]
+    }
+}

@@ -164,7 +164,7 @@ def get_commune_finances_by_siren(
     """
     base_url = "https://data.ofgl.fr/api/explore/v2.1/catalog/datasets"
     dataset = "ofgl-base-communes-consolidee"
-    endpoint = f"{base_url}/{dataset}/export/json"
+    endpoint = f"{base_url}/{dataset}/exports/json"
 
     # Ensure year is a properly formatted 4-digit string
     year = str(datetime.strptime(year, "%Y").year)  # Converts to YYYY format
@@ -222,7 +222,7 @@ def get_epci_finances_by_code(
     """
     base_url = "https://data.ofgl.fr/api/explore/v2.1/catalog/datasets"
     dataset = "ofgl-base-ei"
-    endpoint = f"{base_url}/{dataset}/export/json"
+    endpoint = f"{base_url}/{dataset}/exports/json"
 
     # Ensure year is a properly formatted 4-digit string
     year = str(datetime.strptime(year, "%Y").year)  # Converts to YYYY format
