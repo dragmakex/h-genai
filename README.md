@@ -15,6 +15,15 @@
   - [Local Development Setup](#local-development-setup)
   - [Building for Production](#building-for-production)
 - [Useful Commands](#useful-commands)
+- [CI/CD Pipeline](#cicd-pipeline)
+  - [Workflow Overview](#workflow-overview)
+  - [Environment Variables](#environment-variables)
+- [Testing](#testing)
+  - [Server Tests](#server-tests)
+  - [Local Lambda Testing](#local-lambda-testing)
+  - [Integration Tests](#integration-tests)
+  - [Web App Tests](#web-app-tests)
+  - [Adding New Tests](#adding-new-tests)
 
 ## Overview
 
@@ -106,3 +115,100 @@ cd server && docker build -t h-genai-server . && docker tag h-genai-server:lates
 h-genai-server:latest && docker push 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest && aws lambda 
 update-function-code --function-name h-genai-server --image-uri 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest
 ```
+
+## CI/CD Pipeline
+
+The project uses GitHub Actions for continuous integration and deployment, configured in `.github/workflows/aws-deployment.yml`.
+
+### Workflow Overview
+
+The pipeline consists of three main jobs:
+
+1. **Test Server**:
+   - Runs on every push to `main` that changes files in `/server`
+   - Sets up Python 3.11 environment
+   - Installs dependencies using Poetry
+   - Runs pytest suite
+   - Caches dependencies for faster builds
+
+2. **Deploy Server** (runs after successful tests):
+   - Builds Docker image for Lambda deployment
+   - Pushes to Amazon ECR
+   - Updates Lambda function
+   - Configures provisioned concurrency
+   - Creates production alias
+
+3. **Deploy Web App** (on `web-app` branch):
+   - Sets up Node.js environment
+   - Runs tests and builds application
+   - Deploys to AWS Amplify
+
+### Environment Variables
+
+Required secrets in GitHub:
+```bash
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_ECR_REGISTRY
+AWS_AMPLIFY_APP_ID
+```
+
+## Testing
+
+### Server Tests
+
+The server component uses pytest for testing. Tests are located in `/server/tests/`.
+
+1. **Unit Tests**:
+```bash
+cd server
+poetry run pytest
+```
+
+2. **Local Lambda Testing**:
+```bash
+# Build and run container
+docker build -t h-genai-server:local .
+docker run -p 8080:8080 h-genai-server:local
+
+# Test endpoints
+curl -X POST "http://localhost:8080/2015-03-31/functions/function/invocations" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "version": "2.0",
+    "routeKey": "GET /health",
+    "rawPath": "/health",
+    "requestContext": {
+      "http": {
+        "method": "GET",
+        "path": "/health"
+      }
+    }
+  }'
+```
+
+3. **Integration Tests**:
+- Test script available at `test_local.sh`
+- Automates container lifecycle and endpoint testing
+- Provides detailed test results
+
+### Web App Tests
+
+The web application uses Vitest for testing:
+
+```bash
+cd web-app
+npm run test
+```
+
+### Adding New Tests
+
+1. **Server Tests**:
+   - Add test files in `/server/tests/`
+   - Follow existing patterns for API and agent tests
+   - Use pytest fixtures from `conftest.py`
+
+2. **Web App Tests**:
+   - Add test files alongside components
+   - Use Vue Test Utils for component testing
+   - Follow Vue's testing best practices
