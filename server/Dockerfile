@@ -28,15 +28,25 @@ FROM --platform=linux/amd64 public.ecr.aws/lambda/python:3.11
 
 WORKDIR ${LAMBDA_TASK_ROOT}
 
-# Install WeasyPrint dependencies
+# Add EPEL repository and update
+RUN amazon-linux-extras install epel -y && \
+    yum update -y
+
+# Install WeasyPrint and Pango dependencies
 RUN yum install -y \
     pango \
     pango-devel \
     libffi-devel \
     cairo \
     cairo-devel \
+    gobject-introspection \
     gobject-introspection-devel \
+    harfbuzz \
     harfbuzz-devel \
+    freetype-devel \
+    fontconfig-devel \
+    libxml2-devel \
+    libpng-devel \
     && yum clean all \
     && rm -rf /var/cache/yum
 
@@ -48,9 +58,6 @@ COPY ./api ./api
 
 # Copy agent directory
 COPY ./agent ./agent
-
-# Note: Environment variables should be configured through Lambda environment variables
-# instead of copying .env files
 
 # Copy template directory
 COPY ./template ./template

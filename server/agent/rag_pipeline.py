@@ -59,7 +59,12 @@ rag_pipe = Pipeline()
 rag_pipe.add_component("embedder", SentenceTransformersTextEmbedder(model="sentence-transformers/all-MiniLM-L6-v2"))
 rag_pipe.add_component("retriever", InMemoryEmbeddingRetriever(document_store=document_store))
 rag_pipe.add_component("prompt_builder", ChatPromptBuilder(template=template))
-rag_pipe.add_component("llm", AmazonBedrockChatGenerator(model=MODEL_ID))
+rag_pipe.add_component("llm", AmazonBedrockChatGenerator(
+    model=MODEL_ID,
+    aws_access_key_id=aws_access_key_id,
+    aws_secret_access_key=aws_secret_access_key,
+    aws_region_name=aws_region_name
+))
 rag_pipe.connect("embedder.embedding", "retriever.query_embedding")
 rag_pipe.connect("retriever", "prompt_builder.documents")
 rag_pipe.connect("prompt_builder.prompt", "llm.messages")
