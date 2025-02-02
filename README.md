@@ -103,7 +103,7 @@ The project is organized into two main components:
     - Structured for easy API consumption
 
 The data processing workflow:
-1. Fetches raw data from OFGL API (https://data.ofgl.fr/api/explore/v2.1/)
+1. Fetches raw data from OFGL API (https://www.data.gouv.fr/fr/dataservices/explore-api-v2-50/)
 2. Removes duplicate entries keeping most recent data
 3. Adds reference municipalities based on:
    - Same region
