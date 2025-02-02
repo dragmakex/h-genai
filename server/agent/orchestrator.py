@@ -60,15 +60,15 @@ class Orchestrator:
         """Get the input from the user"""
         return 212102313
     
-    def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_siren: str):
+    def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_epci_code: str):
         """Get the data from the API
         Return a dictionary with the data:
         Example:
         {"Dijon": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10},
         "Dijon Métropole": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10}}"""
         
-        _, municipality_finances = get_commune_finances_by_siren(municipality_siren)
-        _, epci_finances = get_epci_finances_by_code(inter_municipality_siren)
+        _, _, municipality_finances = get_commune_finances_by_siren(municipality_siren)
+        _, _, epci_finances = get_epci_finances_by_code(inter_municipality_epci_code)
         
         return {f"{municipality_name}": municipality_finances,
                 f"{inter_municipality_name}": epci_finances}
