@@ -31,6 +31,17 @@ financial_data_fields = [
     "net_savings_ratio",
     "debt_service_to_operating_revenue_ratio",
 ]
+comparitive_fields = [
+    "municipality",
+    "inter_municipality",
+    "population",
+    "data_from_year",
+    "total_budget",
+    "total_budget_per_person",
+    "debt_repayment_capacity",
+    "debt_ratio",
+    "debt_duration",
+]
 
 
 def get_all_tools():
@@ -484,8 +495,9 @@ class Orchestrator:
         """Process fields from the comparative data section"""
         for i, ref_municipality in enumerate(self.data["comparative_data"]['content']):
             for field, value in ref_municipality.items():
-                if field in summary_fields:
+                if field in comparitive_fields:
                     ref_municipality[field]["content"] = self.financial_api_data["reference_finances"][i][field]
+
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""

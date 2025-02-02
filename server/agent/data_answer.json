@@ -660,61 +660,61 @@
         "municipality": {
             "management_savings_per_capita": {
                 "type": "string",
-                "content": 221
+                "content": 306
             },
             "gross_savings_per_capita": {
                 "type": "string",
-                "content": 198
+                "content": 274
             },
             "net_savings_per_capita": {
                 "type": "string",
-                "content": 131
+                "content": 141
             },
             "management_savings_ratio": {
                 "type": "string",
-                "content": 16.39
+                "content": 18.03
             },
             "gross_savings_ratio": {
                 "type": "string",
-                "content": 15.59
+                "content": 17.35
             },
             "net_savings_ratio": {
                 "type": "string",
-                "content": 10.31
+                "content": 8.91
             },
             "debt_service_to_operating_revenue_ratio": {
                 "type": "string",
-                "content": 7.37
+                "content": 10.51
             }
         },
         "inter_municipality": {
             "management_savings_per_capita": {
                 "type": "string",
-                "content": 561
+                "content": 599
             },
             "gross_savings_per_capita": {
                 "type": "string",
-                "content": 515
+                "content": 522
             },
             "net_savings_per_capita": {
                 "type": "string",
-                "content": 342
+                "content": 316
             },
             "management_savings_ratio": {
                 "type": "string",
-                "content": 20.36
+                "content": 17.82
             },
             "gross_savings_ratio": {
                 "type": "string",
-                "content": 20.59
+                "content": 18.7
             },
             "net_savings_ratio": {
                 "type": "string",
-                "content": 13.67
+                "content": 11.3
             },
             "debt_service_to_operating_revenue_ratio": {
                 "type": "string",
-                "content": 9.07
+                "content": 9.59
             }
         }
     },
@@ -724,19 +724,19 @@
             {
                 "municipality": {
                     "type": "string",
-                    "content": null,
+                    "content": "Rouen",
                     "instruction": "Enter the name of the municipality being compared",
                     "example": "Clermont-Ferrand"
                 },
                 "inter_municipality": {
                     "type": "string",
-                    "content": null,
+                    "content": "Métropole Rouen Normandie",
                     "instruction": "Enter the name of the inter-municipality being compared",
                     "example": "Clermont Auvergne Metropole"
                 },
                 "population": {
                     "type": "number",
-                    "content": 121519,
+                    "content": 115792,
                     "instruction": "Enter the population of the compared municipality",
                     "example": "180975 residents"
                 },
@@ -754,31 +754,31 @@
                 },
                 "total_budget": {
                     "type": "number",
-                    "content": 108014238,
+                    "content": 133040801,
                     "instruction": "Enter the total budget of the compared municipality",
                     "example": "120 million euros"
                 },
                 "total_budget_per_person": {
                     "type": "number",
-                    "content": 889,
+                    "content": 1149,
                     "instruction": "Enter the total budget per person of the compared municipality",
                     "example": "710 €/person"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
-                    "content": 3.1,
+                    "content": 3.7,
                     "instruction": "Enter the debt repayment capacity of the compared municipality",
                     "example": "4.2 years"
                 },
                 "debt_ratio": {
                     "type": "number",
-                    "content": 63.63,
+                    "content": 71.89,
                     "instruction": "Enter the debt ratio of the compared municipality as a percentage",
                     "example": "53%"
                 },
                 "debt_duration": {
                     "type": "number",
-                    "content": 8.0,
+                    "content": 9.0,
                     "instruction": "Enter the debt duration of the compared municipality in years",
                     "example": "11.7 years"
                 }
@@ -786,19 +786,19 @@
             {
                 "municipality": {
                     "type": "string",
-                    "content": null,
+                    "content": "Caen",
                     "instruction": "Enter the name of the municipality being compared",
                     "example": "Saint-Denis"
                 },
                 "inter_municipality": {
                     "type": "string",
-                    "content": null,
+                    "content": "CU Caen la Mer",
                     "instruction": "Enter the name of the inter-municipality being compared",
                     "example": "CA Intercommunale du Nord de la Reunion (CINNOR)"
                 },
                 "population": {
                     "type": "number",
-                    "content": 46567,
+                    "content": 109401,
                     "instruction": "Enter the population of the compared municipality",
                     "example": "210167 residents"
                 },
@@ -816,31 +816,31 @@
                 },
                 "total_budget": {
                     "type": "number",
-                    "content": 89444413,
+                    "content": 112597582,
                     "instruction": "Enter the total budget of the compared municipality",
                     "example": "130 million euros"
                 },
                 "total_budget_per_person": {
                     "type": "number",
-                    "content": 1921,
+                    "content": 1029,
                     "instruction": "Enter the total budget per person of the compared municipality",
                     "example": "728 €/person"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
-                    "content": 17.8,
+                    "content": 6.5,
                     "instruction": "Enter the debt repayment capacity of the compared municipality",
                     "example": "2.9 years"
                 },
                 "debt_ratio": {
                     "type": "number",
-                    "content": 122.51,
+                    "content": 87.91,
                     "instruction": "Enter the debt ratio of the compared municipality as a percentage",
                     "example": "48%"
                 },
                 "debt_duration": {
                     "type": "number",
-                    "content": 13.8,
+                    "content": 10.4,
                     "instruction": "Enter the debt duration of the compared municipality in years",
                     "example": "10.5 years"
                 }
