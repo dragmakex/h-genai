@@ -26,8 +26,6 @@ This project provides a comprehensive data collection and analysis system for Fr
   - [Environment Variables](#environment-variables)
 - [Testing](#testing)
   - [Server Tests](#server-tests)
-  - [Local Lambda Testing](#local-lambda-testing)
-  - [Integration Tests](#integration-tests)
   - [Web App Tests](#web-app-tests)
   - [Adding New Tests](#adding-new-tests)
 - [Team](#team)
