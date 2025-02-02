@@ -25,6 +25,7 @@
   - [Integration Tests](#integration-tests)
   - [Web App Tests](#web-app-tests)
   - [Adding New Tests](#adding-new-tests)
+- [Team](#team)
 
 ## Overview
 
@@ -239,3 +240,11 @@ npm run test
    - Add test files alongside components
    - Use Vue Test Utils for component testing
    - Follow Vue's testing best practices
+
+## Team
+
+Our team of developers and researchers:
+
+<div align="center">
+  <img src="docs/assets/team.jpg" alt="H-GenAI Team" width="600px">
+</div>
