@@ -28,12 +28,10 @@ FROM --platform=linux/amd64 public.ecr.aws/lambda/python:3.11
 
 WORKDIR ${LAMBDA_TASK_ROOT}
 
-# Add EPEL repository and update
-RUN amazon-linux-extras install epel -y && \
-    yum update -y
-
 # Install WeasyPrint and Pango dependencies
-RUN yum install -y \
+RUN yum install -y yum-utils && \
+    yum-config-manager --enable epel && \
+    yum install -y \
     pango \
     pango-devel \
     libffi-devel \
