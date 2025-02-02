@@ -31,10 +31,10 @@ class Orchestrator:
         self.municipality_name = self._get_municipality_name()
         self.inter_municipality_name = self._get_inter_municipality_name()
         self.municipality_siren = self._get_municipality_siren()
-        self.inter_municipality_siren = self._get_inter_municipality_siren()
+        self.inter_municipality_epci = self._get_inter_municipality_epci()
 
 
-        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.inter_municipality_siren, self.inter_municipality_name, self.inter_municipality_siren)
+        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.municipality_siren, self.inter_municipality_name, self.inter_municipality_epci)
      
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
@@ -54,11 +54,11 @@ class Orchestrator:
     
     def _get_municipality_siren(self):
         """Get the input from the user"""
-        return 242100410
-
-    def _get_inter_municipality_siren(self):
-        """Get the input from the user"""
         return 212102313
+
+    def _get_inter_municipality_epci(self):
+        """Get the input from the user"""
+        return 242100410
     
     def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_epci_code: str):
         """Get the data from the API
@@ -272,7 +272,7 @@ class Orchestrator:
             conversation_id = f"contact_{idx + 1}"
             if conversation_id not in self.conversation_history:
                 self.conversation_history[conversation_id] = []
-                
+
             for subfield, subvalue in item.items():                       
                 # Create prompt for this specific array item
                 item_prompt = contact_agent_prompt.format(municipality=self.municipality_name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=subvalue['example'])
@@ -299,8 +299,8 @@ class Orchestrator:
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
-        #self.process_summary_fields(inter=False)
-        #self.process_summary_fields(inter=True)
+        self.process_summary_fields(inter=False)
+        self.process_summary_fields(inter=True)
         #self.process_projects_fields(inter=False)
         #self.process_projects_fields(inter=True)
         self.process_contact_fields()
