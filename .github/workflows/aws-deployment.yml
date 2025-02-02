@@ -108,6 +108,10 @@ jobs:
               SERPERDEV_API_KEY=${{ secrets.SERPERDEV_API_KEY }},
               PERPLEXITY_API_KEY=${{ secrets.PERPLEXITY_API_KEY }}
             }"
+          
+      - name: Wait for Environment Variables Update
+        run: |
+          aws lambda wait function-updated --function-name h-genai-server
 
       - name: Update Lambda Timeout and Memory
         run: |
@@ -115,6 +119,21 @@ jobs:
             --function-name h-genai-server \
             --timeout 900 \
             --memory-size 2048
+
+      - name: Wait for Final Configuration Update
+        run: |
+          aws lambda wait function-updated --function-name h-genai-server
+
+      - name: Configure Provisioned Concurrency
+        run: |
+          aws lambda put-provisioned-concurrency-config \
+            --function-name h-genai-server \
+            --qualifier \$LATEST \
+            --provisioned-concurrent-executions 1
+
+      - name: Wait for Provisioned Concurrency Update
+        run: |
+          aws lambda wait function-updated --function-name h-genai-server
 
   deploy-webapp:
     runs-on: ubuntu-latest
