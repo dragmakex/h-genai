@@ -44,7 +44,7 @@ Install the dependencies:
 npm install
 ```
 
-### Compil and hot-reload (for development)
+### Compile and hot-reload (for development)
 
 ```sh
 npm run dev
