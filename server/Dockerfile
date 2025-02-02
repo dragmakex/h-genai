@@ -58,6 +58,10 @@ COPY ./template ./template
 # Set environment variables
 ENV PYTHONPATH=${LAMBDA_TASK_ROOT}
 ENV PYTHONUNBUFFERED=1
+ENV HOME=/tmp
+ENV XDG_CACHE_HOME=/tmp/.cache
+ENV HAYSTACK_HOME=/tmp/.haystack
+ENV HAYSTACK_TELEMETRY_ENABLED=False
 
 # Lambda specific optimizations
 ENV LAMBDA_RUNTIME_DIR=/var/runtime
