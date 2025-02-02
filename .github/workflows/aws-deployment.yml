@@ -97,6 +97,18 @@ jobs:
         run: |
           aws lambda wait function-updated --function-name h-genai-server
 
+      - name: Update Lambda Environment Variables
+        run: |
+          aws lambda update-function-configuration \
+            --function-name h-genai-server \
+            --environment "Variables={
+              BR_AWS_ACCESS_KEY_ID=${{ secrets.BR_AWS_ACCESS_KEY_ID }},
+              BR_AWS_SECRET_ACCESS_KEY=${{ secrets.BR_AWS_SECRET_ACCESS_KEY }},
+              BR_AWS_DEFAULT_REGION=${{ env.AWS_REGION }},
+              SERPERDEV_API_KEY=${{ secrets.SERPERDEV_API_KEY }},
+              PERPLEXITY_API_KEY=${{ secrets.PERPLEXITY_API_KEY }}
+            }"
+
   deploy-webapp:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/web-app'

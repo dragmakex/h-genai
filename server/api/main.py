@@ -3,6 +3,7 @@ import logging
 import sys
 import traceback
 
+from pydantic import BaseModel
 import uvicorn
 from fastapi import FastAPI, Request, Response
 from fastapi.templating import Jinja2Templates
@@ -10,7 +11,10 @@ from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from weasyprint import HTML, CSS
 from mangum import Mangum
-from typing import Dict, Any
+from typing import Dict, Any, List
+
+from agent.orchestrator import Orchestrator
+
 
 # Configure logging
 logging.basicConfig(
@@ -70,9 +74,24 @@ async def health_check():
     return {"status": "healthy"}
 
 
+class CityModel(BaseModel):
+    siren: str
+    municipality_name: str
+    municipality_code: str
+    inter_municipality_name: str
+    inter_municipality_code: str
+    reference_sirens: List[str]
+    
+
 @app.post("/generate-pdf")
-async def generate_pdf_from_data(request: Request, data: Dict[Any, Any]):
+async def generate_pdf_from_data(request: Request, city_info: CityModel):
     logger.info("PDF generation endpoint called")
+
+    orchestrator_instance = Orchestrator(city_info)
+    data = orchestrator_instance.process_all_sections()
+
+    print(data)
+
     try:
         html_content = templates.TemplateResponse(
             "index.html", 
@@ -94,6 +113,37 @@ async def generate_pdf_from_data(request: Request, data: Dict[Any, Any]):
         logger.error(f"PDF generation failed: {str(e)}")
         logger.error(f"Traceback: {''.join(traceback.format_tb(sys.exc_info()[2]))}")
         raise
+
+@app.post("/small-generate-pdf")
+async def small_generate_pdf_from_data(request: Request, city_info: CityModel):
+    logger.info("PDF generation endpoint called")
+
+    orchestrator_instance = Orchestrator(city_info)
+    data = orchestrator_instance.test_process_all_sections()
+
+    print(data)
+
+    try:
+        html_content = templates.TemplateResponse(
+            "index.html", 
+            {
+                "request": request,
+                "data": data
+            }
+        ).body.decode('utf-8')
+
+        with open("template/styles.css", "r") as css_file:
+            css_content = css_file.read()
+
+        css = CSS(string=css_content)
+        pdf = HTML(string=html_content, base_url="./template").write_pdf(stylesheets=[css])
+
+        logger.info("PDF generated successfully")
+        return HTMLResponse(pdf, media_type="application/pdf")
+    except Exception as e:
+        logger.error(f"PDF generation failed: {str(e)}")
+        logger.error(f"Traceback: {''.join(traceback.format_tb(sys.exc_info()[2]))}")
+        raise  
 
 
 @app.post("/test-generate-pdf")

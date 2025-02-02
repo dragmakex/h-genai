@@ -46,24 +46,19 @@ comparitive_fields = [
 ]
 
 
-def get_all_tools():
-    """Get all functions marked as tools from tools module"""
-    import tools
-
-    return [
-        obj
-        for name, obj in inspect.getmembers(tools)
-        if inspect.isfunction(obj) and hasattr(obj, "_is_tool")
-    ]
-
+# def get_all_tools():
+#     """Get all functions marked as tools from tools module"""
+#     import tools
+#     return [obj for name, obj in inspect.getmembers(tools) 
+#             if inspect.isfunction(obj) and hasattr(obj, '_is_tool')]
 
 class Orchestrator:
     def __init__(self, city_info):
         # Initialize different types of agents
         self.simple_agent = Agent()
         self.tool_agent = ToolCallingAgent(
-            instructions=tool_agent_instructions, functions=get_all_tools()
-        )
+            instructions=tool_agent_instructions,
+            functions=[get_sonar_pro_response]) #get_all_tools())
 
         # Store conversation history
         self.conversation_history: Dict[str, List[ChatMessage]] = {}
@@ -82,7 +77,7 @@ class Orchestrator:
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
         try:
-            with open("data_template.json", "r", encoding="utf-8") as file:
+            with open('data_template.json', 'r', encoding='utf-8') as file:
                 return json.load(file)
         except FileNotFoundError:
             raise FileNotFoundError(
@@ -639,36 +634,12 @@ class Orchestrator:
 
         # Save to answer.json
         try:
-            with open("data_answer.json", "w", encoding="utf-8") as file:
+            with open('data_answer.json', 'w', encoding='utf-8') as file:
                 json.dump(self.data, file, indent=4, ensure_ascii=False)
         except Exception as e:
             print(f"Error saving to answer.json: {e}")
-
+        
         return self.data
-
-
-class city_info:
-    municipality_name = "Le Havre"
-    inter_municipality_name = "CU Le Havre Seine Métropole"
-    siren = 217603513
-    inter_municipality_code = 200084952
-    reference_sirens = [
-        {"siren": "217605401"},
-        {"siren": "211401187"},
-        {"siren": "200056844"},
-    ]
-
-# class city_info:
-#     municipality_name = "Dijon"
-#     inter_municipality_name = "Dijon Métropole"
-#     siren = 212102313
-#     inter_municipality_code = 242100410
-#     reference_sirens = [
-#         {"siren": "212500565"},
-#         {"siren": "217100767"},
-#         {"siren": "219000106"},
-#     ]
-
-
-test_orchestrator = Orchestrator(city_info)
-test_orchestrator.parallel_process_all_sections()
+    
+test_orchestrator = Orchestrator()
+test_orchestrator.process_all_sections()

@@ -592,14 +592,14 @@
                 "education": {
                     "type": "string",
                     "content": null,
-                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez le parcours éducatif du second contact. Soyez aussi bref, conscis et spécifique possible.",
-                    "example": "Master's degree in public law, DESS in Economics, DEA in Political Science"
+                    "instruction": "List the educational background of the contact person",
+                    "example": ["Master's degree in public law", "DESS in Economics", "DEA in Political Science"]
                 },
                 "activities": {
                     "type": "string",
                     "content": null,
-                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez les activités professionnelles du second contact. Soyez aussi bref, conscis et spécifique possible.",
-                    "example": "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
+                    "instruction": "List the professional activities of the contact person",
+                    "example": ["Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"]
                 },
                 "career": {
                     "type": "string",

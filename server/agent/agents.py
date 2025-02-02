@@ -1,3 +1,8 @@
+# Configure environment before importing Haystack
+import os
+os.environ["HAYSTACK_CONFIG_PATH"] = "/tmp/.haystack"
+os.environ["HAYSTACK_TELEMETRY_ENABLED"] = "false"  # Optionally disable telemetry
+
 from haystack_integrations.components.generators.amazon_bedrock import AmazonBedrockChatGenerator
 from haystack.dataclasses import ChatMessage
 from haystack.components.tools import ToolInvoker
@@ -7,16 +12,27 @@ from dataclasses import dataclass, field
 from typing import Callable, Tuple
 
 from dotenv import load_dotenv
-import os
 
 #MODEL_ID = "mistral.mistral-large-2407-v1:0"
 MODEL_ID = "anthropic.claude-3-5-sonnet-20241022-v2:0"
 
 # Load environment variables for Keys
 load_dotenv()
-aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
-aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
-aws_region_name = os.getenv("AWS_DEFAULT_REGION")
+aws_access_key_id = os.getenv("BR_AWS_ACCESS_KEY_ID")
+if not aws_access_key_id:
+    raise ValueError("BR_AWS_ACCESS_KEY_ID is not set in the environment variables")
+
+aws_secret_access_key = os.getenv("BR_AWS_SECRET_ACCESS_KEY")
+if not aws_secret_access_key:
+    raise ValueError("BR_AWS_SECRET_ACCESS_KEY is not set in the environment variables")
+
+aws_region_name = os.getenv("BR_AWS_DEFAULT_REGION")
+if not aws_region_name:
+    raise ValueError("BR_AWS_DEFAULT_REGION is not set in the environment variables")
+
+search_api_key = os.getenv("SERPERDEV_API_KEY")
+if not search_api_key:
+    raise ValueError("SERPERDEV_API_KEY is not set in the environment variables")
 search_api_key = os.getenv("SERPERDEV_API_KEY")
 
 # Implementations adapted from https://haystack.deepset.ai/cookbook/swarm

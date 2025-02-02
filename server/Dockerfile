@@ -46,9 +46,22 @@ COPY --from=builder /var/lang/lib/python3.11/site-packages/ /var/lang/lib/python
 # Copy only the API code
 COPY ./api ./api
 
+# Copy agent directory
+COPY ./agent ./agent
+
+# Note: Environment variables should be configured through Lambda environment variables
+# instead of copying .env files
+
+# Copy template directory
+COPY ./template ./template
+
 # Set environment variables
 ENV PYTHONPATH=${LAMBDA_TASK_ROOT}
 ENV PYTHONUNBUFFERED=1
+ENV HOME=/tmp
+ENV XDG_CACHE_HOME=/tmp/.cache
+ENV HAYSTACK_HOME=/tmp/.haystack
+ENV HAYSTACK_TELEMETRY_ENABLED=False
 
 # Lambda specific optimizations
 ENV LAMBDA_RUNTIME_DIR=/var/runtime
