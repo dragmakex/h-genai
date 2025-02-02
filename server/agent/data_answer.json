@@ -128,7 +128,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Formation of the Communauté Urbaine through merger of Le Havre agglomeration, Canton de Criquetot-l'Esneval, and Caux Estuaire communities",
+                            "content": "Creation of CODAH (Communauté d'agglomération havraise)",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -142,7 +142,7 @@
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Establishment of the Communauté de l'agglomération havraise (CODAH)",
+                            "content": "Creation of Communauté de Communes du Canton de Criquetot-l'Esneval",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
@@ -150,13 +150,13 @@
                     {
                         "year": {
                             "type": "number",
-                            "content": "1973",
+                            "content": "2019",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone",
                             "example": 2012
                         },
                         "milestone": {
                             "type": "string",
-                            "content": "Creation of the District of Le Havre, first intercommunal structure",
+                            "content": "Creation of CU Le Havre Seine Métropole through merger of CODAH, Canton de Criquetot-l'Esneval, and Caux Estuaire",
                             "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event",
                             "example": "Creation de Dijon Métropole avec 23 communes"
                         }
@@ -174,25 +174,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Renewable energies",
+                            "content": "Sustainable transportation",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Renewable energies"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Green hydrogen production",
+                            "content": "Port electrification",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Solar energy"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Construction of a 100 MW green hydrogen production plant in Gonfreville-l'Orcher near Le Havre, set to produce 34 tonnes of green hydrogen daily by 2028, supported by a €149 million government grant. Source: https://www.lhyfe.com/press/lhyfe-receives-from-the-french-government-a-grant-of-up-to-149m-for-large-scale-production-of-green-and-renewable-hydrogen-near-le-havre-in-france/",
+                            "content": "Port electrification project to equip all three cruise ship quays with shore power connections by 2026, providing 10MW power output per quay and reducing CO2 emissions by approximately 100 tonnes and other polluting emissions by 2 tonnes during a typical 12-hour cruise ship stay Source: https://www.haropaport.com/en/actualites/le-havre-cruises-development-project-port-bright-future-sustainable-cruises",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "149 million euros",
+                            "content": "unknown",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project.",
                             "example": "50 million euros"
                         }
@@ -206,19 +206,19 @@
                         },
                         "category": {
                             "type": "string",
-                            "content": "E-methanol production",
+                            "content": "Hydrogen production",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Construction of the Methavert e-methanol production facility at Rogerville in Le Havre port, capable of producing 200,000 tonnes of e-methanol annually to support maritime transport decarbonization, located on a 60-hectare site. Source: https://safety4sea.com/qair-develops-e-methanol-project-on-haropa-port/",
+                            "content": "Development of a renewable hydrogen import terminal by Air Products, set to begin operations by 2030, focusing on green ammonia imports and conversion to hydrogen for distribution across France, aimed at supporting regional industrial decarbonization Source: https://energynews.oedigital.com/renewable-fuels/2024/11/07/france-picks-three-commercial-projects-for-le-havre-port",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
-                            "content": "500 million euros",
+                            "content": "1.1 billion euros",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
@@ -226,25 +226,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Waste management and energy recovery",
+                            "content": "Renewable energies",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Biomass energy facility",
+                            "content": "E-methanol production",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": "BIOSYNERGY facility converting 90,000 tons of non-recyclable waste and wood waste annually into 300,000 MWh of energy for Le Havre's urban heating network and local manufacturers, avoiding 50,000 tons of CO₂ emissions per year. Source: https://www.renewableenergymagazine.com/biomass/suez-and-vauban-infrastructure-partners-invest-in-20241126",
+                            "content": "Construction of an e-methanol production facility by Qair with an annual production capacity of 200,000 tonnes, aimed at decarbonizing maritime transport and integrating with local industrial decarbonization efforts Source: https://hydrogen-central.com/france-qair-to-develop-e-methanol-project-on-haropa-port-site-in-le-havre/",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
+                            "content": "500 million euros",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project.",
                             "example": "50 million euros"
                         }
@@ -258,7 +258,7 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Vocational training and employment",
+                            "content": "Based on the information found, for item 1's theme:\n\nHigher Education and Research Development",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Vocational education and training"
                         },
@@ -270,13 +270,13 @@
                         },
                         "description": {
                             "type": "string",
-                            "content": "LIVE Campus (L'Institut des Vocations pour l'Emploi), inaugurated in 2024, is the sixth LIVE campus in France and first in western France, supporting adults over 25 who have been inactive. The program offers 18 weeks of free support to help individuals re-enter the workforce, contributing to an increased annual hosting capacity of over 650 people across France Source: https://www.lvmh.com/en/news-lvmh/live--linstitut-des-vocations-pour-lemploi--expands-its-hosting-capacity-with-the-inauguration-of-a-new-campus-in-le-havre",
+                            "content": "Creation of a new higher education and student life center with an investment of 100 million euros, including relocation of seven IUT departments to the city center campus, establishment of a branch of ENSAM (National School of Arts and Crafts), and creation of a student life center with university restaurant, accommodating over 2,200 additional students as part of the Le Havre-Normandie Campus expansion. Source: https://www.campus-lehavre-normandie.fr/en/news/new-higher-education-and-student-life-center",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
+                            "content": "100 million euros",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
@@ -284,7 +284,7 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Urban development and sustainability",
+                            "content": "Sustainable Development",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Vocational education and training"
                         },
@@ -296,7 +296,7 @@
                         },
                         "description": {
                             "type": "string",
-                            "content": "Redevelopment of Les Docks Vauban area, creating mixed residential, commercial, and leisure spaces, including waterfront revitalization for improved accessibility and ecological sustainability, with creation of green corridors and urban parks, while rehabilitating historical and industrial sites for new community uses Source: https://futurehubs.eu/unlocking-the-future-le-havre-seine-metropole-frances-thriving-gateway-to-global-trade-and-innovation/",
+                            "content": "Implementation of the Le Havre Smart Port City project, aiming to position the city as a reference among industrial and port metropolises by 2030, featuring the launch of Hangar Zero (a citizen laboratory for ecological transition) and development of agricultural initiatives in urban and port areas, along with investments in renewable energies and encouragement of green businesses. Source: https://www.intelligentcitieschallenge.eu/cities/le-havre-seine-metropole",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
@@ -310,19 +310,19 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Renewable energy development",
+                            "content": "Urban Renewal",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Développement et cohésion territoriale",
+                            "content": "Sport, culture et vie associative",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Le Havre Seine Métropole is developing solar energy across its territory and assets, focusing on installing solar panels on roofs and shade houses to increase renewable energy production and promote sustainable development in the community Source: https://www.eucityfacility.eu/eucf-beneficiaries/le-havre-seine-metropole",
+                            "content": "Transformation of former port areas into public spaces, creating a continuous boardwalk with recreational activities from Sainte-Adresse to the port, including development of the Pointe de Floride with new cruise terminals and public access areas to enhance community engagement and tourism. Source: https://www.lehavreseinemetropole.fr/sites/default/files/media/downloads/le-havre-croisieres-a-large-scale-development-project-for-the-pointe-de-floride.pdf",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
@@ -350,19 +350,19 @@
                         },
                         "category": {
                             "type": "string",
-                            "content": "Énergies renouvelables",
+                            "content": "Installation of renewable energy production units (Solar, Wind, Hydraulic, Geothermal, Biomass)",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Le Havre Seine Métropole is developing a major offshore wind power project aiming to generate 5 GW of energy to power local industries and reduce fossil fuel dependency, combined with industrial waste heat recovery to supply renewable heat to nearby areas, which is part of their commitment to achieve significant carbon reduction by 2030 Source: https://www.ecadin.org/insights-from-ecadins-visit-to-le-havre/",
+                            "content": "Axe Seine Energies Renouvelables, launched in early 2022, aims to develop 50 renewable energy projects by 2030, including biomass, solar PV, wind, heat recovery, and hydrogen projects along the Seine River, with a potential installed renewable capacity of 250 MW. Le Havre's investment amounts to €2.2 million, representing one-quarter of the capital Source: https://www.ren21.net/gsr-2022/snapshots/paris-rouen-and-le-havre/paris-rouen-and-le-havre/",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
+                            "content": "2.2 million euros",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Enter the investment amount for the green project",
                             "example": "15 million euros"
                         }
@@ -370,25 +370,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Waste management",
+                            "content": "Waste management and recovery",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Gestion et valorisation des déchets",
+                            "content": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Starting in 2024, Le Havre will undertake a major environmental remediation project to treat the most polluting materials from an old landfill site, with an estimated cost between 29 and 41 million euros, aiming to reduce environmental impact and protect groundwater Source: https://batinfo.com/en/actuality/the-most-polluting-materials-from-the-old-landfill-in-le-havre-will-be-treated-from-2024_22459",
+                            "content": "Installation of 33 solar-powered compacting waste bins along the coastline, with plans to add 52 more, significantly improving waste management efficiency and cleanliness in coastal areas Source: https://www.mr-fill.com/developments/clean-coastline-of-le-havre-thanks-to-solar-compacting-bins/",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "41 million euros",
+                            "content": "unknown",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project.",
                             "example": "15 million euros"
                         }
@@ -396,19 +396,19 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Sustainable transport",
+                            "content": "Energy efficiency",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Mobilité douce et transports propres",
+                            "content": "Construction or renovation of buildings",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Le Havre has implemented a modern tramway line system to improve sustainable urban mobility, fostering social cohesion by connecting low-income areas to the city center while improving the environmental performance of the public transport system Source: https://ec.europa.eu/regional_policy/sources/evaluation/transport_case_lehavre.pdf",
+                            "content": "Energy renovation of the University of Le Havre Normandy buildings, including installation of photovoltaic panels on building roofs in 2023, as part of the Recovery Plan supported by the French State Source: https://www.campus-lehavre-normandie.fr/en/news/university-continues-its-eco-responsible-development",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
@@ -434,13 +434,13 @@
                         },
                         "category": {
                             "type": "string",
-                            "content": "Maisons de santé",
+                            "content": "Health services and facilities",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Implementation of the Local Health Contract 2022-2024, aiming to strengthen healthcare access through medical professional recruitment initiatives and establishment of new health centers, targeting improved medical coverage for over 275,000 residents Source: https://www.normandie.ars.sante.fr/media/118269/download?inline",
+                            "content": "Campus Health Info Project: A comprehensive health education initiative launched in March 2024, featuring thematic evenings covering mental health services, access to care pathways, sexual health resources, and addiction prevention, supported by local medical associations and health professionals Source: https://www.campus-lehavre-normandie.fr/en/news/campus-health-info",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
@@ -460,19 +460,19 @@
                         },
                         "category": {
                             "type": "string",
-                            "content": "Etablissements de formation professionnelle (CFA, IFSI...)",
+                            "content": "Higher education facilities",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Creation of the École 42 Le Havre campus in 2022, an innovative IT training center providing free education for 150-200 students annually to address digital skills needs in the region Source: https://42lehavre.fr/en/42-le-havre-partners/",
+                            "content": "New Higher Education and Student Life Center project featuring relocation of seven IUT departments to the city center campus, establishment of an ENSAM engineering branch, and creation of a student life center with university restaurant Source: https://www.campus-lehavre-normandie.fr/en/news/new-higher-education-and-student-life-center",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
+                            "content": "100 million euros",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Enter the investment amount for the social project",
                             "example": "21.9 million euros"
                         }
@@ -480,19 +480,19 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Sport, culture et vie associative",
+                            "content": "Enseignement et formation professionnelle",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Equipements culturels (musées, patrimoine...)",
+                            "content": "Professional training facilities",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Enhancement of Le Havre's cultural heritage through the \"Land of Art & History\" classification, implementing programs to preserve historical sites and promote cultural tourism across the metropolitan area Source: https://www.campus-lehavre-normandie.fr/en/le-havre-culture-and-heritage",
+                            "content": "Production School Initiative launched in November 2021, providing alternative educational paths for young people aged 15-18 with training in industrial professions, part of a larger network expansion across France Source: https://www.businesswire.com/news/home/20211108005741/en/TotalEnergies-Confirms-its-Commitment-to-Youth-with-a-New-Production-School-in-Le-Havre",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
@@ -520,13 +520,13 @@
                 },
                 "title": {
                     "type": "string",
-                    "content": "Mayor of Le Havre (since 2020)",
+                    "content": "Mayor of Le Havre",
                     "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the professional title of the first contact person. Answer with max 5 words, without any explanation or excuse.",
                     "example": "Mayor of Dijon"
                 },
                 "title_since": {
                     "type": "string",
-                    "content": "2020",
+                    "content": "July 5, 2020",
                     "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the date when the first person started in this title. Answer with just the date, without any explanation or excuse.",
                     "example": "November 25, 2024"
                 },
@@ -556,7 +556,7 @@
                 },
                 "career": {
                     "type": "string",
-                    "content": "Deputy Mayor of Le Havre (2001-2010), Director General UMP party (2002-2004), Mayor of Le Havre (2010-2017), Member of National Assembly (2012-2017), Prime Minister of France (2017-2020), Mayor of Le Havre (since 2020)",
+                    "content": "Deputy Mayor of Le Havre (2001), Director UMP (2002-2004), Lawyer at Debevoise & Plimpton (2005-2007), Director at Areva (2007-2010), Mayor of Le Havre (2010-2017), Prime Minister of France (2017-2020), Mayor of Le Havre (since 2020)",
                     "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the career history of the first contact person. Be as brief, conscise and specific as possible.",
                     "example": "Former French champion in 5,000 m canoe-kayak (1998), Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014), Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014), 1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024), Acting Mayor of Dijon (July 27-August 10, 2015)"
                 }
@@ -564,49 +564,49 @@
             {
                 "name": {
                     "type": "string",
-                    "content": "Jean-Baptiste Gastinne",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the full name of the second contact person. Answer with just the name, without any explanation or excuse.",
                     "example": "Francois REBSAMEN"
                 },
                 "title": {
                     "type": "string",
-                    "content": "First Deputy Mayor of Le Havre",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the professional title of the second contact person. Answer with max 5 words, without any explanation or excuse.",
                     "example": "Chairman of the Dijon Metropolitan Council"
                 },
                 "title_since": {
                     "type": "string",
-                    "content": "2020",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the date when the second person started in this title. Answer with just the date, without any explanation or excuse.",
                     "example": "2017"
                 },
                 "birth_date": {
                     "type": "string",
-                    "content": "unknown",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth date of the second contact person. Answer with just the date, without any explanation or excuse.",
                     "example": "June 25, 1951"
                 },
                 "birth_place": {
                     "type": "string",
-                    "content": "unknown",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth place of the second contact person. Answer with just the Place, without any explanation or excuse.",
                     "example": "Dijon, France"
                 },
                 "education": {
                     "type": "string",
-                    "content": "unknown",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the educational background of the second contact person. Be as brief, conscise and specific as possible.",
                     "example": "Master's degree in public law, DESS in Economics, DEA in Political Science"
                 },
                 "activities": {
                     "type": "string",
-                    "content": "First Deputy Mayor in charge of urban planning and environmental policy (since 2020)",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the professional activities of the second contact person. Be as brief, conscise and specific as possible.",
                     "example": "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
                 },
                 "career": {
                     "type": "string",
-                    "content": "Teacher at Le Havre colleges (1993-2010), Regional councilor (2010), Deputy Mayor (2011-2019), Mayor of Le Havre (2019-2020), First Deputy Mayor (since 2020)",
+                    "content": null,
                     "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the career history of the second contact person. Be as brief, conscise and specific as possible.",
                     "example": "Burgundy regional councillor (1994-2001), PS National Secretary, in charge of organization and coordination (1997-2005), General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008), Mayor of Dijon (2001-2024)"
                 }
@@ -638,19 +638,19 @@
         "inter_municipality": {
             "date": {
                 "type": "string",
-                "content": "02/02/2024",
+                "content": "unknown",
                 "instruction": "Enter the date of the budget data for the current year for this inter-municipality",
                 "example": "December 21"
             },
             "year": {
                 "type": "number",
-                "content": "2025",
+                "content": "unknown",
                 "instruction": "Enter the fiscal year of the budget data for the current year for this inter-municipality",
                 "example": 2023
             },
             "total_budget": {
                 "type": "number",
-                "content": "408.85 million euros",
+                "content": "762 million euros",
                 "instruction": "Enter the total budget amount in euros for the current year for this inter-municipality",
                 "example": "418 million euros"
             }

@@ -159,9 +159,12 @@ class Orchestrator:
         # print(self.conversation_history[conversation_id][-1])
 
         # Get response from agent and extend the conversation history with the response
-        response = self.tool_agent.run(
-            self.conversation_history[conversation_id])
-        self.conversation_history[conversation_id].extend(response)
+        try:
+            response = self.tool_agent.run(
+                self.conversation_history[conversation_id])
+            self.conversation_history[conversation_id].extend(response)
+        except:
+            print("\033[38;5;208mWARNING: Bedrock Role Exception!\033[0m")
         # print(self.conversation_history[conversation_id][-1])
 
         # We call the agent again to get the final reply after the tool executions
@@ -248,11 +251,15 @@ class Orchestrator:
                             # print("--------------------------------")
 
                             # Get response for this item
-                            response = self.tool_agent.run(
-                                self.conversation_history[conversation_id]
-                            )
-                            self.conversation_history[conversation_id].extend(
-                                response)
+                            try:
+                                response = self.tool_agent.run(
+                                    self.conversation_history[conversation_id]
+                                )
+                                self.conversation_history[conversation_id].extend(
+                                    response)
+                            except:
+                                print("\033[38;5;208mWARNING: Bedrock Role Exception!\033[0m")
+
 
                             # We call the agent again to get the final reply after the tool execution
                             if (
@@ -288,11 +295,14 @@ class Orchestrator:
                     # print(self.conversation_history[conversation_id][-1])
 
                     # Get response from agent and extend the conversation history with the response
-                    response = self.tool_agent.run(
-                        self.conversation_history[conversation_id]
-                    )
-                    self.conversation_history[conversation_id].extend(response)
-                    # print(self.conversation_history[conversation_id][-1])
+                    try:
+                        response = self.tool_agent.run(
+                            self.conversation_history[conversation_id]
+                        )
+                        self.conversation_history[conversation_id].extend(response)
+                        # print(self.conversation_history[conversation_id][-1])
+                    except:
+                        print("\033[38;5;208mWARNING: Bedrock Role Exception!\033[0m")
 
                     # We call the agent again to get the final reply after the tool executions
                     final_reply = self.tool_agent.run(
@@ -365,11 +375,14 @@ class Orchestrator:
                         )
 
                         # Get response for this item
-                        response = self.tool_agent.run(
-                            self.conversation_history[conversation_id]
-                        )
-                        self.conversation_history[conversation_id].extend(
-                            response)
+                        try:
+                            response = self.tool_agent.run(
+                                self.conversation_history[conversation_id]
+                            )
+                            self.conversation_history[conversation_id].extend(
+                                response)
+                        except:
+                            print("\033[38;5;208mWARNING: Bedrock Role Exception!\033[0m")
 
                         # We call the agent again to get the final reply after the tool execution
                         if (
@@ -405,11 +418,14 @@ class Orchestrator:
                 # print(self.conversation_history[conversation_id][-1])
 
                 # Get response from agent and extend the conversation history with the response
-                response = self.tool_agent.run(
-                    self.conversation_history[conversation_id]
-                )
-                self.conversation_history[conversation_id].extend(response)
-                # print(self.conversation_history[conversation_id][-1])
+                try:
+                    response = self.tool_agent.run(
+                        self.conversation_history[conversation_id]
+                    )
+                    self.conversation_history[conversation_id].extend(response)
+                    # print(self.conversation_history[conversation_id][-1])
+                except:
+                    print("\033[38;5;208mWARNING: Bedrock Role Exception!\033[0m")
 
                 # We call the agent again to get the final reply after the tool executions
                 final_reply = self.tool_agent.run(
@@ -462,10 +478,13 @@ class Orchestrator:
                 )
 
                 # Get response for this item
-                response = self.tool_agent.run(
-                    self.conversation_history[conversation_id]
-                )
-                self.conversation_history[conversation_id].extend(response)
+                try:
+                    response = self.tool_agent.run(
+                        self.conversation_history[conversation_id]
+                    )
+                    self.conversation_history[conversation_id].extend(response)
+                except:
+                    print("\033[38;5;208mWARNING: Bedrock Role Exception!\033[0m")
 
                 # We call the agent again to get the final reply after the tool execution
                 if (
@@ -525,11 +544,14 @@ class Orchestrator:
                 # print(self.conversation_history[conversation_id][-1])
 
                 # Get response from agent and extend the conversation history with the response
-                response = self.tool_agent.run(
-                    self.conversation_history[conversation_id]
-                )
-                self.conversation_history[conversation_id].extend(response)
-                # print(self.conversation_history[conversation_id][-1])
+                try:
+                    response = self.tool_agent.run(
+                        self.conversation_history[conversation_id]
+                    )
+                    self.conversation_history[conversation_id].extend(response)
+                    # print(self.conversation_history[conversation_id][-1])
+                except:
+                    print("\033[38;5;208mWARNING: Bedrock Role Exception!\033[0m")
 
                 # We call the agent again to get the final reply after the tool executions
                 final_reply = self.tool_agent.run(
