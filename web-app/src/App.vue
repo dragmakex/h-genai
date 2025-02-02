@@ -79,7 +79,8 @@ const handleGenerate = async () => {
   }, 200)
 
   try {
-    const response = await fetch('https://kbba87ikh5.execute-api.us-west-2.amazonaws.com/generate-pdf', {
+    // const response = await fetch('https://kbba87ikh5.execute-api.us-west-2.amazonaws.com/generate-pdf', {
+    const response = await fetch('https://8e78-178-208-18-142.ngrok-free.app/generate-pdf', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
