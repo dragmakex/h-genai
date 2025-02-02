@@ -8,7 +8,7 @@ This project provides a comprehensive data collection and analysis system for Fr
 
   Click [here](https://youtu.be/6UeDz4PCt1w) for a Demo on YouTube.
 
-  To test the App go to [sfil-ai.com](sfil-ai.com)
+  To test the App go to [https://aws-deployment.d5glcpyeyb6n5.amplifyapp.com/](https://aws-deployment.d5glcpyeyb6n5.amplifyapp.com/)
 </div>
 
 
