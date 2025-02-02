@@ -1,5 +1,6 @@
 import json
 import inspect
+import os
 from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage, ChatRole
 from .agents import Agent, ToolCallingAgent
@@ -77,7 +78,9 @@ class Orchestrator:
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
         try:
-            with open('data_template.json', 'r', encoding='utf-8') as file:
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            file_path = os.path.join(current_dir, 'data_template.json')
+            with open(file_path, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except FileNotFoundError:
             raise FileNotFoundError(
@@ -118,8 +121,8 @@ class Orchestrator:
             self.inter_municipality_epci)
 
         reference_finances = []
-        for element in self.reference_sirens:
-            _, _, ref = get_commune_finances_by_siren(element["siren"])
+        for siren in self.reference_sirens:
+            _, _, ref = get_commune_finances_by_siren(siren)
             reference_finances.append(ref)
 
         return {
@@ -606,6 +609,27 @@ class Orchestrator:
             print(f"Error saving to answer.json: {e}")
 
         return self.data
+    
+    def test_process_all_sections(self) -> Dict[str, Any]:
+        """Process all fields in data_template.json and save results to data_answer.json"""
+        self.process_summary_fields(inter=False)
+        # self.process_summary_fields(inter=True)
+        # self.process_projects_fields(inter=False)
+        # self.process_projects_fields(inter=True)
+        # self.process_contact_fields()
+        # self.process_budget_fields()
+        # self.process_financial_data()
+        # self.process_comparative_data()
+
+        # Save to answer.json
+        try:
+            with open("data_answer.json", "w", encoding="utf-8") as file:
+                json.dump(self.data, file, indent=4, ensure_ascii=False)
+        except Exception as e:
+            print(f"Error saving to answer.json: {e}")
+
+        return self.data
+
 
     def parallel_process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
@@ -641,5 +665,5 @@ class Orchestrator:
         
         return self.data
     
-test_orchestrator = Orchestrator()
-test_orchestrator.process_all_sections()
+# test_orchestrator = Orchestrator()
+# test_orchestrator.process_all_sections()
