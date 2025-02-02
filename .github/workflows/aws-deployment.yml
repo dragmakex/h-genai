@@ -124,6 +124,86 @@ jobs:
         run: |
           aws lambda wait function-updated --function-name h-genai-server
 
+      - name: Create or Update IAM Role
+        env:
+          AWS_ACCOUNT_ID: "140023381458"
+        run: |
+          # Create trust policy
+          echo '{
+            "Version": "2012-10-17",
+            "Statement": [{
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }]
+          }' > trust-policy.json
+
+          # Create role if it doesn't exist
+          if ! aws iam get-role --role-name h-genai-lambda-role &> /dev/null; then
+            aws iam create-role \
+              --role-name h-genai-lambda-role \
+              --assume-role-policy-document file://trust-policy.json
+          fi
+
+          # Create policy document
+          echo '{
+            "Version": "2012-10-17",
+            "Statement": [
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "logs:CreateLogGroup",
+                  "logs:CreateLogStream",
+                  "logs:PutLogEvents"
+                ],
+                "Resource": "arn:aws:logs:*:*:*"
+              },
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "dynamodb:GetItem",
+                  "dynamodb:PutItem",
+                  "dynamodb:UpdateItem"
+                ],
+                "Resource": "arn:aws:dynamodb:${AWS_REGION}:${AWS_ACCOUNT_ID}:table/h-genai-jobs"
+              },
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "s3:PutObject",
+                  "s3:GetObject"
+                ],
+                "Resource": "arn:aws:s3:::h-genai-pdfs/*"
+              },
+              {
+                "Effect": "Allow",
+                "Action": [
+                  "sqs:SendMessage",
+                  "sqs:ReceiveMessage",
+                  "sqs:DeleteMessage",
+                  "sqs:GetQueueAttributes"
+                ],
+                "Resource": "arn:aws:sqs:${AWS_REGION}:${AWS_ACCOUNT_ID}:h-genai-pdf-generation"
+              }
+            ]
+          }' > policy.json
+
+          # Create or update policy
+          aws iam put-role-policy \
+            --role-name h-genai-lambda-role \
+            --policy-name h-genai-lambda-policy \
+            --policy-document file://policy.json
+
+          # Attach AWSLambdaBasicExecutionRole
+          aws iam attach-role-policy \
+            --role-name h-genai-lambda-role \
+            --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+          # Wait for role to propagate
+          sleep 10
+
       - name: Create or Update PDF Generator Lambda
         env:
           AWS_ACCOUNT_ID: "140023381458"
