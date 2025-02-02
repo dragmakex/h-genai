@@ -46,9 +46,11 @@ COPY --from=builder /var/lang/lib/python3.11/site-packages/ /var/lang/lib/python
 # Copy only the API code
 COPY ./api ./api
 
-# Copy agent directory and its .env file
+# Copy agent directory
 COPY ./agent ./agent
-COPY ./agent/.env ./agent/.env
+
+# Note: Environment variables should be configured through Lambda environment variables
+# instead of copying .env files
 
 # Copy template directory
 COPY ./template ./template
