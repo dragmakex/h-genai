@@ -109,6 +109,13 @@ jobs:
               PERPLEXITY_API_KEY=${{ secrets.PERPLEXITY_API_KEY }}
             }"
 
+      - name: Update Lambda Timeout and Memory
+        run: |
+          aws lambda update-function-configuration \
+            --function-name h-genai-server \
+            --timeout 900 \
+            --memory-size 2048
+
   deploy-webapp:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/web-app'
