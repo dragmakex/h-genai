@@ -1,9 +1,13 @@
 # h-genai
 
+This project provides a comprehensive data collection and analysis system for French municipalities and their inter-municipal organizations (EPCIs). It combines financial data from the OFGL (Observatoire des Finances et de la Gestion publique Locales) API with AI-powered web research to create detailed municipality profiles.
+
+<div align="center">
+  <img src="web-app/src/assets/images/screenshot.png" alt="H-GenAI Application Preview" width="800px">
+</div>
+
 ## Table of Contents
-- [Overview](#overview)
 - [Key Features](#key-features)
-  - [Preview](#preview)
   - [Financial Analysis](#financial-analysis)
   - [Data Sources](#data-sources)
   - [Architecture](#architecture)
@@ -28,40 +32,32 @@
   - [Adding New Tests](#adding-new-tests)
 - [Team](#team)
 
-## Overview
-
-This project provides a comprehensive data collection and analysis system for French municipalities and their inter-municipal organizations (EPCIs). It combines financial data from the OFGL (Observatoire des Finances et de la Gestion publique Locales) API with AI-powered web research to create detailed municipality profiles.
-
 ## Key Features
 
-- **Preview**: A glimpse of the application interface:
-<div align="center">
-  <img src="h-genai/web-app/src/assets/images/screenshot.png" alt="H-GenAI Application Preview" width="800px">
-</div>
-
-- **Financial Analysis**: Detailed financial metrics for both municipalities and EPCIs including:
+### Financial Analysis
+Detailed financial metrics for both municipalities and EPCIs including:
   - Budget analysis and debt metrics
   - Savings ratios and operating costs
   - Per capita financial indicators
   - Comparative analysis with similar municipalities
 
-- **Data Sources**:
-  - OFGL API for official financial data (https://www.ofgl.fr/)
-  - Perplexity API for web research (https://www.perplexity.ai/)
-  - RAG (Retrieval Augmented Generation) for document analysis
-  - Custom reference database of similar municipalities
+### Data Sources
+- OFGL API for official financial data (https://www.ofgl.fr/)
+- Perplexity API for web research (https://www.perplexity.ai/)
+- RAG (Retrieval Augmented Generation) for document analysis
+- Custom reference database of similar municipalities
 
-- **Architecture**:
-  - Backend: FastAPI server with AI agent system
-  - Frontend: Vue.js web application
-  - AI: Claude 3.5 Sonnet (via Amazon Bedrock) as the main LLM
-  - Database: DynamoDB for data persistence
+### Architecture
+- Backend: FastAPI server with AI agent system
+- Frontend: Vue.js web application
+- AI: Claude 3.5 Sonnet (via Amazon Bedrock) as the main LLM
+- Database: DynamoDB for data persistence
 
-- **Output Formats**:
-  - Structured JSON data
-  - PDF reports
-  - Interactive web interface
-  - Comparative visualizations
+### Output Formats
+- Structured JSON data
+- PDF reports
+- Interactive web interface
+- Comparative visualizations
 
 The system is designed to help financial analysts, municipal administrators, and researchers access and analyze comprehensive 
 municipal data through an intuitive interface while leveraging AI to enrich the data with contextual information.
@@ -70,31 +66,31 @@ municipal data through an intuitive interface while leveraging AI to enrich the 
 
 The project is organized into two main components:
 
-### Server (`/server`)
-- `agent/`: Core AI agent system
-  - `agents.py`: Agent implementations
-  - `orchestrator.py`: Coordination of data collection
-  - `tools.py`: Tool implementations for agents
-  - `prompt.py`: LLM prompt templates
-  - `rag_pipeline.py`: Document retrieval system
-  - `util.py`: Utility functions for querying the OFGL API
-- `api/`: FastAPI server implementation
-- `template/`: PDF report templates
-- `tests/`: Test suite
-- `notebooks/`: Development and testing notebooks
+### Server
+- `agent/` (/server/agent): Core AI agent system
+  - `agents.py` (/server/agent/agents.py): Agent implementations
+  - `orchestrator.py` (/server/agent/orchestrator.py): Coordination of data collection
+  - `tools.py` (/server/agent/tools.py): Tool implementations for agents
+  - `prompt.py` (/server/agent/prompt.py): LLM prompt templates
+  - `rag_pipeline.py` (/server/agent/rag_pipeline.py): Document retrieval system
+  - `util.py` (/server/agent/util.py): Utility functions for querying the OFGL API
+- `api/` (/server/api): FastAPI server implementation
+- `template/` (/server/template): PDF report templates
+- `tests/` (/server/tests): Test suite
+- `notebooks/` (/server/notebooks): Development and testing notebooks
 
-### Web Application (`/web-app`)
-- `src/`: Source code
-  - `components/`: Vue.js components
-  - `stores/`: State management
-  - `assets/`: Static assets
-  - `lib/`: Utility functions
-- `public/`: Static files
+### Web Application
+- `src/` (/web-app/src): Source code
+  - `components/` (/web-app/src/components): Vue.js components
+  - `stores/` (/web-app/src/stores): State management
+  - `assets/` (/web-app/src/assets): Static assets
+  - `lib/` (/web-app/src/lib): Utility functions
+- `public/` (/web-app/public): Static files
 
-### Data (`/data`)
+### Data
 - Notebooks and scripts for data preprocessing and exploration:
-  - `explore_ofgl_api.ipynb`: Exploration of the OFGL API endpoints and available datasets
-  - `pp_ofgl_data.ipynb`: Data preprocessing pipeline for municipality data including:
+  - `explore_ofgl_api.ipynb` (/data/explore_ofgl_api.ipynb): Exploration of the OFGL API endpoints and available datasets
+  - `pp_ofgl_data.ipynb` (/data/pp_ofgl_data.ipynb): Data preprocessing pipeline for municipality data including:
     - Deduplication of municipality entries
     - Population data normalization
     - Reference municipality selection
@@ -143,41 +139,34 @@ The data processing workflow:
 
 ## Useful commands
 
-### Deploying changes to AWS Lambda (sample command)```bash
+### Deploying changes to AWS Lambda
+Sample command:
+```bash
 cd server && docker build -t h-genai-server . && docker tag h-genai-server:latest 140023381458.dkr.ecr.us-west-2.amazonaws.com/
 h-genai-server:latest && docker push 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest && aws lambda 
 update-function-code --function-name h-genai-server --image-uri 140023381458.dkr.ecr.us-west-2.amazonaws.com/h-genai-server:latest
 ```
-
 ## CI/CD Pipeline
-
 The project uses GitHub Actions for continuous integration and deployment, configured in `.github/workflows/aws-deployment.yml`.
-
 ### Workflow Overview
-
 The pipeline consists of three main jobs:
-
 1. **Test Server**:
    - Runs on every push to `main` that changes files in `/server`
    - Sets up Python 3.11 environment
    - Installs dependencies using Poetry
    - Runs pytest suite
    - Caches dependencies for faster builds
-
 2. **Deploy Server** (runs after successful tests):
    - Builds Docker image for Lambda deployment
    - Pushes to Amazon ECR
    - Updates Lambda function
    - Configures provisioned concurrency
    - Creates production alias
-
 3. **Deploy Web App** (on `web-app` branch):
    - Sets up Node.js environment
    - Runs tests and builds application
    - Deploys to AWS Amplify
-
 ### Environment Variables
-
 Required secrets in GitHub:
 ```bash
 AWS_ACCESS_KEY_ID
@@ -250,4 +239,3 @@ npm run test
 
 <div align="center">
   <img src="docs/assets/team.jpg" alt="H-GenAI Team" width="600px">
-</div>
