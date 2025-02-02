@@ -175,13 +175,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Renewable energies" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Solar energy"
                         },
                         "description": {
@@ -193,7 +193,7 @@
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project.",
                             "example": "50 million euros"
                         }
                     },
@@ -201,13 +201,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Individual transport"
                         },
                         "description": {
@@ -227,13 +227,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Individual transport"
                         },
                         "description": {
@@ -245,13 +245,12 @@
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project.",
                             "example": "50 million euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important green projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN."
-            },
+                "instruction": "Find 3 important green projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."            },
             "social_projects": {
                 "type": "array",
                 "content": [
@@ -259,13 +258,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example":  "Vocational education and training" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
@@ -285,13 +284,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example":  "Vocational education and training" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
@@ -311,13 +310,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example":  "Vocational education and training" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
@@ -334,7 +333,7 @@
                         }
                     }
                 ],
-                "instruction": "Find 3 important social projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN."
+                "instruction": "Find 3 important social projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
             }
         },
         "inter_municipality": {
@@ -345,13 +344,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
@@ -371,13 +370,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
@@ -389,20 +388,20 @@
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project.",
                             "example": "15 million euros"
                         }
                     },{
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
@@ -414,13 +413,12 @@
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project.",
                             "example": "15 million euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important green projects concerning the inter_municipality. Make sure they are 3 distinct, different and representative projects."
-            },
+                "instruction": "Find 3 important green projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."            },
             "social_projects": {
                 "type": "array",
                 "content": [
@@ -428,13 +426,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
@@ -446,7 +444,7 @@
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project.",
                             "example": "21.9 million euros"
                         }
                     },
@@ -454,13 +452,13 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
@@ -480,30 +478,30 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Name the social theme of the project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Name the category of the social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Enter the investment amount for the social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Enter the investment amount for the social project.",
                             "example": "21.9 million euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important social projects concerning the inter_municipality. Make sure they are 3 distinct, different and representative projects."
+                "instruction": "Find 3 important social projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
             }
         }
     },

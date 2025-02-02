@@ -174,51 +174,51 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Based on the search results, let me provide the theme for the first green project in Clermont-Ferrand:\n\nClean mobility",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project",
+                            "content": "Based on the search results, for the first green project's theme:\n\nSustainable construction",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Renewable energies"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Hydrogen transport",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project",
+                            "content": "Efficacité énergétique de la construction & de l'aménagement urbain",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Solar energy"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Implementation of hydrogen bus fleet with 14 buses (4 retrofitted + 10 new) and hydrogen production station in Cournon d'Auvergne by 2025, reducing CO2 emissions by 594 tonnes annually.",
+                            "content": "The Saint-Denis Aquatic Center, inaugurated in 2024, features a 4,200m² solar canopy generating 20% of the site's electricity consumption and is 90% powered by renewable or recovered energy, with an innovative system for recovering heat from humid air to heat the pools Source: https://globalrenewablenews.com/article/energy/category/solar/142/1093161/paris-2024-the-new-saint-denis-aquatic-center-is-inaugurated-.html",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project",
+                            "content": "174.6 million euros",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project.",
                             "example": "50 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Industrial decarbonization",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the environmental theme of the project",
+                            "content": "Mobilité douce et transports propres",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Energy efficiency",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project",
+                            "content": "Transport en commun",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Michelin Cataroux site transformation with ENGIE: modernization of industrial equipment and waste heat recovery system, reducing gas consumption by 50%, water use by 13%, providing heat for 4,000 homes and avoiding 7,000 tonnes CO2 annually.",
+                            "content": "The Grand Paris Express expansion includes a new fully automated metro line encircling Paris with new stations in Saint-Denis, designed to reduce car dependency and provide sustainable transport options in currently car-centric areas Source: https://www.chooseparisregion.org/why-paris-region/A-Sustainable-Region",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
-                            "content": "300 million euros",
+                            "content": "unknown",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Enter the investment amount for the green project",
                             "example": "50 million euros"
                         }
@@ -226,31 +226,31 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Urban greening",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project",
+                            "content": "Énergies renouvelables",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Soft mobility and clean transport"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Urban renewal",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project",
+                            "content": "Géothermie",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Individual transport"
                         },
                         "description": {
                             "type": "string",
-                            "content": "St-Jean district transformation: 40-hectare wasteland conversion into metropolitan district with sustainable housing, enhanced biodiversity, and preservation of industrial heritage.",
+                            "content": "A new geothermal-powered heating network being developed for the nearby towns of Clichy-sous-Bois and Livry-Gargan will extend over 26 km by 2031, with a production capacity of 115 GWh, reducing CO2 emissions by 20,000 tonnes per year Source: https://www.marketscreener.com/quote/stock/ARVERNE-GROUP-S-A-158956579/news/Arverne-Group-geothermal-energy-project-in-Seine-Saint-Denis-48881082/",
                             "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
                         },
                         "investment": {
                             "type": "string",
-                            "content": "532642 euros",
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project",
+                            "content": "unknown",
+                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project.",
                             "example": "50 million euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important green projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN."
+                "instruction": "Find 3 important green projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
             },
             "social_projects": {
                 "type": "array",
@@ -258,25 +258,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Based on the search results, for the first social project theme in Clermont-Ferrand:\n\nEducational inclusion",
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project",
+                            "content": "Based on the search results, for item 1 (theme), focusing on one of the major social projects in Saint-Denis:\n\nUrban sports and aquatics development",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Educational program",
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the category of the social project",
+                            "content": "Sport, culture et vie associative",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Educational and Learning City program launched in 2021, supporting youth aged 0-25 through a network of 100 actors including institutions, schools, companies, and NGOs. Focus on family involvement and educational support across all life stages.",
+                            "content": "The Saint-Denis Aquatics Centre, part of the 2024 Olympics legacy, will be transformed into a community sports facility featuring 50m and 25m swimming pools, paddle tennis courts, team sports areas, climbing facilities, and fitness spaces, addressing the critical need for swimming education among local youth and providing essential sports infrastructure in a historically disadvantaged area. The facility will serve 250,000 residents and help reduce the fact that 60% of local children cannot swim by age 11 Source: https://www.ghd.com/en-us/insights/a-pool-of-possibilities-saint-denis-sustainable-and-social-aquatic-centre",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
+                            "content": "175 million euros",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
@@ -284,25 +284,25 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Urban renewal",
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the social theme of the project",
+                            "content": "Développement et cohésion territoriale",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Industrial zone redevelopment",
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the category of the social project",
+                            "content": "Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV)",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "St-Jean area transformation project converting former industrial zone into economic and social hub, featuring affordable housing, improved living environment, preservation of industrial heritage, and enhanced biodiversity initiatives.",
+                            "content": "The Olympic Village development, spanning 52 hectares across Saint-Denis, will be converted post-2024 Games into a new sustainable neighborhood featuring 2,800 family housing units (25-40% social housing), student residences, a hotel, two schools, two day-care centers, 120,000 m² of office space, 3,200 m² of neighborhood shops, and 6 hectares of green spaces, transforming an underutilized industrial area into a vibrant mixed-use community Source: https://www.diva-portal.org/smash/get/diva2:1769107/FULLTEXT01.pdf",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
+                            "content": "1.3 billion euros",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
@@ -310,31 +310,31 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Sustainable mobility",
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the social theme of the project",
+                            "content": "Urban mobility and transportation",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Vocational education and training"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Public transport infrastructure",
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the category of the social project",
+                            "content": "Développement du Très Haut Débit",
+                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing educational establishments (schools, colleges, lycées...)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Hydrogen bus line implementation by 2025, featuring 14 hydrogen-powered buses, reducing CO2 emissions by 594 tonnes per year, combining retrofitted and new buses for sustainable public transport.",
+                            "content": "The Grand Paris Express station Saint-Denis Pleyel, set to be completed in 2024, will be the largest station of the new metro network, connecting four metro lines (14, 15, 16, and 17) and serving over 250,000 daily travelers, complemented by the Franchissement Urbain Pleyel multimodal bridge project that includes pedestrian and bus lanes to improve connectivity across the railway tracks Source: https://www.diva-portal.org/smash/get/diva2:1769107/FULLTEXT01.pdf",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
                         },
                         "investment": {
                             "type": "string",
-                            "content": "unknown",
+                            "content": "295 million euros",
                             "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Enter the investment amount for the social project",
                             "example": "75 million euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important social projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN."
+                "instruction": "Find 3 important social projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
             }
         },
         "inter_municipality": {
@@ -344,19 +344,19 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "For item 1 (theme) of the first green project in Clermont Auvergne Metropole:\n\nClean Transportation",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the environmental theme of the project",
+                            "content": "Gestion durable de l'eau et de l'assainissement",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Sustainable Public Transportation Infrastructure",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project",
+                            "content": "Service public de l'eau potable",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Introduction of 14 hydrogen-powered buses (10 new and 4 retrofitted) with local hydrogen ecosystem development at Gravanches station. Project includes compression and fueling station at Cournon-d'Auvergne. Expected to reduce CO2 emissions by 594 tonnes annually.",
+                            "content": "Le projet de réutilisation des eaux usées traitées de la station d'épuration du Grand Prado, lancé en 2013, vise à recycler l'eau pour l'agriculture tout en produisant du biogaz pour la production d'électricité et de bioGNV. Source: https://www.cinor.re/PDF/RDD_OB_2022.pdf",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
@@ -370,57 +370,57 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Circular Economy and Recycling",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project",
+                            "content": "Efficacité énergétique de la construction & de l'aménagement urbain",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Textile Waste Management Innovation",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project",
+                            "content": "Aménagement Urbain (modernisation de l'éclairage urbain)",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "WHITECYCLE project: collaboration of 15 partners from 5 countries to transform complex textile-based plastic waste into high-value products. Features symposium on Green Deal and Circular Economy in December 2024. Current recycling rates: 59.2% for ferrous metals and 9.71% for plastics.",
+                            "content": "Programme de modernisation de l'éclairage public avec le remplacement des lampes traditionnelles par des LED dans les zones routières et communautaires, visant à réduire la consommation d'énergie de 50% d'ici 2050 par rapport à 2016. Source: https://www.cinor.re/PDF/RDD_OB_2022.pdf",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
                             "content": "unknown",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project.",
                             "example": "15 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Urban Greening and Energy Transition",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project",
+                            "content": "Énergies renouvelables",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Waste management and recovery"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Urban Vegetation Development",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project",
+                            "content": "Installation d'unité de production d'énergie solaire",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "\"Right to Plant\" plan launched to increase urban vegetation throughout the metropolitan area, combined with district heating initiatives and renewable energy development. Established after achieving 'Positive Energy for Green Growth' city status in 2015.",
+                            "content": "Programme d'équipement de 90% des foyers en chauffe-eau solaires d'ici 2030, dans le cadre du Plan Climat Air Energie Territorial (PCAET) adopté en février 2019, visant à doubler la production d'électricité d'origine renouvelable d'ici 2026. Source: https://www.cinor.re/PDF/RDD_OB_2022.pdf",
                             "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
                         },
                         "investment": {
                             "type": "string",
                             "content": "unknown",
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project",
+                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project.",
                             "example": "15 million euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important green projects concerning the inter_municipality. Make sure they are 3 distinct, different and representative projects."
+                "instruction": "Find 3 important green projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
             },
             "social_projects": {
                 "type": "array",
@@ -428,45 +428,45 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Employment integration",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the social theme of the project",
+                            "content": "Action sanitaire, sociale et familiale",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Employment and professional integration",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project",
+                            "content": "Établissements sociaux et médico-sociaux",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Plan Local pour l'Insertion et l'Emploi (PLIE) supports 1,500 people annually, helping 500 new participants each year with job market integration, achieving 53% positive outcomes in employment and business creation",
+                            "content": "unknown",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": "unknown",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project.",
                             "example": "21.9 million euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Health and wellbeing",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the social theme of the project",
+                            "content": "Enseignement et formation professionnelle",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Healthcare centers development",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project",
+                            "content": "Établissements de formation professionnelle",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Construction of health centers in disadvantaged neighborhoods, establishment of Local Mental Health Council, and implementation of individual health pathways program reaching 6,000 young people",
+                            "content": "unknown",
                             "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
@@ -480,31 +480,31 @@
                     {
                         "theme": {
                             "type": "string",
-                            "content": "Gender equality",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Name the social theme of the project",
+                            "content": "Sport, culture et vie associative",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
                             "example": "Sport, culture and associations"
                         },
                         "category": {
                             "type": "string",
-                            "content": "Innovation and education initiatives",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Name the category of the social project",
+                            "content": "Equipements sportifs",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
                             "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
                         },
                         "description": {
                             "type": "string",
-                            "content": "Clermont Innovation Week 2024 focused on gender equality, featuring events like \"Innovate HER\" Hackathon addressing education, women in the city, gender stereotypes, and physical activities",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
+                            "content": "unknown",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
                             "example": "Renovation of the Carrousel swimming pool"
                         },
                         "investment": {
                             "type": "string",
                             "content": "unknown",
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first third. Enter the investment amount for the social project",
+                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Enter the investment amount for the social project.",
                             "example": "21.9 million euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important social projects concerning the inter_municipality. Make sure they are 3 distinct, different and representative projects."
+                "instruction": "Find 3 important social projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
             }
         }
     },
@@ -654,7 +654,8 @@
                     ]
                 }
             }
-        ]
+        ],
+        "instruction": "Find to contacts for the municipalities and their details. Give the answer as short as possible, idealy only a few words."
     },
     "budget": {
         "municipality": {
@@ -700,19 +701,63 @@
     },
     "financial_data": {
         "municipality": {
-            "year": {
+            "management_savings_per_capita": {
                 "type": "string",
-                "content": null,
-                "instruction": "Enter the year of the financial data",
-                "example": "2023"
+                "content": null
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": null
             }
         },
         "inter_municipality": {
-            "year": {
+            "management_savings_per_capita": {
                 "type": "string",
-                "content": null,
-                "instruction": "Enter the year of the inter-municipality financial data",
-                "example": "2023"
+                "content": null
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": null
             }
         }
     },

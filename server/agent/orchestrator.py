@@ -319,8 +319,8 @@ class Orchestrator:
         return self.data
 
 class city_info():
-    municipality_name = "Dijon"
-    inter_municipality_name = "Dijon Metropole"
+    municipality_name = "Saint-Denis"
+    inter_municipality_name = "CA Intercommunale du Nord de la Reunion (CINNOR)"
     siren = 212102313
     inter_municipality_code = 242100410
 
