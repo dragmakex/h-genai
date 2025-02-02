@@ -2,7 +2,6 @@
 import SfilLogo from '@/assets/images/Sfil-Logo.png'
 import { Button } from '@/components/ui/button'
 import { Progress } from '@/components/ui/progress'
-import pdfTemplate from '@/assets/template.pdf'
 import {
   Command,
   CommandEmpty,
@@ -50,6 +49,7 @@ const progressMessages = ref([
 
 const error = ref(null)
 const gotResult = ref(false)
+const pdfUrl = ref(null)
 
 const handleGenerate = async () => {
   isGenerating.value = true
@@ -75,19 +75,27 @@ const handleGenerate = async () => {
   }, 100)
 
   try {
-    const response = await fetch('http://localhost:8000/test', {
+    const response = await fetch('https://kbba87ikh5.execute-api.us-west-2.amazonaws.com/small-generate-pdf', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        siren: userSelectionStore.selected_siren
+        siren: userSelectionStore.selected_siren,
+        municipality_name: userSelectionStore.selected_municipality,
+        municipality_code: userSelectionStore.selected_municipality_code,
+        inter_municipality_name: userSelectionStore.selected_inter_municipality,
+        inter_municipality_code: userSelectionStore.selected_inter_municipality_code,
+        reference_sirens: userSelectionStore.selected_reference_sirens
       })
     })
 
     if (!response.ok) {
       throw new Error('Erreur lors de la génération du PDF')
     }
+
+    const blob = await response.blob()
+    pdfUrl.value = URL.createObjectURL(blob)
 
     progress.value = 100
     
@@ -194,11 +202,12 @@ const handleGenerate = async () => {
       <div v-if="gotResult" class="w-full my-8">
         <div class="w-full h-[1000px]">
           <embed
-            :src="pdfTemplate"
+            v-if="pdfUrl"
+            :src="pdfUrl"
             class="w-full h-full"
             :title="`PDF pour ${userSelectionStore.selected_municipality}`"
             frameborder="0"
-          />
+          ></embed>
         </div>
       </div>
     </div>
