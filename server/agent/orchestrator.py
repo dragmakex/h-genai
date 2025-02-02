@@ -2,17 +2,17 @@ import json
 import inspect
 from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage, ChatRole
-from agents import Agent, ToolCallingAgent
-from tools import *
-from prompt import tool_agent_instructions, tool_agent_prompt, contact_agent_prompt
-from util import get_commune_finances_by_siren, get_epci_finances_by_code
+from .agents import Agent, ToolCallingAgent
+from .tools import get_sonar_pro_response
+from .prompt import tool_agent_instructions, tool_agent_prompt, contact_agent_prompt
+from .util import get_commune_finances_by_siren, get_epci_finances_by_code
 api_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
 
-def get_all_tools():
-    """Get all functions marked as tools from tools module"""
-    import tools
-    return [obj for name, obj in inspect.getmembers(tools) 
-            if inspect.isfunction(obj) and hasattr(obj, '_is_tool')]
+# def get_all_tools():
+#     """Get all functions marked as tools from tools module"""
+#     import tools
+#     return [obj for name, obj in inspect.getmembers(tools) 
+#             if inspect.isfunction(obj) and hasattr(obj, '_is_tool')]
 
 class Orchestrator:
     def __init__(self, city_info):
@@ -20,7 +20,7 @@ class Orchestrator:
         self.simple_agent = Agent()
         self.tool_agent = ToolCallingAgent(
             instructions=tool_agent_instructions,
-            functions=get_all_tools())
+            functions=[get_sonar_pro_response]) #get_all_tools())
 
         # Store conversation history
         self.conversation_history: Dict[str, List[ChatMessage]] = {}
@@ -28,10 +28,10 @@ class Orchestrator:
         # Load data from data.json
         self.data = self._load_data_fields()
 
-        self.municipality_name = self.city_info.municipality_name
-        self.inter_municipality_name = self.city_info.inter_municipality_name
-        self.municipality_siren = self.city_info.siren
-        self.inter_municipality_epci = self.city_info.inter_municipality_code
+        self.municipality_name = city_info.municipality_name
+        self.inter_municipality_name = city_info.inter_municipality_name
+        self.municipality_siren = city_info.siren
+        self.inter_municipality_epci = city_info.inter_municipality_code
 
 
         self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.municipality_siren, self.inter_municipality_name, self.inter_municipality_epci)
@@ -39,7 +39,7 @@ class Orchestrator:
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
         try:
-            with open('data_template.json', 'r', encoding='utf-8') as file:
+            with open('agent/data_template.json', 'r', encoding='utf-8') as file:
                 return json.load(file)
         except FileNotFoundError:
             raise FileNotFoundError("data_template.json not found in the agent directory")
@@ -300,19 +300,18 @@ class Orchestrator:
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
         self.process_summary_fields(inter=False)
-        self.process_summary_fields(inter=True)
+        #self.process_summary_fields(inter=True)
         #self.process_projects_fields(inter=False)
         #self.process_projects_fields(inter=True)
-        self.process_contact_fields()
+        #self.process_contact_fields()
 
         # Save to answer.json
-        try:
-            with open('data_answer.json', 'w', encoding='utf-8') as file:
-                json.dump(self.data, file, indent=4, ensure_ascii=False)
-        except Exception as e:
-            print(f"Error saving to answer.json: {e}")
-        
+        # try:
+        #     with open('data_answer.json', 'w', encoding='utf-8') as file:
+        #         json.dump(self.data, file, indent=4, ensure_ascii=False)
+        # except Exception as e:
+        #     print(f"Error saving to answer.json: {e}")
         return self.data
     
-test_orchestrator = Orchestrator()
-test_orchestrator.process_all_sections()
+# test_orchestrator = Orchestrator()
+# test_orchestrator.process_all_sections()
