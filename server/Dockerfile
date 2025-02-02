@@ -46,6 +46,13 @@ COPY --from=builder /var/lang/lib/python3.11/site-packages/ /var/lang/lib/python
 # Copy only the API code
 COPY ./api ./api
 
+# Copy agent directory and its .env file
+COPY ./agent ./agent
+COPY ./agent/.env ./agent/.env
+
+# Copy template directory
+COPY ./template ./template
+
 # Set environment variables
 ENV PYTHONPATH=${LAMBDA_TASK_ROOT}
 ENV PYTHONUNBUFFERED=1
