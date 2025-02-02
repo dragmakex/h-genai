@@ -111,6 +111,8 @@ def _process_financial_results(results: List[Dict[str, Any]], year: str, is_comm
     net_savings_ratio = (net_savings / operating_revenue) * 100 # EN/RF
 
     metrics = {
+        'municipality': basic_info['com_name'] if is_commune else None,
+        'inter_municipality': basic_info['epci_name'],
         'population': basic_info['ptot'],
         'data_from_year': int(year),
         'total_budget': round(total_budget),
