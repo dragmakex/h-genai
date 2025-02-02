@@ -1,0 +1,6833 @@
+[
+  {
+    "siren": "210100533",
+    "com_code": "01053",
+    "com_name": "Bourg-en-Bresse",
+    "epci_code": "200071751",
+    "epci_name": "CA du Bassin de Bourg-en-Bresse",
+    "dep_code": "01",
+    "dep_name": "Ain",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 43363,
+    "ptot_n": 43363,
+    "reference_sirens": [
+      {
+        "siren": "216900290"
+      },
+      {
+        "siren": "216900340"
+      },
+      {
+        "siren": "212601983"
+      }
+    ]
+  },
+  {
+    "siren": "210206660",
+    "com_code": "02691",
+    "com_name": "Saint-Quentin",
+    "epci_code": "200071892",
+    "epci_name": "CA du Saint-Quentinois",
+    "dep_code": "02",
+    "dep_name": "Aisne",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 54347,
+    "ptot_n": 54347,
+    "reference_sirens": [
+      {
+        "siren": "216000562"
+      },
+      {
+        "siren": "215900093"
+      },
+      {
+        "siren": "215906066"
+      }
+    ]
+  },
+  {
+    "siren": "210301859",
+    "com_code": "03185",
+    "com_name": "Montluçon",
+    "epci_code": "200071082",
+    "epci_name": "CA Montluçon Communauté",
+    "dep_code": "03",
+    "dep_name": "Allier",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 34868,
+    "ptot_n": 34868,
+    "reference_sirens": [
+      {
+        "siren": "214201873"
+      },
+      {
+        "siren": "216902825"
+      },
+      {
+        "siren": "214202079"
+      }
+    ]
+  },
+  {
+    "siren": "210500617",
+    "com_code": "05061",
+    "com_name": "Gap",
+    "epci_code": "200067825",
+    "epci_name": "CA Gap-Tallard-Durance",
+    "dep_code": "05",
+    "dep_name": "Hautes-Alpes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 41528,
+    "ptot_n": 41528,
+    "reference_sirens": [
+      {
+        "siren": "210600300"
+      },
+      {
+        "siren": "218300507"
+      },
+      {
+        "siren": "211300470"
+      }
+    ]
+  },
+  {
+    "siren": "210600045",
+    "com_code": "06004",
+    "com_name": "Antibes",
+    "epci_code": "240600585",
+    "epci_name": "CA de Sophia Antipolis",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 75779,
+    "ptot_n": 75779,
+    "reference_sirens": [
+      {
+        "siren": "210600292"
+      },
+      {
+        "siren": "218301265"
+      },
+      {
+        "siren": "218400075"
+      }
+    ]
+  },
+  {
+    "siren": "210600276",
+    "com_code": "06027",
+    "com_name": "Cagnes-sur-Mer",
+    "epci_code": "200030195",
+    "epci_name": "Métropole Nice Côte d'Azur",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 52575,
+    "ptot_n": 52575,
+    "reference_sirens": [
+      {
+        "siren": "211300041"
+      },
+      {
+        "siren": "218300697"
+      },
+      {
+        "siren": "210600698"
+      }
+    ]
+  },
+  {
+    "siren": "210600292",
+    "com_code": "06029",
+    "com_name": "Cannes",
+    "epci_code": "200039915",
+    "epci_name": "CA Cannes Pays de Lérins",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 73159,
+    "ptot_n": 73159,
+    "reference_sirens": [
+      {
+        "siren": "210600045"
+      },
+      {
+        "siren": "218301265"
+      },
+      {
+        "siren": "218300614"
+      }
+    ]
+  },
+  {
+    "siren": "210600300",
+    "com_code": "06030",
+    "com_name": "Le Cannet",
+    "epci_code": "200039915",
+    "epci_name": "CA Cannes Pays de Lérins",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 42524,
+    "ptot_n": 42524,
+    "reference_sirens": [
+      {
+        "siren": "210500617"
+      },
+      {
+        "siren": "218300507"
+      },
+      {
+        "siren": "211300470"
+      }
+    ]
+  },
+  {
+    "siren": "210600698",
+    "com_code": "06069",
+    "com_name": "Grasse",
+    "epci_code": "200039857",
+    "epci_name": "CA du Pays de Grasse",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 49607,
+    "ptot_n": 49607,
+    "reference_sirens": [
+      {
+        "siren": "211300561"
+      },
+      {
+        "siren": "211300058"
+      },
+      {
+        "siren": "211300041"
+      }
+    ]
+  },
+  {
+    "siren": "210600839",
+    "com_code": "06083",
+    "com_name": "Menton",
+    "epci_code": "240600551",
+    "epci_name": "CA de la Riviera Française",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 31163,
+    "ptot_n": 31163,
+    "reference_sirens": [
+      {
+        "siren": "218400315"
+      },
+      {
+        "siren": "210601233"
+      },
+      {
+        "siren": "211300546"
+      }
+    ]
+  },
+  {
+    "siren": "210600888",
+    "com_code": "06088",
+    "com_name": "Nice",
+    "epci_code": "200030195",
+    "epci_name": "Métropole Nice Côte d'Azur",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 346376,
+    "ptot_n": 346376,
+    "reference_sirens": [
+      {
+        "siren": "218301372"
+      },
+      {
+        "siren": "211300017"
+      },
+      {
+        "siren": "218400075"
+      }
+    ]
+  },
+  {
+    "siren": "210601233",
+    "com_code": "06123",
+    "com_name": "Saint-Laurent-du-Var",
+    "epci_code": "200030195",
+    "epci_name": "Métropole Nice Côte d'Azur",
+    "dep_code": "06",
+    "dep_name": "Alpes-Maritimes",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 30333,
+    "ptot_n": 30333,
+    "reference_sirens": [
+      {
+        "siren": "218400315"
+      },
+      {
+        "siren": "210600839"
+      },
+      {
+        "siren": "211300546"
+      }
+    ]
+  },
+  {
+    "siren": "210800967",
+    "com_code": "08105",
+    "com_name": "Charleville-Mézières",
+    "epci_code": "200041630",
+    "epci_name": "CA Ardenne Métropole",
+    "dep_code": "08",
+    "dep_name": "Ardennes",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 47433,
+    "ptot_n": 47433,
+    "reference_sirens": [
+      {
+        "siren": "215101015"
+      },
+      {
+        "siren": "215706722"
+      },
+      {
+        "siren": "216701805"
+      }
+    ]
+  },
+  {
+    "siren": "211003744",
+    "com_code": "10387",
+    "com_name": "Troyes",
+    "epci_code": "200069250",
+    "epci_name": "CA Troyes Champagne Métropole",
+    "dep_code": "10",
+    "dep_name": "Aube",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 63708,
+    "ptot_n": 63708,
+    "reference_sirens": [
+      {
+        "siren": "216800664"
+      },
+      {
+        "siren": "210800967"
+      },
+      {
+        "siren": "215101015"
+      }
+    ]
+  },
+  {
+    "siren": "211100698",
+    "com_code": "11069",
+    "com_name": "Carcassonne",
+    "epci_code": "200035715",
+    "epci_name": "CA Carcassonne Agglo",
+    "dep_code": "11",
+    "dep_name": "Aude",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 47854,
+    "ptot_n": 47854,
+    "reference_sirens": [
+      {
+        "siren": "213403017"
+      },
+      {
+        "siren": "218100048"
+      },
+      {
+        "siren": "216504407"
+      }
+    ]
+  },
+  {
+    "siren": "211102629",
+    "com_code": "11262",
+    "com_name": "Narbonne",
+    "epci_code": "241100593",
+    "epci_name": "CA Le Grand Narbonne",
+    "dep_code": "11",
+    "dep_name": "Aude",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 57320,
+    "ptot_n": 57320,
+    "reference_sirens": [
+      {
+        "siren": "218201218"
+      },
+      {
+        "siren": "218100048"
+      },
+      {
+        "siren": "211100698"
+      }
+    ]
+  },
+  {
+    "siren": "211300017",
+    "com_code": "13001",
+    "com_name": "Aix-en-Provence",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 150358,
+    "ptot_n": 150358,
+    "reference_sirens": [
+      {
+        "siren": "218301372"
+      },
+      {
+        "siren": "218400075"
+      },
+      {
+        "siren": "210600045"
+      }
+    ]
+  },
+  {
+    "siren": "211300041",
+    "com_code": "13004",
+    "com_name": "Arles",
+    "epci_code": "241300417",
+    "epci_name": "CA d'Arles-Crau-Camargue-Montagnette",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 51691,
+    "ptot_n": 51691,
+    "reference_sirens": [
+      {
+        "siren": "210600276"
+      },
+      {
+        "siren": "210600698"
+      },
+      {
+        "siren": "211300561"
+      }
+    ]
+  },
+  {
+    "siren": "211300058",
+    "com_code": "13005",
+    "com_name": "Aubagne",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 47640,
+    "ptot_n": 47640,
+    "reference_sirens": [
+      {
+        "siren": "211300561"
+      },
+      {
+        "siren": "210600698"
+      },
+      {
+        "siren": "211301031"
+      }
+    ]
+  },
+  {
+    "siren": "211300280",
+    "com_code": "13028",
+    "com_name": "La Ciotat",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 36812,
+    "ptot_n": 36812,
+    "reference_sirens": [
+      {
+        "siren": "218301182"
+      },
+      {
+        "siren": "218301299"
+      },
+      {
+        "siren": "211301171"
+      }
+    ]
+  },
+  {
+    "siren": "211300470",
+    "com_code": "13047",
+    "com_name": "Istres",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 45119,
+    "ptot_n": 45119,
+    "reference_sirens": [
+      {
+        "siren": "211301031"
+      },
+      {
+        "siren": "211300058"
+      },
+      {
+        "siren": "210600300"
+      }
+    ]
+  },
+  {
+    "siren": "211300546",
+    "com_code": "13054",
+    "com_name": "Marignane",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 32735,
+    "ptot_n": 32735,
+    "reference_sirens": [
+      {
+        "siren": "210600839"
+      },
+      {
+        "siren": "211301171"
+      },
+      {
+        "siren": "218400315"
+      }
+    ]
+  },
+  {
+    "siren": "211300553",
+    "com_code": "13055",
+    "com_name": "Marseille",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 876602,
+    "ptot_n": 876602,
+    "reference_sirens": [
+      {
+        "siren": "210600888"
+      },
+      {
+        "siren": "218301372"
+      },
+      {
+        "siren": "211300017"
+      }
+    ]
+  },
+  {
+    "siren": "211300561",
+    "com_code": "13056",
+    "com_name": "Martigues",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 49037,
+    "ptot_n": 49037,
+    "reference_sirens": [
+      {
+        "siren": "210600698"
+      },
+      {
+        "siren": "211300058"
+      },
+      {
+        "siren": "211300041"
+      }
+    ]
+  },
+  {
+    "siren": "211301031",
+    "com_code": "13103",
+    "com_name": "Salon-de-Provence",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 45595,
+    "ptot_n": 45595,
+    "reference_sirens": [
+      {
+        "siren": "211300470"
+      },
+      {
+        "siren": "211300058"
+      },
+      {
+        "siren": "210600300"
+      }
+    ]
+  },
+  {
+    "siren": "211301171",
+    "com_code": "13117",
+    "com_name": "Vitrolles",
+    "epci_code": "200054807",
+    "epci_name": "Métropole d'Aix-Marseille-Provence",
+    "dep_code": "13",
+    "dep_name": "Bouches-du-Rhône",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 34814,
+    "ptot_n": 34814,
+    "reference_sirens": [
+      {
+        "siren": "218301299"
+      },
+      {
+        "siren": "218301182"
+      },
+      {
+        "siren": "211300280"
+      }
+    ]
+  },
+  {
+    "siren": "211401187",
+    "com_code": "14118",
+    "com_name": "Caen",
+    "epci_code": "200065597",
+    "epci_name": "CU Caen la Mer",
+    "dep_code": "14",
+    "dep_name": "Calvados",
+    "reg_code": "28",
+    "reg_name": "Normandie",
+    "ptot": 109401,
+    "ptot_n": 109401,
+    "reference_sirens": [
+      {
+        "siren": "217605401"
+      },
+      {
+        "siren": "200056844"
+      },
+      {
+        "siren": "217603513"
+      }
+    ]
+  },
+  {
+    "siren": "211600150",
+    "com_code": "16015",
+    "com_name": "Angoulême",
+    "epci_code": "200071827",
+    "epci_name": "CA du Grand Angoulême",
+    "dep_code": "16",
+    "dep_name": "Charente",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 43079,
+    "ptot_n": 43079,
+    "reference_sirens": [
+      {
+        "siren": "216400242"
+      },
+      {
+        "siren": "213305220"
+      },
+      {
+        "siren": "211903109"
+      }
+    ]
+  },
+  {
+    "siren": "211703004",
+    "com_code": "17300",
+    "com_name": "La Rochelle",
+    "epci_code": "241700434",
+    "epci_name": "CA de La Rochelle",
+    "dep_code": "17",
+    "dep_name": "Charente-Maritime",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 79323,
+    "ptot_n": 79323,
+    "reference_sirens": [
+      {
+        "siren": "216404459"
+      },
+      {
+        "siren": "213302813"
+      },
+      {
+        "siren": "213303183"
+      }
+    ]
+  },
+  {
+    "siren": "211800339",
+    "com_code": "18033",
+    "com_name": "Bourges",
+    "epci_code": "241800507",
+    "epci_name": "CA Bourges Plus",
+    "dep_code": "18",
+    "dep_name": "Cher",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 66385,
+    "ptot_n": 66385,
+    "reference_sirens": [
+      {
+        "siren": "214100182"
+      },
+      {
+        "siren": "213600448"
+      },
+      {
+        "siren": "212800858"
+      }
+    ]
+  },
+  {
+    "siren": "211903109",
+    "com_code": "19031",
+    "com_name": "Brive-la-Gaillarde",
+    "epci_code": "200043172",
+    "epci_name": "CA du Bassin de Brive",
+    "dep_code": "19",
+    "dep_name": "Corrèze",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 47175,
+    "ptot_n": 47175,
+    "reference_sirens": [
+      {
+        "siren": "213305220"
+      },
+      {
+        "siren": "211600150"
+      },
+      {
+        "siren": "216400242"
+      }
+    ]
+  },
+  {
+    "siren": "212102313",
+    "com_code": "21231",
+    "com_name": "Dijon",
+    "epci_code": "242100410",
+    "epci_name": "Dijon Métropole",
+    "dep_code": "21",
+    "dep_name": "Côte-d'Or",
+    "reg_code": "27",
+    "reg_name": "Bourgogne-Franche-Comté",
+    "ptot": 162454,
+    "ptot_n": 162454,
+    "reference_sirens": [
+      {
+        "siren": "212500565"
+      },
+      {
+        "siren": "217100767"
+      },
+      {
+        "siren": "219000106"
+      }
+    ]
+  },
+  {
+    "siren": "212202782",
+    "com_code": "22278",
+    "com_name": "Saint-Brieuc",
+    "epci_code": "200069409",
+    "epci_name": "CA Saint-Brieuc Armor Agglomération",
+    "dep_code": "22",
+    "dep_name": "Côtes-d'Armor",
+    "reg_code": "53",
+    "reg_name": "Bretagne",
+    "ptot": 45602,
+    "ptot_n": 45602,
+    "reference_sirens": [
+      {
+        "siren": "213502883"
+      },
+      {
+        "siren": "215602608"
+      },
+      {
+        "siren": "215601212"
+      }
+    ]
+  },
+  {
+    "siren": "212403224",
+    "com_code": "24322",
+    "com_name": "Périgueux",
+    "epci_code": "200040392",
+    "epci_name": "CA Le Grand Périgueux",
+    "dep_code": "24",
+    "dep_name": "Dordogne",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 30823,
+    "ptot_n": 30823,
+    "reference_sirens": [
+      {
+        "siren": "213300395"
+      },
+      {
+        "siren": "214001927"
+      },
+      {
+        "siren": "218600666"
+      }
+    ]
+  },
+  {
+    "siren": "212500565",
+    "com_code": "25056",
+    "com_name": "Besançon",
+    "epci_code": "242500361",
+    "epci_name": "CU Grand Besançon Métropole",
+    "dep_code": "25",
+    "dep_name": "Doubs",
+    "reg_code": "27",
+    "reg_name": "Bourgogne-Franche-Comté",
+    "ptot": 121519,
+    "ptot_n": 121519,
+    "reference_sirens": [
+      {
+        "siren": "212102313"
+      },
+      {
+        "siren": "217100767"
+      },
+      {
+        "siren": "219000106"
+      }
+    ]
+  },
+  {
+    "siren": "212601983",
+    "com_code": "26198",
+    "com_name": "Montélimar",
+    "epci_code": "200040459",
+    "epci_name": "CA Montélimar Agglomération",
+    "dep_code": "26",
+    "dep_name": "Drôme",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 40969,
+    "ptot_n": 40969,
+    "reference_sirens": [
+      {
+        "siren": "216900290"
+      },
+      {
+        "siren": "210100533"
+      },
+      {
+        "siren": "213804214"
+      }
+    ]
+  },
+  {
+    "siren": "212602817",
+    "com_code": "26281",
+    "com_name": "Romans-sur-Isère",
+    "epci_code": "200068781",
+    "epci_name": "CA Valence Romans Agglo",
+    "dep_code": "26",
+    "dep_name": "Drôme",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 33486,
+    "ptot_n": 33486,
+    "reference_sirens": [
+      {
+        "siren": "210301859"
+      },
+      {
+        "siren": "214201873"
+      },
+      {
+        "siren": "217300086"
+      }
+    ]
+  },
+  {
+    "siren": "212603625",
+    "com_code": "26362",
+    "com_name": "Valence",
+    "epci_code": "200068781",
+    "epci_name": "CA Valence Romans Agglo",
+    "dep_code": "26",
+    "dep_name": "Drôme",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 65709,
+    "ptot_n": 65709,
+    "reference_sirens": [
+      {
+        "siren": "216902593"
+      },
+      {
+        "siren": "217300656"
+      },
+      {
+        "siren": "216902569"
+      }
+    ]
+  },
+  {
+    "siren": "212702294",
+    "com_code": "27229",
+    "com_name": "Évreux",
+    "epci_code": "200071454",
+    "epci_name": "CA Evreux Portes de Normandie",
+    "dep_code": "27",
+    "dep_name": "Eure",
+    "reg_code": "28",
+    "reg_name": "Normandie",
+    "ptot": 48096,
+    "ptot_n": 48096,
+    "reference_sirens": [
+      {
+        "siren": "200056844"
+      },
+      {
+        "siren": "211401187"
+      },
+      {
+        "siren": "217605401"
+      }
+    ]
+  },
+  {
+    "siren": "212800858",
+    "com_code": "28085",
+    "com_name": "Chartres",
+    "epci_code": "200033181",
+    "epci_name": "CA Chartres Métropole",
+    "dep_code": "28",
+    "dep_name": "Eure-et-Loir",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 39511,
+    "ptot_n": 39511,
+    "reference_sirens": [
+      {
+        "siren": "213701220"
+      },
+      {
+        "siren": "213600448"
+      },
+      {
+        "siren": "212801344"
+      }
+    ]
+  },
+  {
+    "siren": "212801344",
+    "com_code": "28134",
+    "com_name": "Dreux",
+    "epci_code": "200040277",
+    "epci_name": "CA Agglo du Pays de Dreux",
+    "dep_code": "28",
+    "dep_name": "Eure-et-Loir",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 31239,
+    "ptot_n": 31239,
+    "reference_sirens": [
+      {
+        "siren": "213701220"
+      },
+      {
+        "siren": "212800858"
+      },
+      {
+        "siren": "213600448"
+      }
+    ]
+  },
+  {
+    "siren": "212900195",
+    "com_code": "29019",
+    "com_name": "Brest",
+    "epci_code": "242900314",
+    "epci_name": "Brest Métropole",
+    "dep_code": "29",
+    "dep_name": "Finistère",
+    "reg_code": "53",
+    "reg_name": "Bretagne",
+    "ptot": 142110,
+    "ptot_n": 142110,
+    "reference_sirens": [
+      {
+        "siren": "212902324"
+      },
+      {
+        "siren": "215601212"
+      },
+      {
+        "siren": "213502388"
+      }
+    ]
+  },
+  {
+    "siren": "212902324",
+    "com_code": "29232",
+    "com_name": "Quimper",
+    "epci_code": "200068120",
+    "epci_name": "CA Quimper Bretagne Occidentale",
+    "dep_code": "29",
+    "dep_name": "Finistère",
+    "reg_code": "53",
+    "reg_name": "Bretagne",
+    "ptot": 65875,
+    "ptot_n": 65875,
+    "reference_sirens": [
+      {
+        "siren": "215601212"
+      },
+      {
+        "siren": "215602608"
+      },
+      {
+        "siren": "213502883"
+      }
+    ]
+  },
+  {
+    "siren": "212000046",
+    "com_code": "2A004",
+    "com_name": "Ajaccio",
+    "epci_code": "242010056",
+    "epci_name": "CA du Pays Ajaccien",
+    "dep_code": "2A",
+    "dep_name": "Corse-du-Sud",
+    "reg_code": "94",
+    "reg_name": "Corse",
+    "ptot": 73483,
+    "ptot_n": 73483,
+    "reference_sirens": [
+      {
+        "siren": "212000335"
+      }
+    ]
+  },
+  {
+    "siren": "212000335",
+    "com_code": "2B033",
+    "com_name": "Bastia",
+    "epci_code": "242000354",
+    "epci_name": "CA de Bastia",
+    "dep_code": "2B",
+    "dep_name": "Haute-Corse",
+    "reg_code": "94",
+    "reg_name": "Corse",
+    "ptot": 48928,
+    "ptot_n": 48928,
+    "reference_sirens": [
+      {
+        "siren": "212000046"
+      }
+    ]
+  },
+  {
+    "siren": "213000078",
+    "com_code": "30007",
+    "com_name": "Alès",
+    "epci_code": "200066918",
+    "epci_name": "CA Alès Agglomération",
+    "dep_code": "30",
+    "dep_name": "Gard",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 43492,
+    "ptot_n": 43492,
+    "reference_sirens": [
+      {
+        "siren": "218100659"
+      },
+      {
+        "siren": "216504407"
+      },
+      {
+        "siren": "213403017"
+      }
+    ]
+  },
+  {
+    "siren": "213001894",
+    "com_code": "30189",
+    "com_name": "Nîmes",
+    "epci_code": "243000643",
+    "epci_name": "CA de Nîmes Métropole",
+    "dep_code": "30",
+    "dep_name": "Gard",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 149761,
+    "ptot_n": 149761,
+    "reference_sirens": [
+      {
+        "siren": "216601369"
+      },
+      {
+        "siren": "213400328"
+      },
+      {
+        "siren": "218201218"
+      }
+    ]
+  },
+  {
+    "siren": "213101496",
+    "com_code": "31149",
+    "com_name": "Colomiers",
+    "epci_code": "243100518",
+    "epci_name": "Toulouse Métropole",
+    "dep_code": "31",
+    "dep_name": "Haute-Garonne",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 40342,
+    "ptot_n": 40342,
+    "reference_sirens": [
+      {
+        "siren": "213000078"
+      },
+      {
+        "siren": "218100659"
+      },
+      {
+        "siren": "216504407"
+      }
+    ]
+  },
+  {
+    "siren": "213105554",
+    "com_code": "31555",
+    "com_name": "Toulouse",
+    "epci_code": "243100518",
+    "epci_name": "Toulouse Métropole",
+    "dep_code": "31",
+    "dep_name": "Haute-Garonne",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 503020,
+    "ptot_n": 503020,
+    "reference_sirens": [
+      {
+        "siren": "213401722"
+      },
+      {
+        "siren": "213001894"
+      },
+      {
+        "siren": "216601369"
+      }
+    ]
+  },
+  {
+    "siren": "213300395",
+    "com_code": "33039",
+    "com_name": "Bègles",
+    "epci_code": "243300316",
+    "epci_name": "Bordeaux Métropole",
+    "dep_code": "33",
+    "dep_name": "Gironde",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 30890,
+    "ptot_n": 30890,
+    "reference_sirens": [
+      {
+        "siren": "212403224"
+      },
+      {
+        "siren": "214001927"
+      },
+      {
+        "siren": "218600666"
+      }
+    ]
+  },
+  {
+    "siren": "213300635",
+    "com_code": "33063",
+    "com_name": "Bordeaux",
+    "epci_code": "243300316",
+    "epci_name": "Bordeaux Métropole",
+    "dep_code": "33",
+    "dep_name": "Gironde",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 263247,
+    "ptot_n": 263247,
+    "reference_sirens": [
+      {
+        "siren": "218708501"
+      },
+      {
+        "siren": "218601946"
+      },
+      {
+        "siren": "211703004"
+      }
+    ]
+  },
+  {
+    "siren": "213302813",
+    "com_code": "33281",
+    "com_name": "Mérignac",
+    "epci_code": "243300316",
+    "epci_name": "Bordeaux Métropole",
+    "dep_code": "33",
+    "dep_name": "Gironde",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 74775,
+    "ptot_n": 74775,
+    "reference_sirens": [
+      {
+        "siren": "216404459"
+      },
+      {
+        "siren": "211703004"
+      },
+      {
+        "siren": "213303183"
+      }
+    ]
+  },
+  {
+    "siren": "213303183",
+    "com_code": "33318",
+    "com_name": "Pessac",
+    "epci_code": "243300316",
+    "epci_name": "Bordeaux Métropole",
+    "dep_code": "33",
+    "dep_name": "Gironde",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 66606,
+    "ptot_n": 66606,
+    "reference_sirens": [
+      {
+        "siren": "217901917"
+      },
+      {
+        "siren": "213302813"
+      },
+      {
+        "siren": "216404459"
+      }
+    ]
+  },
+  {
+    "siren": "213304496",
+    "com_code": "33449",
+    "com_name": "Saint-Médard-en-Jalles",
+    "epci_code": "243300316",
+    "epci_name": "Bordeaux Métropole",
+    "dep_code": "33",
+    "dep_name": "Gironde",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 32866,
+    "ptot_n": 32866,
+    "reference_sirens": [
+      {
+        "siren": "214700015"
+      },
+      {
+        "siren": "218600666"
+      },
+      {
+        "siren": "214001927"
+      }
+    ]
+  },
+  {
+    "siren": "213305220",
+    "com_code": "33522",
+    "com_name": "Talence",
+    "epci_code": "243300316",
+    "epci_name": "Bordeaux Métropole",
+    "dep_code": "33",
+    "dep_name": "Gironde",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 45355,
+    "ptot_n": 45355,
+    "reference_sirens": [
+      {
+        "siren": "211903109"
+      },
+      {
+        "siren": "211600150"
+      },
+      {
+        "siren": "216400242"
+      }
+    ]
+  },
+  {
+    "siren": "213305501",
+    "com_code": "33550",
+    "com_name": "Villenave-d'Ornon",
+    "epci_code": "243300316",
+    "epci_name": "Bordeaux Métropole",
+    "dep_code": "33",
+    "dep_name": "Gironde",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 38696,
+    "ptot_n": 38696,
+    "reference_sirens": [
+      {
+        "siren": "216400242"
+      },
+      {
+        "siren": "211600150"
+      },
+      {
+        "siren": "214700015"
+      }
+    ]
+  },
+  {
+    "siren": "213400328",
+    "com_code": "34032",
+    "com_name": "Béziers",
+    "epci_code": "243400769",
+    "epci_name": "CA de Béziers-Méditerranée",
+    "dep_code": "34",
+    "dep_name": "Hérault",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 79873,
+    "ptot_n": 79873,
+    "reference_sirens": [
+      {
+        "siren": "218201218"
+      },
+      {
+        "siren": "211102629"
+      },
+      {
+        "siren": "218100048"
+      }
+    ]
+  },
+  {
+    "siren": "213401722",
+    "com_code": "34172",
+    "com_name": "Montpellier",
+    "epci_code": "243400017",
+    "epci_name": "Montpellier Méditerranée Métropole",
+    "dep_code": "34",
+    "dep_name": "Hérault",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 302425,
+    "ptot_n": 302425,
+    "reference_sirens": [
+      {
+        "siren": "213001894"
+      },
+      {
+        "siren": "216601369"
+      },
+      {
+        "siren": "213105554"
+      }
+    ]
+  },
+  {
+    "siren": "213403017",
+    "com_code": "34301",
+    "com_name": "Sète",
+    "epci_code": "200066355",
+    "epci_name": "CA Sète Agglopôle Méditerranée",
+    "dep_code": "34",
+    "dep_name": "Hérault",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 45175,
+    "ptot_n": 45175,
+    "reference_sirens": [
+      {
+        "siren": "216504407"
+      },
+      {
+        "siren": "218100659"
+      },
+      {
+        "siren": "213000078"
+      }
+    ]
+  },
+  {
+    "siren": "213502388",
+    "com_code": "35238",
+    "com_name": "Rennes",
+    "epci_code": "243500139",
+    "epci_name": "Rennes Métropole",
+    "dep_code": "35",
+    "dep_name": "Ille-et-Vilaine",
+    "reg_code": "53",
+    "reg_name": "Bretagne",
+    "ptot": 226654,
+    "ptot_n": 226654,
+    "reference_sirens": [
+      {
+        "siren": "212900195"
+      },
+      {
+        "siren": "212902324"
+      },
+      {
+        "siren": "215601212"
+      }
+    ]
+  },
+  {
+    "siren": "213502883",
+    "com_code": "35288",
+    "com_name": "Saint-Malo",
+    "epci_code": "243500782",
+    "epci_name": "CA du Pays de Saint Malo Agglomération",
+    "dep_code": "35",
+    "dep_name": "Ille-et-Vilaine",
+    "reg_code": "53",
+    "reg_name": "Bretagne",
+    "ptot": 48328,
+    "ptot_n": 48328,
+    "reference_sirens": [
+      {
+        "siren": "212202782"
+      },
+      {
+        "siren": "215602608"
+      },
+      {
+        "siren": "215601212"
+      }
+    ]
+  },
+  {
+    "siren": "213600448",
+    "com_code": "36044",
+    "com_name": "Châteauroux",
+    "epci_code": "243600327",
+    "epci_name": "CA Châteauroux Métropole",
+    "dep_code": "36",
+    "dep_name": "Indre",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 44890,
+    "ptot_n": 44890,
+    "reference_sirens": [
+      {
+        "siren": "214100182"
+      },
+      {
+        "siren": "212800858"
+      },
+      {
+        "siren": "213701220"
+      }
+    ]
+  },
+  {
+    "siren": "213701220",
+    "com_code": "37122",
+    "com_name": "Joué-lès-Tours",
+    "epci_code": "243700754",
+    "epci_name": "Tours Métropole Val de Loire",
+    "dep_code": "37",
+    "dep_name": "Indre-et-Loire",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 39143,
+    "ptot_n": 39143,
+    "reference_sirens": [
+      {
+        "siren": "212800858"
+      },
+      {
+        "siren": "213600448"
+      },
+      {
+        "siren": "212801344"
+      }
+    ]
+  },
+  {
+    "siren": "213702616",
+    "com_code": "37261",
+    "com_name": "Tours",
+    "epci_code": "243700754",
+    "epci_name": "Tours Métropole Val de Loire",
+    "dep_code": "37",
+    "dep_name": "Indre-et-Loire",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 140474,
+    "ptot_n": 140474,
+    "reference_sirens": [
+      {
+        "siren": "214502346"
+      },
+      {
+        "siren": "211800339"
+      },
+      {
+        "siren": "214100182"
+      }
+    ]
+  },
+  {
+    "siren": "213800535",
+    "com_code": "38053",
+    "com_name": "Bourgoin-Jallieu",
+    "epci_code": "243800604",
+    "epci_name": "CA Porte de l'Isère (CAPI)",
+    "dep_code": "38",
+    "dep_name": "Isère",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 30011,
+    "ptot_n": 30011,
+    "reference_sirens": [
+      {
+        "siren": "213805443"
+      },
+      {
+        "siren": "216902866"
+      },
+      {
+        "siren": "217300086"
+      }
+    ]
+  },
+  {
+    "siren": "213801517",
+    "com_code": "38151",
+    "com_name": "Échirolles",
+    "epci_code": "200040715",
+    "epci_name": "Grenoble-Alpes-Métropole",
+    "dep_code": "38",
+    "dep_name": "Isère",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 37181,
+    "ptot_n": 37181,
+    "reference_sirens": [
+      {
+        "siren": "217402817"
+      },
+      {
+        "siren": "217400126"
+      },
+      {
+        "siren": "216902643"
+      }
+    ]
+  },
+  {
+    "siren": "213801855",
+    "com_code": "38185",
+    "com_name": "Grenoble",
+    "epci_code": "200040715",
+    "epci_name": "Grenoble-Alpes-Métropole",
+    "dep_code": "38",
+    "dep_name": "Isère",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 160483,
+    "ptot_n": 160483,
+    "reference_sirens": [
+      {
+        "siren": "216902668"
+      },
+      {
+        "siren": "216301135"
+      },
+      {
+        "siren": "214202186"
+      }
+    ]
+  },
+  {
+    "siren": "213804214",
+    "com_code": "38421",
+    "com_name": "Saint-Martin-d'Hères",
+    "epci_code": "200040715",
+    "epci_name": "Grenoble-Alpes-Métropole",
+    "dep_code": "38",
+    "dep_name": "Isère",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 38455,
+    "ptot_n": 38455,
+    "reference_sirens": [
+      {
+        "siren": "217400126"
+      },
+      {
+        "siren": "217402817"
+      },
+      {
+        "siren": "213801517"
+      }
+    ]
+  },
+  {
+    "siren": "213805443",
+    "com_code": "38544",
+    "com_name": "Vienne",
+    "epci_code": "200077014",
+    "epci_name": "CA Vienne Condrieu",
+    "dep_code": "38",
+    "dep_name": "Isère",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 30401,
+    "ptot_n": 30401,
+    "reference_sirens": [
+      {
+        "siren": "213800535"
+      },
+      {
+        "siren": "216902866"
+      },
+      {
+        "siren": "217300086"
+      }
+    ]
+  },
+  {
+    "siren": "214001927",
+    "com_code": "40192",
+    "com_name": "Mont-de-Marsan",
+    "epci_code": "244000808",
+    "epci_name": "CA Mont de Marsan Agglomération",
+    "dep_code": "40",
+    "dep_name": "Landes",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 31366,
+    "ptot_n": 31366,
+    "reference_sirens": [
+      {
+        "siren": "213300395"
+      },
+      {
+        "siren": "212403224"
+      },
+      {
+        "siren": "218600666"
+      }
+    ]
+  },
+  {
+    "siren": "214100182",
+    "com_code": "41018",
+    "com_name": "Blois",
+    "epci_code": "200030385",
+    "epci_name": "CA de Blois \"Agglopolys\"",
+    "dep_code": "41",
+    "dep_name": "Loir-et-Cher",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 48127,
+    "ptot_n": 48127,
+    "reference_sirens": [
+      {
+        "siren": "213600448"
+      },
+      {
+        "siren": "212800858"
+      },
+      {
+        "siren": "213701220"
+      }
+    ]
+  },
+  {
+    "siren": "214201873",
+    "com_code": "42187",
+    "com_name": "Roanne",
+    "epci_code": "200035731",
+    "epci_name": "CA Roannais Agglomération",
+    "dep_code": "42",
+    "dep_name": "Loire",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 35152,
+    "ptot_n": 35152,
+    "reference_sirens": [
+      {
+        "siren": "210301859"
+      },
+      {
+        "siren": "216902825"
+      },
+      {
+        "siren": "214202079"
+      }
+    ]
+  },
+  {
+    "siren": "214202079",
+    "com_code": "42207",
+    "com_name": "Saint-Chamond",
+    "epci_code": "244200770",
+    "epci_name": "Saint-Etienne Métropole",
+    "dep_code": "42",
+    "dep_name": "Loire",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 35697,
+    "ptot_n": 35697,
+    "reference_sirens": [
+      {
+        "siren": "216902825"
+      },
+      {
+        "siren": "214201873"
+      },
+      {
+        "siren": "216902643"
+      }
+    ]
+  },
+  {
+    "siren": "214202186",
+    "com_code": "42218",
+    "com_name": "Saint-Étienne",
+    "epci_code": "244200770",
+    "epci_name": "Saint-Etienne Métropole",
+    "dep_code": "42",
+    "dep_name": "Loire",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 176016,
+    "ptot_n": 176016,
+    "reference_sirens": [
+      {
+        "siren": "213801855"
+      },
+      {
+        "siren": "216902668"
+      },
+      {
+        "siren": "216301135"
+      }
+    ]
+  },
+  {
+    "siren": "214401093",
+    "com_code": "44109",
+    "com_name": "Nantes",
+    "epci_code": "244400404",
+    "epci_name": "Nantes Métropole",
+    "dep_code": "44",
+    "dep_name": "Loire-Atlantique",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 325857,
+    "ptot_n": 325857,
+    "reference_sirens": [
+      {
+        "siren": "214900078"
+      },
+      {
+        "siren": "217201813"
+      },
+      {
+        "siren": "214401846"
+      }
+    ]
+  },
+  {
+    "siren": "214401432",
+    "com_code": "44143",
+    "com_name": "Rezé",
+    "epci_code": "244400404",
+    "epci_name": "Nantes Métropole",
+    "dep_code": "44",
+    "dep_name": "Loire-Atlantique",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 43756,
+    "ptot_n": 43756,
+    "reference_sirens": [
+      {
+        "siren": "200082139"
+      },
+      {
+        "siren": "214401622"
+      },
+      {
+        "siren": "215301300"
+      }
+    ]
+  },
+  {
+    "siren": "214401622",
+    "com_code": "44162",
+    "com_name": "Saint-Herblain",
+    "epci_code": "244400404",
+    "epci_name": "Nantes Métropole",
+    "dep_code": "44",
+    "dep_name": "Loire-Atlantique",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 49801,
+    "ptot_n": 49801,
+    "reference_sirens": [
+      {
+        "siren": "200082139"
+      },
+      {
+        "siren": "215301300"
+      },
+      {
+        "siren": "214401432"
+      }
+    ]
+  },
+  {
+    "siren": "214401846",
+    "com_code": "44184",
+    "com_name": "Saint-Nazaire",
+    "epci_code": "244400644",
+    "epci_name": "CA de la Région Nazairienne et de l'Estuaire (CARENE)",
+    "dep_code": "44",
+    "dep_name": "Loire-Atlantique",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 73643,
+    "ptot_n": 73643,
+    "reference_sirens": [
+      {
+        "siren": "218501914"
+      },
+      {
+        "siren": "214900995"
+      },
+      {
+        "siren": "215301300"
+      }
+    ]
+  },
+  {
+    "siren": "214502346",
+    "com_code": "45234",
+    "com_name": "Orléans",
+    "epci_code": "244500468",
+    "epci_name": "Orléans Métropole",
+    "dep_code": "45",
+    "dep_name": "Loiret",
+    "reg_code": "24",
+    "reg_name": "Centre-Val de Loire",
+    "ptot": 119380,
+    "ptot_n": 119380,
+    "reference_sirens": [
+      {
+        "siren": "213702616"
+      },
+      {
+        "siren": "211800339"
+      },
+      {
+        "siren": "214100182"
+      }
+    ]
+  },
+  {
+    "siren": "214700015",
+    "com_code": "47001",
+    "com_name": "Agen",
+    "epci_code": "200096956",
+    "epci_name": "CA Agglomération d'Agen",
+    "dep_code": "47",
+    "dep_name": "Lot-et-Garonne",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 33046,
+    "ptot_n": 33046,
+    "reference_sirens": [
+      {
+        "siren": "213304496"
+      },
+      {
+        "siren": "218600666"
+      },
+      {
+        "siren": "214001927"
+      }
+    ]
+  },
+  {
+    "siren": "214900078",
+    "com_code": "49007",
+    "com_name": "Angers",
+    "epci_code": "244900015",
+    "epci_name": "CU Angers Loire Métropole",
+    "dep_code": "49",
+    "dep_name": "Maine-et-Loire",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 159103,
+    "ptot_n": 159103,
+    "reference_sirens": [
+      {
+        "siren": "217201813"
+      },
+      {
+        "siren": "214401846"
+      },
+      {
+        "siren": "218501914"
+      }
+    ]
+  },
+  {
+    "siren": "214900995",
+    "com_code": "49099",
+    "com_name": "Cholet",
+    "epci_code": "200071678",
+    "epci_name": "CA Agglomération du Choletais",
+    "dep_code": "49",
+    "dep_name": "Maine-et-Loire",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 56286,
+    "ptot_n": 56286,
+    "reference_sirens": [
+      {
+        "siren": "218501914"
+      },
+      {
+        "siren": "215301300"
+      },
+      {
+        "siren": "214401622"
+      }
+    ]
+  },
+  {
+    "siren": "200056844",
+    "com_code": "50129",
+    "com_name": "Cherbourg-en-Cotentin",
+    "epci_code": "200067205",
+    "epci_name": "CA du Cotentin",
+    "dep_code": "50",
+    "dep_name": "Manche",
+    "reg_code": "28",
+    "reg_name": "Normandie",
+    "ptot": 80082,
+    "ptot_n": 80082,
+    "reference_sirens": [
+      {
+        "siren": "211401187"
+      },
+      {
+        "siren": "212702294"
+      },
+      {
+        "siren": "217605401"
+      }
+    ]
+  },
+  {
+    "siren": "215101015",
+    "com_code": "51108",
+    "com_name": "Châlons-en-Champagne",
+    "epci_code": "200066876",
+    "epci_name": "CA de Châlons-en-Champagne",
+    "dep_code": "51",
+    "dep_name": "Marne",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 45481,
+    "ptot_n": 45481,
+    "reference_sirens": [
+      {
+        "siren": "210800967"
+      },
+      {
+        "siren": "215706722"
+      },
+      {
+        "siren": "216701805"
+      }
+    ]
+  },
+  {
+    "siren": "215104217",
+    "com_code": "51454",
+    "com_name": "Reims",
+    "epci_code": "200067213",
+    "epci_name": "CU du Grand Reims",
+    "dep_code": "51",
+    "dep_name": "Marne",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 183287,
+    "ptot_n": 183287,
+    "reference_sirens": [
+      {
+        "siren": "215704636"
+      },
+      {
+        "siren": "216802249"
+      },
+      {
+        "siren": "215403957"
+      }
+    ]
+  },
+  {
+    "siren": "215301300",
+    "com_code": "53130",
+    "com_name": "Laval",
+    "epci_code": "200083392",
+    "epci_name": "CA Laval Agglomération",
+    "dep_code": "53",
+    "dep_name": "Mayenne",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 52169,
+    "ptot_n": 52169,
+    "reference_sirens": [
+      {
+        "siren": "214401622"
+      },
+      {
+        "siren": "200082139"
+      },
+      {
+        "siren": "214900995"
+      }
+    ]
+  },
+  {
+    "siren": "215403957",
+    "com_code": "54395",
+    "com_name": "Nancy",
+    "epci_code": "245400676",
+    "epci_name": "Métropole du Grand Nancy",
+    "dep_code": "54",
+    "dep_name": "Meurthe-et-Moselle",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 105885,
+    "ptot_n": 105885,
+    "reference_sirens": [
+      {
+        "siren": "216802249"
+      },
+      {
+        "siren": "215704636"
+      },
+      {
+        "siren": "216800664"
+      }
+    ]
+  },
+  {
+    "siren": "215405473",
+    "com_code": "54547",
+    "com_name": "Vandœuvre-lès-Nancy",
+    "epci_code": "245400676",
+    "epci_name": "Métropole du Grand Nancy",
+    "dep_code": "54",
+    "dep_name": "Meurthe-et-Moselle",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 30039,
+    "ptot_n": 30039,
+    "reference_sirens": [
+      {
+        "siren": "218801603"
+      },
+      {
+        "siren": "216704478"
+      },
+      {
+        "siren": "216701805"
+      }
+    ]
+  },
+  {
+    "siren": "215601212",
+    "com_code": "56121",
+    "com_name": "Lorient",
+    "epci_code": "200042174",
+    "epci_name": "CA Lorient Agglomération",
+    "dep_code": "56",
+    "dep_name": "Morbihan",
+    "reg_code": "53",
+    "reg_name": "Bretagne",
+    "ptot": 58881,
+    "ptot_n": 58881,
+    "reference_sirens": [
+      {
+        "siren": "215602608"
+      },
+      {
+        "siren": "212902324"
+      },
+      {
+        "siren": "213502883"
+      }
+    ]
+  },
+  {
+    "siren": "215602608",
+    "com_code": "56260",
+    "com_name": "Vannes",
+    "epci_code": "200067932",
+    "epci_name": "CA Golfe du Morbihan - Vannes Agglomération",
+    "dep_code": "56",
+    "dep_name": "Morbihan",
+    "reg_code": "53",
+    "reg_name": "Bretagne",
+    "ptot": 56018,
+    "ptot_n": 56018,
+    "reference_sirens": [
+      {
+        "siren": "215601212"
+      },
+      {
+        "siren": "213502883"
+      },
+      {
+        "siren": "212902324"
+      }
+    ]
+  },
+  {
+    "siren": "215704636",
+    "com_code": "57463",
+    "com_name": "Metz",
+    "epci_code": "200039865",
+    "epci_name": "Metz Métropole",
+    "dep_code": "57",
+    "dep_name": "Moselle",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 122036,
+    "ptot_n": 122036,
+    "reference_sirens": [
+      {
+        "siren": "216802249"
+      },
+      {
+        "siren": "215403957"
+      },
+      {
+        "siren": "216800664"
+      }
+    ]
+  },
+  {
+    "siren": "215706722",
+    "com_code": "57672",
+    "com_name": "Thionville",
+    "epci_code": "245701362",
+    "epci_name": "CA Portes de France-Thionville",
+    "dep_code": "57",
+    "dep_name": "Moselle",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 42117,
+    "ptot_n": 42117,
+    "reference_sirens": [
+      {
+        "siren": "215101015"
+      },
+      {
+        "siren": "210800967"
+      },
+      {
+        "siren": "216701805"
+      }
+    ]
+  },
+  {
+    "siren": "215801945",
+    "com_code": "58194",
+    "com_name": "Nevers",
+    "epci_code": "245804406",
+    "epci_name": "CA de Nevers",
+    "dep_code": "58",
+    "dep_name": "Nièvre",
+    "reg_code": "27",
+    "reg_name": "Bourgogne-Franche-Comté",
+    "ptot": 33285,
+    "ptot_n": 33285,
+    "reference_sirens": [
+      {
+        "siren": "217102706"
+      },
+      {
+        "siren": "218900249"
+      },
+      {
+        "siren": "219000106"
+      }
+    ]
+  },
+  {
+    "siren": "200027159",
+    "com_code": "59183",
+    "com_name": "Dunkerque",
+    "epci_code": "245900428",
+    "epci_name": "CU de Dunkerque",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 87805,
+    "ptot_n": 87805,
+    "reference_sirens": [
+      {
+        "siren": "215905126"
+      },
+      {
+        "siren": "215905993"
+      },
+      {
+        "siren": "216201939"
+      }
+    ]
+  },
+  {
+    "siren": "215900093",
+    "com_code": "59009",
+    "com_name": "Villeneuve-d'Ascq",
+    "epci_code": "200093201",
+    "epci_name": "Métropole Européenne de Lille",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 61902,
+    "ptot_n": 61902,
+    "reference_sirens": [
+      {
+        "siren": "216000562"
+      },
+      {
+        "siren": "216201939"
+      },
+      {
+        "siren": "210206660"
+      }
+    ]
+  },
+  {
+    "siren": "215901224",
+    "com_code": "59122",
+    "com_name": "Cambrai",
+    "epci_code": "200068500",
+    "epci_name": "CA de Cambrai",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 32128,
+    "ptot_n": 32128,
+    "reference_sirens": [
+      {
+        "siren": "216204982"
+      },
+      {
+        "siren": "216205104"
+      },
+      {
+        "siren": "216001743"
+      }
+    ]
+  },
+  {
+    "siren": "215901786",
+    "com_code": "59178",
+    "com_name": "Douai",
+    "epci_code": "200044618",
+    "epci_name": "CA Douaisis Agglo",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 40697,
+    "ptot_n": 40697,
+    "reference_sirens": [
+      {
+        "siren": "216201608"
+      },
+      {
+        "siren": "215906504"
+      },
+      {
+        "siren": "216001586"
+      }
+    ]
+  },
+  {
+    "siren": "215903501",
+    "com_code": "59350",
+    "com_name": "Lille",
+    "epci_code": "200093201",
+    "epci_name": "Métropole Européenne de Lille",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 238104,
+    "ptot_n": 238104,
+    "reference_sirens": [
+      {
+        "siren": "218000198"
+      },
+      {
+        "siren": "215905993"
+      },
+      {
+        "siren": "215905126"
+      }
+    ]
+  },
+  {
+    "siren": "215903782",
+    "com_code": "59378",
+    "com_name": "Marcq-en-Barœul",
+    "epci_code": "200093201",
+    "epci_name": "Métropole Européenne de Lille",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 39319,
+    "ptot_n": 39319,
+    "reference_sirens": [
+      {
+        "siren": "215901786"
+      },
+      {
+        "siren": "216201608"
+      },
+      {
+        "siren": "215906504"
+      }
+    ]
+  },
+  {
+    "siren": "215905126",
+    "com_code": "59512",
+    "com_name": "Roubaix",
+    "epci_code": "200093201",
+    "epci_name": "Métropole Européenne de Lille",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 98480,
+    "ptot_n": 98480,
+    "reference_sirens": [
+      {
+        "siren": "215905993"
+      },
+      {
+        "siren": "200027159"
+      },
+      {
+        "siren": "216201939"
+      }
+    ]
+  },
+  {
+    "siren": "215905993",
+    "com_code": "59599",
+    "com_name": "Tourcoing",
+    "epci_code": "200093201",
+    "epci_name": "Métropole Européenne de Lille",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 99826,
+    "ptot_n": 99826,
+    "reference_sirens": [
+      {
+        "siren": "215905126"
+      },
+      {
+        "siren": "200027159"
+      },
+      {
+        "siren": "216201939"
+      }
+    ]
+  },
+  {
+    "siren": "215906066",
+    "com_code": "59606",
+    "com_name": "Valenciennes",
+    "epci_code": "245901160",
+    "epci_name": "CA Valenciennes Métropole",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 43188,
+    "ptot_n": 43188,
+    "reference_sirens": [
+      {
+        "siren": "216200410"
+      },
+      {
+        "siren": "216001586"
+      },
+      {
+        "siren": "215906504"
+      }
+    ]
+  },
+  {
+    "siren": "215906504",
+    "com_code": "59650",
+    "com_name": "Wattrelos",
+    "epci_code": "200093201",
+    "epci_name": "Métropole Européenne de Lille",
+    "dep_code": "59",
+    "dep_name": "Nord",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 41197,
+    "ptot_n": 41197,
+    "reference_sirens": [
+      {
+        "siren": "216201608"
+      },
+      {
+        "siren": "216001586"
+      },
+      {
+        "siren": "215901786"
+      }
+    ]
+  },
+  {
+    "siren": "216000562",
+    "com_code": "60057",
+    "com_name": "Beauvais",
+    "epci_code": "200067999",
+    "epci_name": "CA du Beauvaisis",
+    "dep_code": "60",
+    "dep_name": "Oise",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 58306,
+    "ptot_n": 58306,
+    "reference_sirens": [
+      {
+        "siren": "215900093"
+      },
+      {
+        "siren": "210206660"
+      },
+      {
+        "siren": "216201939"
+      }
+    ]
+  },
+  {
+    "siren": "216001586",
+    "com_code": "60159",
+    "com_name": "Compiègne",
+    "epci_code": "200067965",
+    "epci_name": "CA de la Région de Compiègne et de la Basse Automne",
+    "dep_code": "60",
+    "dep_name": "Oise",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 41470,
+    "ptot_n": 41470,
+    "reference_sirens": [
+      {
+        "siren": "215906504"
+      },
+      {
+        "siren": "216201608"
+      },
+      {
+        "siren": "215901786"
+      }
+    ]
+  },
+  {
+    "siren": "216001743",
+    "com_code": "60175",
+    "com_name": "Creil",
+    "epci_code": "200068047",
+    "epci_name": "CA Creil Sud Oise",
+    "dep_code": "60",
+    "dep_name": "Oise",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 36193,
+    "ptot_n": 36193,
+    "reference_sirens": [
+      {
+        "siren": "215903782"
+      },
+      {
+        "siren": "216204982"
+      },
+      {
+        "siren": "215901224"
+      }
+    ]
+  },
+  {
+    "siren": "216200410",
+    "com_code": "62041",
+    "com_name": "Arras",
+    "epci_code": "200033579",
+    "epci_name": "CU d'Arras",
+    "dep_code": "62",
+    "dep_name": "Pas-de-Calais",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 43133,
+    "ptot_n": 43133,
+    "reference_sirens": [
+      {
+        "siren": "215906066"
+      },
+      {
+        "siren": "216001586"
+      },
+      {
+        "siren": "215906504"
+      }
+    ]
+  },
+  {
+    "siren": "216201608",
+    "com_code": "62160",
+    "com_name": "Boulogne-sur-Mer",
+    "epci_code": "246200729",
+    "epci_name": "CA du Boulonnais",
+    "dep_code": "62",
+    "dep_name": "Pas-de-Calais",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 40985,
+    "ptot_n": 40985,
+    "reference_sirens": [
+      {
+        "siren": "215906504"
+      },
+      {
+        "siren": "215901786"
+      },
+      {
+        "siren": "216001586"
+      }
+    ]
+  },
+  {
+    "siren": "216201939",
+    "com_code": "62193",
+    "com_name": "Calais",
+    "epci_code": "200090751",
+    "epci_name": "CA Grand Calais Terres et Mers",
+    "dep_code": "62",
+    "dep_name": "Pas-de-Calais",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 68193,
+    "ptot_n": 68193,
+    "reference_sirens": [
+      {
+        "siren": "215900093"
+      },
+      {
+        "siren": "216000562"
+      },
+      {
+        "siren": "210206660"
+      }
+    ]
+  },
+  {
+    "siren": "216204982",
+    "com_code": "62498",
+    "com_name": "Lens",
+    "epci_code": "246200364",
+    "epci_name": "CA de Lens - Liévin",
+    "dep_code": "62",
+    "dep_name": "Pas-de-Calais",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 32651,
+    "ptot_n": 32651,
+    "reference_sirens": [
+      {
+        "siren": "215901224"
+      },
+      {
+        "siren": "216205104"
+      },
+      {
+        "siren": "216001743"
+      }
+    ]
+  },
+  {
+    "siren": "216205104",
+    "com_code": "62510",
+    "com_name": "Liévin",
+    "epci_code": "246200364",
+    "epci_name": "CA de Lens - Liévin",
+    "dep_code": "62",
+    "dep_name": "Pas-de-Calais",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 30432,
+    "ptot_n": 30432,
+    "reference_sirens": [
+      {
+        "siren": "215901224"
+      },
+      {
+        "siren": "216204982"
+      },
+      {
+        "siren": "216001743"
+      }
+    ]
+  },
+  {
+    "siren": "216301135",
+    "com_code": "63113",
+    "com_name": "Clermont-Ferrand",
+    "epci_code": "246300701",
+    "epci_name": "Clermont Auvergne Métropole",
+    "dep_code": "63",
+    "dep_name": "Puy-de-Dôme",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 149898,
+    "ptot_n": 149898,
+    "reference_sirens": [
+      {
+        "siren": "216902668"
+      },
+      {
+        "siren": "213801855"
+      },
+      {
+        "siren": "200063402"
+      }
+    ]
+  },
+  {
+    "siren": "216400242",
+    "com_code": "64024",
+    "com_name": "Anglet",
+    "epci_code": "200067106",
+    "epci_name": "CA du Pays Basque",
+    "dep_code": "64",
+    "dep_name": "Pyrénées-Atlantiques",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 41388,
+    "ptot_n": 41388,
+    "reference_sirens": [
+      {
+        "siren": "211600150"
+      },
+      {
+        "siren": "213305501"
+      },
+      {
+        "siren": "213305220"
+      }
+    ]
+  },
+  {
+    "siren": "216401026",
+    "com_code": "64102",
+    "com_name": "Bayonne",
+    "epci_code": "200067106",
+    "epci_name": "CA du Pays Basque",
+    "dep_code": "64",
+    "dep_name": "Pyrénées-Atlantiques",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 53296,
+    "ptot_n": 53296,
+    "reference_sirens": [
+      {
+        "siren": "211903109"
+      },
+      {
+        "siren": "217901917"
+      },
+      {
+        "siren": "213305220"
+      }
+    ]
+  },
+  {
+    "siren": "216404459",
+    "com_code": "64445",
+    "com_name": "Pau",
+    "epci_code": "200067254",
+    "epci_name": "CA Pau Béarn Pyrénées",
+    "dep_code": "64",
+    "dep_name": "Pyrénées-Atlantiques",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 77061,
+    "ptot_n": 77061,
+    "reference_sirens": [
+      {
+        "siren": "211703004"
+      },
+      {
+        "siren": "213302813"
+      },
+      {
+        "siren": "213303183"
+      }
+    ]
+  },
+  {
+    "siren": "216504407",
+    "com_code": "65440",
+    "com_name": "Tarbes",
+    "epci_code": "200069300",
+    "epci_name": "CA Tarbes-Lourdes-Pyrénées",
+    "dep_code": "65",
+    "dep_name": "Hautes-Pyrénées",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 43944,
+    "ptot_n": 43944,
+    "reference_sirens": [
+      {
+        "siren": "218100659"
+      },
+      {
+        "siren": "213000078"
+      },
+      {
+        "siren": "213403017"
+      }
+    ]
+  },
+  {
+    "siren": "216601369",
+    "com_code": "66136",
+    "com_name": "Perpignan",
+    "epci_code": "200027183",
+    "epci_name": "CU Perpignan Méditerranée Métropole",
+    "dep_code": "66",
+    "dep_name": "Pyrénées-Orientales",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 119447,
+    "ptot_n": 119447,
+    "reference_sirens": [
+      {
+        "siren": "213001894"
+      },
+      {
+        "siren": "213400328"
+      },
+      {
+        "siren": "218201218"
+      }
+    ]
+  },
+  {
+    "siren": "216701805",
+    "com_code": "67180",
+    "com_name": "Haguenau",
+    "epci_code": "200067874",
+    "epci_name": "CA de Haguenau",
+    "dep_code": "67",
+    "dep_name": "Bas-Rhin",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 36009,
+    "ptot_n": 36009,
+    "reference_sirens": [
+      {
+        "siren": "216704478"
+      },
+      {
+        "siren": "218801603"
+      },
+      {
+        "siren": "215405473"
+      }
+    ]
+  },
+  {
+    "siren": "216704478",
+    "com_code": "67447",
+    "com_name": "Schiltigheim",
+    "epci_code": "246700488",
+    "epci_name": "Eurométropole de Strasbourg",
+    "dep_code": "67",
+    "dep_name": "Bas-Rhin",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 34206,
+    "ptot_n": 34206,
+    "reference_sirens": [
+      {
+        "siren": "218801603"
+      },
+      {
+        "siren": "216701805"
+      },
+      {
+        "siren": "215405473"
+      }
+    ]
+  },
+  {
+    "siren": "216704825",
+    "com_code": "67482",
+    "com_name": "Strasbourg",
+    "epci_code": "246700488",
+    "epci_name": "Eurométropole de Strasbourg",
+    "dep_code": "67",
+    "dep_name": "Bas-Rhin",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 293538,
+    "ptot_n": 293538,
+    "reference_sirens": [
+      {
+        "siren": "215104217"
+      },
+      {
+        "siren": "215704636"
+      },
+      {
+        "siren": "216802249"
+      }
+    ]
+  },
+  {
+    "siren": "216800664",
+    "com_code": "68066",
+    "com_name": "Colmar",
+    "epci_code": "246800726",
+    "epci_name": "CA Colmar Agglomération",
+    "dep_code": "68",
+    "dep_name": "Haut-Rhin",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 69398,
+    "ptot_n": 69398,
+    "reference_sirens": [
+      {
+        "siren": "211003744"
+      },
+      {
+        "siren": "210800967"
+      },
+      {
+        "siren": "215101015"
+      }
+    ]
+  },
+  {
+    "siren": "216802249",
+    "com_code": "68224",
+    "com_name": "Mulhouse",
+    "epci_code": "200066009",
+    "epci_name": "CA Mulhouse Alsace Agglomération",
+    "dep_code": "68",
+    "dep_name": "Haut-Rhin",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 109285,
+    "ptot_n": 109285,
+    "reference_sirens": [
+      {
+        "siren": "215403957"
+      },
+      {
+        "siren": "215704636"
+      },
+      {
+        "siren": "216800664"
+      }
+    ]
+  },
+  {
+    "siren": "216900290",
+    "com_code": "69029",
+    "com_name": "Bron",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 42819,
+    "ptot_n": 42819,
+    "reference_sirens": [
+      {
+        "siren": "210100533"
+      },
+      {
+        "siren": "216900340"
+      },
+      {
+        "siren": "212601983"
+      }
+    ]
+  },
+  {
+    "siren": "216900340",
+    "com_code": "69034",
+    "com_name": "Caluire-et-Cuire",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 43929,
+    "ptot_n": 43929,
+    "reference_sirens": [
+      {
+        "siren": "210100533"
+      },
+      {
+        "siren": "216900290"
+      },
+      {
+        "siren": "212601983"
+      }
+    ]
+  },
+  {
+    "siren": "216901231",
+    "com_code": "69123",
+    "com_name": "Lyon",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 528633,
+    "ptot_n": 528633,
+    "reference_sirens": [
+      {
+        "siren": "214202186"
+      },
+      {
+        "siren": "213801855"
+      },
+      {
+        "siren": "216902668"
+      }
+    ]
+  },
+  {
+    "siren": "216902569",
+    "com_code": "69256",
+    "com_name": "Vaulx-en-Velin",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 51990,
+    "ptot_n": 51990,
+    "reference_sirens": [
+      {
+        "siren": "216902908"
+      },
+      {
+        "siren": "216900340"
+      },
+      {
+        "siren": "210100533"
+      }
+    ]
+  },
+  {
+    "siren": "216902593",
+    "com_code": "69259",
+    "com_name": "Vénissieux",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 67017,
+    "ptot_n": 67017,
+    "reference_sirens": [
+      {
+        "siren": "212603625"
+      },
+      {
+        "siren": "217300656"
+      },
+      {
+        "siren": "216902569"
+      }
+    ]
+  },
+  {
+    "siren": "216902643",
+    "com_code": "69264",
+    "com_name": "Villefranche-sur-Saône",
+    "epci_code": "200040590",
+    "epci_name": "CA Villefranche Beaujolais Saône",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 36419,
+    "ptot_n": 36419,
+    "reference_sirens": [
+      {
+        "siren": "214202079"
+      },
+      {
+        "siren": "213801517"
+      },
+      {
+        "siren": "216902825"
+      }
+    ]
+  },
+  {
+    "siren": "216902668",
+    "com_code": "69266",
+    "com_name": "Villeurbanne",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 155858,
+    "ptot_n": 155858,
+    "reference_sirens": [
+      {
+        "siren": "213801855"
+      },
+      {
+        "siren": "216301135"
+      },
+      {
+        "siren": "214202186"
+      }
+    ]
+  },
+  {
+    "siren": "216902825",
+    "com_code": "69282",
+    "com_name": "Meyzieu",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 35468,
+    "ptot_n": 35468,
+    "reference_sirens": [
+      {
+        "siren": "214202079"
+      },
+      {
+        "siren": "214201873"
+      },
+      {
+        "siren": "210301859"
+      }
+    ]
+  },
+  {
+    "siren": "216902866",
+    "com_code": "69286",
+    "com_name": "Rillieux-la-Pape",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 31210,
+    "ptot_n": 31210,
+    "reference_sirens": [
+      {
+        "siren": "217300086"
+      },
+      {
+        "siren": "213805443"
+      },
+      {
+        "siren": "213800535"
+      }
+    ]
+  },
+  {
+    "siren": "216902908",
+    "com_code": "69290",
+    "com_name": "Saint-Priest",
+    "epci_code": "200046977",
+    "epci_name": "Métropole de Lyon",
+    "dep_code": "69",
+    "dep_name": "Rhône",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 48612,
+    "ptot_n": 48612,
+    "reference_sirens": [
+      {
+        "siren": "216902569"
+      },
+      {
+        "siren": "216900340"
+      },
+      {
+        "siren": "210100533"
+      }
+    ]
+  },
+  {
+    "siren": "217100767",
+    "com_code": "71076",
+    "com_name": "Chalon-sur-Saône",
+    "epci_code": "247100589",
+    "epci_name": "CA Le Grand Chalon",
+    "dep_code": "71",
+    "dep_name": "Saône-et-Loire",
+    "reg_code": "27",
+    "reg_name": "Bourgogne-Franche-Comté",
+    "ptot": 46567,
+    "ptot_n": 46567,
+    "reference_sirens": [
+      {
+        "siren": "219000106"
+      },
+      {
+        "siren": "218900249"
+      },
+      {
+        "siren": "217102706"
+      }
+    ]
+  },
+  {
+    "siren": "217102706",
+    "com_code": "71270",
+    "com_name": "Mâcon",
+    "epci_code": "200070308",
+    "epci_name": "CA Mâconnais Beaujolais Agglomération",
+    "dep_code": "71",
+    "dep_name": "Saône-et-Loire",
+    "reg_code": "27",
+    "reg_name": "Bourgogne-Franche-Comté",
+    "ptot": 35137,
+    "ptot_n": 35137,
+    "reference_sirens": [
+      {
+        "siren": "218900249"
+      },
+      {
+        "siren": "215801945"
+      },
+      {
+        "siren": "219000106"
+      }
+    ]
+  },
+  {
+    "siren": "217201813",
+    "com_code": "72181",
+    "com_name": "Le Mans",
+    "epci_code": "247200132",
+    "epci_name": "CU Le Mans Métropole",
+    "dep_code": "72",
+    "dep_name": "Sarthe",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 147983,
+    "ptot_n": 147983,
+    "reference_sirens": [
+      {
+        "siren": "214900078"
+      },
+      {
+        "siren": "214401846"
+      },
+      {
+        "siren": "218501914"
+      }
+    ]
+  },
+  {
+    "siren": "217300086",
+    "com_code": "73008",
+    "com_name": "Aix-les-Bains",
+    "epci_code": "200068674",
+    "epci_name": "CA Grand Lac",
+    "dep_code": "73",
+    "dep_name": "Savoie",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 31642,
+    "ptot_n": 31642,
+    "reference_sirens": [
+      {
+        "siren": "216902866"
+      },
+      {
+        "siren": "213805443"
+      },
+      {
+        "siren": "213800535"
+      }
+    ]
+  },
+  {
+    "siren": "217300656",
+    "com_code": "73065",
+    "com_name": "Chambéry",
+    "epci_code": "200069110",
+    "epci_name": "CA du Grand Chambéry",
+    "dep_code": "73",
+    "dep_name": "Savoie",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 60749,
+    "ptot_n": 60749,
+    "reference_sirens": [
+      {
+        "siren": "212603625"
+      },
+      {
+        "siren": "216902593"
+      },
+      {
+        "siren": "216902569"
+      }
+    ]
+  },
+  {
+    "siren": "200063402",
+    "com_code": "74010",
+    "com_name": "Annecy",
+    "epci_code": "200066793",
+    "epci_name": "CA du Grand Annecy",
+    "dep_code": "74",
+    "dep_name": "Haute-Savoie",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 134942,
+    "ptot_n": 134942,
+    "reference_sirens": [
+      {
+        "siren": "216301135"
+      },
+      {
+        "siren": "216902668"
+      },
+      {
+        "siren": "213801855"
+      }
+    ]
+  },
+  {
+    "siren": "217400126",
+    "com_code": "74012",
+    "com_name": "Annemasse",
+    "epci_code": "200011773",
+    "epci_name": "CA Annemasse-Les Voirons-Agglomération",
+    "dep_code": "74",
+    "dep_name": "Haute-Savoie",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 37859,
+    "ptot_n": 37859,
+    "reference_sirens": [
+      {
+        "siren": "217402817"
+      },
+      {
+        "siren": "213804214"
+      },
+      {
+        "siren": "213801517"
+      }
+    ]
+  },
+  {
+    "siren": "217402817",
+    "com_code": "74281",
+    "com_name": "Thonon-les-Bains",
+    "epci_code": "200067551",
+    "epci_name": "CA Thonon Agglomération",
+    "dep_code": "74",
+    "dep_name": "Haute-Savoie",
+    "reg_code": "84",
+    "reg_name": "Auvergne-Rhône-Alpes",
+    "ptot": 37732,
+    "ptot_n": 37732,
+    "reference_sirens": [
+      {
+        "siren": "217400126"
+      },
+      {
+        "siren": "213801517"
+      },
+      {
+        "siren": "213804214"
+      }
+    ]
+  },
+  {
+    "siren": "217500016",
+    "com_code": "75056",
+    "com_name": "Paris",
+    "epci_code": "200054781",
+    "epci_name": "Métropole du Grand Paris",
+    "dep_code": "75",
+    "dep_name": "Paris",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 2162598,
+    "ptot_n": 2162598,
+    "reference_sirens": [
+      {
+        "siren": "219200128"
+      },
+      {
+        "siren": "219300662"
+      },
+      {
+        "siren": "219300480"
+      }
+    ]
+  },
+  {
+    "siren": "217603513",
+    "com_code": "76351",
+    "com_name": "Le Havre",
+    "epci_code": "200084952",
+    "epci_name": "CU Le Havre Seine Métropole",
+    "dep_code": "76",
+    "dep_name": "Seine-Maritime",
+    "reg_code": "28",
+    "reg_name": "Normandie",
+    "ptot": 167658,
+    "ptot_n": 167658,
+    "reference_sirens": [
+      {
+        "siren": "217605401"
+      },
+      {
+        "siren": "211401187"
+      },
+      {
+        "siren": "200056844"
+      }
+    ]
+  },
+  {
+    "siren": "217605401",
+    "com_code": "76540",
+    "com_name": "Rouen",
+    "epci_code": "200023414",
+    "epci_name": "Métropole Rouen Normandie",
+    "dep_code": "76",
+    "dep_name": "Seine-Maritime",
+    "reg_code": "28",
+    "reg_name": "Normandie",
+    "ptot": 115792,
+    "ptot_n": 115792,
+    "reference_sirens": [
+      {
+        "siren": "211401187"
+      },
+      {
+        "siren": "200056844"
+      },
+      {
+        "siren": "217603513"
+      }
+    ]
+  },
+  {
+    "siren": "217701085",
+    "com_code": "77108",
+    "com_name": "Chelles",
+    "epci_code": "200057958",
+    "epci_name": "CA Paris - Vallée de la Marne",
+    "dep_code": "77",
+    "dep_name": "Seine-et-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 54691,
+    "ptot_n": 54691,
+    "reference_sirens": [
+      {
+        "siren": "219300316"
+      },
+      {
+        "siren": "219300084"
+      },
+      {
+        "siren": "219200235"
+      }
+    ]
+  },
+  {
+    "siren": "217702844",
+    "com_code": "77284",
+    "com_name": "Meaux",
+    "epci_code": "200072130",
+    "epci_name": "CA du Pays de Meaux",
+    "dep_code": "77",
+    "dep_name": "Seine-et-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 56191,
+    "ptot_n": 56191,
+    "reference_sirens": [
+      {
+        "siren": "219400769"
+      },
+      {
+        "siren": "219300084"
+      },
+      {
+        "siren": "217701085"
+      }
+    ]
+  },
+  {
+    "siren": "217702885",
+    "com_code": "77288",
+    "com_name": "Melun",
+    "epci_code": "247700057",
+    "epci_name": "CA Melun Val de Seine",
+    "dep_code": "77",
+    "dep_name": "Seine-et-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 41867,
+    "ptot_n": 41867,
+    "reference_sirens": [
+      {
+        "siren": "219200078"
+      },
+      {
+        "siren": "219502689"
+      },
+      {
+        "siren": "217804988"
+      }
+    ]
+  },
+  {
+    "siren": "217703735",
+    "com_code": "77373",
+    "com_name": "Pontault-Combault",
+    "epci_code": "200057958",
+    "epci_name": "CA Paris - Vallée de la Marne",
+    "dep_code": "77",
+    "dep_name": "Seine-et-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 37804,
+    "ptot_n": 37804,
+    "reference_sirens": [
+      {
+        "siren": "219502523"
+      },
+      {
+        "siren": "219105897"
+      },
+      {
+        "siren": "219300787"
+      }
+    ]
+  },
+  {
+    "siren": "217704451",
+    "com_code": "77445",
+    "com_name": "Savigny-le-Temple",
+    "epci_code": "200059228",
+    "epci_name": "CA Grand Paris Sud Seine Essonne Sénart",
+    "dep_code": "77",
+    "dep_name": "Seine-et-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 30404,
+    "ptot_n": 30404,
+    "reference_sirens": [
+      {
+        "siren": "219400165"
+      },
+      {
+        "siren": "217801463"
+      },
+      {
+        "siren": "219200649"
+      }
+    ]
+  },
+  {
+    "siren": "200085470",
+    "com_code": "78158",
+    "com_name": "Le Chesnay-Rocquencourt",
+    "epci_code": "247800584",
+    "epci_name": "CA Versailles Grand Parc (CAVGP)",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31707,
+    "ptot_n": 31707,
+    "reference_sirens": [
+      {
+        "siren": "219106572"
+      },
+      {
+        "siren": "219400389"
+      },
+      {
+        "siren": "219300639"
+      }
+    ]
+  },
+  {
+    "siren": "200086924",
+    "com_code": "78551",
+    "com_name": "Saint-Germain-en-Laye",
+    "epci_code": "200058519",
+    "epci_name": "CA Saint Germain Boucles de Seine",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 46171,
+    "ptot_n": 46171,
+    "reference_sirens": [
+      {
+        "siren": "219400223"
+      },
+      {
+        "siren": "219200482"
+      },
+      {
+        "siren": "219300464"
+      }
+    ]
+  },
+  {
+    "siren": "217801463",
+    "com_code": "78146",
+    "com_name": "Chatou",
+    "epci_code": "200058519",
+    "epci_name": "CA Saint Germain Boucles de Seine",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 30190,
+    "ptot_n": 30190,
+    "reference_sirens": [
+      {
+        "siren": "219200649"
+      },
+      {
+        "siren": "217704451"
+      },
+      {
+        "siren": "219400165"
+      }
+    ]
+  },
+  {
+    "siren": "217801729",
+    "com_code": "78172",
+    "com_name": "Conflans-Sainte-Honorine",
+    "epci_code": "200059889",
+    "epci_name": "CU Grand Paris Seine et Oise",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 36372,
+    "ptot_n": 36372,
+    "reference_sirens": [
+      {
+        "siren": "219105491"
+      },
+      {
+        "siren": "219300506"
+      },
+      {
+        "siren": "219300738"
+      }
+    ]
+  },
+  {
+    "siren": "217803113",
+    "com_code": "78311",
+    "com_name": "Houilles",
+    "epci_code": "200058519",
+    "epci_name": "CA Saint Germain Boucles de Seine",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 33569,
+    "ptot_n": 33569,
+    "reference_sirens": [
+      {
+        "siren": "217806215"
+      },
+      {
+        "siren": "217804400"
+      },
+      {
+        "siren": "219400520"
+      }
+    ]
+  },
+  {
+    "siren": "217803618",
+    "com_code": "78361",
+    "com_name": "Mantes-la-Jolie",
+    "epci_code": "200059889",
+    "epci_name": "CU Grand Paris Seine et Oise",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 44114,
+    "ptot_n": 44114,
+    "reference_sirens": [
+      {
+        "siren": "219200623"
+      },
+      {
+        "siren": "219502689"
+      },
+      {
+        "siren": "219300530"
+      }
+    ]
+  },
+  {
+    "siren": "217804236",
+    "com_code": "78423",
+    "com_name": "Montigny-le-Bretonneux",
+    "epci_code": "200058782",
+    "epci_name": "CA de Saint-Quentin-en-Yvelines",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 32335,
+    "ptot_n": 32335,
+    "reference_sirens": [
+      {
+        "siren": "219505005"
+      },
+      {
+        "siren": "219500634"
+      },
+      {
+        "siren": "219503067"
+      }
+    ]
+  },
+  {
+    "siren": "217804400",
+    "com_code": "78440",
+    "com_name": "Les Mureaux",
+    "epci_code": "200059889",
+    "epci_name": "CU Grand Paris Seine et Oise",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 33705,
+    "ptot_n": 33705,
+    "reference_sirens": [
+      {
+        "siren": "219400520"
+      },
+      {
+        "siren": "217803113"
+      },
+      {
+        "siren": "217806215"
+      }
+    ]
+  },
+  {
+    "siren": "217804905",
+    "com_code": "78490",
+    "com_name": "Plaisir",
+    "epci_code": "200058782",
+    "epci_name": "CA de Saint-Quentin-en-Yvelines",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31243,
+    "ptot_n": 31243,
+    "reference_sirens": [
+      {
+        "siren": "219106879"
+      },
+      {
+        "siren": "219300597"
+      },
+      {
+        "siren": "219200466"
+      }
+    ]
+  },
+  {
+    "siren": "217804988",
+    "com_code": "78498",
+    "com_name": "Poissy",
+    "epci_code": "200059889",
+    "epci_name": "CU Grand Paris Seine et Oise",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 40049,
+    "ptot_n": 40049,
+    "reference_sirens": [
+      {
+        "siren": "219300324"
+      },
+      {
+        "siren": "219300720"
+      },
+      {
+        "siren": "219300068"
+      }
+    ]
+  },
+  {
+    "siren": "217805860",
+    "com_code": "78586",
+    "com_name": "Sartrouville",
+    "epci_code": "200058519",
+    "epci_name": "CA Saint Germain Boucles de Seine",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 52158,
+    "ptot_n": 52158,
+    "reference_sirens": [
+      {
+        "siren": "219300712"
+      },
+      {
+        "siren": "219400330"
+      },
+      {
+        "siren": "219101748"
+      }
+    ]
+  },
+  {
+    "siren": "217806215",
+    "com_code": "78621",
+    "com_name": "Trappes",
+    "epci_code": "200058782",
+    "epci_name": "CA de Saint-Quentin-en-Yvelines",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 33527,
+    "ptot_n": 33527,
+    "reference_sirens": [
+      {
+        "siren": "217803113"
+      },
+      {
+        "siren": "217804400"
+      },
+      {
+        "siren": "219400520"
+      }
+    ]
+  },
+  {
+    "siren": "217806462",
+    "com_code": "78646",
+    "com_name": "Versailles",
+    "epci_code": "247800584",
+    "epci_name": "CA Versailles Grand Parc (CAVGP)",
+    "dep_code": "78",
+    "dep_name": "Yvelines",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 85474,
+    "ptot_n": 85474,
+    "reference_sirens": [
+      {
+        "siren": "219300050"
+      },
+      {
+        "siren": "219200250"
+      },
+      {
+        "siren": "219200268"
+      }
+    ]
+  },
+  {
+    "siren": "217901917",
+    "com_code": "79191",
+    "com_name": "Niort",
+    "epci_code": "200041317",
+    "epci_name": "CA du Niortais",
+    "dep_code": "79",
+    "dep_name": "Deux-Sèvres",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 60845,
+    "ptot_n": 60845,
+    "reference_sirens": [
+      {
+        "siren": "213303183"
+      },
+      {
+        "siren": "216401026"
+      },
+      {
+        "siren": "211903109"
+      }
+    ]
+  },
+  {
+    "siren": "218000198",
+    "com_code": "80021",
+    "com_name": "Amiens",
+    "epci_code": "248000531",
+    "epci_name": "CA Amiens Métropole",
+    "dep_code": "80",
+    "dep_name": "Somme",
+    "reg_code": "32",
+    "reg_name": "Hauts-de-France",
+    "ptot": 136808,
+    "ptot_n": 136808,
+    "reference_sirens": [
+      {
+        "siren": "215905993"
+      },
+      {
+        "siren": "215905126"
+      },
+      {
+        "siren": "200027159"
+      }
+    ]
+  },
+  {
+    "siren": "218100048",
+    "com_code": "81004",
+    "com_name": "Albi",
+    "epci_code": "248100737",
+    "epci_name": "CA de l'Albigeois (C2A)",
+    "dep_code": "81",
+    "dep_name": "Tarn",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 50783,
+    "ptot_n": 50783,
+    "reference_sirens": [
+      {
+        "siren": "211100698"
+      },
+      {
+        "siren": "213403017"
+      },
+      {
+        "siren": "211102629"
+      }
+    ]
+  },
+  {
+    "siren": "218100659",
+    "com_code": "81065",
+    "com_name": "Castres",
+    "epci_code": "248100430",
+    "epci_name": "CA de Castres Mazamet",
+    "dep_code": "81",
+    "dep_name": "Tarn",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 43833,
+    "ptot_n": 43833,
+    "reference_sirens": [
+      {
+        "siren": "216504407"
+      },
+      {
+        "siren": "213000078"
+      },
+      {
+        "siren": "213403017"
+      }
+    ]
+  },
+  {
+    "siren": "218201218",
+    "com_code": "82121",
+    "com_name": "Montauban",
+    "epci_code": "248200099",
+    "epci_name": "CA Grand Montauban",
+    "dep_code": "82",
+    "dep_name": "Tarn-et-Garonne",
+    "reg_code": "76",
+    "reg_name": "Occitanie",
+    "ptot": 63158,
+    "ptot_n": 63158,
+    "reference_sirens": [
+      {
+        "siren": "211102629"
+      },
+      {
+        "siren": "218100048"
+      },
+      {
+        "siren": "211100698"
+      }
+    ]
+  },
+  {
+    "siren": "218300507",
+    "com_code": "83050",
+    "com_name": "Draguignan",
+    "epci_code": "248300493",
+    "epci_name": "CA Dracénie Provence Verdon Agglomération",
+    "dep_code": "83",
+    "dep_name": "Var",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 40362,
+    "ptot_n": 40362,
+    "reference_sirens": [
+      {
+        "siren": "210500617"
+      },
+      {
+        "siren": "210600300"
+      },
+      {
+        "siren": "211300280"
+      }
+    ]
+  },
+  {
+    "siren": "218300614",
+    "com_code": "83061",
+    "com_name": "Fréjus",
+    "epci_code": "200035319",
+    "epci_name": "CA Estérel Côte d'Azur Agglomération",
+    "dep_code": "83",
+    "dep_name": "Var",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 56598,
+    "ptot_n": 56598,
+    "reference_sirens": [
+      {
+        "siren": "218300697"
+      },
+      {
+        "siren": "210600276"
+      },
+      {
+        "siren": "211300041"
+      }
+    ]
+  },
+  {
+    "siren": "218300697",
+    "com_code": "83069",
+    "com_name": "Hyères",
+    "epci_code": "248300543",
+    "epci_name": "Métropole Toulon-Provence-Méditerranée",
+    "dep_code": "83",
+    "dep_name": "Var",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 55528,
+    "ptot_n": 55528,
+    "reference_sirens": [
+      {
+        "siren": "218300614"
+      },
+      {
+        "siren": "210600276"
+      },
+      {
+        "siren": "211300041"
+      }
+    ]
+  },
+  {
+    "siren": "218301182",
+    "com_code": "83118",
+    "com_name": "Saint-Raphaël",
+    "epci_code": "200035319",
+    "epci_name": "CA Estérel Côte d'Azur Agglomération",
+    "dep_code": "83",
+    "dep_name": "Var",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 36460,
+    "ptot_n": 36460,
+    "reference_sirens": [
+      {
+        "siren": "211300280"
+      },
+      {
+        "siren": "218301299"
+      },
+      {
+        "siren": "211301171"
+      }
+    ]
+  },
+  {
+    "siren": "218301265",
+    "com_code": "83126",
+    "com_name": "La Seyne-sur-Mer",
+    "epci_code": "248300543",
+    "epci_name": "Métropole Toulon-Provence-Méditerranée",
+    "dep_code": "83",
+    "dep_name": "Var",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 62999,
+    "ptot_n": 62999,
+    "reference_sirens": [
+      {
+        "siren": "218300614"
+      },
+      {
+        "siren": "218300697"
+      },
+      {
+        "siren": "210600292"
+      }
+    ]
+  },
+  {
+    "siren": "218301299",
+    "com_code": "83129",
+    "com_name": "Six-Fours-les-Plages",
+    "epci_code": "248300543",
+    "epci_name": "Métropole Toulon-Provence-Méditerranée",
+    "dep_code": "83",
+    "dep_name": "Var",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 35890,
+    "ptot_n": 35890,
+    "reference_sirens": [
+      {
+        "siren": "218301182"
+      },
+      {
+        "siren": "211300280"
+      },
+      {
+        "siren": "211301171"
+      }
+    ]
+  },
+  {
+    "siren": "218301372",
+    "com_code": "83137",
+    "com_name": "Toulon",
+    "epci_code": "248300543",
+    "epci_name": "Métropole Toulon-Provence-Méditerranée",
+    "dep_code": "83",
+    "dep_name": "Var",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 181506,
+    "ptot_n": 181506,
+    "reference_sirens": [
+      {
+        "siren": "211300017"
+      },
+      {
+        "siren": "218400075"
+      },
+      {
+        "siren": "210600045"
+      }
+    ]
+  },
+  {
+    "siren": "218400075",
+    "com_code": "84007",
+    "com_name": "Avignon",
+    "epci_code": "248400251",
+    "epci_name": "CA du Grand Avignon (COGA)",
+    "dep_code": "84",
+    "dep_name": "Vaucluse",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 92277,
+    "ptot_n": 92277,
+    "reference_sirens": [
+      {
+        "siren": "210600045"
+      },
+      {
+        "siren": "210600292"
+      },
+      {
+        "siren": "218301265"
+      }
+    ]
+  },
+  {
+    "siren": "218400315",
+    "com_code": "84031",
+    "com_name": "Carpentras",
+    "epci_code": "248400053",
+    "epci_name": "CA Ventoux-Comtat-Venaissin (COVE)",
+    "dep_code": "84",
+    "dep_name": "Vaucluse",
+    "reg_code": "93",
+    "reg_name": "Provence-Alpes-Côte d'Azur",
+    "ptot": 30564,
+    "ptot_n": 30564,
+    "reference_sirens": [
+      {
+        "siren": "210601233"
+      },
+      {
+        "siren": "210600839"
+      },
+      {
+        "siren": "211300546"
+      }
+    ]
+  },
+  {
+    "siren": "200082139",
+    "com_code": "85194",
+    "com_name": "Les Sables-d'Olonne",
+    "epci_code": "200071165",
+    "epci_name": "CA Les Sables d'Olonne Agglomération",
+    "dep_code": "85",
+    "dep_name": "Vendée",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 48401,
+    "ptot_n": 48401,
+    "reference_sirens": [
+      {
+        "siren": "214401622"
+      },
+      {
+        "siren": "215301300"
+      },
+      {
+        "siren": "214401432"
+      }
+    ]
+  },
+  {
+    "siren": "218501914",
+    "com_code": "85191",
+    "com_name": "La Roche-sur-Yon",
+    "epci_code": "248500589",
+    "epci_name": "CA La Roche-sur-Yon Agglomération",
+    "dep_code": "85",
+    "dep_name": "Vendée",
+    "reg_code": "52",
+    "reg_name": "Pays de la Loire",
+    "ptot": 58168,
+    "ptot_n": 58168,
+    "reference_sirens": [
+      {
+        "siren": "214900995"
+      },
+      {
+        "siren": "215301300"
+      },
+      {
+        "siren": "214401622"
+      }
+    ]
+  },
+  {
+    "siren": "218600666",
+    "com_code": "86066",
+    "com_name": "Châtellerault",
+    "epci_code": "248600413",
+    "epci_name": "CA Grand Châtellerault",
+    "dep_code": "86",
+    "dep_name": "Vienne",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 32345,
+    "ptot_n": 32345,
+    "reference_sirens": [
+      {
+        "siren": "213304496"
+      },
+      {
+        "siren": "214700015"
+      },
+      {
+        "siren": "214001927"
+      }
+    ]
+  },
+  {
+    "siren": "218601946",
+    "com_code": "86194",
+    "com_name": "Poitiers",
+    "epci_code": "200069854",
+    "epci_name": "CU du Grand Poitiers",
+    "dep_code": "86",
+    "dep_name": "Vienne",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 92296,
+    "ptot_n": 92296,
+    "reference_sirens": [
+      {
+        "siren": "211703004"
+      },
+      {
+        "siren": "216404459"
+      },
+      {
+        "siren": "213302813"
+      }
+    ]
+  },
+  {
+    "siren": "218708501",
+    "com_code": "87085",
+    "com_name": "Limoges",
+    "epci_code": "248719312",
+    "epci_name": "CU Limoges Métropole",
+    "dep_code": "87",
+    "dep_name": "Haute-Vienne",
+    "reg_code": "75",
+    "reg_name": "Nouvelle-Aquitaine",
+    "ptot": 132768,
+    "ptot_n": 132768,
+    "reference_sirens": [
+      {
+        "siren": "218601946"
+      },
+      {
+        "siren": "211703004"
+      },
+      {
+        "siren": "216404459"
+      }
+    ]
+  },
+  {
+    "siren": "218801603",
+    "com_code": "88160",
+    "com_name": "Épinal",
+    "epci_code": "200068757",
+    "epci_name": "CA d'Épinal",
+    "dep_code": "88",
+    "dep_name": "Vosges",
+    "reg_code": "44",
+    "reg_name": "Grand Est",
+    "ptot": 33217,
+    "ptot_n": 33217,
+    "reference_sirens": [
+      {
+        "siren": "216704478"
+      },
+      {
+        "siren": "216701805"
+      },
+      {
+        "siren": "215405473"
+      }
+    ]
+  },
+  {
+    "siren": "218900249",
+    "com_code": "89024",
+    "com_name": "Auxerre",
+    "epci_code": "200067114",
+    "epci_name": "CA de l'Auxerrois",
+    "dep_code": "89",
+    "dep_name": "Yonne",
+    "reg_code": "27",
+    "reg_name": "Bourgogne-Franche-Comté",
+    "ptot": 35244,
+    "ptot_n": 35244,
+    "reference_sirens": [
+      {
+        "siren": "217102706"
+      },
+      {
+        "siren": "215801945"
+      },
+      {
+        "siren": "219000106"
+      }
+    ]
+  },
+  {
+    "siren": "219000106",
+    "com_code": "90010",
+    "com_name": "Belfort",
+    "epci_code": "200069052",
+    "epci_name": "CA Grand Belfort",
+    "dep_code": "90",
+    "dep_name": "Territoire de Belfort",
+    "reg_code": "27",
+    "reg_name": "Bourgogne-Franche-Comté",
+    "ptot": 46225,
+    "ptot_n": 46225,
+    "reference_sirens": [
+      {
+        "siren": "217100767"
+      },
+      {
+        "siren": "218900249"
+      },
+      {
+        "siren": "217102706"
+      }
+    ]
+  },
+  {
+    "siren": "200083525",
+    "com_code": "91228",
+    "com_name": "Évry-Courcouronnes",
+    "epci_code": "200059228",
+    "epci_name": "CA Grand Paris Sud Seine Essonne Sénart",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 66543,
+    "ptot_n": 66543,
+    "reference_sirens": [
+      {
+        "siren": "219200441"
+      },
+      {
+        "siren": "219501277"
+      },
+      {
+        "siren": "219200409"
+      }
+    ]
+  },
+  {
+    "siren": "219100278",
+    "com_code": "91027",
+    "com_name": "Athis-Mons",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 35927,
+    "ptot_n": 35927,
+    "reference_sirens": [
+      {
+        "siren": "219105491"
+      },
+      {
+        "siren": "217801729"
+      },
+      {
+        "siren": "219300506"
+      }
+    ]
+  },
+  {
+    "siren": "219101748",
+    "com_code": "91174",
+    "com_name": "Corbeil-Essonnes",
+    "epci_code": "200059228",
+    "epci_name": "CA Grand Paris Sud Seine Essonne Sénart",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 52613,
+    "ptot_n": 52613,
+    "reference_sirens": [
+      {
+        "siren": "217805860"
+      },
+      {
+        "siren": "219300712"
+      },
+      {
+        "siren": "219400330"
+      }
+    ]
+  },
+  {
+    "siren": "219103777",
+    "com_code": "91377",
+    "com_name": "Massy",
+    "epci_code": "200056232",
+    "epci_name": "CA Communauté Paris-Saclay",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 50844,
+    "ptot_n": 50844,
+    "reference_sirens": [
+      {
+        "siren": "219400801"
+      },
+      {
+        "siren": "219200367"
+      },
+      {
+        "siren": "219300704"
+      }
+    ]
+  },
+  {
+    "siren": "219104775",
+    "com_code": "91477",
+    "com_name": "Palaiseau",
+    "epci_code": "200056232",
+    "epci_name": "CA Communauté Paris-Saclay",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 35056,
+    "ptot_n": 35056,
+    "reference_sirens": [
+      {
+        "siren": "219400785"
+      },
+      {
+        "siren": "219200193"
+      },
+      {
+        "siren": "219100278"
+      }
+    ]
+  },
+  {
+    "siren": "219105491",
+    "com_code": "91549",
+    "com_name": "Sainte-Geneviève-des-Bois",
+    "epci_code": "200057859",
+    "epci_name": "CA Cœur d'Essonne Agglomération",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 36190,
+    "ptot_n": 36190,
+    "reference_sirens": [
+      {
+        "siren": "217801729"
+      },
+      {
+        "siren": "219100278"
+      },
+      {
+        "siren": "219300506"
+      }
+    ]
+  },
+  {
+    "siren": "219105897",
+    "com_code": "91589",
+    "com_name": "Savigny-sur-Orge",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 37441,
+    "ptot_n": 37441,
+    "reference_sirens": [
+      {
+        "siren": "219502523"
+      },
+      {
+        "siren": "217703735"
+      },
+      {
+        "siren": "219200201"
+      }
+    ]
+  },
+  {
+    "siren": "219106572",
+    "com_code": "91657",
+    "com_name": "Vigneux-sur-Seine",
+    "epci_code": "200058477",
+    "epci_name": "CA Val d'Yerres Val de Seine",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31640,
+    "ptot_n": 31640,
+    "reference_sirens": [
+      {
+        "siren": "200085470"
+      },
+      {
+        "siren": "219300639"
+      },
+      {
+        "siren": "219400389"
+      }
+    ]
+  },
+  {
+    "siren": "219106879",
+    "com_code": "91687",
+    "com_name": "Viry-Châtillon",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "91",
+    "dep_name": "Essonne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31297,
+    "ptot_n": 31297,
+    "reference_sirens": [
+      {
+        "siren": "217804905"
+      },
+      {
+        "siren": "219300597"
+      },
+      {
+        "siren": "219200466"
+      }
+    ]
+  },
+  {
+    "siren": "219200029",
+    "com_code": "92002",
+    "com_name": "Antony",
+    "epci_code": "200057966",
+    "epci_name": "Vallée Sud Grand Paris",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 63639,
+    "ptot_n": 63639,
+    "reference_sirens": [
+      {
+        "siren": "219200243"
+      },
+      {
+        "siren": "219400413"
+      },
+      {
+        "siren": "200083525"
+      }
+    ]
+  },
+  {
+    "siren": "219200045",
+    "com_code": "92004",
+    "com_name": "Asnières-sur-Seine",
+    "epci_code": "200057990",
+    "epci_name": "Boucle Nord de Seine",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 88672,
+    "ptot_n": 88672,
+    "reference_sirens": [
+      {
+        "siren": "219300019"
+      },
+      {
+        "siren": "219200250"
+      },
+      {
+        "siren": "219300050"
+      }
+    ]
+  },
+  {
+    "siren": "219200078",
+    "com_code": "92007",
+    "com_name": "Bagneux",
+    "epci_code": "200057966",
+    "epci_name": "Vallée Sud Grand Paris",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 42122,
+    "ptot_n": 42122,
+    "reference_sirens": [
+      {
+        "siren": "217702885"
+      },
+      {
+        "siren": "219502689"
+      },
+      {
+        "siren": "217803618"
+      }
+    ]
+  },
+  {
+    "siren": "219200128",
+    "com_code": "92012",
+    "com_name": "Boulogne-Billancourt",
+    "epci_code": "200057974",
+    "epci_name": "Grand Paris Seine Ouest",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 122162,
+    "ptot_n": 122162,
+    "reference_sirens": [
+      {
+        "siren": "219300662"
+      },
+      {
+        "siren": "219300480"
+      },
+      {
+        "siren": "219500188"
+      }
+    ]
+  },
+  {
+    "siren": "219200193",
+    "com_code": "92019",
+    "com_name": "Châtenay-Malabry",
+    "epci_code": "200057966",
+    "epci_name": "Vallée Sud Grand Paris",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 34748,
+    "ptot_n": 34748,
+    "reference_sirens": [
+      {
+        "siren": "219400785"
+      },
+      {
+        "siren": "219104775"
+      },
+      {
+        "siren": "219400587"
+      }
+    ]
+  },
+  {
+    "siren": "219200201",
+    "com_code": "92020",
+    "com_name": "Châtillon",
+    "epci_code": "200057966",
+    "epci_name": "Vallée Sud Grand Paris",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 36688,
+    "ptot_n": 36688,
+    "reference_sirens": [
+      {
+        "siren": "219300738"
+      },
+      {
+        "siren": "219300506"
+      },
+      {
+        "siren": "217801729"
+      }
+    ]
+  },
+  {
+    "siren": "219200235",
+    "com_code": "92023",
+    "com_name": "Clamart",
+    "epci_code": "200057966",
+    "epci_name": "Vallée Sud Grand Paris",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 53740,
+    "ptot_n": 53740,
+    "reference_sirens": [
+      {
+        "siren": "219300100"
+      },
+      {
+        "siren": "219300316"
+      },
+      {
+        "siren": "217701085"
+      }
+    ]
+  },
+  {
+    "siren": "219200243",
+    "com_code": "92024",
+    "com_name": "Clichy",
+    "epci_code": "200057990",
+    "epci_name": "Boucle Nord de Seine",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 63166,
+    "ptot_n": 63166,
+    "reference_sirens": [
+      {
+        "siren": "219200029"
+      },
+      {
+        "siren": "219400413"
+      },
+      {
+        "siren": "219300555"
+      }
+    ]
+  },
+  {
+    "siren": "219200250",
+    "com_code": "92025",
+    "com_name": "Colombes",
+    "epci_code": "200057990",
+    "epci_name": "Boucle Nord de Seine",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 87328,
+    "ptot_n": 87328,
+    "reference_sirens": [
+      {
+        "siren": "219300050"
+      },
+      {
+        "siren": "219200045"
+      },
+      {
+        "siren": "217806462"
+      }
+    ]
+  },
+  {
+    "siren": "219200268",
+    "com_code": "92026",
+    "com_name": "Courbevoie",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 82701,
+    "ptot_n": 82701,
+    "reference_sirens": [
+      {
+        "siren": "217806462"
+      },
+      {
+        "siren": "219200631"
+      },
+      {
+        "siren": "219300050"
+      }
+    ]
+  },
+  {
+    "siren": "219200367",
+    "com_code": "92036",
+    "com_name": "Gennevilliers",
+    "epci_code": "200057990",
+    "epci_name": "Boucle Nord de Seine",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 50096,
+    "ptot_n": 50096,
+    "reference_sirens": [
+      {
+        "siren": "219400801"
+      },
+      {
+        "siren": "219200730"
+      },
+      {
+        "siren": "219103777"
+      }
+    ]
+  },
+  {
+    "siren": "219200409",
+    "com_code": "92040",
+    "com_name": "Issy-les-Moulineaux",
+    "epci_code": "200057974",
+    "epci_name": "Grand Paris Seine Ouest",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 68641,
+    "ptot_n": 68641,
+    "reference_sirens": [
+      {
+        "siren": "219501277"
+      },
+      {
+        "siren": "219300514"
+      },
+      {
+        "siren": "219200441"
+      }
+    ]
+  },
+  {
+    "siren": "219200441",
+    "com_code": "92044",
+    "com_name": "Levallois-Perret",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 67809,
+    "ptot_n": 67809,
+    "reference_sirens": [
+      {
+        "siren": "219501277"
+      },
+      {
+        "siren": "219200409"
+      },
+      {
+        "siren": "200083525"
+      }
+    ]
+  },
+  {
+    "siren": "219200466",
+    "com_code": "92046",
+    "com_name": "Malakoff",
+    "epci_code": "200057966",
+    "epci_name": "Vallée Sud Grand Paris",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31412,
+    "ptot_n": 31412,
+    "reference_sirens": [
+      {
+        "siren": "219300597"
+      },
+      {
+        "siren": "219106879"
+      },
+      {
+        "siren": "219300639"
+      }
+    ]
+  },
+  {
+    "siren": "219200482",
+    "com_code": "92048",
+    "com_name": "Meudon",
+    "epci_code": "200057974",
+    "epci_name": "Grand Paris Seine Ouest",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 46517,
+    "ptot_n": 46517,
+    "reference_sirens": [
+      {
+        "siren": "219400223"
+      },
+      {
+        "siren": "200086924"
+      },
+      {
+        "siren": "219300274"
+      }
+    ]
+  },
+  {
+    "siren": "219200490",
+    "com_code": "92049",
+    "com_name": "Montrouge",
+    "epci_code": "200057966",
+    "epci_name": "Vallée Sud Grand Paris",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 48174,
+    "ptot_n": 48174,
+    "reference_sirens": [
+      {
+        "siren": "219300274"
+      },
+      {
+        "siren": "219200482"
+      },
+      {
+        "siren": "219400223"
+      }
+    ]
+  },
+  {
+    "siren": "219200508",
+    "com_code": "92050",
+    "com_name": "Nanterre",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 96402,
+    "ptot_n": 96402,
+    "reference_sirens": [
+      {
+        "siren": "219400819"
+      },
+      {
+        "siren": "219400280"
+      },
+      {
+        "siren": "219300019"
+      }
+    ]
+  },
+  {
+    "siren": "219200516",
+    "com_code": "92051",
+    "com_name": "Neuilly-sur-Seine",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 60411,
+    "ptot_n": 60411,
+    "reference_sirens": [
+      {
+        "siren": "219300555"
+      },
+      {
+        "siren": "219505856"
+      },
+      {
+        "siren": "219300076"
+      }
+    ]
+  },
+  {
+    "siren": "219200623",
+    "com_code": "92062",
+    "com_name": "Puteaux",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 44275,
+    "ptot_n": 44275,
+    "reference_sirens": [
+      {
+        "siren": "217803618"
+      },
+      {
+        "siren": "219300530"
+      },
+      {
+        "siren": "219502689"
+      }
+    ]
+  },
+  {
+    "siren": "219200631",
+    "com_code": "92063",
+    "com_name": "Rueil-Malmaison",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 79713,
+    "ptot_n": 79713,
+    "reference_sirens": [
+      {
+        "siren": "219400173"
+      },
+      {
+        "siren": "219200268"
+      },
+      {
+        "siren": "219400686"
+      }
+    ]
+  },
+  {
+    "siren": "219200649",
+    "com_code": "92064",
+    "com_name": "Saint-Cloud",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 30115,
+    "ptot_n": 30115,
+    "reference_sirens": [
+      {
+        "siren": "217801463"
+      },
+      {
+        "siren": "217704451"
+      },
+      {
+        "siren": "219400165"
+      }
+    ]
+  },
+  {
+    "siren": "219200730",
+    "com_code": "92073",
+    "com_name": "Suresnes",
+    "epci_code": "200057982",
+    "epci_name": "Paris Ouest La Défense",
+    "dep_code": "92",
+    "dep_name": "Hauts-de-Seine",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 49992,
+    "ptot_n": 49992,
+    "reference_sirens": [
+      {
+        "siren": "219200367"
+      },
+      {
+        "siren": "219400801"
+      },
+      {
+        "siren": "219103777"
+      }
+    ]
+  },
+  {
+    "siren": "219300019",
+    "com_code": "93001",
+    "com_name": "Aubervilliers",
+    "epci_code": "200057867",
+    "epci_name": "Plaine Commune",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 89559,
+    "ptot_n": 89559,
+    "reference_sirens": [
+      {
+        "siren": "219200045"
+      },
+      {
+        "siren": "219200250"
+      },
+      {
+        "siren": "219300050"
+      }
+    ]
+  },
+  {
+    "siren": "219300050",
+    "com_code": "93005",
+    "com_name": "Aulnay-sous-Bois",
+    "epci_code": "200058097",
+    "epci_name": "Paris Terres d'Envol",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 86873,
+    "ptot_n": 86873,
+    "reference_sirens": [
+      {
+        "siren": "219200250"
+      },
+      {
+        "siren": "217806462"
+      },
+      {
+        "siren": "219200045"
+      }
+    ]
+  },
+  {
+    "siren": "219300068",
+    "com_code": "93006",
+    "com_name": "Bagnolet",
+    "epci_code": "200057875",
+    "epci_name": "Est Ensemble",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 38571,
+    "ptot_n": 38571,
+    "reference_sirens": [
+      {
+        "siren": "219300787"
+      },
+      {
+        "siren": "219300720"
+      },
+      {
+        "siren": "217703735"
+      }
+    ]
+  },
+  {
+    "siren": "219300076",
+    "com_code": "93007",
+    "com_name": "Le Blanc-Mesnil",
+    "epci_code": "200058097",
+    "epci_name": "Paris Terres d'Envol",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 58116,
+    "ptot_n": 58116,
+    "reference_sirens": [
+      {
+        "siren": "219400462"
+      },
+      {
+        "siren": "219505856"
+      },
+      {
+        "siren": "219400769"
+      }
+    ]
+  },
+  {
+    "siren": "219300084",
+    "com_code": "93008",
+    "com_name": "Bobigny",
+    "epci_code": "200057875",
+    "epci_name": "Est Ensemble",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 55066,
+    "ptot_n": 55066,
+    "reference_sirens": [
+      {
+        "siren": "217701085"
+      },
+      {
+        "siren": "219300316"
+      },
+      {
+        "siren": "217702844"
+      }
+    ]
+  },
+  {
+    "siren": "219300100",
+    "com_code": "93010",
+    "com_name": "Bondy",
+    "epci_code": "200057875",
+    "epci_name": "Est Ensemble",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 53509,
+    "ptot_n": 53509,
+    "reference_sirens": [
+      {
+        "siren": "219200235"
+      },
+      {
+        "siren": "219101748"
+      },
+      {
+        "siren": "219300316"
+      }
+    ]
+  },
+  {
+    "siren": "219300274",
+    "com_code": "93027",
+    "com_name": "La Courneuve",
+    "epci_code": "200057867",
+    "epci_name": "Plaine Commune",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 46951,
+    "ptot_n": 46951,
+    "reference_sirens": [
+      {
+        "siren": "219200482"
+      },
+      {
+        "siren": "219400223"
+      },
+      {
+        "siren": "200086924"
+      }
+    ]
+  },
+  {
+    "siren": "219300290",
+    "com_code": "93029",
+    "com_name": "Drancy",
+    "epci_code": "200058097",
+    "epci_name": "Paris Terres d'Envol",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 71535,
+    "ptot_n": 71535,
+    "reference_sirens": [
+      {
+        "siren": "219300514"
+      },
+      {
+        "siren": "219200409"
+      },
+      {
+        "siren": "219501277"
+      }
+    ]
+  },
+  {
+    "siren": "219300316",
+    "com_code": "93031",
+    "com_name": "Épinay-sur-Seine",
+    "epci_code": "200057867",
+    "epci_name": "Plaine Commune",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 54569,
+    "ptot_n": 54569,
+    "reference_sirens": [
+      {
+        "siren": "217701085"
+      },
+      {
+        "siren": "219300084"
+      },
+      {
+        "siren": "219200235"
+      }
+    ]
+  },
+  {
+    "siren": "219300324",
+    "com_code": "93032",
+    "com_name": "Gagny",
+    "epci_code": "200058790",
+    "epci_name": "Grand Paris - Grand Est",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 39817,
+    "ptot_n": 39817,
+    "reference_sirens": [
+      {
+        "siren": "217804988"
+      },
+      {
+        "siren": "219300720"
+      },
+      {
+        "siren": "219300068"
+      }
+    ]
+  },
+  {
+    "siren": "219300464",
+    "com_code": "93046",
+    "com_name": "Livry-Gargan",
+    "epci_code": "200058790",
+    "epci_name": "Grand Paris - Grand Est",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 45818,
+    "ptot_n": 45818,
+    "reference_sirens": [
+      {
+        "siren": "219300647"
+      },
+      {
+        "siren": "200086924"
+      },
+      {
+        "siren": "219400025"
+      }
+    ]
+  },
+  {
+    "siren": "219300480",
+    "com_code": "93048",
+    "com_name": "Montreuil",
+    "epci_code": "200057875",
+    "epci_name": "Est Ensemble",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 111954,
+    "ptot_n": 111954,
+    "reference_sirens": [
+      {
+        "siren": "219300662"
+      },
+      {
+        "siren": "219500188"
+      },
+      {
+        "siren": "219200128"
+      }
+    ]
+  },
+  {
+    "siren": "219300506",
+    "com_code": "93050",
+    "com_name": "Neuilly-sur-Marne",
+    "epci_code": "200058790",
+    "epci_name": "Grand Paris - Grand Est",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 36640,
+    "ptot_n": 36640,
+    "reference_sirens": [
+      {
+        "siren": "219300738"
+      },
+      {
+        "siren": "219200201"
+      },
+      {
+        "siren": "217801729"
+      }
+    ]
+  },
+  {
+    "siren": "219300514",
+    "com_code": "93051",
+    "com_name": "Noisy-le-Grand",
+    "epci_code": "200058790",
+    "epci_name": "Grand Paris - Grand Est",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 69352,
+    "ptot_n": 69352,
+    "reference_sirens": [
+      {
+        "siren": "219200409"
+      },
+      {
+        "siren": "219501277"
+      },
+      {
+        "siren": "219200441"
+      }
+    ]
+  },
+  {
+    "siren": "219300530",
+    "com_code": "93053",
+    "com_name": "Noisy-le-Sec",
+    "epci_code": "200057875",
+    "epci_name": "Est Ensemble",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 45156,
+    "ptot_n": 45156,
+    "reference_sirens": [
+      {
+        "siren": "219400025"
+      },
+      {
+        "siren": "219300647"
+      },
+      {
+        "siren": "219300464"
+      }
+    ]
+  },
+  {
+    "siren": "219300555",
+    "com_code": "93055",
+    "com_name": "Pantin",
+    "epci_code": "200057875",
+    "epci_name": "Est Ensemble",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 60597,
+    "ptot_n": 60597,
+    "reference_sirens": [
+      {
+        "siren": "219200516"
+      },
+      {
+        "siren": "219505856"
+      },
+      {
+        "siren": "219300076"
+      }
+    ]
+  },
+  {
+    "siren": "219300597",
+    "com_code": "93059",
+    "com_name": "Pierrefitte-sur-Seine",
+    "epci_code": "200057867",
+    "epci_name": "Plaine Commune",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31393,
+    "ptot_n": 31393,
+    "reference_sirens": [
+      {
+        "siren": "219200466"
+      },
+      {
+        "siren": "219106879"
+      },
+      {
+        "siren": "217804905"
+      }
+    ]
+  },
+  {
+    "siren": "219300639",
+    "com_code": "93063",
+    "com_name": "Romainville",
+    "epci_code": "200057875",
+    "epci_name": "Est Ensemble",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31554,
+    "ptot_n": 31554,
+    "reference_sirens": [
+      {
+        "siren": "219106572"
+      },
+      {
+        "siren": "219200466"
+      },
+      {
+        "siren": "200085470"
+      }
+    ]
+  },
+  {
+    "siren": "219300647",
+    "com_code": "93064",
+    "com_name": "Rosny-sous-Bois",
+    "epci_code": "200058790",
+    "epci_name": "Grand Paris - Grand Est",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 45622,
+    "ptot_n": 45622,
+    "reference_sirens": [
+      {
+        "siren": "219300464"
+      },
+      {
+        "siren": "219400025"
+      },
+      {
+        "siren": "219300530"
+      }
+    ]
+  },
+  {
+    "siren": "219300662",
+    "com_code": "93066",
+    "com_name": "Saint-Denis",
+    "epci_code": "200057867",
+    "epci_name": "Plaine Commune",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 114027,
+    "ptot_n": 114027,
+    "reference_sirens": [
+      {
+        "siren": "219300480"
+      },
+      {
+        "siren": "219500188"
+      },
+      {
+        "siren": "219200128"
+      }
+    ]
+  },
+  {
+    "siren": "219300704",
+    "com_code": "93070",
+    "com_name": "Saint-Ouen-sur-Seine",
+    "epci_code": "200057867",
+    "epci_name": "Plaine Commune",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 51656,
+    "ptot_n": 51656,
+    "reference_sirens": [
+      {
+        "siren": "219400330"
+      },
+      {
+        "siren": "219300712"
+      },
+      {
+        "siren": "217805860"
+      }
+    ]
+  },
+  {
+    "siren": "219300712",
+    "com_code": "93071",
+    "com_name": "Sevran",
+    "epci_code": "200058097",
+    "epci_name": "Paris Terres d'Envol",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 51957,
+    "ptot_n": 51957,
+    "reference_sirens": [
+      {
+        "siren": "219400330"
+      },
+      {
+        "siren": "217805860"
+      },
+      {
+        "siren": "219300704"
+      }
+    ]
+  },
+  {
+    "siren": "219300720",
+    "com_code": "93072",
+    "com_name": "Stains",
+    "epci_code": "200057867",
+    "epci_name": "Plaine Commune",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 39277,
+    "ptot_n": 39277,
+    "reference_sirens": [
+      {
+        "siren": "219300324"
+      },
+      {
+        "siren": "219300068"
+      },
+      {
+        "siren": "217804988"
+      }
+    ]
+  },
+  {
+    "siren": "219300738",
+    "com_code": "93073",
+    "com_name": "Tremblay-en-France",
+    "epci_code": "200058097",
+    "epci_name": "Paris Terres d'Envol",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 36653,
+    "ptot_n": 36653,
+    "reference_sirens": [
+      {
+        "siren": "219300506"
+      },
+      {
+        "siren": "219200201"
+      },
+      {
+        "siren": "217801729"
+      }
+    ]
+  },
+  {
+    "siren": "219300779",
+    "com_code": "93077",
+    "com_name": "Villemomble",
+    "epci_code": "200058790",
+    "epci_name": "Grand Paris - Grand Est",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 30763,
+    "ptot_n": 30763,
+    "reference_sirens": [
+      {
+        "siren": "219400736"
+      },
+      {
+        "siren": "219400165"
+      },
+      {
+        "siren": "219502804"
+      }
+    ]
+  },
+  {
+    "siren": "219300787",
+    "com_code": "93078",
+    "com_name": "Villepinte",
+    "epci_code": "200058097",
+    "epci_name": "Paris Terres d'Envol",
+    "dep_code": "93",
+    "dep_name": "Seine-Saint-Denis",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 38283,
+    "ptot_n": 38283,
+    "reference_sirens": [
+      {
+        "siren": "219300068"
+      },
+      {
+        "siren": "217703735"
+      },
+      {
+        "siren": "219502523"
+      }
+    ]
+  },
+  {
+    "siren": "219400025",
+    "com_code": "94002",
+    "com_name": "Alfortville",
+    "epci_code": "200058006",
+    "epci_name": "Grand Paris Sud Est Avenir",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 45317,
+    "ptot_n": 45317,
+    "reference_sirens": [
+      {
+        "siren": "219300530"
+      },
+      {
+        "siren": "219300647"
+      },
+      {
+        "siren": "219300464"
+      }
+    ]
+  },
+  {
+    "siren": "219400165",
+    "com_code": "94016",
+    "com_name": "Cachan",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 30492,
+    "ptot_n": 30492,
+    "reference_sirens": [
+      {
+        "siren": "217704451"
+      },
+      {
+        "siren": "219300779"
+      },
+      {
+        "siren": "217801463"
+      }
+    ]
+  },
+  {
+    "siren": "219400173",
+    "com_code": "94017",
+    "com_name": "Champigny-sur-Marne",
+    "epci_code": "200057941",
+    "epci_name": "Paris-Est-Marne et Bois",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 77751,
+    "ptot_n": 77751,
+    "reference_sirens": [
+      {
+        "siren": "219200631"
+      },
+      {
+        "siren": "219400686"
+      },
+      {
+        "siren": "219200268"
+      }
+    ]
+  },
+  {
+    "siren": "219400223",
+    "com_code": "94022",
+    "com_name": "Choisy-le-Roi",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 46466,
+    "ptot_n": 46466,
+    "reference_sirens": [
+      {
+        "siren": "219200482"
+      },
+      {
+        "siren": "200086924"
+      },
+      {
+        "siren": "219300274"
+      }
+    ]
+  },
+  {
+    "siren": "219400280",
+    "com_code": "94028",
+    "com_name": "Créteil",
+    "epci_code": "200058006",
+    "epci_name": "Grand Paris Sud Est Avenir",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 92984,
+    "ptot_n": 92984,
+    "reference_sirens": [
+      {
+        "siren": "219400819"
+      },
+      {
+        "siren": "219200508"
+      },
+      {
+        "siren": "219300019"
+      }
+    ]
+  },
+  {
+    "siren": "219400330",
+    "com_code": "94033",
+    "com_name": "Fontenay-sous-Bois",
+    "epci_code": "200057941",
+    "epci_name": "Paris-Est-Marne et Bois",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 51807,
+    "ptot_n": 51807,
+    "reference_sirens": [
+      {
+        "siren": "219300712"
+      },
+      {
+        "siren": "219300704"
+      },
+      {
+        "siren": "217805860"
+      }
+    ]
+  },
+  {
+    "siren": "219400389",
+    "com_code": "94038",
+    "com_name": "L'Haÿ-les-Roses",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31847,
+    "ptot_n": 31847,
+    "reference_sirens": [
+      {
+        "siren": "219503067"
+      },
+      {
+        "siren": "219500634"
+      },
+      {
+        "siren": "200085470"
+      }
+    ]
+  },
+  {
+    "siren": "219400413",
+    "com_code": "94041",
+    "com_name": "Ivry-sur-Seine",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 64248,
+    "ptot_n": 64248,
+    "reference_sirens": [
+      {
+        "siren": "219200029"
+      },
+      {
+        "siren": "219200243"
+      },
+      {
+        "siren": "200083525"
+      }
+    ]
+  },
+  {
+    "siren": "219400462",
+    "com_code": "94046",
+    "com_name": "Maisons-Alfort",
+    "epci_code": "200057941",
+    "epci_name": "Paris-Est-Marne et Bois",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 57944,
+    "ptot_n": 57944,
+    "reference_sirens": [
+      {
+        "siren": "219300076"
+      },
+      {
+        "siren": "219505856"
+      },
+      {
+        "siren": "219400769"
+      }
+    ]
+  },
+  {
+    "siren": "219400520",
+    "com_code": "94052",
+    "com_name": "Nogent-sur-Marne",
+    "epci_code": "200057941",
+    "epci_name": "Paris-Est-Marne et Bois",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 33820,
+    "ptot_n": 33820,
+    "reference_sirens": [
+      {
+        "siren": "217804400"
+      },
+      {
+        "siren": "219400587"
+      },
+      {
+        "siren": "217803113"
+      }
+    ]
+  },
+  {
+    "siren": "219400587",
+    "com_code": "94058",
+    "com_name": "Le Perreux-sur-Marne",
+    "epci_code": "200057941",
+    "epci_name": "Paris-Est-Marne et Bois",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 33981,
+    "ptot_n": 33981,
+    "reference_sirens": [
+      {
+        "siren": "219400520"
+      },
+      {
+        "siren": "217804400"
+      },
+      {
+        "siren": "217803113"
+      }
+    ]
+  },
+  {
+    "siren": "219400686",
+    "com_code": "94068",
+    "com_name": "Saint-Maur-des-Fossés",
+    "epci_code": "200057941",
+    "epci_name": "Paris-Est-Marne et Bois",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 75449,
+    "ptot_n": 75449,
+    "reference_sirens": [
+      {
+        "siren": "219400173"
+      },
+      {
+        "siren": "219300290"
+      },
+      {
+        "siren": "219200631"
+      }
+    ]
+  },
+  {
+    "siren": "219400736",
+    "com_code": "94073",
+    "com_name": "Thiais",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 30994,
+    "ptot_n": 30994,
+    "reference_sirens": [
+      {
+        "siren": "219502804"
+      },
+      {
+        "siren": "219300779"
+      },
+      {
+        "siren": "217804905"
+      }
+    ]
+  },
+  {
+    "siren": "219400769",
+    "com_code": "94076",
+    "com_name": "Villejuif",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 56585,
+    "ptot_n": 56585,
+    "reference_sirens": [
+      {
+        "siren": "217702844"
+      },
+      {
+        "siren": "219400462"
+      },
+      {
+        "siren": "219300084"
+      }
+    ]
+  },
+  {
+    "siren": "219400785",
+    "com_code": "94078",
+    "com_name": "Villeneuve-Saint-Georges",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 34939,
+    "ptot_n": 34939,
+    "reference_sirens": [
+      {
+        "siren": "219104775"
+      },
+      {
+        "siren": "219200193"
+      },
+      {
+        "siren": "219400587"
+      }
+    ]
+  },
+  {
+    "siren": "219400801",
+    "com_code": "94080",
+    "com_name": "Vincennes",
+    "epci_code": "200057941",
+    "epci_name": "Paris-Est-Marne et Bois",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 50168,
+    "ptot_n": 50168,
+    "reference_sirens": [
+      {
+        "siren": "219200367"
+      },
+      {
+        "siren": "219200730"
+      },
+      {
+        "siren": "219103777"
+      }
+    ]
+  },
+  {
+    "siren": "219400819",
+    "com_code": "94081",
+    "com_name": "Vitry-sur-Seine",
+    "epci_code": "200058014",
+    "epci_name": "Grand-Orly Seine Bièvre",
+    "dep_code": "94",
+    "dep_name": "Val-de-Marne",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 96138,
+    "ptot_n": 96138,
+    "reference_sirens": [
+      {
+        "siren": "219200508"
+      },
+      {
+        "siren": "219400280"
+      },
+      {
+        "siren": "219300019"
+      }
+    ]
+  },
+  {
+    "siren": "219500188",
+    "com_code": "95018",
+    "com_name": "Argenteuil",
+    "epci_code": "200057990",
+    "epci_name": "Boucle Nord de Seine",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 109058,
+    "ptot_n": 109058,
+    "reference_sirens": [
+      {
+        "siren": "219300480"
+      },
+      {
+        "siren": "219300662"
+      },
+      {
+        "siren": "219200508"
+      }
+    ]
+  },
+  {
+    "siren": "219500634",
+    "com_code": "95063",
+    "com_name": "Bezons",
+    "epci_code": "200058519",
+    "epci_name": "CA Saint Germain Boucles de Seine",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31978,
+    "ptot_n": 31978,
+    "reference_sirens": [
+      {
+        "siren": "219503067"
+      },
+      {
+        "siren": "219400389"
+      },
+      {
+        "siren": "200085470"
+      }
+    ]
+  },
+  {
+    "siren": "219501277",
+    "com_code": "95127",
+    "com_name": "Cergy",
+    "epci_code": "249500109",
+    "epci_name": "CA de Cergy-Pontoise",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 68275,
+    "ptot_n": 68275,
+    "reference_sirens": [
+      {
+        "siren": "219200409"
+      },
+      {
+        "siren": "219200441"
+      },
+      {
+        "siren": "219300514"
+      }
+    ]
+  },
+  {
+    "siren": "219502523",
+    "com_code": "95252",
+    "com_name": "Franconville",
+    "epci_code": "200058485",
+    "epci_name": "CA Val Parisis",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 37494,
+    "ptot_n": 37494,
+    "reference_sirens": [
+      {
+        "siren": "219105897"
+      },
+      {
+        "siren": "217703735"
+      },
+      {
+        "siren": "219300787"
+      }
+    ]
+  },
+  {
+    "siren": "219502689",
+    "com_code": "95268",
+    "com_name": "Garges-lès-Gonesse",
+    "epci_code": "200055655",
+    "epci_name": "CA Roissy Pays de France",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 43294,
+    "ptot_n": 43294,
+    "reference_sirens": [
+      {
+        "siren": "217803618"
+      },
+      {
+        "siren": "219200623"
+      },
+      {
+        "siren": "219200078"
+      }
+    ]
+  },
+  {
+    "siren": "219502804",
+    "com_code": "95280",
+    "com_name": "Goussainville",
+    "epci_code": "200055655",
+    "epci_name": "CA Roissy Pays de France",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31052,
+    "ptot_n": 31052,
+    "reference_sirens": [
+      {
+        "siren": "219400736"
+      },
+      {
+        "siren": "217804905"
+      },
+      {
+        "siren": "219106879"
+      }
+    ]
+  },
+  {
+    "siren": "219503067",
+    "com_code": "95306",
+    "com_name": "Herblay-sur-Seine",
+    "epci_code": "200058485",
+    "epci_name": "CA Val Parisis",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 31970,
+    "ptot_n": 31970,
+    "reference_sirens": [
+      {
+        "siren": "219500634"
+      },
+      {
+        "siren": "219400389"
+      },
+      {
+        "siren": "200085470"
+      }
+    ]
+  },
+  {
+    "siren": "219505005",
+    "com_code": "95500",
+    "com_name": "Pontoise",
+    "epci_code": "249500109",
+    "epci_name": "CA de Cergy-Pontoise",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 32453,
+    "ptot_n": 32453,
+    "reference_sirens": [
+      {
+        "siren": "217804236"
+      },
+      {
+        "siren": "219500634"
+      },
+      {
+        "siren": "219503067"
+      }
+    ]
+  },
+  {
+    "siren": "219505856",
+    "com_code": "95585",
+    "com_name": "Sarcelles",
+    "epci_code": "200055655",
+    "epci_name": "CA Roissy Pays de France",
+    "dep_code": "95",
+    "dep_name": "Val-d'Oise",
+    "reg_code": "11",
+    "reg_name": "Île-de-France",
+    "ptot": 58715,
+    "ptot_n": 58715,
+    "reference_sirens": [
+      {
+        "siren": "219300076"
+      },
+      {
+        "siren": "219400462"
+      },
+      {
+        "siren": "219200516"
+      }
+    ]
+  },
+  {
+    "siren": "219711017",
+    "com_code": "97101",
+    "com_name": "Les Abymes",
+    "epci_code": "200018653",
+    "epci_name": "CA Cap Excellence",
+    "dep_code": "971",
+    "dep_name": "Guadeloupe",
+    "reg_code": "01",
+    "reg_name": "Guadeloupe",
+    "ptot": 53443,
+    "ptot_n": 53443,
+    "reference_sirens": [
+      {
+        "siren": "219711033"
+      }
+    ]
+  },
+  {
+    "siren": "219711033",
+    "com_code": "97103",
+    "com_name": "Baie-Mahault",
+    "epci_code": "200018653",
+    "epci_name": "CA Cap Excellence",
+    "dep_code": "971",
+    "dep_name": "Guadeloupe",
+    "reg_code": "01",
+    "reg_name": "Guadeloupe",
+    "ptot": 30774,
+    "ptot_n": 30774,
+    "reference_sirens": [
+      {
+        "siren": "219711017"
+      }
+    ]
+  },
+  {
+    "siren": "219733029",
+    "com_code": "97302",
+    "com_name": "Cayenne",
+    "epci_code": "249730045",
+    "epci_name": "CA du Centre Littoral",
+    "dep_code": "973",
+    "dep_name": "Guyane",
+    "reg_code": "03",
+    "reg_name": "Guyane",
+    "ptot": 66327,
+    "ptot_n": 66327,
+    "reference_sirens": [
+      {
+        "siren": "219733110"
+      },
+      {
+        "siren": "219733078"
+      }
+    ]
+  },
+  {
+    "siren": "219733078",
+    "com_code": "97307",
+    "com_name": "Matoury",
+    "epci_code": "249730045",
+    "epci_name": "CA du Centre Littoral",
+    "dep_code": "973",
+    "dep_name": "Guyane",
+    "reg_code": "03",
+    "reg_name": "Guyane",
+    "ptot": 34666,
+    "ptot_n": 34666,
+    "reference_sirens": [
+      {
+        "siren": "219733110"
+      },
+      {
+        "siren": "219733029"
+      }
+    ]
+  },
+  {
+    "siren": "219733110",
+    "com_code": "97311",
+    "com_name": "Saint-Laurent-du-Maroni",
+    "epci_code": "249730037",
+    "epci_name": "CC de l'Ouest Guyanais",
+    "dep_code": "973",
+    "dep_name": "Guyane",
+    "reg_code": "03",
+    "reg_name": "Guyane",
+    "ptot": 49475,
+    "ptot_n": 49475,
+    "reference_sirens": [
+      {
+        "siren": "219733078"
+      },
+      {
+        "siren": "219733029"
+      }
+    ]
+  },
+  {
+    "siren": "219722097",
+    "com_code": "97209",
+    "com_name": "Fort-de-France",
+    "epci_code": "249720061",
+    "epci_name": "CA du Centre de la Martinique",
+    "dep_code": "972",
+    "dep_name": "Martinique",
+    "reg_code": "02",
+    "reg_name": "Martinique",
+    "ptot": 76085,
+    "ptot_n": 76085,
+    "reference_sirens": [
+      {
+        "siren": "219722139"
+      }
+    ]
+  },
+  {
+    "siren": "219722139",
+    "com_code": "97213",
+    "com_name": "Le Lamentin",
+    "epci_code": "249720061",
+    "epci_name": "CA du Centre de la Martinique",
+    "dep_code": "972",
+    "dep_name": "Martinique",
+    "reg_code": "02",
+    "reg_name": "Martinique",
+    "ptot": 40191,
+    "ptot_n": 40191,
+    "reference_sirens": [
+      {
+        "siren": "219722097"
+      }
+    ]
+  },
+  {
+    "siren": "219740073",
+    "com_code": "97407",
+    "com_name": "Le Port",
+    "epci_code": "249740101",
+    "epci_name": "CA Territoire de la Côte Ouest (TCO)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 32864,
+    "ptot_n": 32864,
+    "reference_sirens": [
+      {
+        "siren": "219740081"
+      },
+      {
+        "siren": "219740180"
+      },
+      {
+        "siren": "219740131"
+      }
+    ]
+  },
+  {
+    "siren": "219740081",
+    "com_code": "97408",
+    "com_name": "La Possession",
+    "epci_code": "249740101",
+    "epci_name": "CA Territoire de la Côte Ouest (TCO)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 33766,
+    "ptot_n": 33766,
+    "reference_sirens": [
+      {
+        "siren": "219740073"
+      },
+      {
+        "siren": "219740180"
+      },
+      {
+        "siren": "219740131"
+      }
+    ]
+  },
+  {
+    "siren": "219740099",
+    "com_code": "97409",
+    "com_name": "Saint-André",
+    "epci_code": "249740093",
+    "epci_name": "CA Intercommunale de la Réunion Est (CIREST)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 57329,
+    "ptot_n": 57329,
+    "reference_sirens": [
+      {
+        "siren": "219740149"
+      },
+      {
+        "siren": "219740123"
+      },
+      {
+        "siren": "219740107"
+      }
+    ]
+  },
+  {
+    "siren": "219740107",
+    "com_code": "97410",
+    "com_name": "Saint-Benoît",
+    "epci_code": "249740093",
+    "epci_name": "CA Intercommunale de la Réunion Est (CIREST)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 37265,
+    "ptot_n": 37265,
+    "reference_sirens": [
+      {
+        "siren": "219740123"
+      },
+      {
+        "siren": "219740131"
+      },
+      {
+        "siren": "219740180"
+      }
+    ]
+  },
+  {
+    "siren": "219740115",
+    "com_code": "97411",
+    "com_name": "Saint-Denis",
+    "epci_code": "249740119",
+    "epci_name": "CA Intercommunale du Nord de la Réunion (CINOR)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 154459,
+    "ptot_n": 154459,
+    "reference_sirens": [
+      {
+        "siren": "219740156"
+      },
+      {
+        "siren": "219740164"
+      },
+      {
+        "siren": "219740222"
+      }
+    ]
+  },
+  {
+    "siren": "219740123",
+    "com_code": "97412",
+    "com_name": "Saint-Joseph",
+    "epci_code": "249740085",
+    "epci_name": "CA du Sud",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 38997,
+    "ptot_n": 38997,
+    "reference_sirens": [
+      {
+        "siren": "219740107"
+      },
+      {
+        "siren": "219740131"
+      },
+      {
+        "siren": "219740180"
+      }
+    ]
+  },
+  {
+    "siren": "219740131",
+    "com_code": "97413",
+    "com_name": "Saint-Leu",
+    "epci_code": "249740101",
+    "epci_name": "CA Territoire de la Côte Ouest (TCO)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 35224,
+    "ptot_n": 35224,
+    "reference_sirens": [
+      {
+        "siren": "219740180"
+      },
+      {
+        "siren": "219740081"
+      },
+      {
+        "siren": "219740107"
+      }
+    ]
+  },
+  {
+    "siren": "219740149",
+    "com_code": "97414",
+    "com_name": "Saint-Louis",
+    "epci_code": "249740077",
+    "epci_name": "CA CIVIS (Communauté Intercommunale des Villes Solidaires)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 54322,
+    "ptot_n": 54322,
+    "reference_sirens": [
+      {
+        "siren": "219740099"
+      },
+      {
+        "siren": "219740123"
+      },
+      {
+        "siren": "219740107"
+      }
+    ]
+  },
+  {
+    "siren": "219740156",
+    "com_code": "97415",
+    "com_name": "Saint-Paul",
+    "epci_code": "249740101",
+    "epci_name": "CA Territoire de la Côte Ouest (TCO)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 105597,
+    "ptot_n": 105597,
+    "reference_sirens": [
+      {
+        "siren": "219740164"
+      },
+      {
+        "siren": "219740222"
+      },
+      {
+        "siren": "219740099"
+      }
+    ]
+  },
+  {
+    "siren": "219740164",
+    "com_code": "97416",
+    "com_name": "Saint-Pierre",
+    "epci_code": "249740077",
+    "epci_name": "CA CIVIS (Communauté Intercommunale des Villes Solidaires)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 84822,
+    "ptot_n": 84822,
+    "reference_sirens": [
+      {
+        "siren": "219740222"
+      },
+      {
+        "siren": "219740156"
+      },
+      {
+        "siren": "219740099"
+      }
+    ]
+  },
+  {
+    "siren": "219740180",
+    "com_code": "97418",
+    "com_name": "Sainte-Marie",
+    "epci_code": "249740119",
+    "epci_name": "CA Intercommunale du Nord de la Réunion (CINOR)",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 34774,
+    "ptot_n": 34774,
+    "reference_sirens": [
+      {
+        "siren": "219740131"
+      },
+      {
+        "siren": "219740081"
+      },
+      {
+        "siren": "219740073"
+      }
+    ]
+  },
+  {
+    "siren": "219740222",
+    "com_code": "97422",
+    "com_name": "Le Tampon",
+    "epci_code": "249740085",
+    "epci_name": "CA du Sud",
+    "dep_code": "974",
+    "dep_name": "La Réunion",
+    "reg_code": "04",
+    "reg_name": "La Réunion",
+    "ptot": 81728,
+    "ptot_n": 81728,
+    "reference_sirens": [
+      {
+        "siren": "219740164"
+      },
+      {
+        "siren": "219740156"
+      },
+      {
+        "siren": "219740099"
+      }
+    ]
+  },
+  {
+    "siren": "200008811",
+    "com_code": "97610",
+    "com_name": "Koungou",
+    "epci_code": "200060465",
+    "epci_name": "CA du Grand Nord de Mayotte",
+    "dep_code": "976",
+    "dep_name": "Mayotte",
+    "reg_code": "06",
+    "reg_name": "Mayotte",
+    "ptot": 32752,
+    "ptot_n": 32752,
+    "reference_sirens": [
+      {
+        "siren": "200008837"
+      }
+    ]
+  },
+  {
+    "siren": "200008837",
+    "com_code": "97611",
+    "com_name": "Mamoudzou",
+    "epci_code": "200060457",
+    "epci_name": "CA de Dembeni / Mamoudzou",
+    "dep_code": "976",
+    "dep_name": "Mayotte",
+    "reg_code": "06",
+    "reg_name": "Mayotte",
+    "ptot": 72974,
+    "ptot_n": 72974,
+    "reference_sirens": [
+      {
+        "siren": "200008811"
+      }
+    ]
+  }
+]
