@@ -4,7 +4,7 @@ from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage, ChatRole
 from agents import Agent, ToolCallingAgent
 from tools import *
-from prompt import tool_agent_instructions, tool_agent_prompt
+from prompt import tool_agent_instructions, tool_agent_prompt, contact_agent_prompt
 from util import get_commune_finances_by_siren, get_epci_finances_by_code
 api_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
 
@@ -30,8 +30,11 @@ class Orchestrator:
 
         self.municipality_name = self._get_municipality_name()
         self.inter_municipality_name = self._get_inter_municipality_name()
+        self.municipality_siren = self._get_municipality_siren()
+        self.inter_municipality_siren = self._get_inter_municipality_siren()
 
-        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.inter_municipality_name)
+
+        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.inter_municipality_siren, self.inter_municipality_name, self.inter_municipality_siren)
      
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
@@ -43,11 +46,19 @@ class Orchestrator:
         
     def _get_municipality_name(self):
         """Get the input from the user"""
-        return input("Municipality: ")
+        return "Dijon"
     
     def _get_inter_municipality_name(self):
         """Get the input from the user"""
-        return input("Inter-Municipality: ")
+        return "Dijon Metropole"
+    
+    def _get_municipality_siren(self):
+        """Get the input from the user"""
+        return 242100410
+
+    def _get_inter_municipality_siren(self):
+        """Get the input from the user"""
+        return 212102313
     
     def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_siren: str):
         """Get the data from the API
@@ -243,14 +254,56 @@ class Orchestrator:
             print("--------------------------------")
             print(self.conversation_history[conversation_id])
             print("--------------------------------")
+
+    def process_contact_fields(self) -> None:
+        """Process fields from the contacts section"""        
+        fields = self.data['contacts']
+
+        array_prompt = contact_agent_prompt.format(
+            municipality=self.municipality_name,
+            field="contacts",
+            instruction=fields['instruction'],
+            type=fields['type'],
+            example=""
+        )
+        
+        # Process each item in the array sequentially
+        for idx, item in enumerate(fields['content']):
+            conversation_id = f"contact_{idx + 1}"
+            if conversation_id not in self.conversation_history:
+                self.conversation_history[conversation_id] = []
+                
+            for subfield, subvalue in item.items():                       
+                # Create prompt for this specific array item
+                item_prompt = contact_agent_prompt.format(municipality=self.municipality_name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=subvalue['example'])
+                if idx == 0:
+                    item_prompt = array_prompt + item_prompt
+                self.conversation_history[conversation_id].append(ChatMessage.from_user(item_prompt))
+                
+                # Get response for this item
+                response = self.tool_agent.run(self.conversation_history[conversation_id])
+                self.conversation_history[conversation_id].extend(response)
+
+                # We call the agent again to get the final reply after the tool execution
+                if self.conversation_history[conversation_id][-1].role != ChatRole.ASSISTANT:
+                    final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
+                    self.conversation_history[conversation_id].extend(final_reply)
+                
+                # Store the response for this item
+                self.data['contacts']['content'][idx][subfield]['content'] = self.conversation_history[conversation_id][-1].text #if final_reply else "unknown"           
+
+        print("--------------------------------")
+        print(self.conversation_history[conversation_id])
+        print("--------------------------------")
         
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
-        self.process_summary_fields(inter=False)
-        self.process_summary_fields(inter=True)
-        self.process_projects_fields(inter=False)
-        self.process_projects_fields(inter=True)
+        #self.process_summary_fields(inter=False)
+        #self.process_summary_fields(inter=True)
+        #self.process_projects_fields(inter=False)
+        #self.process_projects_fields(inter=True)
+        self.process_contact_fields()
 
         # Save to answer.json
         try:
