@@ -38,3 +38,23 @@ Example:
 Now, given the '{identifier}' '{name}', the field '{field}', the type '{type}', and the instruction '{instruction}', produce your answer following these rules.
 """
 
+contact_agent_prompt = """You are a research assistant helping to gather information about key contacts in {municipality}. I need you to find accurate information about important municipal officials.
+
+Please provide the following information {field} in the following type {type}:
+
+{instruction}
+
+Please ensure:
+1. All dates are in the format "Month DD, YYYY"
+2. Education, activities, and career should be arrays of strings
+3. Include only verified information - if you're unsure about any detail, omit it rather than guess
+4. List career history in chronological order
+5. For current activities, include "(since Year)" where applicable
+
+This is the field I want to have information for right now {field}.
+
+Here is an example: {example}
+
+Please provide accurate, verified information for this contact. If certain information is not publicly available, you may omit those fields rather than provide uncertain data.
+Provide the answer as short as possible. Do not give any reasoning or explanation. Ideally mainly give only a few words."""
+

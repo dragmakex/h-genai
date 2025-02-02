@@ -4,7 +4,7 @@ from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage, ChatRole
 from agents import Agent, ToolCallingAgent
 from tools import *
-from prompt import tool_agent_instructions, tool_agent_prompt
+from prompt import tool_agent_instructions, tool_agent_prompt, contact_agent_prompt
 from util import get_commune_finances_by_siren, get_epci_finances_by_code
 api_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
 
@@ -15,7 +15,7 @@ def get_all_tools():
             if inspect.isfunction(obj) and hasattr(obj, '_is_tool')]
 
 class Orchestrator:
-    def __init__(self):
+    def __init__(self, city_info):
         # Initialize different types of agents
         self.simple_agent = Agent()
         self.tool_agent = ToolCallingAgent(
@@ -28,13 +28,12 @@ class Orchestrator:
         # Load data from data.json
         self.data = self._load_data_fields()
 
-        self.municipality_name = self._get_municipality_name()
-        self.inter_municipality_name = self._get_inter_municipality_name()
+        self.municipality_name = city_info.municipality_name
+        self.inter_municipality_name = city_info.inter_municipality_name
+        self.municipality_siren = city_info.siren
+        self.inter_municipality_epci = city_info.inter_municipality_code
 
-        self.municipality_siren = self._get_municipality_siren()
-        self.inter_municipality_siren = self._get_inter_municipality_siren()
-
-        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.municipality_siren, self.inter_municipality_name,  self.inter_municipality_siren)
+        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.municipality_siren, self.inter_municipality_name, self.inter_municipality_epci)
      
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
@@ -46,29 +45,34 @@ class Orchestrator:
         
     def _get_municipality_name(self):
         """Get the input from the user"""
-        return input("Municipality: ")
+        return "Dijon"
     
     def _get_inter_municipality_name(self):
         """Get the input from the user"""
         return input("Inter-Municipality: ")
 
-    def _get_municipality_siren(self):
-        """Get the input from the user"""
-        return 242100410
-
     def _get_inter_municipality_siren(self):
         """Get the input from the user"""
         return 212102313
+        return "Dijon Metropole"
     
-    def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_siren: str):
+    def _get_municipality_siren(self):
+        """Get the input from the user"""
+        return 212102313
+
+    def _get_inter_municipality_epci(self):
+        """Get the input from the user"""
+        return 242100410
+    
+    def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_epci_code: str):
         """Get the data from the API
         Return a dictionary with the data:
         Example:
         {"Dijon": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10},
         "Dijon Métropole": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10}}"""
         
-        _, municipality_finances = get_commune_finances_by_siren(municipality_siren)
-        _, epci_finances = get_epci_finances_by_code(inter_municipality_siren)
+        _, _, municipality_finances = get_commune_finances_by_siren(municipality_siren)
+        _, _, epci_finances = get_epci_finances_by_code(inter_municipality_epci_code)
         
         return {f"{municipality_name}": municipality_finances,
                 f"{inter_municipality_name}": epci_finances}
@@ -254,6 +258,47 @@ class Orchestrator:
             print("--------------------------------")
             print(self.conversation_history[conversation_id])
             print("--------------------------------")
+
+    def process_contact_fields(self) -> None:
+        """Process fields from the contacts section"""        
+        fields = self.data['contacts']
+
+        array_prompt = contact_agent_prompt.format(
+            municipality=self.municipality_name,
+            field="contacts",
+            instruction=fields['instruction'],
+            type=fields['type'],
+            example=""
+        )
+        
+        # Process each item in the array sequentially
+        for idx, item in enumerate(fields['content']):
+            conversation_id = f"contact_{idx + 1}"
+            if conversation_id not in self.conversation_history:
+                self.conversation_history[conversation_id] = []
+
+            for subfield, subvalue in item.items():                       
+                # Create prompt for this specific array item
+                item_prompt = contact_agent_prompt.format(municipality=self.municipality_name, field=subfield, instruction=subvalue['instruction'], type=subvalue['type'], example=subvalue['example'])
+                if idx == 0:
+                    item_prompt = array_prompt + item_prompt
+                self.conversation_history[conversation_id].append(ChatMessage.from_user(item_prompt))
+                
+                # Get response for this item
+                response = self.tool_agent.run(self.conversation_history[conversation_id])
+                self.conversation_history[conversation_id].extend(response)
+
+                # We call the agent again to get the final reply after the tool execution
+                if self.conversation_history[conversation_id][-1].role != ChatRole.ASSISTANT:
+                    final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
+                    self.conversation_history[conversation_id].extend(final_reply)
+                
+                # Store the response for this item
+                self.data['contacts']['content'][idx][subfield]['content'] = self.conversation_history[conversation_id][-1].text #if final_reply else "unknown"           
+
+        print("--------------------------------")
+        print(self.conversation_history[conversation_id])
+        print("--------------------------------")
         
 
     def process_all_sections(self) -> Dict[str, Any]:
@@ -262,6 +307,7 @@ class Orchestrator:
         #self.process_summary_fields(inter=True)
         self.process_projects_fields(inter=False)
         self.process_projects_fields(inter=True)
+        #self.process_contact_fields()
 
         # Save to answer.json
         try:
@@ -271,6 +317,12 @@ class Orchestrator:
             print(f"Error saving to answer.json: {e}")
         
         return self.data
-    
-test_orchestrator = Orchestrator()
+
+class city_info():
+    municipality_name = "Dijon"
+    inter_municipality_name = "Dijon Metropole"
+    siren = 212102313
+    inter_municipality_code = 242100410
+
+test_orchestrator = Orchestrator(city_info)
 test_orchestrator.process_all_sections()

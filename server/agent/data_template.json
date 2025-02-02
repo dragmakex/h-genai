@@ -608,34 +608,35 @@
                     "content": null,
                     "instruction": "List the career history of the contact person",
                     "example": [
-    "Chargé de mission to the prefect of the Burgundy region (1979-1981)",
-    "Chargé de mission in the office of Pierre Joxe, then chief of staff to André Billardon, Chairman of the Burgundy Regional Council (1981-1984)",
-    "Chief of Staff to Pierre Joxe, Minister of the Interior and Decentralization (1984-1986)",
-    "General Delegate of the Association of Progressive and Socialist Regional Councils (1986-1988)",
-    "Technical advisor to Pierre Joxe, Minister of the Interior (1988-1991)",
-    "Dijon city councillor (1989-2001)",
-    "Deputy Chief of Staff to Laurent Fabius (1991-1992) and Henri Emmanuelli (1992-1993), Presidents of the French National Assembly",
-    "Sous-préfet hors-cadre on secondment, project manager at the Fondation Jean-Jaurès (1993-1999)",
-    "Burgundy regional councillor (1994-2001)",
-    "PS National Secretary, in charge of organization and coordination (1997-2005)",
-    "Member of the PS national office",
-    "General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008)",
-    "Technical advisor to Jean-Jack Queyranne, Minister for Relations with Parliament (2000-2001)",
-    "Chairman, Dijon Regional Council (2001-2014)",
-    "Mayor of Dijon (2001-2014)",
-    "Vice-Chairman, AMF (Association des maires de France)",
-    "Chairman of the Côte-d'Or Mayors Association (2001-2014)",
-    "PS National Secretary, in charge of coordination (2005-2008)",
-    "Senator for Côte-d'Or (2008-2014)",
-    "Chairman of the Socialist Group in the French Senate (2011-2014)",
-    "Minister of Labor, Employment and Social Dialogue in Manuel Valls' first government (April 2014 to August 2014), then Minister of Labor, Employment, Vocational Training and Social Dialogue (August 2014 to August 2015)",
-    "Chairman of the Communauté d'agglomération, then the Communauté urbaine du Grand Dijon (August 2014-2017)",
-    "Mayor of Dijon (2015-Nov. 2024)",
-    "Chairman, FNSER (Fédération nationale des élus socialistes et républicains) (March 2016-Sept. 2021)"
-  ]
+                        "Chargé de mission to the prefect of the Burgundy region (1979-1981)",
+                        "Chargé de mission in the office of Pierre Joxe, then chief of staff to André Billardon, Chairman of the Burgundy Regional Council (1981-1984)",
+                        "Chief of Staff to Pierre Joxe, Minister of the Interior and Decentralization (1984-1986)",
+                        "General Delegate of the Association of Progressive and Socialist Regional Councils (1986-1988)",
+                        "Technical advisor to Pierre Joxe, Minister of the Interior (1988-1991)",
+                        "Dijon city councillor (1989-2001)",
+                        "Deputy Chief of Staff to Laurent Fabius (1991-1992) and Henri Emmanuelli (1992-1993), Presidents of the French National Assembly",
+                        "Sous-préfet hors-cadre on secondment, project manager at the Fondation Jean-Jaurès (1993-1999)",
+                        "Burgundy regional councillor (1994-2001)",
+                        "PS National Secretary, in charge of organization and coordination (1997-2005)",
+                        "Member of the PS national office",
+                        "General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008)",
+                        "Technical advisor to Jean-Jack Queyranne, Minister for Relations with Parliament (2000-2001)",
+                        "Chairman, Dijon Regional Council (2001-2014)",
+                        "Mayor of Dijon (2001-2014)",
+                        "Vice-Chairman, AMF (Association des maires de France)",
+                        "Chairman of the Côte-d'Or Mayors Association (2001-2014)",
+                        "PS National Secretary, in charge of coordination (2005-2008)",
+                        "Senator for Côte-d'Or (2008-2014)",
+                        "Chairman of the Socialist Group in the French Senate (2011-2014)",
+                        "Minister of Labor, Employment and Social Dialogue in Manuel Valls' first government (April 2014 to August 2014), then Minister of Labor, Employment, Vocational Training and Social Dialogue (August 2014 to August 2015)",
+                        "Chairman of the Communauté d'agglomération, then the Communauté urbaine du Grand Dijon (August 2014-2017)",
+                        "Mayor of Dijon (2015-Nov. 2024)",
+                        "Chairman, FNSER (Fédération nationale des élus socialistes et républicains) (March 2016-Sept. 2021)"
+                    ]
                 }
             }
-        ]
+        ], 
+        "instruction": "Find to contacts for the municipalities and their details. Give the answer as short as possible, idealy only a few words."
     },
     "budget": {
         "municipality": {
@@ -681,19 +682,63 @@
     },
     "financial_data": {
         "municipality": {
-            "year": {
+            "management_savings_per_capita": {
                 "type": "string",
-                "content": null,
-                "instruction": "Enter the year of the financial data",
-                "example": "2023"
+                "content": null
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": null
             }
         },
         "inter_municipality": {
-            "year": {
+            "management_savings_per_capita": {
                 "type": "string",
-                "content": null,
-                "instruction": "Enter the year of the inter-municipality financial data",
-                "example": "2023"
+                "content": null
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": null
             }
         }
     },

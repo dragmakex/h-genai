@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Tuple, Dict, Any
 
 import pandas as pd
 import requests
@@ -6,7 +7,7 @@ import requests
 def get_commune_finances_by_siren(
     siren: str,
     year: str = "2023"
-) -> tuple[pd.DataFrame, dict]:
+) -> Tuple[pd.DataFrame, pd.DataFrame, Dict[str, Any]]:
     """
     Get detailed financial data for a commune using its SIREN number.
     
@@ -15,16 +16,17 @@ def get_commune_finances_by_siren(
         year: Year of data (2016-2023), should be a 4-digit string
         
     Returns:
-        tuple: A tuple containing:
+        Tuple containing:
+            - pd.DataFrame: Profile information with basic details about the commune
             - pd.DataFrame: Financial details with metrics and amounts
-            - dict: Key financial metrics including:
-                - total_budget: Total budget amount
-                - total_budget_per_person: Budget per capita
-                - population: Total population
-                - data_from_year: Year of the data
-                - debt_repayment_capacity: Debt repayment capacity ratio
-                - debt_ratio: Debt to revenue ratio as percentage
-                - debt_duration: Years to repay debt at current rate
+            - Dict[str, Any]: Key financial metrics including:
+                - total_budget (float): Total budget amount
+                - total_budget_per_person (float): Budget per capita
+                - population (int): Total population
+                - data_from_year (int): Year of the data
+                - debt_repayment_capacity (float | None): Debt repayment capacity ratio
+                - debt_ratio (float | None): Debt to revenue ratio as percentage
+                - debt_duration (float | None): Years to repay debt at current rate
     """
     base_url = "https://data.ofgl.fr/api/explore/v2.1/catalog/datasets"
     dataset = "ofgl-base-communes-consolidee"
@@ -50,7 +52,7 @@ def get_commune_finances_by_siren(
 
         if not results:
             print(f"No data found for SIREN {siren} in year {year}")
-            return pd.DataFrame(), {}
+            return pd.DataFrame(), pd.DataFrame(), {}
 
         # Create profile DataFrame
         basic_info = results[0]
@@ -99,17 +101,17 @@ def get_commune_finances_by_siren(
             'debt_duration': (metrics['total_budget'] / remb_emprunts) if remb_emprunts != 0 else None
         })
 
-        return financial_df, metrics
+        return profile_df, financial_df, metrics
     else:
         print(f"Error: {response.status_code}")
         print(response.text)
-        return pd.DataFrame(), {}
+        return pd.DataFrame(), pd.DataFrame(), {}
     
 
 def get_epci_finances_by_code(
     epci_code: str,
     year: str = "2023"
-) -> tuple[pd.DataFrame, dict]:
+) -> Tuple[pd.DataFrame, pd.DataFrame, Dict[str, Any]]:
     """
     Get detailed financial data for an EPCI (Public Establishment for Intercommunal Cooperation) using its code.
     
@@ -118,16 +120,17 @@ def get_epci_finances_by_code(
         year: Year of data (2016-2023), should be a 4-digit string
         
     Returns:
-        tuple: A tuple containing:
+        Tuple containing:
+            - pd.DataFrame: Profile information with basic details about the EPCI
             - pd.DataFrame: Financial details with metrics and amounts
-            - dict: Key financial metrics including:
-                - total_budget: Total budget amount
-                - total_budget_per_person: Budget per capita
-                - population: Total population
-                - data_from_year: Year of the data
-                - debt_repayment_capacity: Debt repayment capacity ratio
-                - debt_ratio: Debt to revenue ratio as percentage
-                - debt_duration: Years to repay debt at current rate
+            - Dict[str, Any]: Key financial metrics including:
+                - total_budget (float): Total budget amount
+                - total_budget_per_person (float): Budget per capita
+                - population (int): Total population
+                - data_from_year (int): Year of the data
+                - debt_repayment_capacity (float | None): Debt repayment capacity ratio
+                - debt_ratio (float | None): Debt to revenue ratio as percentage
+                - debt_duration (float | None): Years to repay debt at current rate
     """
     base_url = "https://data.ofgl.fr/api/explore/v2.1/catalog/datasets"
     dataset = "ofgl-base-ei"
@@ -153,7 +156,7 @@ def get_epci_finances_by_code(
 
         if not results:
             print(f"No data found for EPCI {epci_code} in year {year}")
-            return pd.DataFrame(), {}
+            return pd.DataFrame(), pd.DataFrame(), {}
 
         # Create profile DataFrame
         basic_info = results[0]
@@ -204,8 +207,8 @@ def get_epci_finances_by_code(
             'debt_duration': (metrics['total_budget'] / remb_emprunts) if remb_emprunts != 0 else None
         })
 
-        return financial_df, metrics
+        return profile_df, financial_df, metrics
     else:
         print(f"Error: {response.status_code}")
         print(response.text)
-        return pd.DataFrame(), {}
+        return pd.DataFrame(), pd.DataFrame(), {}

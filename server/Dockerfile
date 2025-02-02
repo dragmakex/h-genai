@@ -28,6 +28,18 @@ FROM --platform=linux/amd64 public.ecr.aws/lambda/python:3.11
 
 WORKDIR ${LAMBDA_TASK_ROOT}
 
+# Install WeasyPrint dependencies
+RUN yum install -y \
+    pango \
+    pango-devel \
+    libffi-devel \
+    cairo \
+    cairo-devel \
+    gobject-introspection-devel \
+    harfbuzz-devel \
+    && yum clean all \
+    && rm -rf /var/cache/yum
+
 # Copy Python dependencies from builder
 COPY --from=builder /var/lang/lib/python3.11/site-packages/ /var/lang/lib/python3.11/site-packages/
 
