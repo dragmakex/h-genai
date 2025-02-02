@@ -238,25 +238,13 @@
                         </div>
                         
                         <div class="section-title">Formation:</div>
-                        <ul>
-                            {% for education in contact.education.content %}
-                            <li>{{education}}</li>
-                            {% endfor %}
-                        </ul>
+                        <div>{{contact.education.content}}</div>
 
                         <div class="section-title">Autres activités en cours:</div>
-                        <ul>
-                            {% for activity in contact.activities.content %}
-                            <li>{{activity.content}}</li>
-                            {% endfor %}
-                        </ul>
+                        <div>{{contact.activities.content}}</div>
 
                         <div class="section-title">Carrière:</div>
-                        <ul>
-                            {% for career_item in contact.career.content %}
-                            <li>{{career_item.content}}</li>
-                            {% endfor %}
-                        </ul>
+                        <div>{{contact.career.content}}</div>
                     </td>
                 </tr>
                 {% endfor %}
