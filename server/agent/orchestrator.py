@@ -300,10 +300,26 @@ class Orchestrator:
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
         self.process_summary_fields(inter=False)
-        #self.process_summary_fields(inter=True)
-        #self.process_projects_fields(inter=False)
-        #self.process_projects_fields(inter=True)
-        #self.process_contact_fields()
+        self.process_summary_fields(inter=True)
+        self.process_projects_fields(inter=False)
+        self.process_projects_fields(inter=True)
+        self.process_contact_fields()
+
+        # Save to answer.json
+        # try:
+        #     with open('data_answer.json', 'w', encoding='utf-8') as file:
+        #         json.dump(self.data, file, indent=4, ensure_ascii=False)
+        # except Exception as e:
+        #     print(f"Error saving to answer.json: {e}")
+        return self.data
+    
+    def test_process_all_sections(self) -> Dict[str, Any]:
+        """Process all fields in data_template.json and save results to data_answer.json"""
+        self.process_summary_fields(inter=False)
+        # self.process_summary_fields(inter=True)
+        # self.process_projects_fields(inter=False)
+        # self.process_projects_fields(inter=True)
+        # self.process_contact_fields()
 
         # Save to answer.json
         # try:
