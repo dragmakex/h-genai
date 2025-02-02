@@ -45,11 +45,10 @@ Follow these instructions as close as possible, do not deviate and do not haluci
 {instruction}
 
 Please ensure:
-1. All dates are in the format "Month DD, YYYY"
-2. Education, activities, and career should be as consice as possible.
-3. Include only verified information - if you're unsure about any detail, omit it rather than guess
-4. List career history in chronological order
-5. For current activities, include "(since Year)" where applicable
+1. Education, activities, and career should be as consice as possible.
+2. Include only verified information - if you're unsure about any detail, omit it rather than guess
+3. List career history in chronological order
+4. For current activities, include "(since Year)" where applicable
 
 This is the field I want to have information for right now {field}.
 
