@@ -1,9 +1,10 @@
+import json
 import logging
 import sys
 import traceback
 
 import uvicorn
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Response
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
@@ -20,7 +21,7 @@ logger = logging.getLogger(__name__)
 app = FastAPI(title="H-GenAI API", description="REST API for H-GenAI", version="1.0.0")
 
 # Initialize Jinja2 templates
-templates = Jinja2Templates(directory="xtemplate")
+templates = Jinja2Templates(directory="template")
 
 # Add CORS middleware
 app.add_middleware(
@@ -93,6 +94,16 @@ async def generate_pdf_from_data(request: Request, data: Dict[Any, Any]):
         logger.error(f"PDF generation failed: {str(e)}")
         logger.error(f"Traceback: {''.join(traceback.format_tb(sys.exc_info()[2]))}")
         raise
+
+
+@app.post("/test-generate-pdf")
+def generate_test_pdf(request: Request):
+    """
+    This is a test endpoint to return response.pdf
+    """
+    with open("api/response.pdf", "rb") as pdf_file:
+        pdf_data = pdf_file.read()
+    return Response(pdf_data, media_type="application/pdf")
 
 
 # Handler for AWS Lambda
