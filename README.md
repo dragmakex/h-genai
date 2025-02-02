@@ -36,7 +36,7 @@ This project provides a comprehensive data collection and analysis system for Fr
 
 - **Preview**: A glimpse of the application interface:
 <div align="center">
-  <img src="docs/assets/preview.png" alt="H-GenAI Application Preview" width="800px">
+  <img src="h-genai/web-app/src/assets/images/screenshot.png" alt="H-GenAI Application Preview" width="800px">
 </div>
 
 - **Financial Analysis**: Detailed financial metrics for both municipalities and EPCIs including:
