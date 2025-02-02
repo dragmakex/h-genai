@@ -682,19 +682,63 @@
     },
     "financial_data": {
         "municipality": {
-            "year": {
+            "management_savings_per_capita": {
                 "type": "string",
-                "content": null,
-                "instruction": "Enter the year of the financial data",
-                "example": "2023"
+                "content": null
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": null
             }
         },
         "inter_municipality": {
-            "year": {
+            "management_savings_per_capita": {
                 "type": "string",
-                "content": null,
-                "instruction": "Enter the year of the inter-municipality financial data",
-                "example": "2023"
+                "content": null
+            },
+            "gross_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_per_capita": {
+                "type": "string",
+                "content": null
+            },
+            "management_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "gross_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "net_savings_ratio": {
+                "type": "string",
+                "content": null
+            },
+            "debt_service_to_operating_revenue_ratio": {
+                "type": "string",
+                "content": null
             }
         }
     },
