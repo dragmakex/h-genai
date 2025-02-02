@@ -145,17 +145,6 @@ jobs:
                --name production \
                --function-version ${{ steps.publish.outputs.version }}
 
-      - name: Configure Provisioned Concurrency
-        run: |
-          aws lambda put-provisioned-concurrency-config \
-            --function-name h-genai-server \
-            --qualifier production \
-            --provisioned-concurrent-executions 1
-
-      - name: Wait for Provisioned Concurrency Update
-        run: |
-          aws lambda wait function-updated --function-name h-genai-server
-
   deploy-webapp:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/web-app'
