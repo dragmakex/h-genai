@@ -88,7 +88,8 @@ async def generate_pdf_from_data(request: Request, city_info: CityModel):
     logger.info("PDF generation endpoint called")
 
     orchestrator_instance = Orchestrator(city_info)
-    data = orchestrator_instance.process_all_sections()
+    # Change the function here if you dont want parallel processing
+    data = orchestrator_instance.parallel_process_all_sections()
 
     print(data)
 
