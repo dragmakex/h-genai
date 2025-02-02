@@ -38,6 +38,25 @@ Example:
 Now, given the '{identifier}' '{name}', the field '{field}', the type '{type}', and the instruction '{instruction}', produce your answer following these rules.
 """
 
+project_agent_prompt = """
+For the '{identifier}' '{name}', provide a concise answer for the field '{field}', in the type '{type}', utilizing the specific instuction '{instruction}'.
+
+Requirements:
+- If a number is requested, only provide one number and its unit (e.g., "150000 inhabitants").
+- If the answer is unknown, respond only with 'unknown' (no additional explanation).
+- Keep the answer as short as possible.
+
+Example:
+- Municipality: Dijon
+- Field: {field}
+- Instruction: {instruction}
+- Type: {type}
+- Answer: {example}
+
+Now, given the '{identifier}' '{name}', the field '{field}', the type '{type}', and the instruction '{instruction}', produce your answer following these rules.
+DO NOT answer with things like: "Based on the information received, I can answer that for the project's theme:". Simply answer with the few words of the actual project theme.
+"""
+
 contact_agent_prompt = """You are a research assistant helping to gather information about key contacts in {municipality}. I need you to find accurate information about important municipal officials.
 
 Please provide the following information {field} in the following type {type}.
@@ -81,3 +100,21 @@ Do not provide any explanations or additional text - only return the URL or 'unk
 
 Example response for Dijon:
 https://upload.wikimedia.org/wikipedia/fr/2/2f/Logo_Dijon.svg"""
+
+budget_agent_prompt = """
+You are an agent tasked with finding information about the current (most recent) budget of French municipalities. 
+For the '{identifier}' '{name}', provide a concise answer for the field '{field}', in the type '{type}', utilizing the specific instuction '{instruction}'.
+
+Requirements:
+- If a number is requested, only provide one number and its unit (e.g., "150000 inhabitants").
+- If the answer is unknown, respond only with 'unknown' (no additional explanation).
+- Keep the answer as short as possible.
+
+Example:
+- Municipality: Dijon
+- Date: December 18
+- Year: 2023
+- Total_Budget: 271.2 million euros
+
+Now, given the '{identifier}' '{name}', the field '{field}', the type '{type}', and the instruction '{instruction}', produce your answer following these rules.
+"""

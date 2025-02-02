@@ -616,19 +616,19 @@
             "date": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the date of the budget data",
+                "instruction": "Enter the date of the budget data for the current year for this municipality",
                 "example": "December 18"
             },
             "year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the fiscal year of the budget",
+                "instruction": "Enter the fiscal year of the budget data for the current year for this municipality",
                 "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget amount in euros",
+                "instruction": "Enter the total budget amount in euros for the current year for this municipality",
                 "example": "271.2 million euros"
             }
         },
@@ -636,19 +636,19 @@
             "date": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the date of the inter-municipality budget data",
+                "instruction": "Enter the date of the budget data for the current year for this inter-municipality",
                 "example": "December 21"
             },
             "year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the fiscal year of the inter-municipality budget",
+                "instruction": "Enter the fiscal year of the budget data for the current year for this inter-municipality",
                 "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total inter-municipality budget amount in euros",
+                "instruction": "Enter the total budget amount in euros for the current year for this inter-municipality",
                 "example": "418 million euros"
             }
         }

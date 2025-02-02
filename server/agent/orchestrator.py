@@ -10,6 +10,8 @@ from prompt import (
     tool_agent_prompt,
     contact_agent_prompt,
     logo_agent_prompt,
+    budget_agent_prompt,
+    project_agent_prompt
 )
 from util import get_commune_finances_by_siren, get_epci_finances_by_code
 
@@ -334,7 +336,7 @@ class Orchestrator:
 
             if type == "array":
                 # Create the overall array instructions
-                array_prompt = tool_agent_prompt.format(
+                array_prompt = project_agent_prompt.format(
                     identifier=identifier,
                     name=name,
                     field=field,
@@ -348,7 +350,7 @@ class Orchestrator:
                     for subfield, subvalue in item.items():
                         # Create prompt for this specific array item
                         item_prompt = f"For item {idx+1} of the array:\n"
-                        item_prompt += tool_agent_prompt.format(
+                        item_prompt += project_agent_prompt.format(
                             identifier=identifier,
                             name=name,
                             field=subfield,
@@ -389,7 +391,7 @@ class Orchestrator:
                         ].text  # if final_reply else "unknown"
             else:
                 # Create a prompt based on the field and append it to the messages
-                prompt = tool_agent_prompt.format(
+                prompt = project_agent_prompt.format(
                     identifier=identifier,
                     name=name,
                     field=field,
@@ -487,6 +489,67 @@ class Orchestrator:
         print(self.conversation_history[conversation_id])
         print("--------------------------------")
 
+    def process_budget_fields(self) -> None:
+        identifiers = ["municipality", "inter_municipality"]
+        for identifier in identifiers:
+            if identifier == "inter_municipality":
+                name = self.inter_municipality_name
+            else:
+                name = self.municipality_name
+            
+            fields = self.data["budget"][identifier]
+            # Process each field in the municipality data
+            for field, value in fields.items():
+                # E.g. field = 'population'
+                # E.g. value = {'type': 'number', 'content': null, 'instruction': 'Enter the total population of the municipality'}
+                print("Field: " + name + " " + field)
+                type = value["type"]
+                instruction = value["instruction"]
+
+                conversation_id = identifier + "_budegt_" + field
+                if conversation_id not in self.conversation_history:
+                    self.conversation_history[conversation_id] = []
+
+                # Create a prompt based on the field and append it to the messages
+                prompt = budget_agent_prompt.format(
+                    identifier=identifier,
+                    name=name,
+                    field=field,
+                    instruction=instruction,
+                    type=type,
+                    example=value["example"],
+                )
+                self.conversation_history[conversation_id].append(
+                    ChatMessage.from_user(prompt)
+                )
+                # print(self.conversation_history[conversation_id][-1])
+
+                # Get response from agent and extend the conversation history with the response
+                response = self.tool_agent.run(
+                    self.conversation_history[conversation_id]
+                )
+                self.conversation_history[conversation_id].extend(response)
+                # print(self.conversation_history[conversation_id][-1])
+
+                # We call the agent again to get the final reply after the tool executions
+                final_reply = self.tool_agent.run(
+                    self.conversation_history[conversation_id]
+                )
+                self.conversation_history[conversation_id].extend(
+                    final_reply)
+                # print(self.conversation_history[conversation_id][-1])
+
+                # Store the response
+                self.data["budget"][identifier][field]["content"] = (
+                    self.conversation_history[conversation_id][-1].text
+                    if final_reply
+                    else "unknown"
+                )
+
+                print("--------------------------------")
+                print(self.conversation_history[conversation_id])
+                print("--------------------------------")
+
     def process_financial_data(self) -> None:
         """Process fields from the financial data section"""
         municipality = self.data["financial_data"]["municipality"]
@@ -509,12 +572,12 @@ class Orchestrator:
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
-        # self.process_logo_field()
-        # self.process_summary_fields(inter=False)
-        # self.process_summary_fields(inter=True)
-        # self.process_projects_fields(inter=False)
-        # self.process_projects_fields(inter=True)
-        # self.process_contact_fields()
+        self.process_summary_fields(inter=False)
+        self.process_summary_fields(inter=True)
+        self.process_projects_fields(inter=False)
+        self.process_projects_fields(inter=True)
+        self.process_contact_fields()
+        self.process_budget_fields()
         self.process_financial_data()
         self.process_comparative_data()
 
@@ -531,18 +594,18 @@ class Orchestrator:
         """Process all fields in data_template.json and save results to data_answer.json"""
         # Define the tasks we want to run in parallel
         tasks = [
-            (self.process_logo_field, ()),
             (self.process_summary_fields, (False,)),
             (self.process_summary_fields, (True,)),
             (self.process_projects_fields, (False,)),
             (self.process_projects_fields, (True,)),
             (self.process_contact_fields, ()),
+            (self.process_budget_fields, ()),
             (self.process_financial_data, ()),
             (self.process_comparative_data, ())
         ]
 
         # Run tasks in parallel
-        with ThreadPoolExecutor(max_workers=6) as executor:
+        with ThreadPoolExecutor(max_workers=8) as executor:
             futures = [executor.submit(func, *args) for func, args in tasks]
 
             # Wait for all tasks to complete
@@ -586,4 +649,4 @@ class city_info:
 
 
 test_orchestrator = Orchestrator(city_info)
-test_orchestrator.process_all_sections()
+test_orchestrator.parallel_process_all_sections()
