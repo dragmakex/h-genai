@@ -2,119 +2,119 @@
     "municipality_name": {
         "type": "string",
         "content": null,
-        "instruction": "Enter the name of the municipality",
+        "instruction": "Entrez le nom de la commune",
         "example": "Dijon"
     },
     "inter_municipality_name": {
         "type": "string",
         "content": null,
-        "instruction": "Enter the name of the inter-municipality organization",
+        "instruction": "Entrez le nom de l'organisation intercommunale",
         "example": "Dijon Métropole"
     },
     "logo": {
         "type": "string",
         "content": null,
-        "instruction": "Provide the URL or path to the municipality logo. DO NOT HALUCINATE A URL, provide a real image url that you found on the internet!"
+        "instruction": "Fournissez l'URL ou le chemin vers le logo de la commune. NE PAS HALUCINER UN URL, fournissez un URL d'image réel que vous avez trouvé sur Internet!"
     },
     "summary": {
         "municipality": {
             "population": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total population of the municipality",
-                "example": "159346 residents"
+                "instruction": "Entrez la population totale de la commune",
+                "example": "159346 habitants"
             },
             "area": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total area of the municipality in square kilometers",
-                "example": "40.40 km2"
+                "instruction": "Entrez la superficie totale de la commune en kilomètres carrés",
+                "example": "40,40 km2"
             },
             "data_from_year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the year from which this data was collected",
+                "instruction": "Entrez l'année de collecte de ces données",
                 "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget of the municipality in euros",
-                "example": "110 million euros"
+                "instruction": "Entrez le budget total de la commune en euros",
+                "example": "110 millions d'euros"
             },
             "total_budget_per_person": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget per person in euros",
-                "example": "679 €/person"
+                "instruction": "Entrez le budget total par habitant en euros",
+                "example": "679 €/habitant"
             },
             "debt_repayment_capacity": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt repayment capacity as a ratio",
-                "example": "3.4 years"
+                "instruction": "Entrez la capacité de remboursement de la dette sous forme de ratio",
+                "example": "3,4 ans"
             },
             "debt_ratio": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt ratio as a percentage",
+                "instruction": "Entrez le ratio d'endettement en pourcentage",
                 "example": "51%"
             },
             "debt_duration": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt duration in years",
-                "example": "10.1 years"
+                "instruction": "Entrez la durée de la dette en années",
+                "example": "10,1 ans"
             }
         },
         "inter_municipality": {
             "population": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total population of the inter-municipality",
-                "example": "257193 residents"
+                "instruction": "Entrez la population totale de l'intercommunalité",
+                "example": "257193 habitants"
             },
             "area": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total area of the inter-municipality in square kilometers",
+                "instruction": "Entrez la superficie totale de l'intercommunalité en kilomètres carrés",
                 "example": "240 km2"
             },
             "data_from_year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the year from which this data was collected",
+                "instruction": "Entrez l'année de collecte de ces données",
                 "example": 2021
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget of the inter-municipality in euros",
-                "example": "257 million euros"
+                "instruction": "Entrez le budget total de l'intercommunalité en euros",
+                "example": "257 millions d'euros"
             },
             "total_budget_per_person": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget per person in euros",
-                "example": "968 €/person"
+                "instruction": "Entrez le budget total par habitant en euros",
+                "example": "968 €/habitant"
             },
             "debt_repayment_capacity": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt repayment capacity as a ratio",
-                "example": "2.7 years"
+                "instruction": "Entrez la capacité de remboursement de la dette sous forme de ratio",
+                "example": "2,7 ans"
             },
             "debt_ratio": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt ratio as a percentage",
-                "example": "71%" 
+                "instruction": "Entrez le ratio d'endettement en pourcentage",
+                "example": "71%"
             },
             "debt_duration": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the debt duration in years",
-                "example": "8.7 years"
+                "instruction": "Entrez la durée de la dette en années",
+                "example": "8,7 ans"
             },
             "historical_milestones": {
                 "type": "array",
@@ -123,13 +123,13 @@
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Enter the year of the first historical milestone",
+                            "instruction": "Trouvez 3 événements historiques importants concernant la commune. Les ordonnez successivement. C'est le premier. Entrez l'année du premier événement historique",
                             "example": 1957
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the first one. Describe the first historical milestone event",
+                            "instruction": "Trouvez 3 événements historiques importants concernant la commune. Les ordonnez successivement. C'est le premier. Décrivez l'événement du premier événement historique",
                             "example": "Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
                     },
@@ -137,13 +137,13 @@
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Enter the year of the second historical milestone",
+                            "instruction": "Trouvez 3 événements historiques importants concernant la commune. Les ordonnez successivement. C'est le second. Entrez l'année du second événement historique",
                             "example": 1999
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the second one. Describe the second historical milestone event",
+                            "instruction": "Trouvez 3 événements historiques importants concernant la commune. Les ordonnez successivement. C'est le second. Décrivez l'événement du second événement historique",
                             "example":  "Création de la Communauté d'Agglomération de Dijon Métropole. Création de la Communauté d'Agglomération de Dijon Métropole"
                         }
                     },
@@ -151,18 +151,18 @@
                         "year": {
                             "type": "number",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Enter the year of the third historical milestone",
+                            "instruction": "Trouvez 3 événements historiques importants concernant la commune. Les ordonnez successivement. C'est le troisième. Entrez l'année du troisième événement historique",
                             "example": 2012
                         },
                         "milestone": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important historical milestones concerning the municipality. Order them consecutively. This is the third one. Describe the third historical milestone event",
+                            "instruction": "Trouvez 3 événements historiques importants concernant la commune. Les ordonnez successivement. C'est le troisième. Décrivez l'événement du troisième événement historique",
                             "example": "Creation de Dijon Métropole avec 23 communes"
                         }
                     }
                 ],
-                "instruction": "Find 3 important historical milestones concerning the inter-municipalities. Make sure they are 3 distinct and different events. Take care of this when researching the individual milestones."
+                "instruction": "Trouvez 3 événements historiques importants concernant les intercommunalités. Assurez-vous qu'ils sont 3 distincts et différents. Prenez soin de ce point lors de la recherche des événements individuels."
             }
         }
     },
@@ -175,82 +175,82 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Renewable energies" 
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le premier. Nommez le thème environnemental du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Énergies renouvelables" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Solar energy"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le premier. Nommez la catégorie du projet vert. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Énergie solaire"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Deployment of photovoltaic panels on the roofs of public buildings (Anjou and Buffon school groups, Gymnasium, Fontaine d'Ouche stadium, etc.)."
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le premier. Fournissez une description détaillée du projet vert incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Déploiement de panneaux photovoltaïques sur les toits des bâtiments publics (groupes scolaires Anjou et Buffon, gymnase, stade Fontaine d'Ouche, etc.)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the first one. Enter the investment amount for the green project.",
-                            "example": "50 million euros"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le premier. Entrez le montant d'investissement pour le projet vert.",
+                            "example": "50 millions d'euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Soft mobility and clean transport"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le second. Nommez le thème environnemental du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Mobilité douce et transport propre"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Individual transport"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le second. Nommez la catégorie du projet vert. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Transport individuel"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le second. Fournissez une description détaillée du projet vert incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "367km de pistes cyclables et remplacement des tracteurs et véhicules à moteur à combustion par des véhicules électriques dans le parc municipal avec des véhicules électriques"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the second one. Enter the investment amount for the green project",
-                            "example": "50 million euros"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le second. Entrez le montant d'investissement pour le projet vert",
+                            "example": "50 millions d'euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Soft mobility and clean transport"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le troisième. Nommez le thème environnemental du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Mobilité douce et transport propre"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Individual transport"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le troisième. Nommez la catégorie du projet vert. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Transport individuel"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "367km of cycle paths and replacement of tractors and combustion-powered vehicles in the municipal fleet with electric vehicles"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le troisième. Fournissez une description détaillée du projet vert incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "367km de pistes cyclables et remplacement des tracteurs et véhicules à moteur à combustion par des véhicules électriques dans le parc municipal avec des véhicules électriques"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the municipality. This is the third one. Enter the investment amount for the green project.",
-                            "example": "50 million euros"
+                            "instruction": "Trouvez 3 projets verts importants concernant la commune. C'est le troisième. Entrez le montant d'investissement pour le projet vert.",
+                            "example": "50 millions d'euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important green projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."            },
+                "instruction": "Trouvez 3 projets verts importants concernant la commune. Assurez-vous qu'ils sont 3 distincts, différents et représentatifs. Voici quelques sites Web qui pourraient vous aider à rechercher et fournir un certain contexte: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Voici quelques exemples et catégories à garder à l'esprit lors de la recherche de projets similaires actuels: Sous «Énergies renouvelables»: Installation d'unité de production d'énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); sous «Gestion durable de l'eau et de l'assainissement»: Service public de l'eau potable, Service public de l'assainissement, Gestion des Eaux Pluviales, et GEMAPI; sous «Gestion et valorisation des déchets»: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; sous «Mobilité douce et transports propres»: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d'échanges multimodaux…); et sous «Éfficacité énergétique de la construction & de l'aménagement urbain»: Aménagement Urbain (modernisation de l'éclairage urbain) et Construction ou rénovation de bâtiments. Vous devez spécifier la source lorsque vous fournissez la description détaillée du projet dans le format suivant, mais assurez-vous que cela s'insère dans la phrase avec la grammaire et la ponctuation appropriées: «Source: <lien vers la source>». Spécifiez le lien vers la source à la fin de la description détaillée et non avant."            },
             "social_projects": {
                 "type": "array",
                 "content": [
@@ -258,82 +258,82 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example":  "Vocational education and training" 
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le premier. Nommez le thème social du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example":  "Éducation et formation professionnelle" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Financing educational establishments (schools, colleges, lycées...)"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le premier. Nommez la catégorie du projet social. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Financement des établissements d'éducation (écoles, collèges, lycées...)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le premier. Fournissez une description détaillée du projet social incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Plan de rénovation multi-année pour les 76 écoles de Dijon: budget de 75M€ incluant: 30M€ sur 10 ans pour la rénovation et la modernisation, 36.7M€ pour supprimer le préalable et 4.3M€ pour rénover les lieux et les environs, par exemple l'école maternelle d'Anjou (beautificatio des interieurs de l'école; école élémentaire Beaumarchais: rénovation des installations sanitaires; école élémentaire Dampierre: remplacement du bois de plancher; gymnase et groupe ALSH Schoo de Flammarion: rénovation partielle des interieurs, installation de volets roulants et réparations de toit; groupes élémentaires Coteaux du Suzon, Plein Air et Ouest: rénovation des toits plats; groupe élémentaire Darcy: rénovation de préau...)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the first one. Enter the investment amount for the social project",
-                            "example": "75 million euros"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le premier. Entrez le montant d'investissement pour le projet social",
+                            "example": "75 millions d'euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example":  "Vocational education and training" 
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le second. Nommez le thème social du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example":  "Éducation et formation professionnelle" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Financing educational establishments (schools, colleges, lycées...)"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le second. Nommez la catégorie du projet social. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Financement des établissements d'éducation (écoles, collèges, lycées...)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le second. Fournissez une description détaillée du projet social incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Plan de rénovation multi-année pour les 76 écoles de Dijon: budget de 75M€ incluant: 30M€ sur 10 ans pour la rénovation et la modernisation, 36.7M€ pour supprimer le préalable et 4.3M€ pour rénover les lieux et les environs, par exemple l'école maternelle d'Anjou (beautificatio des interieurs de l'école; école élémentaire Beaumarchais: rénovation des installations sanitaires; école élémentaire Dampierre: remplacement du bois de plancher; gymnase et groupe ALSH Schoo de Flammarion: rénovation partielle des interieurs, installation de volets roulants et réparations de toit; groupes élémentaires Coteaux du Suzon, Plein Air et Ouest: rénovation des toits plats; groupe élémentaire Darcy: rénovation de préau...)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the second one. Enter the investment amount for the social project",
-                            "example": "75 million euros"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le second. Entrez le montant d'investissement pour le projet social",
+                            "example": "75 millions d'euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example":  "Vocational education and training" 
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le troisième. Nommez le thème social du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example":  "Éducation et formation professionnelle" 
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Financing educational establishments (schools, colleges, lycées...)"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le troisième. Nommez la catégorie du projet social. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Financement des établissements d'éducation (écoles, collèges, lycées...)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Major multiyear renovation plan for Dijon's 76 schools: budget of 75M€ including: 30M€ over 10 years for renovation and modernization, 36.7M€ to remove prefal and 4.3M€ to renovate school grounds and surroundings, e.g. Anjou nursery school (beautificatio of school interiors; Beaumarchais elementary school: renovation of sanitar facilities; Dampierre elementary school: replacement of ground-floor woodwork; Flammarion gymnasium and ALSH schoo groups: partial interior renovation, installation of roller shutters and roof repairs; Coteaux du Suzon, Plein Air and Ouest elementary school groups: renovation of flat roofs; Darcy school group: renovation of préau...)."
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le troisième. Fournissez une description détaillée du projet social incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Plan de rénovation multi-année pour les 76 écoles de Dijon: budget de 75M€ incluant: 30M€ sur 10 ans pour la rénovation et la modernisation, 36.7M€ pour supprimer le préalable et 4.3M€ pour rénover les lieux et les environs, par exemple l'école maternelle d'Anjou (beautificatio des interieurs de l'école; école élémentaire Beaumarchais: rénovation des installations sanitaires; école élémentaire Dampierre: remplacement du bois de plancher; gymnase et groupe ALSH Schoo de Flammarion: rénovation partielle des interieurs, installation de volets roulants et réparations de toit; groupes élémentaires Coteaux du Suzon, Plein Air et Ouest: rénovation des toits plats; groupe élémentaire Darcy: rénovation de préau...)."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the municipality. This is the third one. Enter the investment amount for the social project",
-                            "example": "75 million euros"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant la commune. C'est le troisième. Entrez le montant d'investissement pour le projet social",
+                            "example": "75 millions d'euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important social projects concerning the municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
+                "instruction": "Trouvez 3 projets sociaux importants concernant la commune. Assurez-vous qu'ils sont 3 distincts, différents et représentatifs. Voici quelques sites Web qui pourraient vous aider à rechercher et fournir un certain contexte: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Voici quelques exemples et catégories à garder à l'esprit lors de la recherche de projets similaires actuels: Sous «Service d'incendie et de secours»: Services Départementaux d'Incendie et de Secours (SDIS); sous «Action sanitaire, sociale et familiale»: Établissements sociaux et médico-sociaux (EHPAD, IME…), Établissements de la Petite Enfance (crèches…), Maisons de santé; sous «Enseignement et formation professionnelle»: Établissements d'enseignement (écoles, collèges, lycées), Établissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); sous «Sport, culture et vie associative»: Équipements sportifs (gymnases, piscines…), Équipements culturels (musées, patrimoine…), Équipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); et sous «Développement et cohésion territoriale»: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d'investissement au logement social, et Déploiement du Très Haut Débit. Vous devez spécifier la source lorsque vous fournissez la description détaillée du projet dans le format suivant, mais assurez-vous que cela s'insère dans la phrase avec la grammaire et la ponctuation appropriées: «Source: <lien vers la source>». Spécifiez le lien vers la source à la fin de la description détaillée et non avant."
             }
         },
         "inter_municipality": {
@@ -344,81 +344,81 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Waste management and recovery"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le premier. Nommez le thème environnemental du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Gestion et récupération des déchets"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le premier. Nommez la catégorie du projet vert. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Collecte et tri des déchets ménagers et assimilés (HHW) et traitement des déchets ménagers et assimilés (DMA)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le premier. Fournissez une description détaillée du projet vert incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Acquisition de poubelles à déchets domestiques, mise à niveau du centre de tri PPI de €21 M\nDéploiement de la station de production et de distribution d'hydrogène avec le premier véhicule de collecte à la station du Nord (Valmy)\nModernisation du centre de tri (€2 million en 2024 et un PPI total de €29 million).\nProjet de modernisation de la centrale à combustion de déchets à combustible."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the first one. Enter the investment amount for the green project",
-                            "example": "15 million euros"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le premier. Entrez le montant d'investissement pour le projet vert",
+                            "example": "15 millions d'euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Waste management and recovery"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le second. Nommez le thème environnemental du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Gestion et récupération des déchets"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le second. Nommez la catégorie du projet vert. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Collecte et tri des déchets ménagers et assimilés (HHW) et traitement des déchets ménagers et assimilés (DMA)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le second. Fournissez une description détaillée du projet vert incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Acquisition de poubelles à déchets domestiques, mise à niveau du centre de tri PPI de €21 M\nDéploiement de la station de production et de distribution d'hydrogène avec le premier véhicule de collecte à la station du Nord (Valmy)\nModernisation du centre de tri (€2 million en 2024 et un PPI total de €29 million).\nProjet de modernisation de la centrale à combustion de déchets à combustible."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the second one. Enter the investment amount for the green project.",
-                            "example": "15 million euros"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le second. Entrez le montant d'investissement pour le projet vert.",
+                            "example": "15 millions d'euros"
                         }
                     },{
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the environmental theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Waste management and recovery"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le troisième. Nommez le thème environnemental du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Gestion et récupération des déchets"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Name the category of the green project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Collection and sorting of household and similar waste (HHW) and treatment of household and similar waste (DMA)"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le troisième. Nommez la catégorie du projet vert. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Collecte et tri des déchets ménagers et assimilés (HHW) et traitement des déchets ménagers et assimilés (DMA)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Provide a detailed description of the green project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Acquisition of household waste skips, upgrading of sorting center PPI of €21 M\nDeployment of the hydrogen production and distribution station with the 1st refuse collection vehicle + start-up of operations at the North station (Valmy)\nModernization of the sorting center (€2 million in 2024 and a PPI total of €29 million).\nProject to modernize the waste-to-energy plant."
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le troisième. Fournissez une description détaillée du projet vert incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Acquisition de poubelles à déchets domestiques, mise à niveau du centre de tri PPI de €21 M\nDéploiement de la station de production et de distribution d'hydrogène avec le premier véhicule de collecte à la station du Nord (Valmy)\nModernisation du centre de tri (€2 million en 2024 et un PPI total de €29 million).\nProjet de modernisation de la centrale à combustion de déchets à combustible."
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important green projects concerning the inter-municipality. This is the third one. Enter the investment amount for the green project.",
-                            "example": "15 million euros"
+                            "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. C'est le troisième. Entrez le montant d'investissement pour le projet vert.",
+                            "example": "15 millions d'euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important green projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Énergies renouvelables »: Installation d’unité de production d’énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); under « Gestion durable de l’eau et de l’assainissement »: Service public de l’eau potable, Service public de l’assainissement, Gestion des Eaux Pluviales, et GEMAPI; under « Gestion et valorisation des déchets »: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; under « Mobilité douce et transports propres »: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d’échanges multimodaux…); and under « Efficacité énergétique de la construction & de l’aménagement urbain »: Aménagement Urbain (modernisation de l’éclairage urbain) et Construction ou rénovation de bâtiments. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."            },
+                "instruction": "Trouvez 3 projets verts importants concernant l'intercommunalité. Assurez-vous qu'ils sont 3 distincts, différents et représentatifs. Voici quelques sites Web qui pourraient vous aider à rechercher et fournir un certain contexte: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Voici quelques exemples et catégories à garder à l'esprit lors de la recherche de projets similaires actuels: Sous «Énergies renouvelables»: Installation d'unité de production d'énergie de sources renouvelables (Solaire, Eolien, Hydraulique, Géothermie, Biomasse); sous «Gestion durable de l'eau et de l'assainissement»: Service public de l'eau potable, Service public de l'assainissement, Gestion des Eaux Pluviales, et GEMAPI; sous «Gestion et valorisation des déchets»: Collecte et tri des Déchets Ménagers et Assimilés (DMA), puis Traitement des DMA par Réemploi, Recyclage ou compostage, et Valorisation énergétique; sous «Mobilité douce et transports propres»: Transport individuel (véhicules électriques, dispositifs de recharge, pistes cyclables) et Transport en commun (Tramways, bus électriques…, Infrastructures ferroviaires, Pôles d'échanges multimodaux…); et sous «Éfficacité énergétique de la construction & de l'aménagement urbain»: Aménagement Urbain (modernisation de l'éclairage urbain) et Construction ou rénovation de bâtiments. Vous devez spécifier la source lorsque vous fournissez la description détaillée du projet dans le format suivant, mais assurez-vous que cela s'insère dans la phrase avec la grammaire et la ponctuation appropriées: «Source: <lien vers la source>». Spécifiez le lien vers la source à la fin de la description détaillée et non avant."            },
             "social_projects": {
                 "type": "array",
                 "content": [
@@ -426,82 +426,82 @@
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Sport, culture and associations"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le premier. Nommez le thème social du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Sport, culture et associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le premier. Nommez la catégorie du projet social. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Financement des installations sportives (gymnases, piscines, terrains de sport, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Renovation of the Carrousel swimming pool"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le premier. Fournissez une description détaillée du projet social incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Rénovation de la piscine Carrousel"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the first one. Enter the investment amount for the social project.",
-                            "example": "21.9 million euros"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le premier. Entrez le montant d'investissement pour le projet social.",
+                            "example": "21.9 millions d'euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Sport, culture and associations"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le second. Nommez le thème social du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Sport, culture et associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le second. Nommez la catégorie du projet social. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Financement des installations sportives (gymnases, piscines, terrains de sport, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Renovation of the Carrousel swimming pool"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le second. Fournissez une description détaillée du projet social incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Rénovation de la piscine Carrousel"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the second one. Enter the investment amount for the social project",
-                            "example": "21.9 million euros"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le second. Entrez le montant d'investissement pour le projet social",
+                            "example": "21.9 millions d'euros"
                         }
                     },
                     {
                         "theme": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the social theme of the project. Make sure to only state the theme and not include anything else. Don't ever explain yourself. It's very important that you just name the theme and don't return anything else.",
-                            "example": "Sport, culture and associations"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le troisième. Nommez le thème social du projet. Assurez-vous de ne mentionner que le thème et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que le thème et ne retourniez rien d'autre.",
+                            "example": "Sport, culture et associations"
                         },
                         "category": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Name the category of the social project. Make sure to only state the category and not include anything else. Don't ever explain yourself. It's very important that you just name the category and don't return anything else.",
-                            "example": "Financing sports facilities (gymnasiums, swimming pools, sports fields, etc.)"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le troisième. Nommez la catégorie du projet social. Assurez-vous de ne mentionner que la catégorie et ne rien inclure d'autre. Ne vous expliquez jamais. C'est très important que vous ne nommiez que la catégorie et ne retourniez rien d'autre.",
+                            "example": "Financement des installations sportives (gymnases, piscines, terrains de sport, etc.)"
                         },
                         "description": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Provide a detailed description of the social project including any statistics that you find. Preferably this would include the date of the project and perhaps some other facts on how this project will help the community.",
-                            "example": "Renovation of the Carrousel swimming pool"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le troisième. Fournissez une description détaillée du projet social incluant toute statistique que vous trouvez. Idéalement, cela inclurait la date du projet et peut-être quelques autres faits sur la manière dont ce projet aidera la communauté.",
+                            "example": "Rénovation de la piscine Carrousel"
                         },
                         "investment": {
                             "type": "string",
                             "content": null,
-                            "instruction": "Find 3 important social projects concerning the inter-municipality. This is the third. Enter the investment amount for the social project.",
-                            "example": "21.9 million euros"
+                            "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. C'est le troisième. Entrez le montant d'investissement pour le projet social.",
+                            "example": "21.9 millions d'euros"
                         }
                     }
                 ],
-                "instruction": "Find 3 important social projects concerning the inter-municipality. Make sure they are 3 distinct, different and representative projects. Here are some websites that might help your search and provide some context: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Here are some examples and categories to keep in mind when you search for similar current projects: Under « Service d’incendie et de secours »: Services Départementaux d’Incendie et de Secours (SDIS); under « Action sanitaire, sociale et familiale »: Etablissements sociaux et médico-sociaux (EHPAD, IME…), Etablissements de la Petite Enfance (crèches…), Maisons de santé; under « Enseignement et formation professionnelle »: Etablissements d’enseignement (écoles, collèges, lycées), Etablissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); under « Sport, culture et vie associative »: Equipements sportifs (gymnases, piscines…), Equipements culturels (musées, patrimoine…), Equipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); and under « Développement et cohésion territoriale »: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d’investissement au logement social, et Déploiement du Très Haut Débit. You must specify the source when you provide the detailed description for the project in the following format, but make sure that it fits into the sentence with proper grammar and punctuation: \"Source: <link to source>\". Specify the link to the source at the very end of the detailed description and not before."
+                "instruction": "Trouvez 3 projets sociaux importants concernant l'intercommunalité. Assurez-vous qu'ils sont 3 distincts, différents et représentatifs. Voici quelques sites Web qui pourraient vous aider à rechercher et fournir un certain contexte: https://francevilledurable.fr/les-realisations/carte-des-realisations/, https://plainecommune.fr/projets/grands-projets-urbains/lecoquartier-fluvial/, https://www.ecologie.gouv.fr/, https://www.iledefrance-mobilites.fr/le-reseau/projets, https://www.ademe.fr/, https://www.banquedesterritoires.fr/notre-identite, https://www.onpv.fr/, https://francevilledurable.fr/, https://www.ademe.fr/en/futures-in-transition/, https://www.caissedesdepots.fr/blog/tag/PROJET%20URBAIN. Voici quelques exemples et catégories à garder à l'esprit lors de la recherche de projets similaires actuels: Sous «Service d'incendie et de secours»: Services Départementaux d'Incendie et de Secours (SDIS); sous «Action sanitaire, sociale et familiale»: Établissements sociaux et médico-sociaux (EHPAD, IME…), Établissements de la Petite Enfance (crèches…), Maisons de santé; sous «Enseignement et formation professionnelle»: Établissements d'enseignement (écoles, collèges, lycées), Établissements de formation professionnelle (CFA, IFSI…), Services annexes (restauration et ramassage scolaire…); sous «Sport, culture et vie associative»: Équipements sportifs (gymnases, piscines…), Équipements culturels (musées, patrimoine…), Équipements de la vie associative locale (maisons des associations…), Espaces verts (parcs et jardins); et sous «Développement et cohésion territoriale»: Renouvellement urbain des Quartiers Prioritaires de la Ville (QPV), Opération de Revitalisation de Territoire (ORT), Subvention d'investissement au logement social, et Déploiement du Très Haut Débit. Vous devez spécifier la source lorsque vous fournissez la description détaillée du projet dans le format suivant, mais assurez-vous que cela s'insère dans la phrase avec la grammaire et la ponctuation appropriées: «Source: <lien vers la source>». Spécifiez le lien vers la source à la fin de la description détaillée et non avant."
             }
         }
     },
@@ -512,49 +512,49 @@
                 "name": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the full name of the first contact person. Answer with just the name, without any explanation or excuse.",
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez le nom complet du premier contact. Répondez avec juste le nom, sans aucune explication ou excuse.",
                     "example": "Nathalie KOENDERS"
                 },
                 "title": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the professional title of the first contact person. Answer with max 5 words, without any explanation or excuse.",
-                    "example": "Mayor of Dijon"
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez le titre professionnel du premier contact. Répondez avec max 5 mots, sans aucune explication ou excuse.",
+                    "example": "Maire de Dijon"
                 },
                 "title_since": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the date when the first person started in this title. Answer with just the date, without any explanation or excuse.",
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez la date à laquelle le premier personne a commencé dans ce titre. Répondez avec juste la date, sans aucune explication ou excuse.",
                     "example": "November 25, 2024"
                 },
                 "birth_date": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the birth date of the first contact person. Answer with just the date, without any explanation or excuse.",
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez la date de naissance du premier contact. Répondez avec juste la date, sans aucune explication ou excuse.",
                     "example": "March 1, 1977" 
                 },
                 "birth_place": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. Enter the birth place of the first contact person. Answer with just the place, without any explanation or excuse.",
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez le lieu de naissance du premier contact. Répondez avec juste le lieu, sans aucune explication ou excuse.",
                     "example": "Rennes, France"
                 },
                 "education": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the educational background of the first contact person. Be as brief, conscise and specific as possible.",
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez le parcours éducatif du premier contact. Soyez aussi bref, conscis et spécifique possible.",
                     "example": "Master's degree in public law and sports management from the University of Burgundy (1999), Bachelor's degree in public administration, Université Paris I Panthéon-Assas (2005), Institute for Public Management and Economic Development (IGPDE) (2006)"
                 },
                 "activities": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the professional activities of the first contact person. Be as brief, conscise and specific as possible.",
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez les activités professionnelles du premier contact. Soyez aussi bref, conscis et spécifique possible.",
                     "example": "1st Vice-President of Dijon Métropole in charge of soft mobility, the bicycle plan, the European Green Capital, relations with the Département (since September 2024)"
                 },
                 "career": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the first contact ONLY, enter only information concerning this contact. List the career history of the first contact person. Be as brief, conscise and specific as possible.",
+                    "instruction": "C'est pour le premier contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez l'histoire de carrière du premier contact. Soyez aussi bref, conscis et spécifique possible.",
                     "example": "Former French champion in 5,000 m canoe-kayak (1998), Deputy mayor of Dijon, responsible for trade, crafts and the Cour de ville project, then local democracy (2008-2014), Lecturer in Master 2 at the Faculty of Sports, University of Burgundy (2010-2014), 1st Deputy Mayor of Dijon, responsible for ecological transition, climate and the environment (2014-2024), Acting Mayor of Dijon (July 27-August 10, 2015)"
                 }
             },
@@ -562,94 +562,94 @@
                 "name": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the full name of the second contact person. Answer with just the name, without any explanation or excuse.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez le nom complet du second contact. Répondez avec juste le nom, sans aucune explication ou excuse.",
                     "example": "Francois REBSAMEN"
                 },
                 "title": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the professional title of the second contact person. Answer with max 5 words, without any explanation or excuse.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez le titre professionnel du second contact. Répondez avec max 5 mots, sans aucune explication ou excuse.",
                     "example": "Chairman of the Dijon Metropolitan Council"
                 },
                 "title_since": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the date when the second person started in this title. Answer with just the date, without any explanation or excuse.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez la date à laquelle le second personne a commencé dans ce titre. Répondez avec juste la date, sans aucune explication ou excuse.",
                     "example": "2017"
                 },
                 "birth_date": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth date of the second contact person. Answer with just the date, without any explanation or excuse.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez la date de naissance du second contact. Répondez avec juste la date, sans aucune explication ou excuse.",
                     "example": "June 25, 1951"
                 },
                 "birth_place": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. Enter the birth place of the second contact person. Answer with just the Place, without any explanation or excuse.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Entrez le lieu de naissance du second contact. Répondez avec juste le lieu, sans aucune explication ou excuse.",
                     "example": "Dijon, France"
                 },
                 "education": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the educational background of the second contact person. Be as brief, conscise and specific as possible.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez le parcours éducatif du second contact. Soyez aussi bref, conscis et spécifique possible.",
                     "example": "Master's degree in public law, DESS in Economics, DEA in Political Science"
                 },
                 "activities": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the professional activities of the second contact person. Be as brief, conscise and specific as possible.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez les activités professionnelles du second contact. Soyez aussi bref, conscis et spécifique possible.",
                     "example": "Chairman, CNER (Fédération des agences d'attractivité, de développement et d'innovation) (since May 2023)"
                 },
                 "career": {
                     "type": "string",
                     "content": null,
-                    "instruction": "This is for the second contact ONLY, enter only information concerning this contact. List the career history of the second contact person. Be as brief, conscise and specific as possible.",
+                    "instruction": "C'est pour le second contact SEULEMENT, entrez uniquement les informations concernant ce contact. Listez l'histoire de carrière du second contact. Soyez aussi bref, conscis et spécifique possible.",
                     "example": "Burgundy regional councillor (1994-2001), PS National Secretary, in charge of organization and coordination (1997-2005), General Councillor for Côte-d'Or, Dijon 5 canton (1998-2008), Mayor of Dijon (2001-2024)"
                 }
             }
         ], 
-        "instruction": "Find two contacts (e.g. the mayor of the municipality and the chairman of the inter-municipality) for the municipalities and their details. Give the answer as short as possible, idealy only a few words. Try to search for the individual contact persons after identifying them and then parse the specific informations from the search result."
+        "instruction": "Trouvez deux contacts (par exemple le maire de la commune et le président du conseil intercommunal) pour les communes et leurs détails. Donnez la réponse aussi courte que possible, idéalement uniquement quelques mots. Essayez de rechercher les personnes de contact individuelles après les avoir identifiées et puis analysez les informations spécifiques à partir du résultat de la recherche."
     },
     "budget": {
         "municipality": {
             "date": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the date of the budget data for the current year for this municipality",
+                "instruction": "Entrez la date des données de budget pour l'année en cours pour cette commune",
                 "example": "December 18"
             },
             "year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the fiscal year of the budget data for the current year for this municipality",
+                "instruction": "Entrez l'année fiscale des données de budget pour l'année en cours pour cette commune",
                 "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget amount in euros for the current year for this municipality",
-                "example": "271.2 million euros"
+                "instruction": "Entrez le montant total du budget en euros pour l'année en cours pour cette commune",
+                "example": "271.2 millions d'euros"
             }
         },
         "inter_municipality": {
             "date": {
                 "type": "string",
                 "content": null,
-                "instruction": "Enter the date of the budget data for the current year for this inter-municipality",
+                "instruction": "Entrez la date des données de budget pour l'année en cours pour cette intercommunalité",
                 "example": "December 21"
             },
             "year": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the fiscal year of the budget data for the current year for this inter-municipality",
+                "instruction": "Entrez l'année fiscale des données de budget pour l'année en cours pour cette intercommunalité",
                 "example": 2023
             },
             "total_budget": {
                 "type": "number",
                 "content": null,
-                "instruction": "Enter the total budget amount in euros for the current year for this inter-municipality",
-                "example": "418 million euros"
+                "instruction": "Entrez le montant total du budget en euros pour l'année en cours pour cette intercommunalité",
+                "example": "418 millions d'euros"
             }
         }
     },
@@ -722,124 +722,124 @@
                 "municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the municipality being compared",
+                    "instruction": "Entrez le nom de la commune comparée",
                     "example": "Clermont-Ferrand"
                 },
                 "inter_municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the inter-municipality being compared",
+                    "instruction": "Entrez le nom de l'intercommunalité comparée",
                     "example": "Clermont Auvergne Metropole"
                 },
                 "population": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the population of the compared municipality",
-                    "example": "180975 residents"
+                    "instruction": "Entrez la population de la commune comparée",
+                    "example": "180975 habitants"
                 },
                 "area": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the area of the compared municipality in square kilometers",
+                    "instruction": "Entrez la superficie de la commune comparée en kilomètres carrés",
                     "example": "43.65 km2"
                 },
                 "data_from_year": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the year of the comparative data",
+                    "instruction": "Entrez l'année des données comparatives",
                     "example": "2023"
                 },
                 "total_budget": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget of the compared municipality",
-                    "example": "120 million euros"
+                    "instruction": "Entrez le budget total de la commune comparée",
+                    "example": "120 millions d'euros"
                 },
                 "total_budget_per_person": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget per person of the compared municipality",
-                    "example": "710 €/person"
+                    "instruction": "Entrez le budget total par personne de la commune comparée",
+                    "example": "710 €/personne"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt repayment capacity of the compared municipality",
-                    "example": "4.2 years"
+                    "instruction": "Entrez la capacité de remboursement de la commune comparée",
+                    "example": "4.2 ans"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt ratio of the compared municipality as a percentage",
+                    "instruction": "Entrez le ratio d'endettement de la commune comparée en pourcentage",
                     "example": "53%"
                 },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt duration of the compared municipality in years",
-                    "example": "11.7 years"
+                    "instruction": "Entrez la durée de la dette de la commune comparée en années",
+                    "example": "11.7 ans"
                 }
             },
             {
                 "municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the municipality being compared",
+                    "instruction": "Entrez le nom de la commune comparée",
                     "example": "Saint-Denis"
                 },
                 "inter_municipality": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the name of the inter-municipality being compared",
+                    "instruction": "Entrez le nom de l'intercommunalité comparée",
                     "example": "CA Intercommunale du Nord de la Reunion (CINNOR)"
                 },
                 "population": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the population of the compared municipality",
-                    "example": "210167 residents"
+                    "instruction": "Entrez la population de la commune comparée",
+                    "example": "210167 habitants"
                 },
                 "area": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the area of the compared municipality in square kilometers",
+                    "instruction": "Entrez la superficie de la commune comparée en kilomètres carrés",
                     "example": "46.3 km2" 
                 },
                 "data_from_year": {
                     "type": "string",
                     "content": null,
-                    "instruction": "Enter the year of the comparative data",
+                    "instruction": "Entrez l'année des données comparatives",
                     "example": "2023"
                 },
                 "total_budget": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget of the compared municipality",
-                    "example": "130 million euros"
+                    "instruction": "Entrez le budget total de la commune comparée",
+                    "example": "130 millions d'euros"
                 },
                 "total_budget_per_person": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the total budget per person of the compared municipality",
-                    "example": "728 €/person"
+                    "instruction": "Entrez le budget total par personne de la commune comparée",
+                    "example": "728 €/personne"
                 },
                 "debt_repayment_capacity": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt repayment capacity of the compared municipality",
-                    "example": "2.9 years"
+                    "instruction": "Entrez la capacité de remboursement de la commune comparée",
+                    "example": "2.9 ans"
                 },
                 "debt_ratio": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt ratio of the compared municipality as a percentage",
+                    "instruction": "Entrez le ratio d'endettement de la commune comparée en pourcentage",
                     "example": "48%"
                 },
                 "debt_duration": {
                     "type": "number",
                     "content": null,
-                    "instruction": "Enter the debt duration of the compared municipality in years",
-                    "example": "10.5 years"
+                    "instruction": "Entrez la durée de la dette de la commune comparée en années",
+                    "example": "10.5 ans"
                 }
             }
         ]
