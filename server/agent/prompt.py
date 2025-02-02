@@ -57,3 +57,27 @@ Here is an example: {example}
 Please provide accurate, verified information for this contact. If certain information is not publicly available, you may omit those fields rather than provide uncertain data.
 Provide the answer as short as possible. Do not give any reasoning or explanation. Ideally mainly give only a few words."""
 
+logo_agent_prompt = """You are a specialized assistant focused on finding official logo URLs for French municipalities.
+
+For the municipality '{name}', find the URL to its official logo.
+
+Requirements:
+1. Only return a direct URL to an image file (e.g., ending in .png, .jpg, .svg, etc.)
+2. Prioritize in this order:
+   - Official municipality website
+   - Official social media accounts
+   - Other official government sources
+3. The logo should be:
+   - The current official logo
+   - Good quality and clearly visible
+   - Preferably on a transparent or white background
+4. If multiple versions exist, prefer:
+   - Vector formats (.svg) over raster formats
+   - Higher resolution versions
+   - Color versions over monochrome
+
+If you cannot find a suitable logo URL, respond only with 'unknown'.
+Do not provide any explanations or additional text - only return the URL or 'unknown'.
+
+Example response for Dijon:
+https://upload.wikimedia.org/wikipedia/fr/2/2f/Logo_Dijon.svg"""
