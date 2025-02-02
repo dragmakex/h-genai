@@ -7,7 +7,8 @@ from tools import *
 from concurrent.futures import ThreadPoolExecutor
 from prompt import tool_agent_instructions, tool_agent_prompt, contact_agent_prompt, logo_agent_prompt
 from util import get_commune_finances_by_siren, get_epci_finances_by_code
-api_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
+summary_fields = ['population', 'data_from_year', 'total_budget', 'total_budget_per_person', 'debt_repayment_capacity', 'debt_ratio', 'debt_duration']
+financial_data_fields = ['management_savings_per_capita', 'gross_savings_per_capita', 'net_savings_per_capita', 'management_savings_ratio', 'gross_savings_ratio', 'net_savings_ratio', 'debt_service_to_operating_revenue_ratio']
 
 def get_all_tools():
     """Get all functions marked as tools from tools module"""
@@ -33,8 +34,9 @@ class Orchestrator:
         self.inter_municipality_name = city_info.inter_municipality_name
         self.municipality_siren = city_info.siren
         self.inter_municipality_epci = city_info.inter_municipality_code
+        self.reference_sirens = city_info.reference_sirens
 
-        self.numeric_api_data = self._get_numeric_api_data(self.municipality_name, self.municipality_siren, self.inter_municipality_name, self.inter_municipality_epci)
+        self.financial_api_data = self._get_numeric_api_data()
      
     def _load_data_fields(self) -> Dict[str, Any]:
         """Load data from data_template.json file"""
@@ -65,18 +67,24 @@ class Orchestrator:
         """Get the input from the user"""
         return 242100410
     
-    def _get_numeric_api_data(self, municipality_name: str, municipality_siren: str, inter_municipality_name: str, inter_municipality_epci_code: str):
+    def _get_numeric_api_data(self, city_info):
         """Get the data from the API
         Return a dictionary with the data:
         Example:
         {"Dijon": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10},
         "Dijon Métropole": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10}}"""
         
-        _, _, municipality_finances = get_commune_finances_by_siren(municipality_siren)
-        _, _, epci_finances = get_epci_finances_by_code(inter_municipality_epci_code)
-        
-        return {f"{municipality_name}": municipality_finances,
-                f"{inter_municipality_name}": epci_finances}
+        _, _, municipality_finances = get_commune_finances_by_siren(self.municipality_siren)
+        _, _, epci_finances = get_epci_finances_by_code(self.inter_municipality_epci)
+
+        reference_finances = []
+        for siren in self.reference_sirens:
+            _, _, reference_finances = get_commune_finances_by_siren(siren)
+            reference_finances.append(reference_finances)
+
+        return {f"{self.municipality_name}": municipality_finances,
+                f"{self.inter_municipality_name}": epci_finances,
+                f"{self.reference_sirens}": reference_finances}
 
 
     def get_conversation_history(self, conversation_id: str) -> List[Dict[str, Any]]:
@@ -145,7 +153,7 @@ class Orchestrator:
             type = value['type']
             instruction = value['instruction']
 
-            if field in api_fields:
+            if field in summary_fields:
                 self.data['summary'][identifier][field]['content'] = self.numeric_api_data[name][field]
                 print("Populated from API")
             else:
@@ -328,6 +336,26 @@ class Orchestrator:
         print(self.conversation_history[conversation_id])
         print("--------------------------------")
         
+    def process_financial_data(self) -> None:
+        """Process fields from the financial data section"""
+        municipality = self.data['financial_data']['municipality']
+        inter_municipality = self.data['financial_data']['inter_municipality']
+
+        for field, value in municipality.items():
+            if field in financial_data_fields:
+                municipality[field]['content'] = self.financial_api_data[self.municipality_name][field]
+
+        for field, value in inter_municipality.items():
+            if field in financial_data_fields:
+                inter_municipality[field]['content'] = self.financial_api_data[self.inter_municipality_name][field]
+
+    def process_comparative_data(self) -> None:
+        """Process fields from the comparative data section"""
+        for i, ref_municipality in enumerate(self.data['comparative_data']):
+            for field, value in ref_municipality.items():
+                if field in financial_data_fields:
+                    ref_municipality[field]['content'] = self.financial_api_data[self.reference_sirens[i]][field]
+
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
@@ -337,6 +365,8 @@ class Orchestrator:
         self.process_projects_fields(inter=False)
         self.process_projects_fields(inter=True)
         self.process_contact_fields()
+        self.process_financial_data()
+        self.process_comparative_data()
 
         # Save to answer.json
         try:
