@@ -124,6 +124,64 @@ jobs:
         run: |
           aws lambda wait function-updated --function-name h-genai-server
 
+      - name: Create or Update PDF Generator Lambda
+        env:
+          AWS_ACCOUNT_ID: "140023381458"
+        run: |
+          # Try to get the function configuration
+          if ! aws lambda get-function --function-name h-genai-pdf-generator &> /dev/null; then
+            # Create the function if it doesn't exist
+            aws lambda create-function \
+              --function-name h-genai-pdf-generator \
+              --package-type Image \
+              --code ImageUri=${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:latest \
+              --role arn:aws:iam::${AWS_ACCOUNT_ID}:role/h-genai-lambda-role \
+              --timeout 900 \
+              --memory-size 2048
+          else
+            # Update existing function
+            aws lambda update-function-code \
+              --function-name h-genai-pdf-generator \
+              --image-uri ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/h-genai-server:latest
+          fi
+
+      - name: Wait for PDF Generator Update
+        run: |
+          aws lambda wait function-updated --function-name h-genai-pdf-generator
+
+      - name: Update PDF Generator Configuration
+        run: |
+          aws lambda update-function-configuration \
+            --function-name h-genai-pdf-generator \
+            --handler api.pdf_generator_lambda.process_pdf_generation \
+            --timeout 900 \
+            --memory-size 2048 \
+            --environment "Variables={
+              BR_AWS_ACCESS_KEY_ID=${{ secrets.BR_AWS_ACCESS_KEY_ID }},
+              BR_AWS_SECRET_ACCESS_KEY=${{ secrets.BR_AWS_SECRET_ACCESS_KEY }},
+              BR_AWS_DEFAULT_REGION=${{ env.AWS_REGION }},
+              SERPERDEV_API_KEY=${{ secrets.SERPERDEV_API_KEY }},
+              PERPLEXITY_API_KEY=${{ secrets.PERPLEXITY_API_KEY }}
+            }"
+
+      - name: Create SQS Queue if not exists
+        run: |
+          aws sqs create-queue --queue-name h-genai-pdf-generation || true
+
+      - name: Configure SQS trigger for PDF Generator
+        env:
+          AWS_ACCOUNT_ID: "140023381458"
+        run: |
+          # Get Queue ARN
+          QUEUE_URL=$(aws sqs get-queue-url --queue-name h-genai-pdf-generation --query 'QueueUrl' --output text)
+          QUEUE_ARN=$(aws sqs get-queue-attributes --queue-url $QUEUE_URL --attribute-names QueueArn --query 'Attributes.QueueArn' --output text)
+          
+          # Create or update event source mapping
+          aws lambda create-event-source-mapping \
+            --function-name h-genai-pdf-generator \
+            --event-source-arn $QUEUE_ARN \
+            --batch-size 1 || true
+
       - name: Publish New Version
         id: publish
         run: |

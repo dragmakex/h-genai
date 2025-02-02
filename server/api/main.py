@@ -27,6 +27,10 @@ jobs_table = dynamodb.Table('h-genai-jobs')
 s3 = boto3.client('s3')
 S3_BUCKET = 'h-genai-pdfs'  # Make sure to create this bucket
 
+# Configure SQS
+sqs = boto3.client('sqs')
+PDF_GENERATION_QUEUE_URL = 'https://sqs.us-west-2.amazonaws.com/140023381458/h-genai-pdf-generation'
+
 class JobStatus(str, Enum):
     PENDING = "pending"
     PROCESSING = "processing"
@@ -113,79 +117,42 @@ async def generate_pdf_from_data(request: Request, city_info: CityModel):
     # Generate a unique job ID
     job_id = str(uuid.uuid4())
     
-    # Create a job record in DynamoDB
-    jobs_table.put_item(
-        Item={
+    try:
+        # Create a job record in DynamoDB
+        jobs_table.put_item(
+            Item={
+                'job_id': job_id,
+                'status': JobStatus.PENDING.value,
+                'created_at': datetime.utcnow().isoformat(),
+                'city_info': city_info.dict()
+            }
+        )
+        
+        # Send message to SQS
+        message_body = {
             'job_id': job_id,
-            'status': JobStatus.PENDING.value,
-            'created_at': datetime.utcnow().isoformat(),
             'city_info': city_info.dict()
         }
-    )
-    
-    # Start the PDF generation process in a background task
-    async def process_pdf():
+        
+        sqs.send_message(
+            QueueUrl=PDF_GENERATION_QUEUE_URL,
+            MessageBody=json.dumps(message_body)
+        )
+        
+        logger.info(f"Job {job_id} created and queued for processing")
+        
+        # Return the job ID immediately
+        return JobResponse(
+            job_id=job_id,
+            status=JobStatus.PENDING
+        )
+        
+    except Exception as e:
+        logger.error(f"Failed to create job: {str(e)}")
+        logger.error(f"Traceback: {''.join(traceback.format_tb(sys.exc_info()[2]))}")
+        
+        # Update job status to failed if we managed to create it
         try:
-            # Update status to processing
-            jobs_table.update_item(
-                Key={'job_id': job_id},
-                UpdateExpression='SET #status = :status',
-                ExpressionAttributeNames={'#status': 'status'},
-                ExpressionAttributeValues={':status': JobStatus.PROCESSING.value}
-            )
-            
-            # Generate the PDF
-            orchestrator_instance = Orchestrator(city_info)
-            data = orchestrator_instance.parallel_process_all_sections()
-            
-            html_content = templates.TemplateResponse(
-                "index.html", 
-                {
-                    "request": request,
-                    "data": data
-                }
-            ).body.decode('utf-8')
-
-            with open("template/styles.css", "r") as css_file:
-                css_content = css_file.read()
-
-            css = CSS(string=css_content)
-            pdf = HTML(string=html_content, base_url="./template").write_pdf(stylesheets=[css])
-            
-            # Upload PDF to S3
-            pdf_key = f'pdfs/{job_id}.pdf'
-            s3.put_object(
-                Bucket=S3_BUCKET,
-                Key=pdf_key,
-                Body=pdf,
-                ContentType='application/pdf'
-            )
-            
-            # Generate a pre-signed URL that's valid for 1 hour
-            pdf_url = s3.generate_presigned_url(
-                'get_object',
-                Params={'Bucket': S3_BUCKET, 'Key': pdf_key},
-                ExpiresIn=3600
-            )
-            
-            # Update job status to completed
-            jobs_table.update_item(
-                Key={'job_id': job_id},
-                UpdateExpression='SET #status = :status, pdf_url = :pdf_url',
-                ExpressionAttributeNames={'#status': 'status'},
-                ExpressionAttributeValues={
-                    ':status': JobStatus.COMPLETED.value,
-                    ':pdf_url': pdf_url
-                }
-            )
-            
-            logger.info(f"PDF generation completed for job {job_id}")
-            
-        except Exception as e:
-            logger.error(f"PDF generation failed for job {job_id}: {str(e)}")
-            logger.error(f"Traceback: {''.join(traceback.format_tb(sys.exc_info()[2]))}")
-            
-            # Update job status to failed
             jobs_table.update_item(
                 Key={'job_id': job_id},
                 UpdateExpression='SET #status = :status, error = :error',
@@ -195,16 +162,10 @@ async def generate_pdf_from_data(request: Request, city_info: CityModel):
                     ':error': str(e)
                 }
             )
-    
-    # Start the background task
-    import asyncio
-    asyncio.create_task(process_pdf())
-    
-    # Return the job ID immediately
-    return JobResponse(
-        job_id=job_id,
-        status=JobStatus.PENDING
-    )
+        except:
+            pass
+            
+        raise HTTPException(status_code=500, detail="Failed to create PDF generation job")
 
 @app.get("/pdf-status/{job_id}", response_model=JobResponse)
 async def get_pdf_status(job_id: str):
