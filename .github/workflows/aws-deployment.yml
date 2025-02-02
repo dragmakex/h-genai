@@ -124,11 +124,32 @@ jobs:
         run: |
           aws lambda wait function-updated --function-name h-genai-server
 
+      - name: Publish New Version
+        id: publish
+        run: |
+          VERSION=$(aws lambda publish-version \
+            --function-name h-genai-server \
+            --description "Automated publish from GitHub Actions" \
+            --query 'Version' \
+            --output text)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create or Update Alias
+        run: |
+          aws lambda create-alias \
+            --function-name h-genai-server \
+            --name production \
+            --function-version ${{ steps.publish.outputs.version }} \
+            || aws lambda update-alias \
+               --function-name h-genai-server \
+               --name production \
+               --function-version ${{ steps.publish.outputs.version }}
+
       - name: Configure Provisioned Concurrency
         run: |
           aws lambda put-provisioned-concurrency-config \
             --function-name h-genai-server \
-            --qualifier \$LATEST \
+            --qualifier production \
             --provisioned-concurrent-executions 1
 
       - name: Wait for Provisioned Concurrency Update
