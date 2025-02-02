@@ -2,10 +2,10 @@ import json
 import inspect
 from typing import List, Dict, Any
 from haystack.dataclasses import ChatMessage, ChatRole
-from agents import Agent, ToolCallingAgent
-from tools import *
+from .agents import Agent, ToolCallingAgent
+from .tools import get_sonar_pro_response
 from concurrent.futures import ThreadPoolExecutor
-from prompt import (
+from .prompt import (
     tool_agent_instructions,
     tool_agent_prompt,
     contact_agent_prompt,
@@ -13,7 +13,7 @@ from prompt import (
     budget_agent_prompt,
     project_agent_prompt
 )
-from util import get_commune_finances_by_siren, get_epci_finances_by_code
+from .util import get_commune_finances_by_siren, get_epci_finances_by_code
 
 summary_fields = [
     "population",
