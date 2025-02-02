@@ -6,6 +6,8 @@ This project provides a comprehensive data collection and analysis system for Fr
   <img src="web-app/src/assets/images/screenshot.png" alt="H-GenAI Application Preview" width="800px">
 </div>
 
+Click for a [VIDEO DEMO](https://youtu.be/6UeDz4PCt1w) on YouTube.
+
 ## Table of Contents
 - [Key Features](#key-features)
   - [Financial Analysis](#financial-analysis)
