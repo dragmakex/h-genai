@@ -52,7 +52,7 @@ def get_all_tools():
         obj
         for name, obj in inspect.getmembers(tools)
         if inspect.isfunction(obj) and hasattr(obj, "_is_tool")
-]
+    ]
 
 
 class Orchestrator:
@@ -115,8 +115,10 @@ class Orchestrator:
         {"Dijon": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10},
         "Dijon Métropole": {"population": 159346, "data_from_year": 2023, "total_budget": 110000000, "total_budget_per_person": 679, "debt_repayment_capacity": 3.4, "debt_ratio": 0.5, "debt_duration": 10}}
         """
-        _, _, municipality_finances = get_commune_finances_by_siren(self.municipality_siren)
-        _, _, epci_finances = get_epci_finances_by_code(self.inter_municipality_epci)
+        _, _, municipality_finances = get_commune_finances_by_siren(
+            self.municipality_siren)
+        _, _, epci_finances = get_epci_finances_by_code(
+            self.inter_municipality_epci)
 
         reference_finances = []
         for element in self.reference_sirens:
@@ -150,16 +152,19 @@ class Orchestrator:
             self.conversation_history[conversation_id] = []
         # Create a prompt based on the field and append it to the messages
         prompt = logo_agent_prompt.format(name=self.municipality_name)
-        self.conversation_history[conversation_id].append(ChatMessage.from_user(prompt))
+        self.conversation_history[conversation_id].append(
+            ChatMessage.from_user(prompt))
         # print(self.conversation_history[conversation_id][-1])
 
         # Get response from agent and extend the conversation history with the response
-        response = self.tool_agent.run(self.conversation_history[conversation_id])
+        response = self.tool_agent.run(
+            self.conversation_history[conversation_id])
         self.conversation_history[conversation_id].extend(response)
         # print(self.conversation_history[conversation_id][-1])
 
         # We call the agent again to get the final reply after the tool executions
-        final_reply = self.tool_agent.run(self.conversation_history[conversation_id])
+        final_reply = self.tool_agent.run(
+            self.conversation_history[conversation_id])
         self.conversation_history[conversation_id].extend(final_reply)
         # print(self.conversation_history[conversation_id][-1])
 
@@ -244,7 +249,8 @@ class Orchestrator:
                             response = self.tool_agent.run(
                                 self.conversation_history[conversation_id]
                             )
-                            self.conversation_history[conversation_id].extend(response)
+                            self.conversation_history[conversation_id].extend(
+                                response)
 
                             # We call the agent again to get the final reply after the tool execution
                             if (
@@ -290,7 +296,8 @@ class Orchestrator:
                     final_reply = self.tool_agent.run(
                         self.conversation_history[conversation_id]
                     )
-                    self.conversation_history[conversation_id].extend(final_reply)
+                    self.conversation_history[conversation_id].extend(
+                        final_reply)
                     # print(self.conversation_history[conversation_id][-1])
 
                     # Store the response
@@ -359,7 +366,8 @@ class Orchestrator:
                         response = self.tool_agent.run(
                             self.conversation_history[conversation_id]
                         )
-                        self.conversation_history[conversation_id].extend(response)
+                        self.conversation_history[conversation_id].extend(
+                            response)
 
                         # We call the agent again to get the final reply after the tool execution
                         if (
@@ -465,7 +473,8 @@ class Orchestrator:
                     final_reply = self.tool_agent.run(
                         self.conversation_history[conversation_id]
                     )
-                    self.conversation_history[conversation_id].extend(final_reply)
+                    self.conversation_history[conversation_id].extend(
+                        final_reply)
 
                 # Store the response for this item
                 self.data["contacts"]["content"][idx][subfield][
@@ -497,7 +506,6 @@ class Orchestrator:
             for field, value in ref_municipality.items():
                 if field in comparitive_fields:
                     ref_municipality[field]["content"] = self.financial_api_data["reference_finances"][i][field]
-
 
     def process_all_sections(self) -> Dict[str, Any]:
         """Process all fields in data_template.json and save results to data_answer.json"""
