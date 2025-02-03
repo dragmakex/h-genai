@@ -241,8 +241,3 @@ npm run test
    - Add test files alongside components
    - Use Vue Test Utils for component testing
    - Follow Vue's testing best practices
-
-## Team
-
-<div align="center">
-  <img src="docs/assets/team.jpg" alt="H-GenAI Team" width="600px">
